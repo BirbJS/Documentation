@@ -14,3 +14,21 @@ The Client class is the main entry point for Birb.JS. It is used by the end user
 |:-----------------------|:----------------------|:---------------------------------|:---------|:------------|
 | options                | The client options    | Object                           | false    | none        |
 | options.intents        | Intents to use        | [Intents](/classes/Intents)      | false    | none        |
+
+## Examples
+Create a basic client that listens to all intents:
+```js
+const { Client, Intents } = require('birb');
+const client = new Client({
+    intents: new Intents(Intents.FLAGS.ALL)
+});
+client.connect("token")
+```
+Just listen to guild and guild message events:
+```js
+const { Client, Intents } = require('birb');
+const client = new Client({
+    intents: new Intents(Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES)
+});
+client.connect("token")
+```

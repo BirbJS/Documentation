@@ -11,5 +11,5 @@ The Client class is the main entry point for Birb.JS. It is used by the end user
 ## Properties
 | name                   | description           | type                             | optional | default     |
 |:-----------------------|:----------------------|:---------------------------------|:---------|:------------|
-| options                | The client options    | Object                           | false    |             |
-| options.intents        | Intents to use        | [Intents](/classes/Intents)      | false    |             |
+| options                | The client options    | Object                           | false    | none        |
+| options.intents        | Intents to use        | [Intents](/classes/Intents)      | false    | none        |

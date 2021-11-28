@@ -92,7 +92,12 @@ Convert this [Intents](#constructor) instance into a string.
 
 **Returns:** String
 
-## fromString(string) STATIC{: .label }
+## fromString(string)
+{: .d-inline-block }
+
+STATIC
+{: .label .label }
+
 Convert an intents string into an [Intents](#constructor) instance.
 
 | name                        | description                           | type                    |

@@ -46,7 +46,7 @@ Registers a listener for the specified event.
 
 | name                        | description                           | type                    |
 |:----------------------------|:--------------------------------------|:------------------------|
-| event                       | The event to list to                  | String                  |
+| event                       | The event to listen to                | String                  |
 | listener                    | The function to be ran when emitted   | Function                |
 
 ```js
@@ -55,6 +55,32 @@ client.on('message', message => {
         message.reply('hello!');
     }
 });
+```
+
+**Returns:** void
+
+## unbind(event)
+Unbinds a listener that was previously bound using the [`on`](#oneventlistener) method to the specified event.
+
+| name                        | description                           | type                    |
+|:----------------------------|:--------------------------------------|:------------------------|
+| event                       | The event to unbind                   | String                  |
+
+```js
+client.unbind('message');
+```
+
+**Returns:** void
+
+## connect(token)
+Connects to Discord using the specified token. **Never share your token!**
+
+| name                        | description                           | type                    |
+|:----------------------------|:--------------------------------------|:------------------------|
+| token                       | The token to use                      | String                  |
+
+```js
+client.connect('your_token_here');
 ```
 
 **Returns:** void

@@ -5,14 +5,13 @@ parent: Classes
 has_toc: true
 ---
 
-### Table of contents
+# Intents
+The Discord API uses intents to determine what events should be sent to connected clients. Intents are now **required** when connecting. You may use `Intents.FLAGS.ALL` to enable all intents, and `Intents.FLAGS.NOT_PRIVILEGED` to enable all intents that don't require approval (for verified bots).
+
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
-
-# Intents
-The Discord API uses intents to determine what events should be sent to connected clients. Intents are now **required** when connecting. You may use `Intents.FLAGS.ALL` to enable all intents, and `Intents.FLAGS.NOT_PRIVILEGED` to enable all intents that don't require approval (for verified bots).
 
 # Constructor
 `new Intents(...flags)`

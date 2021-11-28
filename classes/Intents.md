@@ -23,28 +23,46 @@ The Discord API uses intents to determine what events should be sent to connecte
 
 # Properties
 
+## flags
+The intents that are enabled.
+
+**Type:** Number (from Intents.FLAGS)
+
+## Intents.FLAGS
+{: .d-inline-block }
+
+STATIC
+{: .label .label }
+
+An easier way to enable/disable intents. Can be used in place of numbers when creating intents.
+
 | name                        | description                           | type                    | access     |
 |:----------------------------|:--------------------------------------|:------------------------|:-----------|
-| flags                       | A intents added to the class          | Number                  |            |
-| FLAGS                       | A list of intents that can be used    | Object                  | **static** |
-| FLAGS.ALL                   | All intents                           | Number                  | **static** |
-| FLAGS.NOT_PRIVILEGED        | All intents that don't require whitelisting | Number            | **static** |
-| FLAGS.GUILDS                | Guild events                          | Number                  | **static** |
-| FLAGS.GUILD_MEMBERS         | Guild member events (whitelisted)     | Number                  | **static** |
-| FLAGS.GUILD_BANS            | Guild ban events                      | Number                  | **static** |
-| FLAGS.GUILD_EMOJIS_AND_STICKERS | Guild emoji and sticker events    | Number                  | **static** |
-| FLAGS.GUILD_INTEGRATIONS    | Guild integration events              | Number                  | **static** |
-| FLAGS.GUILD_WEBHOOKS        | Guild webhook events                  | Number                  | **static** |
-| FLAGS.GUILD_INVITES         | Guild invite events                   | Number                  | **static** |
-| FLAGS.GUILD_VOICE_STATES    | Guild voice state events              | Number                  | **static** |
-| FLAGS.GUILD_PRESENCES       | Guild presence events (whitelisted)   | Number                  | **static** |
-| FLAGS.GUILD_MESSAGES        | Guild message events                  | Number                  | **static** |
-| FLAGS.GUILD_MESSAGE_REACTIONS | Guild message reaction events       | Number                  | **static** |
-| FLAGS.GUILD_MESSAGE_TYPING  | Guild typing events                   | Number                  | **static** |
-| FLAGS.DIRECT_MESSAGES       | Direct message events                 | Number                  | **static** |
-| FLAGS.DIRECT_MESSAGE_REACTIONS | Direct message reaction events     | Number                  | **static** |
-| FLAGS.DIRECT_MESSAGE_TYPING | Direct message typing events          | Number                  | **static** |
-| FLAGS.GUILD_SCHEDULED_EVENTS | Guild scheduled events               | Number                  | **static** |
+| ALL                         | All intents                           | Number                  | **static** |
+| NOT_PRIVILEGED              | All intents that don't require whitelisting | Number            | **static** |
+| GUILDS                      | Guild events                          | Number                  | **static** |
+| GUILD_MEMBERS               | Guild member events (whitelisted)     | Number                  | **static** |
+| GUILD_BANS                  | Guild ban events                      | Number                  | **static** |
+| GUILD_EMOJIS_AND_STICKERS   | Guild emoji and sticker events        | Number                  | **static** |
+| GUILD_INTEGRATIONS          | Guild integration events              | Number                  | **static** |
+| GUILD_WEBHOOKS              | Guild webhook events                  | Number                  | **static** |
+| GUILD_INVITES               | Guild invite events                   | Number                  | **static** |
+| GUILD_VOICE_STATES          | Guild voice state events              | Number                  | **static** |
+| GUILD_PRESENCES             | Guild presence events (whitelisted)   | Number                  | **static** |
+| GUILD_MESSAGES              | Guild message events                  | Number                  | **static** |
+| GUILD_MESSAGE_REACTIONS     | Guild message reaction events         | Number                  | **static** |
+| GUILD_MESSAGE_TYPING        | Guild typing events                   | Number                  | **static** |
+| DIRECT_MESSAGES             | Direct message events                 | Number                  | **static** |
+| DIRECT_MESSAGE_REACTIONS    | Direct message reaction events        | Number                  | **static** |
+| DIRECT_MESSAGE_TYPING       | Direct message typing events          | Number                  | **static** |
+| GUILD_SCHEDULED_EVENTS      | Guild scheduled events                | Number                  | **static** |
+
+```js
+// both Intents.FLAGS.GUILDS and (1 << 0) equal 1
+Intents.FLAGS.GUILDS == (1 << 0); // true
+```
+
+**Type:** Object
 
 # Methods
 

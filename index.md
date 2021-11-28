@@ -1,3 +1,9 @@
+---
+layout: default
+title: Welcome to Birb.JS!
+nav_order: 1
+---
+
 # Welcome to Birb.JS!
 Birb.JS is a Discord API wrapper for Node.JS. It's built to be simple, yet powerful. With just a few lines of code, you can get a Discord bot connected to the Discord API.
 

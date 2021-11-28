@@ -2,12 +2,13 @@
 layout: default
 title: Client
 parent: Classes
+has_toc: true
 ---
 
 # Client
 The Client class is the main entry point for Birb.JS. It is used by the end user to connect to Discord, receive events, and send some commands to the Discord API.
 
-## Constructor
+# Constructor
 `new Client(options)`
 
 | name                   | description           | type                             | optional | default     |
@@ -15,7 +16,7 @@ The Client class is the main entry point for Birb.JS. It is used by the end user
 | options                | The client options    | Object                           | false    | none        |
 | options.intents        | Intents to use        | [Intents](/classes/Intents)      | false    | none        |
 
-## Examples
+# Examples
 Create a basic client that listens to all intents:
 ```js
 const { Client, Intents } = require('birb');

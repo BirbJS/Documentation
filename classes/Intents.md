@@ -2,12 +2,13 @@
 layout: default
 title: Intents
 parent: Classes
+has_toc: true
 ---
 
 # Intents
 The Discord API uses intents to determine what events should be sent to connected clients. Intents are now **required** when connecting. You may use `Intents.FLAGS.ALL` to enable all intents, and `Intents.FLAGS.NOT_PRIVILEGED` to enable all intents that don't require approval (for verified bots).
 
-## Constructor
+# Constructor
 `new Intents(...flags)`
 
 | name                   | description           | type                             | optional | default     |
@@ -18,6 +19,7 @@ The Discord API uses intents to determine what events should be sent to connecte
 
 | name                        | description                           | type                    | access     |
 |:----------------------------|:--------------------------------------|:------------------------|:-----------|
+| flags                       | A intents added to the class          | Number                  |            |
 | FLAGS                       | A list of intents that can be used    | Object                  | **static** |
 | FLAGS.ALL                   | All intents                           | Number                  | **static** |
 | FLAGS.NOT_PRIVILEGED        | All intents that don't require whitelisting | Number            | **static** |
@@ -38,7 +40,68 @@ The Discord API uses intents to determine what events should be sent to connecte
 | FLAGS.DIRECT_MESSAGE_TYPING | Direct message typing events          | Number                  | **static** |
 | FLAGS.GUILD_SCHEDULED_EVENTS | Guild scheduled events               | Number                  | **static** |
 
-## Examples
+# Methods
+
+## add(...flags)
+Adds flags to this [Intents](#constructor) instance.
+
+| name                        | description                           | type                    |
+|:----------------------------|:--------------------------------------|:------------------------|
+| ...flags                    | The intents to add                    | Number                  |
+
+```js
+// add one or more intents from Intents.FLAGS...
+intents.add(Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES);
+```
+
+**Returns:** [Intents](#constructor)
+
+## remove(...flags)
+Removes flags from this [Intents](#constructor) instance.
+
+| name                        | description                           | type                    |
+|:----------------------------|:--------------------------------------|:------------------------|
+| ...flags                    | The intents to remove                 | Number                  |
+
+```js
+// enable all but typing events
+intents.add(Intents.FLAGS.ALL);
+intents.remove(Intents.FLAGS.GUILD_MESSAGE_TYPING, Intents.FLAGS.DIRECT_MESSAGE_TYPING);
+```
+
+**Returns:** [Intents](#constructor)
+
+## has(flag)
+Check if this [Intents](#constructor) instance has a flag.
+
+| name                        | description                           | type                    |
+|:----------------------------|:--------------------------------------|:------------------------|
+| flag                        | The flag to check for                 | Number                  |
+
+```js
+// check if an intents list has an intent
+if (intents.has(Intents.FLAGS.GUILDS)) {
+    console.log('intents has guilds!');
+}
+```
+
+**Returns:** Boolean
+
+## toString()
+Convert this [Intents](#constructor) instance into a string.
+
+**Returns:** String
+
+## fromString(string) STATIC{: .label }
+Convert an intents string into an [Intents](#constructor) instance.
+
+| name                        | description                           | type                    |
+|:----------------------------|:--------------------------------------|:------------------------|
+| string                      | The string                            | String                  |
+
+**Returns:** [Intents](#constructor)
+
+# Examples
 Create a basic client that listens to all intents:
 ```js
 const { Client, Intents } = require('birb');

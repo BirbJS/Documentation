@@ -34,6 +34,31 @@ The options used to initialize the client.
 
 **Type:** [ClientOptions](/classes/ClientOptions)
 
+# Methods
+
+## on(event, listener)
+{: .d-inline-block }
+
+EVENT LISTENER
+{: .label .label-purple }
+
+Registers a listener for the specified event.
+
+| name                        | description                           | type                    |
+|:----------------------------|:--------------------------------------|:------------------------|
+| event                       | The event to list to                  | String                  |
+| listener                    | The function to be ran when emitted   | Function                |
+
+```js
+client.on('message', message => {
+    if (message.content === 'hi') {
+        message.reply('hello!');
+    }
+});
+```
+
+**Returns:** void
+
 # Examples
 Create a basic client that listens to all intents:
 ```js

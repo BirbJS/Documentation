@@ -41,25 +41,25 @@ The intents to use when connecting to Discord.
 ## cdnDomain
 The Discord CDN domain.
 
-**Type:** String
+**Type:** String    
 **Default:** `cdn.discord.com`
 
 ## inviteDomain
 The Discord invite domain.
 
-**Type:** String
+**Type:** String    
 **Default:** `discord.gg`
 
 ## gatewayDomain
 The Discord API gateway domain.
 
-**Type:** String
+**Type:** String    
 **Default:** `gateway.discord.gg`
 
 ## gatewayVersion
 The gateway version to use when communicating with Discord.
 
-**Type:** Number
+**Type:** Number    
 **Default:** `9`
 
 # Methods
@@ -97,7 +97,7 @@ Check if the options contains a key.
 
 | name                        | description                           | type                    |
 |:----------------------------|:--------------------------------------|:------------------------|
-| key                         | The key to check fo                   | String                  |
+| key                         | The key to check for                  | String                  |
 
 **Returns:** Boolean
 

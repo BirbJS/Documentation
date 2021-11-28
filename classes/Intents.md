@@ -28,7 +28,7 @@ The intents that are enabled.
 
 **Type:** Number (from Intents.FLAGS)
 
-## Intents.FLAGS
+## FLAGS
 {: .d-inline-block }
 
 STATIC
@@ -131,9 +131,9 @@ Convert an intents string into an [Intents](#constructor) instance.
 **Returns:** [Intents](#constructor)
 
 # Examples
-Create a basic client that listens to all intents:
+Listen to all events:
 ```js
-const { Client, Intents } = require('birb');
+const { Intents } = require('birb');
 new Intents(Intents.FLAGS.ALL);
 ```
 Just listen to guild and guild message events:

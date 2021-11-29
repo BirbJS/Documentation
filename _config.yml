@@ -1,3 +1,8 @@
 # their theme is sooooooo good
 remote_theme: pmarsceill/just-the-docs
 color_scheme: dark
+aux_links:
+  "GitHub":
+    - "https://github.com/BirbJS/Birb"
+  "NPM":
+    - "https://npmjs.com/package/birb"

@@ -11,7 +11,7 @@ The Discord API uses intents to determine what events should be sent to connecte
 ### Contents
 {: .no_toc .text-delta }
 
-1. TOC
+- TOC
 {:toc}
 
 # Constructor

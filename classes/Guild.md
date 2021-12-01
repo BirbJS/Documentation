@@ -11,7 +11,7 @@ A Guild represents a Discord server.
 ### Contents
 {: .no_toc .text-delta }
 
-1. TOC
+- TOC
 {:toc}
 
 # Constructor
@@ -37,7 +37,7 @@ The Guild's ID.
 ## name
 The Guild's name.
 
-**Type:** String?
+**Type:** String
 
 ## icon
 The Guild's icon hash.
@@ -67,12 +67,12 @@ This guild's description.
 ## verificationLevel
 This guild's [verification level](https://discord.com/developers/docs/resources/guild#guild-object-verification-level).
 
-**Type:** [VerificationLevel](/enums/VerificationLevel)?
+**Type:** [VerificationLevel](/enums/VerificationLevel)
 
 ## defaultNotifications
 This guild's [default message notification level](https://discord.com/developers/docs/resources/guild#guild-object-default-message-notification-level).
 
-**Type:** [NotificationLevel](/enums/NotificationLevel)?
+**Type:** [NotificationLevel](/enums/NotificationLevel)
 
 ## available
 Whether or not this Guild is available to this client.
@@ -87,7 +87,7 @@ The ID of the system notifications channel.
 ## ownerId
 The ID of the Guild owner.
 
-**Type:** String?
+**Type:** String
 
 ## large
 Whether or not this Guild is considered large.
@@ -102,7 +102,7 @@ The ID of the AFK voice channel.
 ## explicitContentFilter
 The explicit content filter level for this Guild.
 
-**Type:** [ExplicitContentFilterLevel](/enums/ExplicitContentFilterLevel)?
+**Type:** [ExplicitContentFilterLevel](/enums/ExplicitContentFilterLevel)
 
 ## maxMembers
 The maximum amount of members this Guild can have.
@@ -117,7 +117,7 @@ This Guild's preferred locale.
 ## mfaLevel
 The level of MFA required for this Guild's staff members.
 
-**Type:** [MFALevel](/enums/MFALevel)?
+**Type:** [MFALevel](/enums/MFALevel)
 
 ## vanityCode
 This Guild's vanity invite code, if it has one.
@@ -127,7 +127,7 @@ This Guild's vanity invite code, if it has one.
 ## nsfwLevel
 The Discord-defined NSFW level related to this Guild's content.
 
-**Type:** [NSFWLevel](/enums/NSFWLevel)?
+**Type:** [NSFWLevel](/enums/NSFWLevel)
 
 ## maxVideoChannelUsers
 The maximum amount of users allowed in a video channel.
@@ -152,7 +152,7 @@ This Guild's member count.
 ## boostTier
 This Guild's Nitro booster tier.
 
-**Type:** number?
+**Type:** number
 
 ## rulesChannelId
 This ID of this Guild's rules channel, if it has one.
@@ -162,12 +162,12 @@ This ID of this Guild's rules channel, if it has one.
 ## afkTimeout
 The amount of time, in seconds, it takes for an inactive user to be moved to the AFK voice channel.
 
-**Type:** number?
+**Type:** number
 
 ## roles
 This Guild's roles block.
 
-**Type:** [RoleBlock](/classes/RolesBlock)?
+**Type:** [RoleBlock](/classes/RolesBlock)
 
 # Methods
 
@@ -191,79 +191,6 @@ client.listen('message', message => {
     }
 });
 ```
-
-**Returns:** void
-
-## unbind(event)
-Unbinds a listener that was previously bound using the [`listen`](#listeneventlistener) method to the specified event.
-
-| name                        | description                           | type                    | optional       |
-|:----------------------------|:--------------------------------------|:------------------------|:---------------|
-| event                       | The event to unbind                   | String                  | false          |
-
-```js
-client.unbind('message');
-```
-
-**Returns:** void
-
-## emit(event, ...args)
-{: .d-inline-block }
-
-EVENT EMITTER
-{: .label .label-purple }
-
-Emits an event that can be detected using the [`listen`](#listeneventlistener) method on the specified event.
-
-| name                        | description                           | type                    | optional       |
-|:----------------------------|:--------------------------------------|:------------------------|:---------------|
-| event                       | The event to unbind                   | String                  | false          |
-| ...args                     | One or more arguments to pass         | any                     | true           |
-
-```js
-client.emit('customEvent', 'something happened!');
-```
-
-**Returns:** void
-
-## connect(token)
-Connects to Discord using the specified token. **Never share your token!**
-
-| name                        | description                           | type                    | optional       |
-|:----------------------------|:--------------------------------------|:------------------------|:---------------|
-| token                       | Your bot's token                      | String                  | false          |
-
-```js
-client.connect('your_token_here');
-```
-
-**Returns:** void
-
-## debug(...message)
-{: .d-inline-block }
-
-INTERNAL
-{: .label .label-yellow }
-
-Emit a debug message. Printed to console if debug mode is enabled.
-
-| name                        | description                           | type                    | optional       |
-|:----------------------------|:--------------------------------------|:------------------------|:---------------|
-| ...message                  | The message to emit                   | any                     | false          |
-
-**Returns:** void
-
-## warn(...message)
-{: .d-inline-block }
-
-INTERNAL
-{: .label .label-yellow }
-
-Emit a warning message. Printed to console if debug mode is enabled.
-
-| name                        | description                           | type                    | optional       |
-|:----------------------------|:--------------------------------------|:------------------------|:---------------|
-| ...message                  | The message to emit                   | any                     | false          |
 
 **Returns:** void
 

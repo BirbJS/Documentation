@@ -11,7 +11,7 @@ The Client class is the main entry point for Birb.JS. It is used by the end user
 ### Contents
 {: .no_toc .text-delta }
 
-1. TOC
+- TOC
 {:toc}
 
 # Constructor

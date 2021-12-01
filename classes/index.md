@@ -12,5 +12,5 @@ This is a list of classes in the Birb.JS project. Use the menu to navigate throu
 ### All public classes
 {: .no_toc .text-delta }
 
-1. TOC
+- TOC
 {:toc}

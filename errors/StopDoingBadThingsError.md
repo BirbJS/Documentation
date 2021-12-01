@@ -17,4 +17,5 @@ We've deliberately made sure that, if Birb.JS is told your account is not a bot,
 
 ```
 StopDoingBadThingsError: self-bots (non-bot automated accounts) are banned from accessing the Discord API Gateway by Discord and are not supported by the Birb.JS library; to use Birb.JS you must use a bot account otherwise you may have your account BANNED by Discord; use a bot token instead
+More info: https://support.discord.com/hc/en-us/articles/115002192352-Automated-user-accounts-self-bots-
 ```

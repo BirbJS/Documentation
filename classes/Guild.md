@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Client
+title: Guild
 parent: Classes
 has_toc: true
 ---
 
-# Client
-The Client class is the main entry point for Birb.JS. It is used by the end user to connect to Discord, receive events, and send some commands to the Discord API.
+# Guild
+A Guild represents a Discord server.
 
 ### Contents
 {: .no_toc .text-delta }
@@ -15,32 +15,159 @@ The Client class is the main entry point for Birb.JS. It is used by the end user
 {:toc}
 
 # Constructor
-`new Client(options)`
+`new Guild(client, data)`
 
 | name                   | description           | type                             | optional | default     |
 |:-----------------------|:----------------------|:---------------------------------|:---------|:------------|
-| options                | The client options    | Object                           | false    | none        |
-| options.intents        | Intents to use        | [Intents](/classes/Intents)      | false    | none        |
-| options.debug          | Debug mode            | Boolean                          | true     | false       |
-
-```js
-const { Client, Intents } = require('birb.js');
-const Client = new Client({
-  intents: new Intents(Intents.FLAGS.ALL)
-});
-```
+| client                 | The client            | [Client](/classes/Client)        | false    | none        |
+| data                   | Raw data from the API | Object                           | false    | none        |
 
 # Properties
 
-## token
-The token to use to connect to Discord. **Never share your token!**
+## client
+The client related to this Guild.
+
+**Type:** [Client](/classes/Client)
+
+## id
+The Guild's ID.
 
 **Type:** String
 
-## options
-The options used to initialize the client.
+## name
+The Guild's name.
 
-**Type:** [ClientOptions](/classes/ClientOptions)
+**Type:** String?
+
+## icon
+The Guild's icon hash.
+
+**Type:** String?
+
+## nsfw
+Whether or not this Guild has been marked as NSFW.
+
+**Type:** boolean?
+
+## discoverySplash
+This guild's discovery splash hash.
+
+**Type:** String?
+
+## banner
+This guild's banner hash.
+
+**Type:** String?
+
+## description
+This guild's description.
+
+**Type:** String?
+
+## verificationLevel
+This guild's [verification level](https://discord.com/developers/docs/resources/guild#guild-object-verification-level).
+
+**Type:** [VerificationLevel](/enums/VerificationLevel)?
+
+## defaultNotifications
+This guild's [default message notification level](https://discord.com/developers/docs/resources/guild#guild-object-default-message-notification-level).
+
+**Type:** [NotificationLevel](/enums/NotificationLevel)?
+
+## available
+Whether or not this Guild is available to this client.
+
+**Type:** boolean
+
+## systemChannelId
+The ID of the system notifications channel.
+
+**Type:** String?
+
+## ownerId
+The ID of the Guild owner.
+
+**Type:** String?
+
+## large
+Whether or not this Guild is considered large.
+
+**Type:** String?
+
+## afkChannelId
+The ID of the AFK voice channel.
+
+**Type:** String?
+
+## explicitContentFilter
+The explicit content filter level for this Guild.
+
+**Type:** [ExplicitContentFilterLevel](/enums/ExplicitContentFilterLevel)?
+
+## maxMembers
+The maximum amount of members this Guild can have.
+
+**Type:** number?
+
+## preferredLocale
+This Guild's preferred locale.
+
+**Type:** String?
+
+## mfaLevel
+The level of MFA required for this Guild's staff members.
+
+**Type:** [MFALevel](/enums/MFALevel)?
+
+## vanityCode
+This Guild's vanity invite code, if it has one.
+
+**Type:** String?
+
+## nsfwLevel
+The Discord-defined NSFW level related to this Guild's content.
+
+**Type:** [NSFWLevel](/enums/NSFWLevel)?
+
+## maxVideoChannelUsers
+The maximum amount of users allowed in a video channel.
+
+**Type:** number?
+
+## boosterCount
+The amount of users who have Nitro boosted for this Guild.
+
+**Type:** number?
+
+## splash
+This Guild's splash hash.
+
+**Type:** String?
+
+## memberCount
+This Guild's member count.
+
+**Type:** number?
+
+## boostTier
+This Guild's Nitro booster tier.
+
+**Type:** number?
+
+## rulesChannelId
+This ID of this Guild's rules channel, if it has one.
+
+**Type:** String?
+
+## afkTimeout
+The amount of time, in seconds, it takes for an inactive user to be moved to the AFK voice channel.
+
+**Type:** number?
+
+## roles
+This Guild's roles block.
+
+**Type:** [RoleBlock](/classes/RolesBlock)?
 
 # Methods
 

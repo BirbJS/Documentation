@@ -24,7 +24,7 @@ Connect to the Discord API:
 ```js
 const { Client, Intents } = require('birb');
 let client = new Client({
-    intents: new Intents(Intents.ALL),
+    intents: new Intents(Intents.FLAGS.ALL),
 });
 
 client.listen('ready', () => {

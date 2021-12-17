@@ -79,4 +79,3 @@ client.connect('your_bot_token');
 
 ## Licensing
 Birb.js is currently licensed under the [Mozilla Public License 2.0](https://github.com/BirbJS/Birb/blob/main/LICENSE). You're free to use it as a library in both personal and commercial projects, free-of-charge.
-

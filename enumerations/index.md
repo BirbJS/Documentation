@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Classes
+title: Enumerations
 has_children: true
 has_toc: true
 ---
 
-# Classes
+# Enumerations
 ### Table of Contents
 {: .no_toc .text-delta }
 

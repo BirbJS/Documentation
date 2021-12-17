@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Classes
+title: Types
 has_children: true
 has_toc: true
 ---
 
-# Classes
+# Types
 ### Table of Contents
 {: .no_toc .text-delta }
 

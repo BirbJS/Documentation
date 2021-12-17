@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Intents
+title: BitsBlock
 parent: Classes
 has_children: false
 has_toc: true
 ---
 
-# Intents
+# BitsBlock
 ### Table of Contents
 {: .no_toc .text-delta }
 
@@ -14,7 +14,7 @@ has_toc: true
 {:toc}
 ## Constructor
 ```js
-new Intents(flags)
+new BitsBlock(flags)
 ```
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
@@ -23,14 +23,6 @@ new Intents(flags)
 ## Properties
 ### flags
 **Type:** number
-
-### FLAGS
-{: .d-inline-block }
-
-STATIC
-{: .label .label-blue }
-
-**Type:** Object
 
 ## Methods
 ### add(flags)

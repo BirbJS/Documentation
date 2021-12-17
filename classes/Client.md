@@ -2,157 +2,215 @@
 layout: default
 title: Client
 parent: Classes
+has_children: false
 has_toc: true
 ---
 
 # Client
-The Client class is the main entry point for Birb.JS. It is used by the end user to connect to Discord, receive events, and send some commands to the Discord API.
-
-### Contents
+### Table of Contents
 {: .no_toc .text-delta }
 
 - TOC
 {:toc}
-
-# Constructor
-`new Client(options)`
-
-| name                   | description           | type                             | optional | default     |
-|:-----------------------|:----------------------|:---------------------------------|:---------|:------------|
-| options                | The client options    | Object                           | false    | none        |
-| options.intents        | Intents to use        | [Intents](/classes/Intents)      | false    | none        |
-| options.debug          | Debug mode            | Boolean                          | true     | false       |
-
+## Constructor
 ```js
-const { Client, Intents } = require('birb.js');
-const Client = new Client({
-  intents: new Intents(Intents.FLAGS.ALL)
-});
+new Client(options)
 ```
+| name | type | description | optional | default |
+|:-----|:-----|:------------|:---------|:--------|
+| options | Object |  | false |  |
 
-# Properties
-
-## token
-The token to use to connect to Discord. **Never share your token!**
-
-**Type:** String
-
-## options
-The options used to initialize the client.
-
-**Type:** [ClientOptions](/classes/ClientOptions)
-
-# Methods
-
-## listen(event, listener)
+## Properties
+### api
 {: .d-inline-block }
 
-EVENT LISTENER
+READONLY
 {: .label .label-purple }
 
-Registers a listener for the specified event.
+**Type:** Object
 
-| name                        | description                           | type                    | optional       |
-|:----------------------------|:--------------------------------------|:------------------------|:---------------|
-| event                       | The event to listen to                | String                  | false          |
-| listener                    | The function to be ran when emitted   | Function                | false          |
+### channels
+**Type:** [ChannelBlock](classes/ChannelBlock)
 
-```js
-client.listen('message', message => {
-    if (message.content === 'hi') {
-        message.reply('hello!');
-    }
-});
-```
-
-**Returns:** void
-
-## unbind(event)
-Unbinds a listener that was previously bound using the [`listen`](#listeneventlistener) method to the specified event.
-
-| name                        | description                           | type                    | optional       |
-|:----------------------------|:--------------------------------------|:------------------------|:---------------|
-| event                       | The event to unbind                   | String                  | false          |
-
-```js
-client.unbind('message');
-```
-
-**Returns:** void
-
-## emit(event, ...args)
+### devtools
 {: .d-inline-block }
 
-EVENT EMITTER
-{: .label .label-purple }
+PRIVATE
+{: .label .label-red }
 
-Emits an event that can be detected using the [`listen`](#listeneventlistener) method on the specified event.
+**Type:** any
 
-| name                        | description                           | type                    | optional       |
-|:----------------------------|:--------------------------------------|:------------------------|:---------------|
-| event                       | The event to unbind                   | String                  | false          |
-| ...args                     | One or more arguments to pass         | any                     | true           |
-
-```js
-client.emit('customEvent', 'something happened!');
-```
-
-**Returns:** void
-
-## connect(token)
-Connects to Discord using the specified token. **Never share your token!**
-
-| name                        | description                           | type                    | optional       |
-|:----------------------------|:--------------------------------------|:------------------------|:---------------|
-| token                       | Your bot's token                      | String                  | false          |
-
-```js
-client.connect('your_token_here');
-```
-
-**Returns:** void
-
-## debug(...message)
+### events
 {: .d-inline-block }
 
-INTERNAL
-{: .label .label-yellow }
+PRIVATE
+{: .label .label-red }
 
-Emit a debug message. Printed to console if debug mode is enabled.
+**Type:** any
 
-| name                        | description                           | type                    | optional       |
-|:----------------------------|:--------------------------------------|:------------------------|:---------------|
-| ...message                  | The message to emit                   | any                     | false          |
+### guilds
+**Type:** [GuildBlock](classes/GuildBlock)
 
-**Returns:** void
+### me
+**Type:** Object | [ClientUser](classes/ClientUser)
 
-## warn(...message)
+### options
+**Type:** Object
+
+### shard
+**Type:** any
+
+### token
+**Type:** string
+
+### users
+**Type:** [UserBlock](classes/UserBlock)
+
+### valid
 {: .d-inline-block }
 
-INTERNAL
-{: .label .label-yellow }
+PRIVATE
+{: .label .label-red }
 
-Emit a warning message. Printed to console if debug mode is enabled.
+**Type:** boolean
 
-| name                        | description                           | type                    | optional       |
-|:----------------------------|:--------------------------------------|:------------------------|:---------------|
-| ...message                  | The message to emit                   | any                     | false          |
+### ws
+**Type:** [Websocket](classes/Websocket)
+
+## Methods
+### add(fn)
+Initilize a new addon to the client.
+
+| name | type | description | optional | default |
+|:-----|:-----|:------------|:---------|:--------|
+| fn | Function | The addon's main function. | false |  |
+
+**Returns:** [Client](classes/Client)
+
+### connect(token)
+Connect to the Discord gateway.
+
+| name | type | description | optional | default |
+|:-----|:-----|:------------|:---------|:--------|
+| token | string | Your bot's token. | false |  |
 
 **Returns:** void
 
-# Examples
-Send `hello!` when a member says `hi`:
-```js
-const { Client, Intents } = require('birb');
-const client = new Client({
-    intents: new Intents(Intents.FLAGS.ALL)
-});
+### debug(message)
+Emit a log in debug mode.
 
-client.listen('message', (message) => {
-    if (message.content === 'hi') {
-        message.reply('hello!');
-    }
-});
+| name | type | description | optional | default |
+|:-----|:-----|:------------|:---------|:--------|
+| message | Object | The log message. | false |  |
 
-client.connect("token")
-```
+**Returns:** void
+
+### emit(event, args)
+Emit an event.
+
+| name | type | description | optional | default |
+|:-----|:-----|:------------|:---------|:--------|
+| event | string | The event name. | false |  |
+| args | Object |  | false |  |
+
+**Returns:** any
+
+### invalidate()
+{: .d-inline-block }
+
+PRIVATE
+{: .label .label-red }
+
+Invalidate the client, forcing the user to restart
+the process to use it. Once called, this cannot be
+undone (mostly because it would defeat the entire
+purpose of this function).
+
+**Returns:** void
+
+### listen(event, callback)
+Add an event listener.
+
+| name | type | description | optional | default |
+|:-----|:-----|:------------|:---------|:--------|
+| event | string | The event name. | false |  |
+| callback | Function |  | false |  |
+
+**Returns:** void
+
+### listenIfNotRegistered(event, callback)
+{: .d-inline-block }
+
+PRIVATE
+{: .label .label-red }
+
+Only registers the provided event if it isn't
+already registered.
+
+| name | type | description | optional | default |
+|:-----|:-----|:------------|:---------|:--------|
+| event | EventResolvable |  | false |  |
+| callback | Function |  | false |  |
+
+**Returns:** void
+
+### logHttp(message)
+{: .d-inline-block }
+
+PRIVATE
+{: .label .label-red }
+
+Log a HTTP event.
+
+| name | type | description | optional | default |
+|:-----|:-----|:------------|:---------|:--------|
+| message | Object | The event data. | false |  |
+
+**Returns:** void
+
+### logReceive(message)
+{: .d-inline-block }
+
+PRIVATE
+{: .label .label-red }
+
+Log a packet received from the gateway.
+
+| name | type | description | optional | default |
+|:-----|:-----|:------------|:---------|:--------|
+| message | Object | The packet data. | false |  |
+
+**Returns:** void
+
+### logSend(message)
+{: .d-inline-block }
+
+PRIVATE
+{: .label .label-red }
+
+Log a packet sent to the gateway.
+
+| name | type | description | optional | default |
+|:-----|:-----|:------------|:---------|:--------|
+| message | Object | The packet data. | false |  |
+
+**Returns:** void
+
+### unbind(event)
+Undind an event listener.
+
+| name | type | description | optional | default |
+|:-----|:-----|:------------|:---------|:--------|
+| event | string | The event name to unbind. | false |  |
+
+**Returns:** void
+
+### warn(message)
+Emit a warning in debug mode.
+
+| name | type | description | optional | default |
+|:-----|:-----|:------------|:---------|:--------|
+| message | Object | The warning message. | false |  |
+
+**Returns:** void
+

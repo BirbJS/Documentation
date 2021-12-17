@@ -2,211 +2,290 @@
 layout: default
 title: Guild
 parent: Classes
+has_children: false
 has_toc: true
 ---
 
 # Guild
-A Guild represents a Discord server.
-
-### Contents
+### Table of Contents
 {: .no_toc .text-delta }
 
 - TOC
 {:toc}
+## Constructor
+```js
+new Guild(client, data)
+```
+| name | type | description | optional | default |
+|:-----|:-----|:------------|:---------|:--------|
+| client | [Client](classes/Client) |  | false |  |
+| data | any |  | false |  |
 
-# Constructor
-`new Guild(client, data)`
+## Properties
+### afkChannelId
+**Type:** Object | string
 
-| name                   | description           | type                             | optional | default     |
-|:-----------------------|:----------------------|:---------------------------------|:---------|:------------|
-| client                 | The client            | [Client](/classes/Client)        | false    | none        |
-| data                   | Raw data from the API | Object                           | false    | none        |
+### afkTimeout
+**Type:** number
 
-# Properties
+### approximateMemberCount
+**Type:** Object | number
 
-## client
-The client related to this Guild.
+### approximatePresenceCount
+**Type:** Object | number
 
-**Type:** [Client](/classes/Client)
-
-## id
-The Guild's ID.
-
-**Type:** String
-
-## name
-The Guild's name.
-
-**Type:** String
-
-## icon
-The Guild's icon hash.
-
-**Type:** String?
-
-## nsfw
-Whether or not this Guild has been marked as NSFW.
-
-**Type:** boolean?
-
-## discoverySplash
-This guild's discovery splash hash.
-
-**Type:** String?
-
-## banner
-This guild's banner hash.
-
-**Type:** String?
-
-## description
-This guild's description.
-
-**Type:** String?
-
-## verificationLevel
-This guild's [verification level](https://discord.com/developers/docs/resources/guild#guild-object-verification-level).
-
-**Type:** [VerificationLevel](/enums/VerificationLevel)
-
-## defaultNotifications
-This guild's [default message notification level](https://discord.com/developers/docs/resources/guild#guild-object-default-message-notification-level).
-
-**Type:** [NotificationLevel](/enums/NotificationLevel)
-
-## available
-Whether or not this Guild is available to this client.
-
+### available
 **Type:** boolean
 
-## systemChannelId
-The ID of the system notifications channel.
+### banner
+**Type:** Object | string
 
-**Type:** String?
-
-## ownerId
-The ID of the Guild owner.
-
-**Type:** String
-
-## large
-Whether or not this Guild is considered large.
-
-**Type:** String?
-
-## afkChannelId
-The ID of the AFK voice channel.
-
-**Type:** String?
-
-## explicitContentFilter
-The explicit content filter level for this Guild.
-
-**Type:** [ExplicitContentFilterLevel](/enums/ExplicitContentFilterLevel)
-
-## maxMembers
-The maximum amount of members this Guild can have.
-
-**Type:** number?
-
-## preferredLocale
-This Guild's preferred locale.
-
-**Type:** String?
-
-## mfaLevel
-The level of MFA required for this Guild's staff members.
-
-**Type:** [MFALevel](/enums/MFALevel)
-
-## vanityCode
-This Guild's vanity invite code, if it has one.
-
-**Type:** String?
-
-## nsfwLevel
-The Discord-defined NSFW level related to this Guild's content.
-
-**Type:** [NSFWLevel](/enums/NSFWLevel)
-
-## maxVideoChannelUsers
-The maximum amount of users allowed in a video channel.
-
-**Type:** number?
-
-## boosterCount
-The amount of users who have Nitro boosted for this Guild.
-
-**Type:** number?
-
-## splash
-This Guild's splash hash.
-
-**Type:** String?
-
-## memberCount
-This Guild's member count.
-
-**Type:** number?
-
-## boostTier
-This Guild's Nitro booster tier.
-
+### boostTier
 **Type:** number
 
-## rulesChannelId
-This ID of this Guild's rules channel, if it has one.
+### boosterCount
+**Type:** Object | number
 
-**Type:** String?
+### channels
+**Type:** default
 
-## afkTimeout
-The amount of time, in seconds, it takes for an inactive user to be moved to the AFK voice channel.
+### client
+**Type:** [Client](classes/Client)
 
-**Type:** number
+### defaultNotifications
+**Type:** [NotificationLevel](enums/NotificationLevel)
 
-## roles
-This Guild's roles block.
+### description
+**Type:** Object | string
 
-**Type:** [RoleBlock](/classes/RolesBlock)
+### discoverySplash
+**Type:** Object | string
 
-# Methods
+### explicitContentFilter
+**Type:** [ExplicitContentFilterLevel](enums/ExplicitContentFilterLevel)
 
-## listen(event, listener)
+### icon
+**Type:** Object | string
+
+### id
 {: .d-inline-block }
 
-EVENT LISTENER
+READONLY
 {: .label .label-purple }
 
-Registers a listener for the specified event.
+**Type:** string
 
-| name                        | description                           | type                    | optional       |
-|:----------------------------|:--------------------------------------|:------------------------|:---------------|
-| event                       | The event to listen to                | String                  | false          |
-| listener                    | The function to be ran when emitted   | Function                | false          |
+### large
+**Type:** boolean
 
-```js
-client.listen('message', message => {
-    if (message.content === 'hi') {
-        message.reply('hello!');
-    }
-});
-```
+### maxMembers
+**Type:** Object | number
+
+### maxVideoChannelUsers
+**Type:** Object | number
+
+### memberCount
+**Type:** Object | number
+
+### members
+**Type:** [GuildMemberBlock](classes/GuildMemberBlock)
+
+### mfaLevel
+**Type:** [MFALevel](enums/MFALevel)
+
+### name
+**Type:** string
+
+### nsfw
+**Type:** boolean
+
+### nsfwLevel
+**Type:** [NSFWLevel](enums/NSFWLevel)
+
+### ownerId
+**Type:** string
+
+### preferredLocale
+**Type:** Object | string
+
+### roles
+**Type:** [RoleBlock](classes/RoleBlock)
+
+### rulesChannelId
+**Type:** Object | string
+
+### splash
+**Type:** Object | string
+
+### systemChannelId
+**Type:** Object | string
+
+### vanityCode
+**Type:** Object | string
+
+### verificationLevel
+**Type:** [VerificationLevel](enums/VerificationLevel)
+
+## Methods
+### build(data)
+{: .d-inline-block }
+
+PRIVATE
+{: .label .label-red }
+
+| name | type | description | optional | default |
+|:-----|:-----|:------------|:---------|:--------|
+| data | any |  | false |  |
 
 **Returns:** void
 
-# Examples
-Send `hello!` when a member says `hi`:
-```js
-const { Client, Intents } = require('birb');
-const client = new Client({
-    intents: new Intents(Intents.FLAGS.ALL)
-});
+### leave()
+Leave the Guild.
 
-client.listen('message', (message) => {
-    if (message.content === 'hi') {
-        message.reply('hello!');
-    }
-});
+**Returns:** Promise<void>
 
-client.connect("token")
-```
+### modify(data, reason?)
+Modify the Guild.
+
+| name | type | description | optional | default |
+|:-----|:-----|:------------|:---------|:--------|
+| data | Object | The data to send to the Discord API. | false |  |
+| reason | string |  | true |  |
+
+**Returns:** Promise<void>
+
+### set()
+{: .d-inline-block }
+
+PRIVATE
+{: .label .label-red }
+
+Set the Guild's data to the cache.
+
+**Returns:** [Guild](classes/Guild)
+
+### setAfkChannel(channel, reason?)
+Set this Guild's AFK timeout channel.
+
+| name | type | description | optional | default |
+|:-----|:-----|:------------|:---------|:--------|
+| channel | ChannelResolvable | The AFK timeout channel. | false |  |
+| reason | string |  | true |  |
+
+**Returns:** Promise<void>
+
+### setAfkTimeout(seconds, reason?)
+Change this Guild's AFK timeout.
+
+| name | type | description | optional | default |
+|:-----|:-----|:------------|:---------|:--------|
+| seconds | number | The AFK timeout in seconds. | false |  |
+| reason | string |  | true |  |
+
+**Returns:** Promise<void>
+
+### setBoostProgressBar(toggle, reason?)
+Toggle the Guild's booster progress bar.
+
+| name | type | description | optional | default |
+|:-----|:-----|:------------|:---------|:--------|
+| toggle | number | Whether or not to show the booster progress bar. | false |  |
+| reason | string |  | true |  |
+
+**Returns:** Promise<void>
+
+### setDefaultNotifications(level, reason?)
+Change this Guild's default notifications level.
+
+| name | type | description | optional | default |
+|:-----|:-----|:------------|:---------|:--------|
+| level | [NotificationLevel](enums/NotificationLevel) | The new notification level for the Guild. | false |  |
+| reason | string |  | true |  |
+
+**Returns:** Promise<void>
+
+### setDescription(description, reason?)
+Set the Guild's description.
+
+| name | type | description | optional | default |
+|:-----|:-----|:------------|:---------|:--------|
+| description | string | The new description. | false |  |
+| reason | string |  | true |  |
+
+**Returns:** Promise<void>
+
+### setExplicitContentFilter(level, reason?)
+Change this Guild's explicit content filter level.
+
+| name | type | description | optional | default |
+|:-----|:-----|:------------|:---------|:--------|
+| level | [ExplicitContentFilterLevel](enums/ExplicitContentFilterLevel) | The new explicit content filter level for the Guild. | false |  |
+| reason | string |  | true |  |
+
+**Returns:** Promise<void>
+
+### setName(name, reason?)
+Change this Guild's name.
+
+| name | type | description | optional | default |
+|:-----|:-----|:------------|:---------|:--------|
+| name | string | The new name for the Guild. | false |  |
+| reason | string |  | true |  |
+
+**Returns:** Promise<void>
+
+### setPreferredLocale(locale, reason?)
+Set the Guild's preferred locale.
+
+| name | type | description | optional | default |
+|:-----|:-----|:------------|:---------|:--------|
+| locale | string | The new locale. | false |  |
+| reason | string |  | true |  |
+
+**Returns:** Promise<void>
+
+### setPublicUpdatesChannel(channel, reason?)
+Set this Guild's public updates channel.
+
+| name | type | description | optional | default |
+|:-----|:-----|:------------|:---------|:--------|
+| channel | ChannelResolvable | The channel. | false |  |
+| reason | string |  | true |  |
+
+**Returns:** Promise<void>
+
+### setRulesChannel(channel, reason?)
+Set this Guild's rules channel.
+
+| name | type | description | optional | default |
+|:-----|:-----|:------------|:---------|:--------|
+| channel | ChannelResolvable | The channel. | false |  |
+| reason | string |  | true |  |
+
+**Returns:** Promise<void>
+
+### setSystemChannel(channel, reason?)
+Set this Guild's system messages channel.
+
+| name | type | description | optional | default |
+|:-----|:-----|:------------|:---------|:--------|
+| channel | ChannelResolvable | The channel. | false |  |
+| reason | string |  | true |  |
+
+**Returns:** Promise<void>
+
+### setVerificationLevel(level, reason?)
+Change this Guild's verification level.
+
+| name | type | description | optional | default |
+|:-----|:-----|:------------|:---------|:--------|
+| level | [VerificationLevel](enums/VerificationLevel) | The new verification level for the Guild. | false |  |
+| reason | string |  | true |  |
+
+**Returns:** Promise<void>
+
+### toString()
+Convert this Guild into a a string (the name).
+
+**Returns:** string
+

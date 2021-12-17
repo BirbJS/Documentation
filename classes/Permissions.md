@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Intents
+title: Permissions
 parent: Classes
 has_children: false
 has_toc: true
 ---
 
-# Intents
+# Permissions
 ### Table of Contents
 {: .no_toc .text-delta }
 
@@ -14,7 +14,7 @@ has_toc: true
 {:toc}
 ## Constructor
 ```js
-new Intents(flags)
+new Permissions(flags)
 ```
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
@@ -54,6 +54,13 @@ Check if a flag (bit) is in the block.
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | flag | number | The flag to check. | false |  |
+
+**Returns:** boolean
+
+### hasPermission(flag)
+| name | type | description | optional | default |
+|:-----|:-----|:------------|:---------|:--------|
+| flag | number |  | false |  |
 
 **Returns:** boolean
 

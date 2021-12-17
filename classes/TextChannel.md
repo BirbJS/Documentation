@@ -19,17 +19,17 @@ new TextChannel(client, data, options?, guild?)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | data | any |  | false |  |
 | options | Object |  | true |  |
-| guild | [Guild](classes/Guild) |  | true |  |
+| guild | [Guild](/classes/Guild) |  | true |  |
 
 # Properties
 ## client
-**Type:** [Client](classes/Client)
+**Type:** [Client](/classes/Client)
 
 ## guild
-**Type:** [Guild](classes/Guild)
+**Type:** [Guild](/classes/Guild)
 
 ## id
 {: .d-inline-block }
@@ -45,13 +45,13 @@ READONLY
 READONLY
 {: .label .label-purple }
 
-**Type:** [MessageBlock](classes/MessageBlock)
+**Type:** [MessageBlock](/classes/MessageBlock)
 
 ## name
 **Type:** string
 
 ## permissions
-**Type:** [ChannelPermissionsBlock](classes/ChannelPermissionsBlock)
+**Type:** [ChannelPermissionsBlock](/classes/ChannelPermissionsBlock)
 
 # Methods
 ## build(data)
@@ -72,7 +72,7 @@ PRIVATE
 PROTECTED
 {: .label .label-red }
 
-**Returns:** undefined | [TextChannel](classes/TextChannel)
+**Returns:** undefined | [TextChannel](/classes/TextChannel)
 
 ## modify(data, reason?)
 | name | type | description | optional | default |
@@ -80,14 +80,14 @@ PROTECTED
 | data | any |  | false |  |
 | reason | string |  | true |  |
 
-**Returns:** Promise<[TextChannel](classes/TextChannel)>
+**Returns:** Promise<[TextChannel](/classes/TextChannel)>
 
 ## send(message)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | message | MessageContent |  | false |  |
 
-**Returns:** Promise<[Message](classes/Message)>
+**Returns:** Promise<[Message](/classes/Message)>
 
 ## set()
 {: .d-inline-block }
@@ -97,7 +97,7 @@ PROTECTED
 
 Set the TextChannel's data to the cache.
 
-**Returns:** [TextChannel](classes/TextChannel)
+**Returns:** [TextChannel](/classes/TextChannel)
 
 ## setAutoArchive(minutes, reason?)
 | name | type | description | optional | default |
@@ -105,7 +105,7 @@ Set the TextChannel's data to the cache.
 | minutes | number |  | false |  |
 | reason | string |  | true |  |
 
-**Returns:** Promise<[TextChannel](classes/TextChannel)>
+**Returns:** Promise<[TextChannel](/classes/TextChannel)>
 
 ## setNSFW(nsfw, reason?)
 | name | type | description | optional | default |
@@ -113,7 +113,7 @@ Set the TextChannel's data to the cache.
 | nsfw | boolean |  | false |  |
 | reason | string |  | true |  |
 
-**Returns:** Promise<[TextChannel](classes/TextChannel)>
+**Returns:** Promise<[TextChannel](/classes/TextChannel)>
 
 ## setName(name, reason?)
 | name | type | description | optional | default |
@@ -121,7 +121,7 @@ Set the TextChannel's data to the cache.
 | name | string |  | false |  |
 | reason | string |  | true |  |
 
-**Returns:** Promise<[TextChannel](classes/TextChannel)>
+**Returns:** Promise<[TextChannel](/classes/TextChannel)>
 
 ## setOverwrites(overwrite)
 {: .d-inline-block }
@@ -141,7 +141,7 @@ PROTECTED
 | position | number |  | false |  |
 | reason | string |  | true |  |
 
-**Returns:** Promise<[TextChannel](classes/TextChannel)>
+**Returns:** Promise<[TextChannel](/classes/TextChannel)>
 
 ## setSlowmode(seconds, reason?)
 | name | type | description | optional | default |
@@ -149,7 +149,7 @@ PROTECTED
 | seconds | number |  | false |  |
 | reason | string |  | true |  |
 
-**Returns:** Promise<[TextChannel](classes/TextChannel)>
+**Returns:** Promise<[TextChannel](/classes/TextChannel)>
 
 ## setTopic(topic, reason?)
 | name | type | description | optional | default |
@@ -157,5 +157,5 @@ PROTECTED
 | topic | string |  | false |  |
 | reason | string |  | true |  |
 
-**Returns:** Promise<[TextChannel](classes/TextChannel)>
+**Returns:** Promise<[TextChannel](/classes/TextChannel)>
 

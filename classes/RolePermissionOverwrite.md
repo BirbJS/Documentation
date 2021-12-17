@@ -19,23 +19,23 @@ new RolePermissionOverwrite(client, role, allow, deny)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
-| role | [Role](classes/Role) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
+| role | [Role](/classes/Role) |  | false |  |
 | allow | number |  | false | 0 |
 | deny | number |  | false | 0 |
 
 # Properties
 ## allow
-**Type:** [PermissionsBlock](classes/PermissionsBlock)
+**Type:** [PermissionsBlock](/classes/PermissionsBlock)
 
 ## client
-**Type:** [Client](classes/Client)
+**Type:** [Client](/classes/Client)
 
 ## deny
-**Type:** [PermissionsBlock](classes/PermissionsBlock)
+**Type:** [PermissionsBlock](/classes/PermissionsBlock)
 
 ## role
-**Type:** [Role](classes/Role)
+**Type:** [Role](/classes/Role)
 
 # Methods
 ## grant(flags)
@@ -43,12 +43,12 @@ new RolePermissionOverwrite(client, role, allow, deny)
 |:-----|:-----|:------------|:---------|:--------|
 | flags | Object |  | false |  |
 
-**Returns:** [RolePermissionOverwrite](classes/RolePermissionOverwrite)
+**Returns:** [RolePermissionOverwrite](/classes/RolePermissionOverwrite)
 
 ## revoke(flags)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | flags | Object |  | false |  |
 
-**Returns:** [RolePermissionOverwrite](classes/RolePermissionOverwrite)
+**Returns:** [RolePermissionOverwrite](/classes/RolePermissionOverwrite)
 

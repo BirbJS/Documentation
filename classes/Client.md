@@ -31,7 +31,7 @@ READONLY
 **Type:** Object
 
 ## channels
-**Type:** [ChannelBlock](classes/ChannelBlock)
+**Type:** [ChannelBlock](/classes/ChannelBlock)
 
 ## devtools
 {: .d-inline-block }
@@ -50,10 +50,10 @@ PRIVATE
 **Type:** any
 
 ## guilds
-**Type:** [GuildBlock](classes/GuildBlock)
+**Type:** [GuildBlock](/classes/GuildBlock)
 
 ## me
-**Type:** Object | [ClientUser](classes/ClientUser)
+**Type:** Object | [ClientUser](/classes/ClientUser)
 
 ## options
 **Type:** Object
@@ -65,7 +65,7 @@ PRIVATE
 **Type:** string
 
 ## users
-**Type:** [UserBlock](classes/UserBlock)
+**Type:** [UserBlock](/classes/UserBlock)
 
 ## valid
 {: .d-inline-block }
@@ -76,7 +76,7 @@ PRIVATE
 **Type:** boolean
 
 ## ws
-**Type:** [Websocket](classes/Websocket)
+**Type:** [Websocket](/classes/Websocket)
 
 # Methods
 ## add(fn)
@@ -86,7 +86,7 @@ Initilize a new addon to the client.
 |:-----|:-----|:------------|:---------|:--------|
 | fn | Function | The addon's main function. | false |  |
 
-**Returns:** [Client](classes/Client)
+**Returns:** [Client](/classes/Client)
 
 ## connect(token)
 Connect to the Discord gateway.

@@ -19,15 +19,15 @@ new PermissionsBlock(client, flags)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | flags | Object |  | false |  |
 
 # Properties
 ## bits
-**Type:** [Permissions](classes/Permissions)
+**Type:** [Permissions](/classes/Permissions)
 
 ## client
-**Type:** [Client](classes/Client)
+**Type:** [Client](/classes/Client)
 
 # Methods
 ## add(flags)
@@ -35,12 +35,12 @@ new PermissionsBlock(client, flags)
 |:-----|:-----|:------------|:---------|:--------|
 | flags | Object |  | false |  |
 
-**Returns:** [PermissionsBlock](classes/PermissionsBlock)
+**Returns:** [PermissionsBlock](/classes/PermissionsBlock)
 
 ## equals(check)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| check | number | [PermissionsBlock](classes/PermissionsBlock) | [Permissions](classes/Permissions) |  | false |  |
+| check | number | [PermissionsBlock](/classes/PermissionsBlock) | [Permissions](/classes/Permissions) |  | false |  |
 
 **Returns:** boolean
 
@@ -57,5 +57,5 @@ new PermissionsBlock(client, flags)
 |:-----|:-----|:------------|:---------|:--------|
 | flags | Object |  | false |  |
 
-**Returns:** [PermissionsBlock](classes/PermissionsBlock)
+**Returns:** [PermissionsBlock](/classes/PermissionsBlock)
 

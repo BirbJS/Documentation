@@ -19,7 +19,7 @@ new ClientUser(client, data)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | data | any |  | false |  |
 
 # Properties
@@ -36,7 +36,7 @@ new ClientUser(client, data)
 **Type:** boolean
 
 ## client
-**Type:** [Client](classes/Client)
+**Type:** [Client](/classes/Client)
 
 ## discriminator
 **Type:** string

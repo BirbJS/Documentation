@@ -19,7 +19,7 @@ new Message(client, data)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | data | any |  | false |  |
 
 # Properties
@@ -27,7 +27,7 @@ new Message(client, data)
 **Type:** Object
 
 ## author
-**Type:** Object | [BaseUser](classes/BaseUser)
+**Type:** Object | [BaseUser](/classes/BaseUser)
 
 ## baseAuthor
 {: .d-inline-block }
@@ -38,10 +38,10 @@ PRIVATE
 **Type:** any
 
 ## channel
-**Type:** [TextBasedChannel](classes/TextBasedChannel)
+**Type:** [TextBasedChannel](/classes/TextBasedChannel)
 
 ## client
-**Type:** [Client](classes/Client)
+**Type:** [Client](/classes/Client)
 
 ## content
 **Type:** Object | string
@@ -50,7 +50,7 @@ PRIVATE
 **Type:** number
 
 ## guild
-**Type:** Object | [Guild](classes/Guild)
+**Type:** Object | [Guild](/classes/Guild)
 
 ## id
 {: .d-inline-block }
@@ -61,7 +61,7 @@ READONLY
 **Type:** string
 
 ## member
-**Type:** Object | [GuildMember](classes/GuildMember)
+**Type:** Object | [GuildMember](/classes/GuildMember)
 
 ## system
 **Type:** boolean
@@ -86,7 +86,7 @@ PRIVATE
 **Returns:** void
 
 ## crosspost()
-**Returns:** Promise<[Message](classes/Message)>
+**Returns:** Promise<[Message](/classes/Message)>
 
 ## delete()
 **Returns:** Promise<void>
@@ -96,14 +96,14 @@ PRIVATE
 |:-----|:-----|:------------|:---------|:--------|
 | message | MessageContent |  | false |  |
 
-**Returns:** Promise<[Message](classes/Message)>
+**Returns:** Promise<[Message](/classes/Message)>
 
 ## modify(data)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | data | any |  | false |  |
 
-**Returns:** Promise<[Message](classes/Message)>
+**Returns:** Promise<[Message](/classes/Message)>
 
 ## parse(data)
 {: .d-inline-block }
@@ -115,21 +115,21 @@ PRIVATE
 |:-----|:-----|:------------|:---------|:--------|
 | data | any |  | false |  |
 
-**Returns:** Promise<[Message](classes/Message)>
+**Returns:** Promise<[Message](/classes/Message)>
 
 ## pin(reason?)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | reason | string |  | true |  |
 
-**Returns:** Promise<[Message](classes/Message)>
+**Returns:** Promise<[Message](/classes/Message)>
 
 ## reply(message)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | message | MessageContent |  | false |  |
 
-**Returns:** Promise<[Message](classes/Message)>
+**Returns:** Promise<[Message](/classes/Message)>
 
 ## set()
 {: .d-inline-block }
@@ -137,7 +137,7 @@ PRIVATE
 PRIVATE
 {: .label .label-red }
 
-**Returns:** [Message](classes/Message)
+**Returns:** [Message](/classes/Message)
 
 ## startThread(name, options)
 | name | type | description | optional | default |
@@ -148,14 +148,14 @@ PRIVATE
 **Returns:** Promise<void>
 
 ## supressEmbeds()
-**Returns:** Promise<[Message](classes/Message)>
+**Returns:** Promise<[Message](/classes/Message)>
 
 ## unpin(reason?)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | reason | string |  | true |  |
 
-**Returns:** Promise<[Message](classes/Message)>
+**Returns:** Promise<[Message](/classes/Message)>
 
 ## waitForAuthor()
 {: .d-inline-block }
@@ -163,7 +163,7 @@ PRIVATE
 PRIVATE
 {: .label .label-red }
 
-**Returns:** Promise<[Message](classes/Message)>
+**Returns:** Promise<[Message](/classes/Message)>
 
 ## buildApiMessage(data, edit)
 {: .d-inline-block }

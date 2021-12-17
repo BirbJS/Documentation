@@ -24,17 +24,17 @@ new TextBasedChannel(client, data, options?, guild?)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | data | any |  | false |  |
 | options | Object |  | true |  |
-| guild | [Guild](classes/Guild) |  | true |  |
+| guild | [Guild](/classes/Guild) |  | true |  |
 
 # Properties
 ## client
-**Type:** [Client](classes/Client)
+**Type:** [Client](/classes/Client)
 
 ## guild
-**Type:** [Guild](classes/Guild)
+**Type:** [Guild](/classes/Guild)
 
 ## id
 {: .d-inline-block }
@@ -50,13 +50,13 @@ READONLY
 READONLY
 {: .label .label-purple }
 
-**Type:** [MessageBlock](classes/MessageBlock)
+**Type:** [MessageBlock](/classes/MessageBlock)
 
 ## name
 **Type:** string
 
 ## permissions
-**Type:** [ChannelPermissionsBlock](classes/ChannelPermissionsBlock)
+**Type:** [ChannelPermissionsBlock](/classes/ChannelPermissionsBlock)
 
 # Methods
 ## init()
@@ -78,14 +78,14 @@ ABSTRACT
 | data | any |  | false |  |
 | reason | string |  | true |  |
 
-**Returns:** Promise<[GuildChannel](classes/GuildChannel)>
+**Returns:** Promise<[GuildChannel](/classes/GuildChannel)>
 
 ## send(message)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | message | MessageContent |  | false |  |
 
-**Returns:** Promise<[Message](classes/Message)>
+**Returns:** Promise<[Message](/classes/Message)>
 
 ## setOverwrites(overwrite)
 {: .d-inline-block }

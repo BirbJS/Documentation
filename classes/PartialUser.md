@@ -19,12 +19,12 @@ new PartialUser(client, data)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | data | any |  | false |  |
 
 # Properties
 ## client
-**Type:** [Client](classes/Client)
+**Type:** [Client](/classes/Client)
 
 ## discriminator
 **Type:** string
@@ -63,7 +63,7 @@ Fetch (and resolve) this PartialUser into a User.
 |:-----|:-----|:------------|:---------|:--------|
 | options | Object |  | true |  |
 
-**Returns:** Promise<[User](classes/User)>
+**Returns:** Promise<[User](/classes/User)>
 
 ## isPartial()
 Whether or not this instance is a full or partial

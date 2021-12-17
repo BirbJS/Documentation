@@ -19,19 +19,19 @@ new GuildMemberBlock(client, guild, options?)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
-| guild | [Guild](classes/Guild) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
+| guild | [Guild](/classes/Guild) |  | false |  |
 | options | any |  | true |  |
 
 # Properties
 ## cache
-**Type:** [Cache](classes/Cache)
+**Type:** [Cache](/classes/Cache)
 
 ## client
-**Type:** [Client](classes/Client)
+**Type:** [Client](/classes/Client)
 
 ## guild
-**Type:** [Guild](classes/Guild)
+**Type:** [Guild](/classes/Guild)
 
 # Methods
 ## fetch(userId, options?)
@@ -40,14 +40,14 @@ new GuildMemberBlock(client, guild, options?)
 | userId | string |  | false |  |
 | options | Object |  | true |  |
 
-**Returns:** Promise<[GuildMember](classes/GuildMember)>
+**Returns:** Promise<[GuildMember](/classes/GuildMember)>
 
 ## resolve(user, guild, def?)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | user | UserResolvable |  | false |  |
-| guild | [Guild](classes/Guild) |  | false |  |
+| guild | [Guild](/classes/Guild) |  | false |  |
 | def | any |  | true |  |
 
-**Returns:** Object | [GuildMember](classes/GuildMember)
+**Returns:** Object | [GuildMember](/classes/GuildMember)
 

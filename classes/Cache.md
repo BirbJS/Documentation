@@ -41,7 +41,7 @@ PRIVATE
 ABSTRACT
 {: .label .label-yellow }
 
-**Type:** [Client](classes/Client)
+**Type:** [Client](/classes/Client)
 
 ## options
 {: .d-inline-block }
@@ -65,7 +65,7 @@ Get an array of the entries in the cache as `Pair`s.
 ## clear()
 Clear the cache and its contents.
 
-**Returns:** [Cache](classes/Cache)
+**Returns:** [Cache](/classes/Cache)
 
 ## entries()
 Get an object of the entries in the cache. The
@@ -143,7 +143,7 @@ Remove a key from the cache.
 |:-----|:-----|:------------|:---------|:--------|
 | key | string | The key of the entry. | false |  |
 
-**Returns:** [Cache](classes/Cache)
+**Returns:** [Cache](/classes/Cache)
 
 ## set(key, value, options?)
 Set a value in the cache.
@@ -154,7 +154,7 @@ Set a value in the cache.
 | value | any | The value to set it to. | false |  |
 | options | any |  | true |  |
 
-**Returns:** [Cache](classes/Cache)
+**Returns:** [Cache](/classes/Cache)
 
 ## size()
 Get the amount of entries in the cache.

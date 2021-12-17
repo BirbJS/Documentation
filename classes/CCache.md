@@ -19,12 +19,12 @@ new CCache(client, options?)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | options | Object |  | true |  |
 
 # Properties
 ## client
-**Type:** [Client](classes/Client)
+**Type:** [Client](/classes/Client)
 
 # Methods
 ## array()
@@ -40,7 +40,7 @@ Get an array of the entries in the cache as `Pair`s.
 ## clear()
 Clear the cache and its contents.
 
-**Returns:** [Cache](classes/Cache)
+**Returns:** [Cache](/classes/Cache)
 
 ## entries()
 Get an object of the entries in the cache. The
@@ -113,7 +113,7 @@ Remove a key from the cache.
 |:-----|:-----|:------------|:---------|:--------|
 | key | string | The key of the entry. | false |  |
 
-**Returns:** [Cache](classes/Cache)
+**Returns:** [Cache](/classes/Cache)
 
 ## set(key, value, options?)
 Set a value in the cache.
@@ -124,7 +124,7 @@ Set a value in the cache.
 | value | any | The value to set it to. | false |  |
 | options | any |  | true |  |
 
-**Returns:** [Cache](classes/Cache)
+**Returns:** [Cache](/classes/Cache)
 
 ## size()
 Get the amount of entries in the cache.

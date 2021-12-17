@@ -19,16 +19,16 @@ new ChannelPermissionsBlock(client, channel, overwrites)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
-| channel | [GuildChannel](classes/GuildChannel) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
+| channel | [GuildChannel](/classes/GuildChannel) |  | false |  |
 | overwrites | Object |  | false |  |
 
 # Properties
 ## channel
-**Type:** [GuildChannel](classes/GuildChannel)
+**Type:** [GuildChannel](/classes/GuildChannel)
 
 ## client
-**Type:** [Client](classes/Client)
+**Type:** [Client](/classes/Client)
 
 ## overwrites
 **Type:** Object

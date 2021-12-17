@@ -19,7 +19,7 @@ new Request(client, method, path, body?)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | method | HTTPMethod |  | false |  |
 | path | string |  | false |  |
 | body | any |  | true |  |
@@ -29,7 +29,7 @@ new Request(client, method, path, body?)
 **Type:** any
 
 ## client
-**Type:** [Client](classes/Client)
+**Type:** [Client](/classes/Client)
 
 ## method
 **Type:** HTTPMethod

@@ -26,7 +26,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | channelId | string |  | false |  |
 | userId | string |  | false |  |
 
@@ -40,7 +40,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | channelId | string |  | false |  |
 | data | any |  | false |  |
 | reason | string |  | true |  |
@@ -55,7 +55,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | channelId | string |  | false |  |
 | data | any |  | false |  |
 | reason | string |  | true |  |
@@ -70,7 +70,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | channelId | string |  | false |  |
 | data | any |  | false |  |
 
@@ -84,7 +84,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | channelId | string |  | false |  |
 | messageId | string |  | false |  |
 | emoji | string |  | false |  |
@@ -99,7 +99,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | channelId | string |  | false |  |
 | messageId | string |  | false |  |
 
@@ -113,7 +113,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | channelId | string |  | false |  |
 | reason | string |  | true |  |
 
@@ -127,7 +127,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | channelId | string |  | false |  |
 | messageId | string |  | false |  |
 
@@ -141,7 +141,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | channelId | string |  | false |  |
 | messageId | string |  | false |  |
 | emoji | string |  | false |  |
@@ -156,7 +156,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | channelId | string |  | false |  |
 | messageId | string |  | false |  |
 | reason | string |  | true |  |
@@ -171,7 +171,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | channelId | string |  | false |  |
 | messageId | string |  | false |  |
 | userId | string |  | false |  |
@@ -187,7 +187,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | channelId | string |  | false |  |
 | messageId | string |  | false |  |
 | emoji | string |  | false |  |
@@ -202,7 +202,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | channelId | string |  | false |  |
 | overwriteId | string |  | false |  |
 | reason | string |  | true |  |
@@ -217,7 +217,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | channelId | string |  | false |  |
 | userId | string |  | false |  |
 | data | any |  | false |  |
@@ -232,7 +232,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | channelId | string |  | false |  |
 | userId | string |  | false |  |
 
@@ -246,11 +246,11 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | channelId | string |  | false |  |
 | messageId | string |  | false |  |
 | data | any |  | false |  |
-| original | [Message](classes/Message) |  | true |  |
+| original | [Message](/classes/Message) |  | true |  |
 
 **Returns:** Promise<any>
 
@@ -262,7 +262,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | channelId | string |  | false |  |
 | overwriteId | string |  | false |  |
 | data | any |  | false |  |
@@ -277,7 +277,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | channelId | string |  | false |  |
 | data | any |  | false |  |
 
@@ -291,7 +291,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | channelId | string |  | false |  |
 
 **Returns:** Promise<any>
@@ -304,7 +304,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | channelId | string |  | false |  |
 | messageId | any |  | false |  |
 
@@ -318,7 +318,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | channelId | string |  | false |  |
 | messageId | any |  | false |  |
 | emoji | string |  | false |  |
@@ -333,7 +333,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | channelId | string |  | false |  |
 | data | any |  | false |  |
 
@@ -347,7 +347,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | channelId | string |  | false |  |
 
 **Returns:** Promise<any>
@@ -360,7 +360,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | channelId | string |  | false |  |
 | userId | string |  | false |  |
 
@@ -374,7 +374,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | channelId | string |  | false |  |
 
 **Returns:** Promise<any>
@@ -387,7 +387,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | channelId | string |  | false |  |
 
 **Returns:** Promise<any>
@@ -400,7 +400,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | channelId | string |  | false |  |
 
 **Returns:** Promise<any>
@@ -413,7 +413,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | channelId | string |  | false |  |
 
 **Returns:** Promise<any>
@@ -426,7 +426,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | channelId | string |  | false |  |
 | data | any |  | false |  |
 | reason | string |  | true |  |
@@ -441,7 +441,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | channelId | string |  | false |  |
 | messageId | string |  | false |  |
 | reason | string |  | true |  |
@@ -456,7 +456,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | channelId | string |  | false |  |
 | userId | string |  | false |  |
 
@@ -470,7 +470,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | channelId | string |  | false |  |
 | messageId | string |  | false |  |
 | data | any |  | false |  |
@@ -486,7 +486,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | channelId | string |  | false |  |
 | data | any |  | false |  |
 | reason | string |  | true |  |
@@ -501,7 +501,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | channelId | string |  | false |  |
 
 **Returns:** Promise<any>
@@ -514,7 +514,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | channelId | string |  | false |  |
 | messageId | string |  | false |  |
 | reason | string |  | true |  |

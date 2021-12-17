@@ -41,13 +41,13 @@ Adds a flag (bit) to the block.
 |:-----|:-----|:------------|:---------|:--------|
 | flags | Object | The flags to add. | false |  |
 
-**Returns:** [BitsBlock](classes/BitsBlock)
+**Returns:** [BitsBlock](/classes/BitsBlock)
 
 ## clone()
 Returns a new BitsBlock with the flags of this
 block.
 
-**Returns:** [BitsBlock](classes/BitsBlock)
+**Returns:** [BitsBlock](/classes/BitsBlock)
 
 ## has(flag)
 Check if a flag (bit) is in the block.
@@ -70,7 +70,7 @@ Removes a flag (bit) from the block.
 |:-----|:-----|:------------|:---------|:--------|
 | flags | Object | The flags to remove. | false |  |
 
-**Returns:** [BitsBlock](classes/BitsBlock)
+**Returns:** [BitsBlock](/classes/BitsBlock)
 
 ## set(flags)
 Sets the flags of the block.
@@ -79,5 +79,5 @@ Sets the flags of the block.
 |:-----|:-----|:------------|:---------|:--------|
 | flags | number | The flags to set. | false |  |
 
-**Returns:** [BitsBlock](classes/BitsBlock)
+**Returns:** [BitsBlock](/classes/BitsBlock)
 

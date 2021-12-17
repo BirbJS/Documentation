@@ -13,5 +13,5 @@ has_toc: true
 - TOC
 {:toc}
 ## Definition
-- [Guild](classes/Guild)
+- [Guild](/classes/Guild)
 - string

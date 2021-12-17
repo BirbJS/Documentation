@@ -13,5 +13,5 @@ has_toc: true
 - TOC
 {:toc}
 ## Definition
-- [Channel](classes/Channel)
+- [Channel](/classes/Channel)
 - string

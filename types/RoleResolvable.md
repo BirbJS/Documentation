@@ -13,5 +13,5 @@ has_toc: true
 - TOC
 {:toc}
 ## Definition
-- [Role](classes/Role)
+- [Role](/classes/Role)
 - string

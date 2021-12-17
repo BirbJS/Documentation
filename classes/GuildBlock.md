@@ -19,15 +19,15 @@ new GuildBlock(client, options?)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | options | any |  | true |  |
 
 # Properties
 ## cache
-**Type:** [Cache](classes/Cache)
+**Type:** [Cache](/classes/Cache)
 
 ## client
-**Type:** [Client](classes/Client)
+**Type:** [Client](/classes/Client)
 
 # Methods
 ## fetch(options)
@@ -35,5 +35,5 @@ new GuildBlock(client, options?)
 |:-----|:-----|:------------|:---------|:--------|
 | options | GuildResolvable | Object |  | false |  |
 
-**Returns:** Promise<[Guild](classes/Guild)>
+**Returns:** Promise<[Guild](/classes/Guild)>
 

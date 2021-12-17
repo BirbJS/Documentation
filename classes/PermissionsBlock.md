@@ -12,7 +12,7 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new PermissionsBlock(client, flags)
 ```
@@ -21,29 +21,29 @@ new PermissionsBlock(client, flags)
 | client | [Client](classes/Client) |  | false |  |
 | flags | Object |  | false |  |
 
-## Properties
-### bits
+# Properties
+## bits
 **Type:** [Permissions](classes/Permissions)
 
-### client
+## client
 **Type:** [Client](classes/Client)
 
-## Methods
-### add(flags)
+# Methods
+## add(flags)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | flags | Object |  | false |  |
 
 **Returns:** [PermissionsBlock](classes/PermissionsBlock)
 
-### equals(check)
+## equals(check)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | check | number | [PermissionsBlock](classes/PermissionsBlock) | [Permissions](classes/Permissions) |  | false |  |
 
 **Returns:** boolean
 
-### has(flag, options)
+## has(flag, options)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | flag | number |  | false |  |
@@ -51,7 +51,7 @@ new PermissionsBlock(client, flags)
 
 **Returns:** boolean
 
-### remove(flags)
+## remove(flags)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | flags | Object |  | false |  |

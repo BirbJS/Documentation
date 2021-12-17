@@ -12,7 +12,7 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new Request(client, method, path, body?)
 ```
@@ -23,30 +23,30 @@ new Request(client, method, path, body?)
 | path | string |  | false |  |
 | body | any |  | true |  |
 
-## Properties
-### body
+# Properties
+## body
 **Type:** any
 
-### client
+## client
 **Type:** [Client](classes/Client)
 
-### method
+## method
 **Type:** HTTPMethod
 
-### reason
+## reason
 **Type:** Object | string
 
-### response
+## response
 **Type:** any
 
-### upload
+## upload
 **Type:** boolean
 
-### url
+## url
 **Type:** string
 
-## Methods
-### make(files?)
+# Methods
+## make(files?)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | files | Object |  | true |  |

@@ -17,7 +17,7 @@ ABSTRACT
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new TextBasedChannel(client, data, options?, guild?)
 ```
@@ -28,14 +28,14 @@ new TextBasedChannel(client, data, options?, guild?)
 | options | Object |  | true |  |
 | guild | [Guild](classes/Guild) |  | true |  |
 
-## Properties
-### client
+# Properties
+## client
 **Type:** [Client](classes/Client)
 
-### guild
+## guild
 **Type:** [Guild](classes/Guild)
 
-### id
+## id
 {: .d-inline-block }
 
 READONLY
@@ -43,7 +43,7 @@ READONLY
 
 **Type:** string
 
-### messages
+## messages
 {: .d-inline-block }
 
 READONLY
@@ -51,14 +51,14 @@ READONLY
 
 **Type:** [MessageBlock](classes/MessageBlock)
 
-### name
+## name
 **Type:** string
 
-### permissions
+## permissions
 **Type:** [ChannelPermissionsBlock](classes/ChannelPermissionsBlock)
 
-## Methods
-### init()
+# Methods
+## init()
 {: .d-inline-block }
 
 PROTECTED
@@ -66,7 +66,7 @@ PROTECTED
 
 **Returns:** undefined | Object
 
-### modify(data, reason?)
+## modify(data, reason?)
 {: .d-inline-block }
 
 ABSTRACT
@@ -79,14 +79,14 @@ ABSTRACT
 
 **Returns:** Promise<[GuildChannel](classes/GuildChannel)>
 
-### send(message)
+## send(message)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | message | MessageContent |  | false |  |
 
 **Returns:** Promise<[Message](classes/Message)>
 
-### setOverwrites(overwrite)
+## setOverwrites(overwrite)
 {: .d-inline-block }
 
 PROTECTED

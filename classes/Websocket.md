@@ -13,7 +13,7 @@ has_toc: true
 - TOC
 {:toc}
 Creates a websocket connection to a Discord gateway.
-## Constructor
+# Constructor
 ```js
 new Websocket(client, domain)
 ```
@@ -22,14 +22,14 @@ new Websocket(client, domain)
 | client | [Client](classes/Client) | The client. | false |  |
 | domain | string | The domain to connect to. | false |  |
 
-## Properties
-### buffer
+# Properties
+## buffer
 **Type:** any
 
-### client
+## client
 **Type:** [Client](classes/Client)
 
-### doNotReconnect
+## doNotReconnect
 {: .d-inline-block }
 
 PROTECTED
@@ -37,16 +37,16 @@ PROTECTED
 
 **Type:** boolean
 
-### domain
+## domain
 **Type:** string
 
-### encoding
+## encoding
 **Type:** string
 
-### expectedGuilds
+## expectedGuilds
 **Type:** Set<string>
 
-### heartbeatInterval
+## heartbeatInterval
 {: .d-inline-block }
 
 PROTECTED
@@ -54,7 +54,7 @@ PROTECTED
 
 **Type:** Object
 
-### lastHeartbeat
+## lastHeartbeat
 {: .d-inline-block }
 
 PROTECTED
@@ -62,7 +62,7 @@ PROTECTED
 
 **Type:** number
 
-### lastHeartbeatAcked
+## lastHeartbeatAcked
 {: .d-inline-block }
 
 PROTECTED
@@ -70,7 +70,7 @@ PROTECTED
 
 **Type:** boolean
 
-### lastResume
+## lastResume
 {: .d-inline-block }
 
 PROTECTED
@@ -78,7 +78,7 @@ PROTECTED
 
 **Type:** number
 
-### lastSequenceIdentifier
+## lastSequenceIdentifier
 {: .d-inline-block }
 
 PROTECTED
@@ -86,10 +86,10 @@ PROTECTED
 
 **Type:** Object
 
-### ping
+## ping
 **Type:** number
 
-### schedulerLoop
+## schedulerLoop
 {: .d-inline-block }
 
 PROTECTED
@@ -97,7 +97,7 @@ PROTECTED
 
 **Type:** Timer
 
-### sessionIdentifier
+## sessionIdentifier
 {: .d-inline-block }
 
 PROTECTED
@@ -105,17 +105,17 @@ PROTECTED
 
 **Type:** Object | string
 
-### status
+## status
 **Type:** [WebsocketStatus](enums/WebsocketStatus)
 
-### url
+## url
 **Type:** URL
 
-### ws
+## ws
 **Type:** WebSocket
 
-## Methods
-### cleanup()
+# Methods
+## cleanup()
 {: .d-inline-block }
 
 PRIVATE
@@ -125,7 +125,7 @@ Clean up the websocket.
 
 **Returns:** void
 
-### close(code?)
+## close(code?)
 Close the websocket.
 
 | name | type | description | optional | default |
@@ -134,12 +134,12 @@ Close the websocket.
 
 **Returns:** void
 
-### connect()
+## connect()
 Connect to the gateway.
 
 **Returns:** void
 
-### generateURL()
+## generateURL()
 {: .d-inline-block }
 
 PROTECTED
@@ -147,12 +147,12 @@ PROTECTED
 
 **Returns:** URL
 
-### heartbeat()
+## heartbeat()
 Send a heartbeat to the gateway.
 
 **Returns:** Promise<void>
 
-### identify()
+## identify()
 {: .d-inline-block }
 
 PRIVATE
@@ -162,7 +162,7 @@ Send an identify packet to the gateway.
 
 **Returns:** void
 
-### init()
+## init()
 {: .d-inline-block }
 
 PROTECTED
@@ -170,22 +170,22 @@ PROTECTED
 
 **Returns:** void
 
-### isClosed()
+## isClosed()
 Check if the websocket is closed.
 
 **Returns:** boolean
 
-### isConnected()
+## isConnected()
 Check if the websocket is connected.
 
 **Returns:** boolean
 
-### isConnecting()
+## isConnecting()
 Check if the websocket is connecting.
 
 **Returns:** boolean
 
-### onClose(code)
+## onClose(code)
 {: .d-inline-block }
 
 PRIVATE
@@ -199,7 +199,7 @@ Process the websocket closing.
 
 **Returns:** Promise<void>
 
-### onOpen()
+## onOpen()
 {: .d-inline-block }
 
 PRIVATE
@@ -209,7 +209,7 @@ Process the websocket opening.
 
 **Returns:** void
 
-### onPacket(body)
+## onPacket(body)
 {: .d-inline-block }
 
 PRIVATE
@@ -223,7 +223,7 @@ Process a packet.
 
 **Returns:** Promise<void>
 
-### pack(data)
+## pack(data)
 {: .d-inline-block }
 
 PROTECTED
@@ -235,7 +235,7 @@ PROTECTED
 
 **Returns:** any
 
-### preventReconnect(value?)
+## preventReconnect(value?)
 Prevent reconnection.
 
 | name | type | description | optional | default |
@@ -244,7 +244,7 @@ Prevent reconnection.
 
 **Returns:** void
 
-### processPacket(data)
+## processPacket(data)
 {: .d-inline-block }
 
 PROTECTED
@@ -256,12 +256,12 @@ PROTECTED
 
 **Returns:** any
 
-### reconnect()
+## reconnect()
 Reconnect to the gateway.
 
 **Returns:** void
 
-### scheduler()
+## scheduler()
 {: .d-inline-block }
 
 PRIVATE
@@ -272,7 +272,7 @@ will call it's method every 50ms.
 
 **Returns:** void
 
-### send(data)
+## send(data)
 Send a packet to the gateway.
 
 | name | type | description | optional | default |
@@ -281,7 +281,7 @@ Send a packet to the gateway.
 
 **Returns:** void
 
-### setSessionIdentifier(sessionIdentifier)
+## setSessionIdentifier(sessionIdentifier)
 Set the websocket's session identifier.
 
 | name | type | description | optional | default |
@@ -290,7 +290,7 @@ Set the websocket's session identifier.
 
 **Returns:** void
 
-### setStatus(status)
+## setStatus(status)
 Set the websocket's status.
 
 | name | type | description | optional | default |
@@ -299,14 +299,14 @@ Set the websocket's status.
 
 **Returns:** void
 
-### terminate()
+## terminate()
 Terminate the websocket. Does not notify the gateway
 that you've disconnected. Should only be used when
 the gateway won't respond (e.g. timeouts).
 
 **Returns:** void
 
-### unpack(data, type?)
+## unpack(data, type?)
 {: .d-inline-block }
 
 PROTECTED

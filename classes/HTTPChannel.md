@@ -12,12 +12,12 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new HTTPChannel()
 ```
-## Methods
-### addThreadMember(client, channelId, userId)
+# Methods
+## addThreadMember(client, channelId, userId)
 {: .d-inline-block }
 
 STATIC
@@ -31,7 +31,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### bulkDeleteMessages(client, channelId, data, reason?)
+## bulkDeleteMessages(client, channelId, data, reason?)
 {: .d-inline-block }
 
 STATIC
@@ -46,7 +46,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### createInvite(client, channelId, data, reason?)
+## createInvite(client, channelId, data, reason?)
 {: .d-inline-block }
 
 STATIC
@@ -61,7 +61,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### createMessage(client, channelId, data)
+## createMessage(client, channelId, data)
 {: .d-inline-block }
 
 STATIC
@@ -75,7 +75,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### createMessageReaction(client, channelId, messageId, emoji)
+## createMessageReaction(client, channelId, messageId, emoji)
 {: .d-inline-block }
 
 STATIC
@@ -90,7 +90,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### crossPostMessage(client, channelId, messageId)
+## crossPostMessage(client, channelId, messageId)
 {: .d-inline-block }
 
 STATIC
@@ -104,7 +104,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### delete(client, channelId, reason?)
+## delete(client, channelId, reason?)
 {: .d-inline-block }
 
 STATIC
@@ -118,7 +118,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### deleteAllMessageReactions(client, channelId, messageId)
+## deleteAllMessageReactions(client, channelId, messageId)
 {: .d-inline-block }
 
 STATIC
@@ -132,7 +132,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### deleteAllMessageReactionsForEmoji(client, channelId, messageId, emoji)
+## deleteAllMessageReactionsForEmoji(client, channelId, messageId, emoji)
 {: .d-inline-block }
 
 STATIC
@@ -147,7 +147,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### deleteMessage(client, channelId, messageId, reason?)
+## deleteMessage(client, channelId, messageId, reason?)
 {: .d-inline-block }
 
 STATIC
@@ -162,7 +162,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### deleteMessageReaction(client, channelId, messageId, userId, emoji)
+## deleteMessageReaction(client, channelId, messageId, userId, emoji)
 {: .d-inline-block }
 
 STATIC
@@ -178,7 +178,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### deleteOwnMessageReaction(client, channelId, messageId, emoji)
+## deleteOwnMessageReaction(client, channelId, messageId, emoji)
 {: .d-inline-block }
 
 STATIC
@@ -193,7 +193,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### deletePermission(client, channelId, overwriteId, reason?)
+## deletePermission(client, channelId, overwriteId, reason?)
 {: .d-inline-block }
 
 STATIC
@@ -208,7 +208,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### dmAddRecipient(client, channelId, userId, data)
+## dmAddRecipient(client, channelId, userId, data)
 {: .d-inline-block }
 
 STATIC
@@ -223,7 +223,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### dmRemoveRecipient(client, channelId, userId)
+## dmRemoveRecipient(client, channelId, userId)
 {: .d-inline-block }
 
 STATIC
@@ -237,7 +237,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### editMessage(client, channelId, messageId, data, original?)
+## editMessage(client, channelId, messageId, data, original?)
 {: .d-inline-block }
 
 STATIC
@@ -253,7 +253,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### editPermissions(client, channelId, overwriteId, data)
+## editPermissions(client, channelId, overwriteId, data)
 {: .d-inline-block }
 
 STATIC
@@ -268,7 +268,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### followChannel(client, channelId, data)
+## followChannel(client, channelId, data)
 {: .d-inline-block }
 
 STATIC
@@ -282,7 +282,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### getInvites(client, channelId)
+## getInvites(client, channelId)
 {: .d-inline-block }
 
 STATIC
@@ -295,7 +295,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### getMessage(client, channelId, messageId)
+## getMessage(client, channelId, messageId)
 {: .d-inline-block }
 
 STATIC
@@ -309,7 +309,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### getMessageReactions(client, channelId, messageId, emoji)
+## getMessageReactions(client, channelId, messageId, emoji)
 {: .d-inline-block }
 
 STATIC
@@ -324,7 +324,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### getMessages(client, channelId, data)
+## getMessages(client, channelId, data)
 {: .d-inline-block }
 
 STATIC
@@ -338,7 +338,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### getPinnedMessages(client, channelId)
+## getPinnedMessages(client, channelId)
 {: .d-inline-block }
 
 STATIC
@@ -351,7 +351,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### getThreadMember(client, channelId, userId)
+## getThreadMember(client, channelId, userId)
 {: .d-inline-block }
 
 STATIC
@@ -365,7 +365,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### joinThread(client, channelId)
+## joinThread(client, channelId)
 {: .d-inline-block }
 
 STATIC
@@ -378,7 +378,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### leaveThread(client, channelId)
+## leaveThread(client, channelId)
 {: .d-inline-block }
 
 STATIC
@@ -391,7 +391,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### listActiveThreads(client, channelId)
+## listActiveThreads(client, channelId)
 {: .d-inline-block }
 
 STATIC
@@ -404,7 +404,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### listThreadMembers(client, channelId)
+## listThreadMembers(client, channelId)
 {: .d-inline-block }
 
 STATIC
@@ -417,7 +417,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### modify(client, channelId, data, reason?)
+## modify(client, channelId, data, reason?)
 {: .d-inline-block }
 
 STATIC
@@ -432,7 +432,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### pinMessage(client, channelId, messageId, reason?)
+## pinMessage(client, channelId, messageId, reason?)
 {: .d-inline-block }
 
 STATIC
@@ -447,7 +447,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### removeThreadMember(client, channelId, userId)
+## removeThreadMember(client, channelId, userId)
 {: .d-inline-block }
 
 STATIC
@@ -461,7 +461,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### startThreadWithMessage(client, channelId, messageId, data, reason?)
+## startThreadWithMessage(client, channelId, messageId, data, reason?)
 {: .d-inline-block }
 
 STATIC
@@ -477,7 +477,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### startThreadWithoutMessage(client, channelId, data, reason?)
+## startThreadWithoutMessage(client, channelId, data, reason?)
 {: .d-inline-block }
 
 STATIC
@@ -492,7 +492,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### triggerTypingIndicator(client, channelId)
+## triggerTypingIndicator(client, channelId)
 {: .d-inline-block }
 
 STATIC
@@ -505,7 +505,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### unpinMessage(client, channelId, messageId, reason?)
+## unpinMessage(client, channelId, messageId, reason?)
 {: .d-inline-block }
 
 STATIC

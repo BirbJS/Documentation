@@ -12,11 +12,11 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new Addons()
 ```
-## Properties
-### Sharding
+# Properties
+## Sharding
 **Type:** any
 

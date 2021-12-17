@@ -12,7 +12,7 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new Intents(flags)
 ```
@@ -20,11 +20,11 @@ new Intents(flags)
 |:-----|:-----|:------------|:---------|:--------|
 | flags | Object |  | false |  |
 
-## Properties
-### flags
+# Properties
+## flags
 **Type:** number
 
-### FLAGS
+## FLAGS
 {: .d-inline-block }
 
 STATIC
@@ -32,8 +32,8 @@ STATIC
 
 **Type:** Object
 
-## Methods
-### add(flags)
+# Methods
+## add(flags)
 Adds a flag (bit) to the block.
 
 | name | type | description | optional | default |
@@ -42,13 +42,13 @@ Adds a flag (bit) to the block.
 
 **Returns:** [BitsBlock](classes/BitsBlock)
 
-### clone()
+## clone()
 Returns a new BitsBlock with the flags of this
 block.
 
 **Returns:** [BitsBlock](classes/BitsBlock)
 
-### has(flag)
+## has(flag)
 Check if a flag (bit) is in the block.
 
 | name | type | description | optional | default |
@@ -57,12 +57,12 @@ Check if a flag (bit) is in the block.
 
 **Returns:** boolean
 
-### isEmpty()
+## isEmpty()
 Check if the block is empty.
 
 **Returns:** boolean
 
-### remove(flags)
+## remove(flags)
 Removes a flag (bit) from the block.
 
 | name | type | description | optional | default |
@@ -71,7 +71,7 @@ Removes a flag (bit) from the block.
 
 **Returns:** [BitsBlock](classes/BitsBlock)
 
-### set(flags)
+## set(flags)
 Sets the flags of the block.
 
 | name | type | description | optional | default |

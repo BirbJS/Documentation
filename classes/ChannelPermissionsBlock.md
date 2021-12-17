@@ -12,7 +12,7 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new ChannelPermissionsBlock(client, channel, overwrites)
 ```
@@ -22,13 +22,13 @@ new ChannelPermissionsBlock(client, channel, overwrites)
 | channel | [GuildChannel](classes/GuildChannel) |  | false |  |
 | overwrites | Object |  | false |  |
 
-## Properties
-### channel
+# Properties
+## channel
 **Type:** [GuildChannel](classes/GuildChannel)
 
-### client
+## client
 **Type:** [Client](classes/Client)
 
-### overwrites
+## overwrites
 **Type:** Object
 

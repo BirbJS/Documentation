@@ -12,7 +12,7 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new InternalWebsocket(client, domain)
 ```
@@ -21,27 +21,27 @@ new InternalWebsocket(client, domain)
 | client | [Client](classes/Client) |  | false |  |
 | domain | string |  | false |  |
 
-## Properties
-### buffer
+# Properties
+## buffer
 **Type:** any
 
-### client
+## client
 **Type:** [Client](classes/Client)
 
-### domain
+## domain
 **Type:** string
 
-### encoding
+## encoding
 **Type:** string
 
-### status
+## status
 **Type:** [WebsocketStatus](enums/WebsocketStatus)
 
-### url
+## url
 **Type:** URL
 
-## Methods
-### generateURL()
+# Methods
+## generateURL()
 {: .d-inline-block }
 
 PROTECTED
@@ -49,7 +49,7 @@ PROTECTED
 
 **Returns:** URL
 
-### init()
+## init()
 {: .d-inline-block }
 
 PROTECTED
@@ -57,7 +57,7 @@ PROTECTED
 
 **Returns:** void
 
-### pack(data)
+## pack(data)
 {: .d-inline-block }
 
 PROTECTED
@@ -69,7 +69,7 @@ PROTECTED
 
 **Returns:** any
 
-### processPacket(data)
+## processPacket(data)
 {: .d-inline-block }
 
 PROTECTED
@@ -81,7 +81,7 @@ PROTECTED
 
 **Returns:** any
 
-### unpack(data, type?)
+## unpack(data, type?)
 {: .d-inline-block }
 
 PROTECTED

@@ -12,7 +12,7 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new GuildMemberBlock(client, guild, options?)
 ```
@@ -22,18 +22,18 @@ new GuildMemberBlock(client, guild, options?)
 | guild | [Guild](classes/Guild) |  | false |  |
 | options | any |  | true |  |
 
-## Properties
-### cache
+# Properties
+## cache
 **Type:** [Cache](classes/Cache)
 
-### client
+## client
 **Type:** [Client](classes/Client)
 
-### guild
+## guild
 **Type:** [Guild](classes/Guild)
 
-## Methods
-### fetch(userId, options?)
+# Methods
+## fetch(userId, options?)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | userId | string |  | false |  |
@@ -41,7 +41,7 @@ new GuildMemberBlock(client, guild, options?)
 
 **Returns:** Promise<[GuildMember](classes/GuildMember)>
 
-### resolve(user, guild, def?)
+## resolve(user, guild, def?)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | user | UserResolvable |  | false |  |

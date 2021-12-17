@@ -17,7 +17,7 @@ ABSTRACT
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new CachedBlock(client, cache)
 ```
@@ -26,10 +26,10 @@ new CachedBlock(client, cache)
 | client | [Client](classes/Client) |  | false |  |
 | cache | [Cache](classes/Cache) |  | false |  |
 
-## Properties
-### cache
+# Properties
+## cache
 **Type:** [Cache](classes/Cache)
 
-### client
+## client
 **Type:** [Client](classes/Client)
 

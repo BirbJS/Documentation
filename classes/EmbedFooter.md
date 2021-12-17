@@ -12,7 +12,7 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new EmbedFooter(text, iconUrl?)
 ```
@@ -21,30 +21,30 @@ new EmbedFooter(text, iconUrl?)
 | text | string |  | false |  |
 | iconUrl | string |  | true |  |
 
-## Properties
-### iconUrl
+# Properties
+## iconUrl
 **Type:** Object | string
 
-### text
+## text
 **Type:** string
 
-## Methods
-### format()
+# Methods
+## format()
 Format this class into an API-acceptable object.
 
 **Returns:** Object
 
-### removeIcon()
+## removeIcon()
 **Returns:** void
 
-### setIconUrl(iconUrl)
+## setIconUrl(iconUrl)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | iconUrl | string |  | false |  |
 
 **Returns:** void
 
-### setText(text)
+## setText(text)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | text | string |  | false |  |

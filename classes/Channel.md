@@ -12,7 +12,7 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new Channel(client, data)
 ```
@@ -21,11 +21,11 @@ new Channel(client, data)
 | client | [Client](classes/Client) |  | false |  |
 | data | any |  | false |  |
 
-## Properties
-### client
+# Properties
+## client
 **Type:** [Client](classes/Client)
 
-### id
+## id
 {: .d-inline-block }
 
 READONLY
@@ -33,11 +33,11 @@ READONLY
 
 **Type:** string
 
-### name
+## name
 **Type:** string
 
-## Methods
-### init()
+# Methods
+## init()
 {: .d-inline-block }
 
 PROTECTED

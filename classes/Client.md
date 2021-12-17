@@ -12,7 +12,7 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new Client(options)
 ```
@@ -20,8 +20,8 @@ new Client(options)
 |:-----|:-----|:------------|:---------|:--------|
 | options | Object |  | false |  |
 
-## Properties
-### api
+# Properties
+## api
 {: .d-inline-block }
 
 READONLY
@@ -29,10 +29,10 @@ READONLY
 
 **Type:** Object
 
-### channels
+## channels
 **Type:** [ChannelBlock](classes/ChannelBlock)
 
-### devtools
+## devtools
 {: .d-inline-block }
 
 PRIVATE
@@ -40,7 +40,7 @@ PRIVATE
 
 **Type:** any
 
-### events
+## events
 {: .d-inline-block }
 
 PRIVATE
@@ -48,25 +48,25 @@ PRIVATE
 
 **Type:** any
 
-### guilds
+## guilds
 **Type:** [GuildBlock](classes/GuildBlock)
 
-### me
+## me
 **Type:** Object | [ClientUser](classes/ClientUser)
 
-### options
+## options
 **Type:** Object
 
-### shard
+## shard
 **Type:** any
 
-### token
+## token
 **Type:** string
 
-### users
+## users
 **Type:** [UserBlock](classes/UserBlock)
 
-### valid
+## valid
 {: .d-inline-block }
 
 PRIVATE
@@ -74,11 +74,11 @@ PRIVATE
 
 **Type:** boolean
 
-### ws
+## ws
 **Type:** [Websocket](classes/Websocket)
 
-## Methods
-### add(fn)
+# Methods
+## add(fn)
 Initilize a new addon to the client.
 
 | name | type | description | optional | default |
@@ -87,7 +87,7 @@ Initilize a new addon to the client.
 
 **Returns:** [Client](classes/Client)
 
-### connect(token)
+## connect(token)
 Connect to the Discord gateway.
 
 | name | type | description | optional | default |
@@ -96,7 +96,7 @@ Connect to the Discord gateway.
 
 **Returns:** void
 
-### debug(message)
+## debug(message)
 Emit a log in debug mode.
 
 | name | type | description | optional | default |
@@ -105,7 +105,7 @@ Emit a log in debug mode.
 
 **Returns:** void
 
-### emit(event, args)
+## emit(event, args)
 Emit an event.
 
 | name | type | description | optional | default |
@@ -115,7 +115,7 @@ Emit an event.
 
 **Returns:** any
 
-### invalidate()
+## invalidate()
 {: .d-inline-block }
 
 PRIVATE
@@ -128,7 +128,7 @@ purpose of this function).
 
 **Returns:** void
 
-### listen(event, callback)
+## listen(event, callback)
 Add an event listener.
 
 | name | type | description | optional | default |
@@ -138,7 +138,7 @@ Add an event listener.
 
 **Returns:** void
 
-### listenIfNotRegistered(event, callback)
+## listenIfNotRegistered(event, callback)
 {: .d-inline-block }
 
 PRIVATE
@@ -154,7 +154,7 @@ already registered.
 
 **Returns:** void
 
-### logHttp(message)
+## logHttp(message)
 {: .d-inline-block }
 
 PRIVATE
@@ -168,7 +168,7 @@ Log a HTTP event.
 
 **Returns:** void
 
-### logReceive(message)
+## logReceive(message)
 {: .d-inline-block }
 
 PRIVATE
@@ -182,7 +182,7 @@ Log a packet received from the gateway.
 
 **Returns:** void
 
-### logSend(message)
+## logSend(message)
 {: .d-inline-block }
 
 PRIVATE
@@ -196,7 +196,7 @@ Log a packet sent to the gateway.
 
 **Returns:** void
 
-### unbind(event)
+## unbind(event)
 Undind an event listener.
 
 | name | type | description | optional | default |
@@ -205,7 +205,7 @@ Undind an event listener.
 
 **Returns:** void
 
-### warn(message)
+## warn(message)
 Emit a warning in debug mode.
 
 | name | type | description | optional | default |

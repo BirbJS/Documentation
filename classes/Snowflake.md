@@ -12,7 +12,7 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new Snowflake(epoch)
 ```
@@ -21,8 +21,8 @@ new Snowflake(epoch)
 | epoch | number | bigint | Date | the epoch to use
  | false |  |
 
-## Properties
-### #private
+# Properties
+## #private
 {: .d-inline-block }
 
 PRIVATE
@@ -30,11 +30,11 @@ PRIVATE
 
 **Type:** any
 
-### decode
+## decode
 **Type:** Object
 
-## Methods
-### deconstruct(id)
+# Methods
+## deconstruct(id)
 Deconstructs a snowflake given a snowflake ID
 
 | name | type | description | optional | default |
@@ -43,7 +43,7 @@ Deconstructs a snowflake given a snowflake ID
 
 **Returns:** DeconstructedSnowflake
 
-### generate(options?)
+## generate(options?)
 Generates a snowflake given an epoch and optionally a timestamp
 
 | name | type | description | optional | default |
@@ -54,7 +54,7 @@ Generates a snowflake given an epoch and optionally a timestamp
 
 **Returns:** bigint
 
-### timestampFrom(id)
+## timestampFrom(id)
 Retrieves the timestamp field's value from a snowflake.
 
 | name | type | description | optional | default |

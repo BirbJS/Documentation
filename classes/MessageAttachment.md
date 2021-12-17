@@ -12,7 +12,7 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new MessageAttachment(file, filename, id?, url?, proxyUrl?)
 ```
@@ -24,27 +24,27 @@ new MessageAttachment(file, filename, id?, url?, proxyUrl?)
 | url | string |  | true |  |
 | proxyUrl | string |  | true |  |
 
-## Properties
-### buffer
+# Properties
+## buffer
 **Type:** Object | Buffer
 
-### filename
+## filename
 **Type:** string
 
-### id
+## id
 **Type:** Object | string
 
-### proxyUrl
+## proxyUrl
 **Type:** Object | string
 
-### url
+## url
 **Type:** Object | string
 
-## Methods
-### getBuffer()
+# Methods
+## getBuffer()
 **Returns:** Object | Buffer
 
-### fromApiMessage(attachments?)
+## fromApiMessage(attachments?)
 {: .d-inline-block }
 
 STATIC

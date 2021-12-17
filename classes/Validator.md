@@ -12,12 +12,12 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new Validator()
 ```
-## Methods
-### parseChannel(channel)
+# Methods
+## parseChannel(channel)
 {: .d-inline-block }
 
 STATIC

@@ -12,7 +12,7 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new GuildMemberRoleBlock(client, options?)
 ```
@@ -21,10 +21,10 @@ new GuildMemberRoleBlock(client, options?)
 | client | [Client](classes/Client) |  | false |  |
 | options | any |  | true |  |
 
-## Properties
-### cache
+# Properties
+## cache
 **Type:** [Cache](classes/Cache)
 
-### client
+## client
 **Type:** [Client](classes/Client)
 

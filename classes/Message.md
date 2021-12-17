@@ -12,7 +12,7 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new Message(client, data)
 ```
@@ -21,14 +21,14 @@ new Message(client, data)
 | client | [Client](classes/Client) |  | false |  |
 | data | any |  | false |  |
 
-## Properties
-### attachments
+# Properties
+## attachments
 **Type:** Object
 
-### author
+## author
 **Type:** Object | [BaseUser](classes/BaseUser)
 
-### baseAuthor
+## baseAuthor
 {: .d-inline-block }
 
 PRIVATE
@@ -36,22 +36,22 @@ PRIVATE
 
 **Type:** any
 
-### channel
+## channel
 **Type:** [TextBasedChannel](classes/TextBasedChannel)
 
-### client
+## client
 **Type:** [Client](classes/Client)
 
-### content
+## content
 **Type:** Object | string
 
-### flags
+## flags
 **Type:** number
 
-### guild
+## guild
 **Type:** Object | [Guild](classes/Guild)
 
-### id
+## id
 {: .d-inline-block }
 
 READONLY
@@ -59,20 +59,20 @@ READONLY
 
 **Type:** string
 
-### member
+## member
 **Type:** Object | [GuildMember](classes/GuildMember)
 
-### system
+## system
 **Type:** boolean
 
-### type
+## type
 **Type:** Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object
 
-### webhookId
+## webhookId
 **Type:** Object | string
 
-## Methods
-### build(data)
+# Methods
+## build(data)
 {: .d-inline-block }
 
 PRIVATE
@@ -84,27 +84,27 @@ PRIVATE
 
 **Returns:** void
 
-### crosspost()
+## crosspost()
 **Returns:** Promise<[Message](classes/Message)>
 
-### delete()
+## delete()
 **Returns:** Promise<void>
 
-### edit(message)
+## edit(message)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | message | MessageContent |  | false |  |
 
 **Returns:** Promise<[Message](classes/Message)>
 
-### modify(data)
+## modify(data)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | data | any |  | false |  |
 
 **Returns:** Promise<[Message](classes/Message)>
 
-### parse(data)
+## parse(data)
 {: .d-inline-block }
 
 PRIVATE
@@ -116,21 +116,21 @@ PRIVATE
 
 **Returns:** Promise<[Message](classes/Message)>
 
-### pin(reason?)
+## pin(reason?)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | reason | string |  | true |  |
 
 **Returns:** Promise<[Message](classes/Message)>
 
-### reply(message)
+## reply(message)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | message | MessageContent |  | false |  |
 
 **Returns:** Promise<[Message](classes/Message)>
 
-### set()
+## set()
 {: .d-inline-block }
 
 PRIVATE
@@ -138,7 +138,7 @@ PRIVATE
 
 **Returns:** [Message](classes/Message)
 
-### startThread(name, options)
+## startThread(name, options)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | name | string |  | false |  |
@@ -146,17 +146,17 @@ PRIVATE
 
 **Returns:** Promise<void>
 
-### supressEmbeds()
+## supressEmbeds()
 **Returns:** Promise<[Message](classes/Message)>
 
-### unpin(reason?)
+## unpin(reason?)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | reason | string |  | true |  |
 
 **Returns:** Promise<[Message](classes/Message)>
 
-### waitForAuthor()
+## waitForAuthor()
 {: .d-inline-block }
 
 PRIVATE
@@ -164,7 +164,7 @@ PRIVATE
 
 **Returns:** Promise<[Message](classes/Message)>
 
-### buildApiMessage(data, edit)
+## buildApiMessage(data, edit)
 {: .d-inline-block }
 
 STATIC

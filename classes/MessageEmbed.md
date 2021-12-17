@@ -12,46 +12,46 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new MessageEmbed()
 ```
-## Properties
-### author
+# Properties
+## author
 **Type:** Object | [EmbedAuthor](classes/EmbedAuthor)
 
-### color
+## color
 **Type:** Object | string
 
-### description
+## description
 **Type:** Object | string
 
-### fields
+## fields
 **Type:** Object
 
-### footer
+## footer
 **Type:** Object | [EmbedFooter](classes/EmbedFooter)
 
-### image
+## image
 **Type:** Object | [EmbedMedia](classes/EmbedMedia)
 
-### thumbnail
+## thumbnail
 **Type:** Object | [EmbedMedia](classes/EmbedMedia)
 
-### timestamp
+## timestamp
 **Type:** Object | Date
 
-### title
+## title
 **Type:** Object | string
 
-### url
+## url
 **Type:** Object | string
 
-### video
+## video
 **Type:** Object | [EmbedMedia](classes/EmbedMedia)
 
-## Methods
-### addField(name, value, inline?)
+# Methods
+## addField(name, value, inline?)
 Add a field to this embed.
 
 | name | type | description | optional | default |
@@ -62,7 +62,7 @@ Add a field to this embed.
 
 **Returns:** [MessageEmbed](classes/MessageEmbed)
 
-### addFields(fields)
+## addFields(fields)
 Add multiple fields to this embed.
 
 | name | type | description | optional | default |
@@ -71,12 +71,12 @@ Add multiple fields to this embed.
 
 **Returns:** [MessageEmbed](classes/MessageEmbed)
 
-### format()
+## format()
 Format this class into an API-acceptable object.
 
 **Returns:** Object
 
-### removeField(index)
+## removeField(index)
 Remove a field from this embed.
 
 | name | type | description | optional | default |
@@ -85,7 +85,7 @@ Remove a field from this embed.
 
 **Returns:** [MessageEmbed](classes/MessageEmbed)
 
-### setAuthor(name, url?, iconUrl?)
+## setAuthor(name, url?, iconUrl?)
 Set the author of this embed.
 
 | name | type | description | optional | default |
@@ -96,7 +96,7 @@ Set the author of this embed.
 
 **Returns:** [MessageEmbed](classes/MessageEmbed)
 
-### setColor(color)
+## setColor(color)
 Set the HEX color of this embed.
 
 | name | type | description | optional | default |
@@ -105,7 +105,7 @@ Set the HEX color of this embed.
 
 **Returns:** [MessageEmbed](classes/MessageEmbed)
 
-### setDescription(description)
+## setDescription(description)
 Set the description of this embed.
 
 | name | type | description | optional | default |
@@ -114,7 +114,7 @@ Set the description of this embed.
 
 **Returns:** [MessageEmbed](classes/MessageEmbed)
 
-### setFields(fields)
+## setFields(fields)
 Set the fields of this embed.
 
 | name | type | description | optional | default |
@@ -123,7 +123,7 @@ Set the fields of this embed.
 
 **Returns:** [MessageEmbed](classes/MessageEmbed)
 
-### setFooter(text, iconUrl?)
+## setFooter(text, iconUrl?)
 Set the footer of this embed.
 
 | name | type | description | optional | default |
@@ -133,7 +133,7 @@ Set the footer of this embed.
 
 **Returns:** [MessageEmbed](classes/MessageEmbed)
 
-### setImage(url, height?, width?)
+## setImage(url, height?, width?)
 Set the image for this embed.
 
 | name | type | description | optional | default |
@@ -144,7 +144,7 @@ Set the image for this embed.
 
 **Returns:** [MessageEmbed](classes/MessageEmbed)
 
-### setThumbnail(url, height?, width?)
+## setThumbnail(url, height?, width?)
 Set the thumbnail for this embed.
 
 | name | type | description | optional | default |
@@ -155,7 +155,7 @@ Set the thumbnail for this embed.
 
 **Returns:** [MessageEmbed](classes/MessageEmbed)
 
-### setTimestamp(timestamp)
+## setTimestamp(timestamp)
 Set the timestamp of this embed.
 
 | name | type | description | optional | default |
@@ -164,7 +164,7 @@ Set the timestamp of this embed.
 
 **Returns:** [MessageEmbed](classes/MessageEmbed)
 
-### setTitle(title)
+## setTitle(title)
 Set the title of this embed.
 
 | name | type | description | optional | default |
@@ -173,7 +173,7 @@ Set the title of this embed.
 
 **Returns:** [MessageEmbed](classes/MessageEmbed)
 
-### setUrl(url)
+## setUrl(url)
 Set the URL of this embed.
 
 | name | type | description | optional | default |
@@ -182,7 +182,7 @@ Set the URL of this embed.
 
 **Returns:** [MessageEmbed](classes/MessageEmbed)
 
-### setVideo(url, height?, width?)
+## setVideo(url, height?, width?)
 Set the video for this embed.
 
 | name | type | description | optional | default |

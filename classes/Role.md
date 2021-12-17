@@ -12,7 +12,7 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new Role(client, data, guild)
 ```
@@ -22,23 +22,23 @@ new Role(client, data, guild)
 | data | any |  | false |  |
 | guild | [Guild](classes/Guild) |  | false |  |
 
-## Properties
-### client
+# Properties
+## client
 **Type:** [Client](classes/Client)
 
-### color
+## color
 **Type:** Object | string
 
-### guild
+## guild
 **Type:** [Guild](classes/Guild)
 
-### hoist
+## hoist
 **Type:** Object | boolean
 
-### icon
+## icon
 **Type:** Object | string
 
-### id
+## id
 {: .d-inline-block }
 
 READONLY
@@ -46,26 +46,26 @@ READONLY
 
 **Type:** string
 
-### managed
+## managed
 **Type:** Object | boolean
 
-### mentionable
+## mentionable
 **Type:** Object | boolean
 
-### name
+## name
 **Type:** Object | string
 
-### permissions
+## permissions
 **Type:** [RolePermissionsBlock](classes/RolePermissionsBlock)
 
-### position
+## position
 **Type:** Object | number
 
-### unicodeEmoji
+## unicodeEmoji
 **Type:** Object | string
 
-## Methods
-### build(data)
+# Methods
+## build(data)
 {: .d-inline-block }
 
 PRIVATE
@@ -77,7 +77,7 @@ PRIVATE
 
 **Returns:** void
 
-### delete(reason?)
+## delete(reason?)
 Delete this Role.
 
 | name | type | description | optional | default |
@@ -86,7 +86,7 @@ Delete this Role.
 
 **Returns:** Promise<void>
 
-### modify(data, reason?)
+## modify(data, reason?)
 Modify this Role.
 
 | name | type | description | optional | default |
@@ -96,7 +96,7 @@ Modify this Role.
 
 **Returns:** Promise<[Role](classes/Role)>
 
-### move(velocity, reason?)
+## move(velocity, reason?)
 Move this Role's position.
 
 | name | type | description | optional | default |
@@ -106,7 +106,7 @@ Move this Role's position.
 
 **Returns:** Promise<[Role](classes/Role)>
 
-### set()
+## set()
 {: .d-inline-block }
 
 PRIVATE
@@ -116,7 +116,7 @@ Set the Role's data to the cache.
 
 **Returns:** [Role](classes/Role)
 
-### setColor(color, reason?)
+## setColor(color, reason?)
 Set the color of this Role.
 
 | name | type | description | optional | default |
@@ -126,7 +126,7 @@ Set the color of this Role.
 
 **Returns:** Promise<[Role](classes/Role)>
 
-### setIsHoisted(hoisted, reason?)
+## setIsHoisted(hoisted, reason?)
 Set if this members of this Role should be hoisted
 on the member list.
 
@@ -137,7 +137,7 @@ on the member list.
 
 **Returns:** Promise<[Role](classes/Role)>
 
-### setIsMentionable(mentionable, reason?)
+## setIsMentionable(mentionable, reason?)
 Set if this Role can be mentioned.
 
 | name | type | description | optional | default |
@@ -147,7 +147,7 @@ Set if this Role can be mentioned.
 
 **Returns:** Promise<[Role](classes/Role)>
 
-### setName(name, reason?)
+## setName(name, reason?)
 Set the name of this Role.
 
 | name | type | description | optional | default |
@@ -157,7 +157,7 @@ Set the name of this Role.
 
 **Returns:** Promise<[Role](classes/Role)>
 
-### setPosition(position, reason?)
+## setPosition(position, reason?)
 Set the position of this Role.
 
 | name | type | description | optional | default |
@@ -167,12 +167,12 @@ Set the position of this Role.
 
 **Returns:** Promise<[Role](classes/Role)>
 
-### toString()
+## toString()
 Convert this Role into a mention (string).
 
 **Returns:** string
 
-### handleUpdate(client, data, guild)
+## handleUpdate(client, data, guild)
 {: .d-inline-block }
 
 STATIC
@@ -192,7 +192,7 @@ Handle updates from the Discord Gateway.
 
 **Returns:** [Role](classes/Role)
 
-### toIdOnly(role)
+## toIdOnly(role)
 {: .d-inline-block }
 
 STATIC

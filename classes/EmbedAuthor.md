@@ -12,7 +12,7 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new EmbedAuthor(name, url?, iconUrl?)
 ```
@@ -22,43 +22,43 @@ new EmbedAuthor(name, url?, iconUrl?)
 | url | string |  | true |  |
 | iconUrl | string |  | true |  |
 
-## Properties
-### iconUrl
+# Properties
+## iconUrl
 **Type:** Object | string
 
-### name
+## name
 **Type:** string
 
-### url
+## url
 **Type:** Object | string
 
-## Methods
-### format()
+# Methods
+## format()
 Format this class into an API-acceptable object.
 
 **Returns:** Object
 
-### removeIcon()
+## removeIcon()
 **Returns:** void
 
-### removeUrl()
+## removeUrl()
 **Returns:** void
 
-### setIconUrl(iconUrl)
+## setIconUrl(iconUrl)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | iconUrl | string |  | false |  |
 
 **Returns:** void
 
-### setName(name)
+## setName(name)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | name | string |  | false |  |
 
 **Returns:** void
 
-### setUrl(url)
+## setUrl(url)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | url | string |  | false |  |

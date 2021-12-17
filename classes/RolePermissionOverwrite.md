@@ -12,7 +12,7 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new RolePermissionOverwrite(client, role, allow, deny)
 ```
@@ -23,28 +23,28 @@ new RolePermissionOverwrite(client, role, allow, deny)
 | allow | number |  | false | 0 |
 | deny | number |  | false | 0 |
 
-## Properties
-### allow
+# Properties
+## allow
 **Type:** [PermissionsBlock](classes/PermissionsBlock)
 
-### client
+## client
 **Type:** [Client](classes/Client)
 
-### deny
+## deny
 **Type:** [PermissionsBlock](classes/PermissionsBlock)
 
-### role
+## role
 **Type:** [Role](classes/Role)
 
-## Methods
-### grant(flags)
+# Methods
+## grant(flags)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | flags | Object |  | false |  |
 
 **Returns:** [RolePermissionOverwrite](classes/RolePermissionOverwrite)
 
-### revoke(flags)
+## revoke(flags)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | flags | Object |  | false |  |

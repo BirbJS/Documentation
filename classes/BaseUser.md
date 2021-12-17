@@ -12,7 +12,7 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new BaseUser(client, data)
 ```
@@ -21,29 +21,29 @@ new BaseUser(client, data)
 | client | [Client](classes/Client) |  | false |  |
 | data | any |  | false |  |
 
-## Properties
-### accent_color
+# Properties
+## accent_color
 **Type:** Object | string
 
-### avatar
+## avatar
 **Type:** Object | string
 
-### banner
+## banner
 **Type:** Object | string
 
-### bot
+## bot
 **Type:** boolean
 
-### client
+## client
 **Type:** [Client](classes/Client)
 
-### discriminator
+## discriminator
 **Type:** string
 
-### flags
+## flags
 **Type:** Object | string
 
-### id
+## id
 {: .d-inline-block }
 
 READONLY
@@ -51,17 +51,17 @@ READONLY
 
 **Type:** string
 
-### system
+## system
 **Type:** boolean
 
-### tag
+## tag
 **Type:** string
 
-### username
+## username
 **Type:** string
 
-## Methods
-### isPartial()
+# Methods
+## isPartial()
 Whether or not this instance is a full or partial
 user. A partial user is a user that is only
 guaranteed to have `id` set on them.

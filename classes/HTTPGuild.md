@@ -12,12 +12,12 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new HTTPGuild()
 ```
-## Methods
-### addMember(client, guildId, userId, data)
+# Methods
+## addMember(client, guildId, userId, data)
 {: .d-inline-block }
 
 STATIC
@@ -32,7 +32,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### addMemberRole(client, guildId, userId, roleId, data, reason?)
+## addMemberRole(client, guildId, userId, roleId, data, reason?)
 {: .d-inline-block }
 
 STATIC
@@ -49,7 +49,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### beginPrune(client, guildId, data, reason?)
+## beginPrune(client, guildId, data, reason?)
 {: .d-inline-block }
 
 STATIC
@@ -64,7 +64,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### createBan(client, guildId, userId, data, reason?)
+## createBan(client, guildId, userId, data, reason?)
 {: .d-inline-block }
 
 STATIC
@@ -80,7 +80,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### createChannel(client, guildId, data, reason?)
+## createChannel(client, guildId, data, reason?)
 {: .d-inline-block }
 
 STATIC
@@ -95,7 +95,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### createRole(client, guildId, data, reason?)
+## createRole(client, guildId, data, reason?)
 {: .d-inline-block }
 
 STATIC
@@ -110,7 +110,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### delete(client, guildId)
+## delete(client, guildId)
 {: .d-inline-block }
 
 STATIC
@@ -123,7 +123,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### deleteIntegration(client, guildId, integrationId, reason?)
+## deleteIntegration(client, guildId, integrationId, reason?)
 {: .d-inline-block }
 
 STATIC
@@ -138,7 +138,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### deleteRole(client, guildId, roleId, reason?)
+## deleteRole(client, guildId, roleId, reason?)
 {: .d-inline-block }
 
 STATIC
@@ -153,7 +153,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### get(client, guildId)
+## get(client, guildId)
 {: .d-inline-block }
 
 STATIC
@@ -166,7 +166,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### getActiveThreads(client, guildId)
+## getActiveThreads(client, guildId)
 {: .d-inline-block }
 
 STATIC
@@ -179,73 +179,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### getBan(client, guildId, userId)
-{: .d-inline-block }
-
-STATIC
-{: .label .label-blue }
-
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
-| guildId | string |  | false |  |
-| userId | string |  | false |  |
-
-**Returns:** Promise<any>
-
-### getBans(client, guildId)
-{: .d-inline-block }
-
-STATIC
-{: .label .label-blue }
-
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
-| guildId | string |  | false |  |
-
-**Returns:** Promise<any>
-
-### getChannels(client, guildId)
-{: .d-inline-block }
-
-STATIC
-{: .label .label-blue }
-
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
-| guildId | string |  | false |  |
-
-**Returns:** Promise<any>
-
-### getIntegrations(client, guildId)
-{: .d-inline-block }
-
-STATIC
-{: .label .label-blue }
-
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
-| guildId | string |  | false |  |
-
-**Returns:** Promise<any>
-
-### getInvites(client, guildId)
-{: .d-inline-block }
-
-STATIC
-{: .label .label-blue }
-
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
-| guildId | string |  | false |  |
-
-**Returns:** Promise<any>
-
-### getMember(client, guildId, userId)
+## getBan(client, guildId, userId)
 {: .d-inline-block }
 
 STATIC
@@ -259,7 +193,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### getMembers(client, guildId)
+## getBans(client, guildId)
 {: .d-inline-block }
 
 STATIC
@@ -272,7 +206,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### getPreview(client, guildId)
+## getChannels(client, guildId)
 {: .d-inline-block }
 
 STATIC
@@ -285,7 +219,73 @@ STATIC
 
 **Returns:** Promise<any>
 
-### getPruneCount(client, guildId, days, includeRoles?)
+## getIntegrations(client, guildId)
+{: .d-inline-block }
+
+STATIC
+{: .label .label-blue }
+
+| name | type | description | optional | default |
+|:-----|:-----|:------------|:---------|:--------|
+| client | [Client](classes/Client) |  | false |  |
+| guildId | string |  | false |  |
+
+**Returns:** Promise<any>
+
+## getInvites(client, guildId)
+{: .d-inline-block }
+
+STATIC
+{: .label .label-blue }
+
+| name | type | description | optional | default |
+|:-----|:-----|:------------|:---------|:--------|
+| client | [Client](classes/Client) |  | false |  |
+| guildId | string |  | false |  |
+
+**Returns:** Promise<any>
+
+## getMember(client, guildId, userId)
+{: .d-inline-block }
+
+STATIC
+{: .label .label-blue }
+
+| name | type | description | optional | default |
+|:-----|:-----|:------------|:---------|:--------|
+| client | [Client](classes/Client) |  | false |  |
+| guildId | string |  | false |  |
+| userId | string |  | false |  |
+
+**Returns:** Promise<any>
+
+## getMembers(client, guildId)
+{: .d-inline-block }
+
+STATIC
+{: .label .label-blue }
+
+| name | type | description | optional | default |
+|:-----|:-----|:------------|:---------|:--------|
+| client | [Client](classes/Client) |  | false |  |
+| guildId | string |  | false |  |
+
+**Returns:** Promise<any>
+
+## getPreview(client, guildId)
+{: .d-inline-block }
+
+STATIC
+{: .label .label-blue }
+
+| name | type | description | optional | default |
+|:-----|:-----|:------------|:---------|:--------|
+| client | [Client](classes/Client) |  | false |  |
+| guildId | string |  | false |  |
+
+**Returns:** Promise<any>
+
+## getPruneCount(client, guildId, days, includeRoles?)
 {: .d-inline-block }
 
 STATIC
@@ -300,7 +300,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### getRoles(client, guildId)
+## getRoles(client, guildId)
 {: .d-inline-block }
 
 STATIC
@@ -313,7 +313,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### getVanityUrl(client, guildId)
+## getVanityUrl(client, guildId)
 {: .d-inline-block }
 
 STATIC
@@ -326,7 +326,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### getVoiceRegions(client, guildId)
+## getVoiceRegions(client, guildId)
 {: .d-inline-block }
 
 STATIC
@@ -339,7 +339,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### getWelcomeScreen(client, guildId)
+## getWelcomeScreen(client, guildId)
 {: .d-inline-block }
 
 STATIC
@@ -352,7 +352,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### getWidget(client, guildId)
+## getWidget(client, guildId)
 {: .d-inline-block }
 
 STATIC
@@ -365,7 +365,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### getWidgetSettings(client, guildId)
+## getWidgetSettings(client, guildId)
 {: .d-inline-block }
 
 STATIC
@@ -378,22 +378,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### modify(client, guildId, data, reason?)
-{: .d-inline-block }
-
-STATIC
-{: .label .label-blue }
-
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
-| guildId | string |  | false |  |
-| data | any |  | false |  |
-| reason | string |  | true |  |
-
-**Returns:** Promise<any>
-
-### modifyChannelPositions(client, guildId, data, reason?)
+## modify(client, guildId, data, reason?)
 {: .d-inline-block }
 
 STATIC
@@ -408,7 +393,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### modifyCurrentMember(client, guildId, data, reason?)
+## modifyChannelPositions(client, guildId, data, reason?)
 {: .d-inline-block }
 
 STATIC
@@ -423,7 +408,22 @@ STATIC
 
 **Returns:** Promise<any>
 
-### modifyMember(client, guildId, userId, data, reason?)
+## modifyCurrentMember(client, guildId, data, reason?)
+{: .d-inline-block }
+
+STATIC
+{: .label .label-blue }
+
+| name | type | description | optional | default |
+|:-----|:-----|:------------|:---------|:--------|
+| client | [Client](classes/Client) |  | false |  |
+| guildId | string |  | false |  |
+| data | any |  | false |  |
+| reason | string |  | true |  |
+
+**Returns:** Promise<any>
+
+## modifyMember(client, guildId, userId, data, reason?)
 {: .d-inline-block }
 
 STATIC
@@ -439,7 +439,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### modifyRole(client, guildId, roleId, data, reason?)
+## modifyRole(client, guildId, roleId, data, reason?)
 {: .d-inline-block }
 
 STATIC
@@ -455,7 +455,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### modifyRolePositions(client, guildId, data, reason?)
+## modifyRolePositions(client, guildId, data, reason?)
 {: .d-inline-block }
 
 STATIC
@@ -470,7 +470,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### modifyVoiceState(client, guildId, userId, data, reason?)
+## modifyVoiceState(client, guildId, userId, data, reason?)
 {: .d-inline-block }
 
 STATIC
@@ -486,7 +486,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### modifyWelcomeScreen(client, guildId, data, reason?)
+## modifyWelcomeScreen(client, guildId, data, reason?)
 {: .d-inline-block }
 
 STATIC
@@ -501,7 +501,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### modifyWidget(client, guildId, data, reason?)
+## modifyWidget(client, guildId, data, reason?)
 {: .d-inline-block }
 
 STATIC
@@ -516,7 +516,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### removeBan(client, guildId, userId, reason?)
+## removeBan(client, guildId, userId, reason?)
 {: .d-inline-block }
 
 STATIC
@@ -531,7 +531,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### removeMember(client, guildId, userId, reason?)
+## removeMember(client, guildId, userId, reason?)
 {: .d-inline-block }
 
 STATIC
@@ -546,7 +546,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### removeMemberRole(client, guildId, userId, roleId, reason?)
+## removeMemberRole(client, guildId, userId, roleId, reason?)
 {: .d-inline-block }
 
 STATIC
@@ -562,7 +562,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### searchMembers(client, guildId, query)
+## searchMembers(client, guildId, query)
 {: .d-inline-block }
 
 STATIC

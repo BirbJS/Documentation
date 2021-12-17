@@ -12,7 +12,7 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new User(client, data)
 ```
@@ -21,32 +21,32 @@ new User(client, data)
 | client | [Client](classes/Client) |  | false |  |
 | data | any |  | false |  |
 
-## Properties
-### accent_color
+# Properties
+## accent_color
 **Type:** Object | string
 
-### avatar
+## avatar
 **Type:** Object | string
 
-### banner
+## banner
 **Type:** Object | string
 
-### bot
+## bot
 **Type:** boolean
 
-### client
+## client
 **Type:** [Client](classes/Client)
 
-### discriminator
+## discriminator
 **Type:** string
 
-### dmChannel
+## dmChannel
 **Type:** any
 
-### flags
+## flags
 **Type:** Object | string
 
-### id
+## id
 {: .d-inline-block }
 
 READONLY
@@ -54,17 +54,17 @@ READONLY
 
 **Type:** string
 
-### system
+## system
 **Type:** boolean
 
-### tag
+## tag
 **Type:** string
 
-### username
+## username
 **Type:** string
 
-## Methods
-### build(data)
+# Methods
+## build(data)
 {: .d-inline-block }
 
 PRIVATE
@@ -76,7 +76,7 @@ PRIVATE
 
 **Returns:** void
 
-### fetch(options?)
+## fetch(options?)
 Fetch this user again.
 
 | name | type | description | optional | default |
@@ -85,7 +85,7 @@ Fetch this user again.
 
 **Returns:** Promise<[User](classes/User)>
 
-### getAvatar(options?)
+## getAvatar(options?)
 Generate a link to the user's avatar.
 
 | name | type | description | optional | default |
@@ -94,7 +94,7 @@ Generate a link to the user's avatar.
 
 **Returns:** string
 
-### getBanner(options?)
+## getBanner(options?)
 Generate a link to the user's avatar.
 
 | name | type | description | optional | default |
@@ -103,19 +103,19 @@ Generate a link to the user's avatar.
 
 **Returns:** string
 
-### hasDefaultAvatar()
+## hasDefaultAvatar()
 Determine if the user's avatar is default.
 
 **Returns:** boolean
 
-### isPartial()
+## isPartial()
 Whether or not this instance is a full or partial
 user. A partial user is a user that is only
 guaranteed to have `id` set on them.
 
 **Returns:** boolean
 
-### send(content)
+## send(content)
 Send a message to the user.
 
 | name | type | description | optional | default |
@@ -124,7 +124,7 @@ Send a message to the user.
 
 **Returns:** Promise<[Message](classes/Message)>
 
-### set()
+## set()
 {: .d-inline-block }
 
 PRIVATE
@@ -134,12 +134,12 @@ Set the User's data to the cache.
 
 **Returns:** [User](classes/User)
 
-### toString()
+## toString()
 Convert this User into a mention (string).
 
 **Returns:** string
 
-### retrieveOrBuildPartial(client, data)
+## retrieveOrBuildPartial(client, data)
 {: .d-inline-block }
 
 STATIC
@@ -159,7 +159,7 @@ PartialUser instance to avoid fetching from the API.
 
 **Returns:** [User](classes/User) | [PartialUser](classes/PartialUser)
 
-### toIdOnly(user)
+## toIdOnly(user)
 {: .d-inline-block }
 
 STATIC

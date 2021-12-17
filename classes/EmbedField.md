@@ -12,7 +12,7 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new EmbedField(name, value, inline?)
 ```
@@ -22,37 +22,37 @@ new EmbedField(name, value, inline?)
 | value | string |  | false |  |
 | inline | boolean |  | true |  |
 
-## Properties
-### inline
+# Properties
+## inline
 **Type:** boolean
 
-### name
+## name
 **Type:** string
 
-### value
+## value
 **Type:** string
 
-## Methods
-### format()
+# Methods
+## format()
 Format this class into an API-acceptable object.
 
 **Returns:** Object
 
-### setInline(inline)
+## setInline(inline)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | inline | boolean |  | false |  |
 
 **Returns:** void
 
-### setName(name)
+## setName(name)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | name | string |  | false |  |
 
 **Returns:** void
 
-### setValue(value)
+## setValue(value)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | value | string |  | false |  |

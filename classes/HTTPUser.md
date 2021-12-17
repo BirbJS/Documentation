@@ -16,6 +16,7 @@ has_toc: true
 ```js
 new HTTPUser()
 ```
+
 # Methods
 ## createDM(client, userId)
 {: .d-inline-block }

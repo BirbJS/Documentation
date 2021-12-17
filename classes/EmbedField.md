@@ -16,6 +16,7 @@ has_toc: true
 ```js
 new EmbedField(name, value, inline?)
 ```
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | name | string |  | false |  |

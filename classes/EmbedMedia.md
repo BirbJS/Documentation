@@ -16,6 +16,7 @@ has_toc: true
 ```js
 new EmbedMedia(url, height?, width?)
 ```
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | url | string |  | false |  |

@@ -16,6 +16,7 @@ has_toc: true
 ```js
 new Channel(client, data)
 ```
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](classes/Client) |  | false |  |

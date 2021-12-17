@@ -16,6 +16,7 @@ has_toc: true
 ```js
 new RolePermissionOverwrite(client, role, allow, deny)
 ```
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](classes/Client) |  | false |  |

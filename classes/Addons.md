@@ -16,6 +16,7 @@ has_toc: true
 ```js
 new Addons()
 ```
+
 # Properties
 ## Sharding
 **Type:** any

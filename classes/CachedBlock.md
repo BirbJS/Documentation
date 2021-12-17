@@ -21,6 +21,7 @@ ABSTRACT
 ```js
 new CachedBlock(client, cache)
 ```
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](classes/Client) |  | false |  |

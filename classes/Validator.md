@@ -16,6 +16,7 @@ has_toc: true
 ```js
 new Validator()
 ```
+
 # Methods
 ## parseChannel(channel)
 {: .d-inline-block }

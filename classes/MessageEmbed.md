@@ -16,6 +16,7 @@ has_toc: true
 ```js
 new MessageEmbed()
 ```
+
 # Properties
 ## author
 **Type:** Object | [EmbedAuthor](classes/EmbedAuthor)

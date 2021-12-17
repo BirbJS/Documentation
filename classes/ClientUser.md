@@ -16,6 +16,7 @@ has_toc: true
 ```js
 new ClientUser(client, data)
 ```
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](classes/Client) |  | false |  |

@@ -16,6 +16,7 @@ has_toc: true
 ```js
 new HTTPChannel()
 ```
+
 # Methods
 ## addThreadMember(client, channelId, userId)
 {: .d-inline-block }

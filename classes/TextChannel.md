@@ -16,6 +16,7 @@ has_toc: true
 ```js
 new TextChannel(client, data, options?, guild?)
 ```
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](classes/Client) |  | false |  |

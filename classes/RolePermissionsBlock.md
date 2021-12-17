@@ -16,6 +16,7 @@ has_toc: true
 ```js
 new RolePermissionsBlock(client, role, flags)
 ```
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](classes/Client) |  | false |  |

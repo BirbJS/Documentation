@@ -21,6 +21,7 @@ ABSTRACT
 ```js
 new TextBasedChannel(client, data, options?, guild?)
 ```
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](classes/Client) |  | false |  |

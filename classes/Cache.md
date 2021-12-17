@@ -21,6 +21,7 @@ ABSTRACT
 ```js
 new Cache(options?)
 ```
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | options | Object |  | true |  |

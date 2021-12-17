@@ -21,6 +21,7 @@ ABSTRACT
 ```js
 new GuildChannel(client, data, guild?)
 ```
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](classes/Client) |  | false |  |

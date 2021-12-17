@@ -16,6 +16,7 @@ has_toc: true
 ```js
 new MessageAttachment(file, filename, id?, url?, proxyUrl?)
 ```
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | file | Object | string | Buffer |  | false | null |

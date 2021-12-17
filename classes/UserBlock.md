@@ -12,7 +12,7 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new UserBlock(client, options?)
 ```
@@ -21,15 +21,15 @@ new UserBlock(client, options?)
 | client | [Client](classes/Client) |  | false |  |
 | options | any |  | true |  |
 
-## Properties
-### cache
+# Properties
+## cache
 **Type:** [Cache](classes/Cache)
 
-### client
+## client
 **Type:** [Client](classes/Client)
 
-## Methods
-### fetch(userId, options?)
+# Methods
+## fetch(userId, options?)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | userId | string |  | false |  |
@@ -37,10 +37,10 @@ new UserBlock(client, options?)
 
 **Returns:** Promise<[User](classes/User)>
 
-### fetchMe()
+## fetchMe()
 **Returns:** Promise<[ClientUser](classes/ClientUser)>
 
-### resolve(user, def?)
+## resolve(user, def?)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | user | UserResolvable |  | false |  |

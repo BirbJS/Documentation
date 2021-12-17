@@ -17,7 +17,7 @@ ABSTRACT
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new Cache(options?)
 ```
@@ -25,8 +25,8 @@ new Cache(options?)
 |:-----|:-----|:------------|:---------|:--------|
 | options | Object |  | true |  |
 
-## Properties
-### cache
+# Properties
+## cache
 {: .d-inline-block }
 
 PRIVATE
@@ -34,7 +34,7 @@ PRIVATE
 
 **Type:** Map<string, any>
 
-### client
+## client
 {: .d-inline-block }
 
 ABSTRACT
@@ -42,7 +42,7 @@ ABSTRACT
 
 **Type:** [Client](classes/Client)
 
-### options
+## options
 {: .d-inline-block }
 
 PRIVATE
@@ -50,30 +50,30 @@ PRIVATE
 
 **Type:** any
 
-## Methods
-### array()
+# Methods
+## array()
 Get an array of the entries in the cache.
 
 **Returns:** Object
 
-### arrayPair()
+## arrayPair()
 Get an array of the entries in the cache as `Pair`s.
 
 **Returns:** Object
 
-### clear()
+## clear()
 Clear the cache and its contents.
 
 **Returns:** [Cache](classes/Cache)
 
-### entries()
+## entries()
 Get an object of the entries in the cache. The
 key is the key of the entry, and the value is
 the value of the entry.
 
 **Returns:** Object
 
-### filter(fn)
+## filter(fn)
 Filter values in the cache. If the key is not found
 in the cache, an empty array is returned.
 
@@ -83,7 +83,7 @@ in the cache, an empty array is returned.
 
 **Returns:** Object
 
-### find(fn)
+## find(fn)
 Find a value in the cache. If the key is not found
 in the cache, `null` is returned.
 
@@ -93,7 +93,7 @@ in the cache, `null` is returned.
 
 **Returns:** any
 
-### get(key)
+## get(key)
 Get a value from the cache. If the key is not found
 in the cache, `null` is returned.
 
@@ -103,7 +103,7 @@ in the cache, `null` is returned.
 
 **Returns:** any
 
-### has(key)
+## has(key)
 Check if the cache contains a key.
 
 | name | type | description | optional | default |
@@ -112,7 +112,7 @@ Check if the cache contains a key.
 
 **Returns:** boolean
 
-### makeSpace(options?)
+## makeSpace(options?)
 Make space in the cache for a new entry. You
 **probably shouldn't** run this method directly
 unless you know **EXACTLY** what you're doing.
@@ -123,7 +123,7 @@ unless you know **EXACTLY** what you're doing.
 
 **Returns:** void
 
-### rebuild(data)
+## rebuild(data)
 {: .d-inline-block }
 
 ABSTRACT
@@ -135,7 +135,7 @@ ABSTRACT
 
 **Returns:** any
 
-### remove(key)
+## remove(key)
 Remove a key from the cache.
 
 | name | type | description | optional | default |
@@ -144,7 +144,7 @@ Remove a key from the cache.
 
 **Returns:** [Cache](classes/Cache)
 
-### set(key, value, options?)
+## set(key, value, options?)
 Set a value in the cache.
 
 | name | type | description | optional | default |
@@ -155,12 +155,12 @@ Set a value in the cache.
 
 **Returns:** [Cache](classes/Cache)
 
-### size()
+## size()
 Get the amount of entries in the cache.
 
 **Returns:** number
 
-### strip(data)
+## strip(data)
 {: .d-inline-block }
 
 ABSTRACT

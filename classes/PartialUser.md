@@ -12,7 +12,7 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new PartialUser(client, data)
 ```
@@ -21,14 +21,14 @@ new PartialUser(client, data)
 | client | [Client](classes/Client) |  | false |  |
 | data | any |  | false |  |
 
-## Properties
-### client
+# Properties
+## client
 **Type:** [Client](classes/Client)
 
-### discriminator
+## discriminator
 **Type:** string
 
-### id
+## id
 {: .d-inline-block }
 
 READONLY
@@ -36,14 +36,14 @@ READONLY
 
 **Type:** string
 
-### tag
+## tag
 **Type:** string
 
-### username
+## username
 **Type:** string
 
-## Methods
-### build(data)
+# Methods
+## build(data)
 {: .d-inline-block }
 
 PRIVATE
@@ -55,7 +55,7 @@ PRIVATE
 
 **Returns:** void
 
-### fetch(options?)
+## fetch(options?)
 Fetch (and resolve) this PartialUser into a User.
 
 | name | type | description | optional | default |
@@ -64,14 +64,14 @@ Fetch (and resolve) this PartialUser into a User.
 
 **Returns:** Promise<[User](classes/User)>
 
-### isPartial()
+## isPartial()
 Whether or not this instance is a full or partial
 user. A partial user is a user that is only
 guaranteed to have `id` set on them.
 
 **Returns:** boolean
 
-### toString()
+## toString()
 Convert this User into a mention (string).
 
 **Returns:** string

@@ -2,7 +2,7 @@
 layout: default
 title: Types
 has_children: true
-has_toc: true
+has_toc: false
 ---
 
 # Types

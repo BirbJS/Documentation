@@ -12,7 +12,7 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new GuildBlock(client, options?)
 ```
@@ -21,15 +21,15 @@ new GuildBlock(client, options?)
 | client | [Client](classes/Client) |  | false |  |
 | options | any |  | true |  |
 
-## Properties
-### cache
+# Properties
+## cache
 **Type:** [Cache](classes/Cache)
 
-### client
+## client
 **Type:** [Client](classes/Client)
 
-## Methods
-### fetch(options)
+# Methods
+## fetch(options)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | options | GuildResolvable | Object |  | false |  |

@@ -12,7 +12,7 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new Guild(client, data)
 ```
@@ -21,53 +21,53 @@ new Guild(client, data)
 | client | [Client](classes/Client) |  | false |  |
 | data | any |  | false |  |
 
-## Properties
-### afkChannelId
+# Properties
+## afkChannelId
 **Type:** Object | string
 
-### afkTimeout
+## afkTimeout
 **Type:** number
 
-### approximateMemberCount
+## approximateMemberCount
 **Type:** Object | number
 
-### approximatePresenceCount
+## approximatePresenceCount
 **Type:** Object | number
 
-### available
+## available
 **Type:** boolean
 
-### banner
+## banner
 **Type:** Object | string
 
-### boostTier
+## boostTier
 **Type:** number
 
-### boosterCount
+## boosterCount
 **Type:** Object | number
 
-### channels
+## channels
 **Type:** default
 
-### client
+## client
 **Type:** [Client](classes/Client)
 
-### defaultNotifications
+## defaultNotifications
 **Type:** [NotificationLevel](enums/NotificationLevel)
 
-### description
+## description
 **Type:** Object | string
 
-### discoverySplash
+## discoverySplash
 **Type:** Object | string
 
-### explicitContentFilter
+## explicitContentFilter
 **Type:** [ExplicitContentFilterLevel](enums/ExplicitContentFilterLevel)
 
-### icon
+## icon
 **Type:** Object | string
 
-### id
+## id
 {: .d-inline-block }
 
 READONLY
@@ -75,59 +75,59 @@ READONLY
 
 **Type:** string
 
-### large
+## large
 **Type:** boolean
 
-### maxMembers
+## maxMembers
 **Type:** Object | number
 
-### maxVideoChannelUsers
+## maxVideoChannelUsers
 **Type:** Object | number
 
-### memberCount
+## memberCount
 **Type:** Object | number
 
-### members
+## members
 **Type:** [GuildMemberBlock](classes/GuildMemberBlock)
 
-### mfaLevel
+## mfaLevel
 **Type:** [MFALevel](enums/MFALevel)
 
-### name
+## name
 **Type:** string
 
-### nsfw
+## nsfw
 **Type:** boolean
 
-### nsfwLevel
+## nsfwLevel
 **Type:** [NSFWLevel](enums/NSFWLevel)
 
-### ownerId
+## ownerId
 **Type:** string
 
-### preferredLocale
+## preferredLocale
 **Type:** Object | string
 
-### roles
+## roles
 **Type:** [RoleBlock](classes/RoleBlock)
 
-### rulesChannelId
+## rulesChannelId
 **Type:** Object | string
 
-### splash
+## splash
 **Type:** Object | string
 
-### systemChannelId
+## systemChannelId
 **Type:** Object | string
 
-### vanityCode
+## vanityCode
 **Type:** Object | string
 
-### verificationLevel
+## verificationLevel
 **Type:** [VerificationLevel](enums/VerificationLevel)
 
-## Methods
-### build(data)
+# Methods
+## build(data)
 {: .d-inline-block }
 
 PRIVATE
@@ -139,12 +139,12 @@ PRIVATE
 
 **Returns:** void
 
-### leave()
+## leave()
 Leave the Guild.
 
 **Returns:** Promise<void>
 
-### modify(data, reason?)
+## modify(data, reason?)
 Modify the Guild.
 
 | name | type | description | optional | default |
@@ -154,7 +154,7 @@ Modify the Guild.
 
 **Returns:** Promise<void>
 
-### set()
+## set()
 {: .d-inline-block }
 
 PRIVATE
@@ -164,7 +164,7 @@ Set the Guild's data to the cache.
 
 **Returns:** [Guild](classes/Guild)
 
-### setAfkChannel(channel, reason?)
+## setAfkChannel(channel, reason?)
 Set this Guild's AFK timeout channel.
 
 | name | type | description | optional | default |
@@ -174,7 +174,7 @@ Set this Guild's AFK timeout channel.
 
 **Returns:** Promise<void>
 
-### setAfkTimeout(seconds, reason?)
+## setAfkTimeout(seconds, reason?)
 Change this Guild's AFK timeout.
 
 | name | type | description | optional | default |
@@ -184,7 +184,7 @@ Change this Guild's AFK timeout.
 
 **Returns:** Promise<void>
 
-### setBoostProgressBar(toggle, reason?)
+## setBoostProgressBar(toggle, reason?)
 Toggle the Guild's booster progress bar.
 
 | name | type | description | optional | default |
@@ -194,7 +194,7 @@ Toggle the Guild's booster progress bar.
 
 **Returns:** Promise<void>
 
-### setDefaultNotifications(level, reason?)
+## setDefaultNotifications(level, reason?)
 Change this Guild's default notifications level.
 
 | name | type | description | optional | default |
@@ -204,7 +204,7 @@ Change this Guild's default notifications level.
 
 **Returns:** Promise<void>
 
-### setDescription(description, reason?)
+## setDescription(description, reason?)
 Set the Guild's description.
 
 | name | type | description | optional | default |
@@ -214,7 +214,7 @@ Set the Guild's description.
 
 **Returns:** Promise<void>
 
-### setExplicitContentFilter(level, reason?)
+## setExplicitContentFilter(level, reason?)
 Change this Guild's explicit content filter level.
 
 | name | type | description | optional | default |
@@ -224,7 +224,7 @@ Change this Guild's explicit content filter level.
 
 **Returns:** Promise<void>
 
-### setName(name, reason?)
+## setName(name, reason?)
 Change this Guild's name.
 
 | name | type | description | optional | default |
@@ -234,7 +234,7 @@ Change this Guild's name.
 
 **Returns:** Promise<void>
 
-### setPreferredLocale(locale, reason?)
+## setPreferredLocale(locale, reason?)
 Set the Guild's preferred locale.
 
 | name | type | description | optional | default |
@@ -244,7 +244,7 @@ Set the Guild's preferred locale.
 
 **Returns:** Promise<void>
 
-### setPublicUpdatesChannel(channel, reason?)
+## setPublicUpdatesChannel(channel, reason?)
 Set this Guild's public updates channel.
 
 | name | type | description | optional | default |
@@ -254,7 +254,7 @@ Set this Guild's public updates channel.
 
 **Returns:** Promise<void>
 
-### setRulesChannel(channel, reason?)
+## setRulesChannel(channel, reason?)
 Set this Guild's rules channel.
 
 | name | type | description | optional | default |
@@ -264,7 +264,7 @@ Set this Guild's rules channel.
 
 **Returns:** Promise<void>
 
-### setSystemChannel(channel, reason?)
+## setSystemChannel(channel, reason?)
 Set this Guild's system messages channel.
 
 | name | type | description | optional | default |
@@ -274,7 +274,7 @@ Set this Guild's system messages channel.
 
 **Returns:** Promise<void>
 
-### setVerificationLevel(level, reason?)
+## setVerificationLevel(level, reason?)
 Change this Guild's verification level.
 
 | name | type | description | optional | default |
@@ -284,7 +284,7 @@ Change this Guild's verification level.
 
 **Returns:** Promise<void>
 
-### toString()
+## toString()
 Convert this Guild into a a string (the name).
 
 **Returns:** string

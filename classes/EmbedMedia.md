@@ -12,7 +12,7 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new EmbedMedia(url, height?, width?)
 ```
@@ -22,43 +22,43 @@ new EmbedMedia(url, height?, width?)
 | height | number |  | true |  |
 | width | number |  | true |  |
 
-## Properties
-### height
+# Properties
+## height
 **Type:** Object | number
 
-### url
+## url
 **Type:** string
 
-### width
+## width
 **Type:** Object | number
 
-## Methods
-### format()
+# Methods
+## format()
 Format this class into an API-acceptable object.
 
 **Returns:** Object
 
-### removeHeight()
+## removeHeight()
 **Returns:** void
 
-### removeWidth()
+## removeWidth()
 **Returns:** void
 
-### setHeight(height)
+## setHeight(height)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | height | number |  | false |  |
 
 **Returns:** void
 
-### setUrl(url)
+## setUrl(url)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | url | string |  | false |  |
 
 **Returns:** void
 
-### setWidth(width)
+## setWidth(width)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | width | number |  | false |  |

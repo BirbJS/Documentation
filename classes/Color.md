@@ -12,12 +12,12 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new Color()
 ```
-## Methods
-### hexToInt(hex)
+# Methods
+## hexToInt(hex)
 {: .d-inline-block }
 
 STATIC
@@ -31,7 +31,7 @@ Convert a hex string to an integer.
 
 **Returns:** number
 
-### intToHex(int)
+## intToHex(int)
 {: .d-inline-block }
 
 STATIC

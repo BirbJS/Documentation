@@ -12,7 +12,7 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new GuildMember(client, data, guild)
 ```
@@ -22,23 +22,23 @@ new GuildMember(client, data, guild)
 | data | any |  | false |  |
 | guild | [Guild](classes/Guild) |  | false |  |
 
-## Properties
-### avatar
+# Properties
+## avatar
 **Type:** Object | string
 
-### client
+## client
 **Type:** [Client](classes/Client)
 
-### deafened
+## deafened
 **Type:** boolean
 
-### full
+## full
 **Type:** boolean
 
-### guild
+## guild
 **Type:** [Guild](classes/Guild)
 
-### id
+## id
 {: .d-inline-block }
 
 READONLY
@@ -46,35 +46,35 @@ READONLY
 
 **Type:** string
 
-### joinedAt
+## joinedAt
 **Type:** Object | Date
 
-### muted
+## muted
 **Type:** boolean
 
-### nick
+## nick
 **Type:** Object | string
 
-### originalUser
+## originalUser
 **Type:** any
 
-### pendingMembershipScreening
+## pendingMembershipScreening
 **Type:** boolean
 
-### roles
+## roles
 **Type:** [GuildMemberRoleBlock](classes/GuildMemberRoleBlock)
 
-### timedOutUntil
+## timedOutUntil
 **Type:** Object | Date
 
-### user
+## user
 **Type:** Object | [BaseUser](classes/BaseUser)
 
-## Methods
-### _waitForFull()
+# Methods
+## _waitForFull()
 **Returns:** Promise<[GuildMember](classes/GuildMember)>
 
-### ban(daysToPrune, reason?)
+## ban(daysToPrune, reason?)
 Ban the GuildMember.
 
 | name | type | description | optional | default |
@@ -84,7 +84,7 @@ Ban the GuildMember.
 
 **Returns:** Promise<void>
 
-### build(data)
+## build(data)
 {: .d-inline-block }
 
 PRIVATE
@@ -96,12 +96,12 @@ PRIVATE
 
 **Returns:** void
 
-### isInTimeout()
+## isInTimeout()
 Check if this GuildMember is in timeout.
 
 **Returns:** boolean
 
-### kick(reason?)
+## kick(reason?)
 Kick the GuildMember.
 
 | name | type | description | optional | default |
@@ -110,7 +110,7 @@ Kick the GuildMember.
 
 **Returns:** Promise<void>
 
-### modify(data, reason?)
+## modify(data, reason?)
 Modify the GuildMember.
 
 | name | type | description | optional | default |
@@ -120,7 +120,7 @@ Modify the GuildMember.
 
 **Returns:** Promise<void>
 
-### set()
+## set()
 {: .d-inline-block }
 
 PRIVATE
@@ -128,7 +128,7 @@ PRIVATE
 
 **Returns:** [GuildMember](classes/GuildMember)
 
-### setDeafen(deafen, reason?)
+## setDeafen(deafen, reason?)
 Set this GuildMember's deafened status.
 
 | name | type | description | optional | default |
@@ -138,7 +138,7 @@ Set this GuildMember's deafened status.
 
 **Returns:** Promise<void>
 
-### setMute(mute, reason?)
+## setMute(mute, reason?)
 Set this GuildMember's muted status.
 
 | name | type | description | optional | default |
@@ -148,7 +148,7 @@ Set this GuildMember's muted status.
 
 **Returns:** Promise<void>
 
-### setNick(nickname, reason?)
+## setNick(nickname, reason?)
 Set this GuildMember's nickname.
 
 | name | type | description | optional | default |

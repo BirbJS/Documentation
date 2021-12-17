@@ -12,7 +12,7 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new RolePermissionsBlock(client, role, flags)
 ```
@@ -22,32 +22,32 @@ new RolePermissionsBlock(client, role, flags)
 | role | [Role](classes/Role) |  | false |  |
 | flags | Object |  | false |  |
 
-## Properties
-### bits
+# Properties
+## bits
 **Type:** [Permissions](classes/Permissions)
 
-### client
+## client
 **Type:** [Client](classes/Client)
 
-### role
+## role
 **Type:** [Role](classes/Role)
 
-## Methods
-### add(flags)
+# Methods
+## add(flags)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | flags | Object |  | false |  |
 
 **Returns:** [PermissionsBlock](classes/PermissionsBlock)
 
-### equals(check)
+## equals(check)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | check | number | [PermissionsBlock](classes/PermissionsBlock) | [Permissions](classes/Permissions) |  | false |  |
 
 **Returns:** boolean
 
-### grant(permissions, options)
+## grant(permissions, options)
 Grant the role the specified permissions.
 
 | name | type | description | optional | default |
@@ -57,7 +57,7 @@ Grant the role the specified permissions.
 
 **Returns:** Promise<[Role](classes/Role)>
 
-### has(flag, options)
+## has(flag, options)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | flag | number |  | false |  |
@@ -65,14 +65,14 @@ Grant the role the specified permissions.
 
 **Returns:** boolean
 
-### remove(flags)
+## remove(flags)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | flags | Object |  | false |  |
 
 **Returns:** [PermissionsBlock](classes/PermissionsBlock)
 
-### revoke(permissions, options)
+## revoke(permissions, options)
 Revoke the specified permissions from the Role.
 
 | name | type | description | optional | default |
@@ -82,7 +82,7 @@ Revoke the specified permissions from the Role.
 
 **Returns:** Promise<[Role](classes/Role)>
 
-### set(permissions, options)
+## set(permissions, options)
 Set the permissions for the Role.
 
 | name | type | description | optional | default |

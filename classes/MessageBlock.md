@@ -12,7 +12,7 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new MessageBlock(client, guild, options?)
 ```
@@ -22,10 +22,10 @@ new MessageBlock(client, guild, options?)
 | guild | [Guild](classes/Guild) |  | false |  |
 | options | any |  | true |  |
 
-## Properties
-### cache
+# Properties
+## cache
 **Type:** [Cache](classes/Cache)
 
-### client
+## client
 **Type:** [Client](classes/Client)
 

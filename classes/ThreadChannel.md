@@ -12,7 +12,7 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new ThreadChannel(client, data, options?)
 ```
@@ -22,14 +22,14 @@ new ThreadChannel(client, data, options?)
 | data | any |  | false |  |
 | options | Object |  | true |  |
 
-## Properties
-### client
+# Properties
+## client
 **Type:** [Client](classes/Client)
 
-### guild
+## guild
 **Type:** [Guild](classes/Guild)
 
-### id
+## id
 {: .d-inline-block }
 
 READONLY
@@ -37,7 +37,7 @@ READONLY
 
 **Type:** string
 
-### messages
+## messages
 {: .d-inline-block }
 
 READONLY
@@ -45,14 +45,14 @@ READONLY
 
 **Type:** [MessageBlock](classes/MessageBlock)
 
-### name
+## name
 **Type:** string
 
-### permissions
+## permissions
 **Type:** [ChannelPermissionsBlock](classes/ChannelPermissionsBlock)
 
-## Methods
-### build(data)
+# Methods
+## build(data)
 {: .d-inline-block }
 
 PRIVATE
@@ -64,7 +64,7 @@ PRIVATE
 
 **Returns:** void
 
-### init()
+## init()
 {: .d-inline-block }
 
 PROTECTED
@@ -72,7 +72,7 @@ PROTECTED
 
 **Returns:** undefined
 
-### modify(data, reason?)
+## modify(data, reason?)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | data | any |  | false |  |
@@ -80,14 +80,14 @@ PROTECTED
 
 **Returns:** Promise<[ThreadChannel](classes/ThreadChannel)>
 
-### send(message)
+## send(message)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | message | MessageContent |  | false |  |
 
 **Returns:** Promise<[Message](classes/Message)>
 
-### set()
+## set()
 {: .d-inline-block }
 
 PROTECTED
@@ -97,7 +97,7 @@ Set the ThreadChannel's data to the cache.
 
 **Returns:** [ThreadChannel](classes/ThreadChannel)
 
-### setOverwrites(overwrite)
+## setOverwrites(overwrite)
 {: .d-inline-block }
 
 PROTECTED

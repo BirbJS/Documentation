@@ -12,7 +12,7 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new ClientUser(client, data)
 ```
@@ -21,29 +21,29 @@ new ClientUser(client, data)
 | client | [Client](classes/Client) |  | false |  |
 | data | any |  | false |  |
 
-## Properties
-### accent_color
+# Properties
+## accent_color
 **Type:** Object | string
 
-### avatar
+## avatar
 **Type:** Object | string
 
-### banner
+## banner
 **Type:** Object | string
 
-### bot
+## bot
 **Type:** boolean
 
-### client
+## client
 **Type:** [Client](classes/Client)
 
-### discriminator
+## discriminator
 **Type:** string
 
-### flags
+## flags
 **Type:** Object | string
 
-### id
+## id
 {: .d-inline-block }
 
 READONLY
@@ -51,17 +51,17 @@ READONLY
 
 **Type:** string
 
-### system
+## system
 **Type:** boolean
 
-### tag
+## tag
 **Type:** string
 
-### username
+## username
 **Type:** string
 
-## Methods
-### build(data)
+# Methods
+## build(data)
 {: .d-inline-block }
 
 PRIVATE
@@ -73,21 +73,21 @@ PRIVATE
 
 **Returns:** void
 
-### isPartial()
+## isPartial()
 Whether or not this instance is a full or partial
 user. A partial user is a user that is only
 guaranteed to have `id` set on them.
 
 **Returns:** boolean
 
-### setName(name)
+## setName(name)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | name | string |  | false |  |
 
 **Returns:** Promise<void>
 
-### updatePresence(options)
+## updatePresence(options)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | options | Object |  | false |  |

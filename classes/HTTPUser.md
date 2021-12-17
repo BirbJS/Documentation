@@ -12,12 +12,12 @@ has_toc: true
 
 - TOC
 {:toc}
-## Constructor
+# Constructor
 ```js
 new HTTPUser()
 ```
-## Methods
-### createDM(client, userId)
+# Methods
+## createDM(client, userId)
 {: .d-inline-block }
 
 STATIC
@@ -30,7 +30,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### get(client, userId)
+## get(client, userId)
 {: .d-inline-block }
 
 STATIC
@@ -43,7 +43,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### getCurrent(client)
+## getCurrent(client)
 {: .d-inline-block }
 
 STATIC
@@ -55,7 +55,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### leaveGuild(client, guildId)
+## leaveGuild(client, guildId)
 {: .d-inline-block }
 
 STATIC
@@ -68,7 +68,7 @@ STATIC
 
 **Returns:** Promise<any>
 
-### modifyCurrent(client, data)
+## modifyCurrent(client, data)
 {: .d-inline-block }
 
 STATIC

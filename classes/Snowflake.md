@@ -16,6 +16,7 @@ has_toc: true
 ```js
 new Snowflake(epoch)
 ```
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | epoch | number | bigint | Date | the epoch to use

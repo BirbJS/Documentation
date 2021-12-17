@@ -16,6 +16,7 @@ has_toc: true
 ```js
 new HTTPGuild()
 ```
+
 # Methods
 ## addMember(client, guildId, userId, data)
 {: .d-inline-block }

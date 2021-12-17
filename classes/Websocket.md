@@ -17,6 +17,7 @@ Creates a websocket connection to a Discord gateway.
 ```js
 new Websocket(client, domain)
 ```
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](classes/Client) | The client. | false |  |

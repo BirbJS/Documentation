@@ -16,6 +16,7 @@ has_toc: true
 ```js
 new PermissionsBlock(client, flags)
 ```
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](classes/Client) |  | false |  |

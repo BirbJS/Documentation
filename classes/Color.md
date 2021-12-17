@@ -16,6 +16,7 @@ has_toc: true
 ```js
 new Color()
 ```
+
 # Methods
 ## hexToInt(hex)
 {: .d-inline-block }

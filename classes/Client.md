@@ -16,6 +16,7 @@ has_toc: true
 ```js
 new Client(options)
 ```
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | options | Object |  | false |  |

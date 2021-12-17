@@ -16,6 +16,7 @@ has_toc: true
 ```js
 new Request(client, method, path, body?)
 ```
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](classes/Client) |  | false |  |

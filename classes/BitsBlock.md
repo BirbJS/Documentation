@@ -16,6 +16,7 @@ has_toc: true
 ```js
 new BitsBlock(flags)
 ```
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | flags | Object |  | false |  |

@@ -16,6 +16,7 @@ has_toc: true
 ```js
 new EmbedFooter(text, iconUrl?)
 ```
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | text | string |  | false |  |

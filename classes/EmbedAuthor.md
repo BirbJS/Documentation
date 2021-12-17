@@ -16,6 +16,7 @@ has_toc: true
 ```js
 new EmbedAuthor(name, url?, iconUrl?)
 ```
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | name | string |  | false |  |

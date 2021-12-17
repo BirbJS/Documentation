@@ -19,16 +19,16 @@ new GuildMember(client, data, guild)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | data | any |  | false |  |
-| guild | [Guild](classes/Guild) |  | false |  |
+| guild | [Guild](/classes/Guild) |  | false |  |
 
 # Properties
 ## avatar
 **Type:** Object | string
 
 ## client
-**Type:** [Client](classes/Client)
+**Type:** [Client](/classes/Client)
 
 ## deafened
 **Type:** boolean
@@ -37,7 +37,7 @@ new GuildMember(client, data, guild)
 **Type:** boolean
 
 ## guild
-**Type:** [Guild](classes/Guild)
+**Type:** [Guild](/classes/Guild)
 
 ## id
 {: .d-inline-block }
@@ -63,17 +63,17 @@ READONLY
 **Type:** boolean
 
 ## roles
-**Type:** [GuildMemberRoleBlock](classes/GuildMemberRoleBlock)
+**Type:** [GuildMemberRoleBlock](/classes/GuildMemberRoleBlock)
 
 ## timedOutUntil
 **Type:** Object | Date
 
 ## user
-**Type:** Object | [BaseUser](classes/BaseUser)
+**Type:** Object | [BaseUser](/classes/BaseUser)
 
 # Methods
 ## _waitForFull()
-**Returns:** Promise<[GuildMember](classes/GuildMember)>
+**Returns:** Promise<[GuildMember](/classes/GuildMember)>
 
 ## ban(daysToPrune, reason?)
 Ban the GuildMember.
@@ -127,7 +127,7 @@ Modify the GuildMember.
 PRIVATE
 {: .label .label-red }
 
-**Returns:** [GuildMember](classes/GuildMember)
+**Returns:** [GuildMember](/classes/GuildMember)
 
 ## setDeafen(deafen, reason?)
 Set this GuildMember's deafened status.

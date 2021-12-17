@@ -19,19 +19,19 @@ new Role(client, data, guild)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | data | any |  | false |  |
-| guild | [Guild](classes/Guild) |  | false |  |
+| guild | [Guild](/classes/Guild) |  | false |  |
 
 # Properties
 ## client
-**Type:** [Client](classes/Client)
+**Type:** [Client](/classes/Client)
 
 ## color
 **Type:** Object | string
 
 ## guild
-**Type:** [Guild](classes/Guild)
+**Type:** [Guild](/classes/Guild)
 
 ## hoist
 **Type:** Object | boolean
@@ -57,7 +57,7 @@ READONLY
 **Type:** Object | string
 
 ## permissions
-**Type:** [RolePermissionsBlock](classes/RolePermissionsBlock)
+**Type:** [RolePermissionsBlock](/classes/RolePermissionsBlock)
 
 ## position
 **Type:** Object | number
@@ -95,7 +95,7 @@ Modify this Role.
 | data | any | The data to modify this Role with. | false |  |
 | reason | string |  | true |  |
 
-**Returns:** Promise<[Role](classes/Role)>
+**Returns:** Promise<[Role](/classes/Role)>
 
 ## move(velocity, reason?)
 Move this Role's position.
@@ -105,7 +105,7 @@ Move this Role's position.
 | velocity | number | The velocity to apply to this Role's position. Provide a positive integer to move this Role up, and a negative integer to move this Role down. | false |  |
 | reason | string |  | true |  |
 
-**Returns:** Promise<[Role](classes/Role)>
+**Returns:** Promise<[Role](/classes/Role)>
 
 ## set()
 {: .d-inline-block }
@@ -115,7 +115,7 @@ PRIVATE
 
 Set the Role's data to the cache.
 
-**Returns:** [Role](classes/Role)
+**Returns:** [Role](/classes/Role)
 
 ## setColor(color, reason?)
 Set the color of this Role.
@@ -125,7 +125,7 @@ Set the color of this Role.
 | color | string | number | The new color for this Role. Accepts HEX color codes (e.g. ffffff for white) or an RGB integer. | false |  |
 | reason | string |  | true |  |
 
-**Returns:** Promise<[Role](classes/Role)>
+**Returns:** Promise<[Role](/classes/Role)>
 
 ## setIsHoisted(hoisted, reason?)
 Set if this members of this Role should be hoisted
@@ -136,7 +136,7 @@ on the member list.
 | hoisted | boolean | Whether or not this Role should be hoisted on the member list. | false |  |
 | reason | string |  | true |  |
 
-**Returns:** Promise<[Role](classes/Role)>
+**Returns:** Promise<[Role](/classes/Role)>
 
 ## setIsMentionable(mentionable, reason?)
 Set if this Role can be mentioned.
@@ -146,7 +146,7 @@ Set if this Role can be mentioned.
 | mentionable | boolean | Whether or not this Role can be mentioned. | false |  |
 | reason | string |  | true |  |
 
-**Returns:** Promise<[Role](classes/Role)>
+**Returns:** Promise<[Role](/classes/Role)>
 
 ## setName(name, reason?)
 Set the name of this Role.
@@ -156,7 +156,7 @@ Set the name of this Role.
 | name | string | The name to set this Role to. | false |  |
 | reason | string |  | true |  |
 
-**Returns:** Promise<[Role](classes/Role)>
+**Returns:** Promise<[Role](/classes/Role)>
 
 ## setPosition(position, reason?)
 Set the position of this Role.
@@ -166,7 +166,7 @@ Set the position of this Role.
 | position | number | The position to set this Role to. | false |  |
 | reason | string |  | true |  |
 
-**Returns:** Promise<[Role](classes/Role)>
+**Returns:** Promise<[Role](/classes/Role)>
 
 ## toString()
 Convert this Role into a mention (string).
@@ -187,11 +187,11 @@ Handle updates from the Discord Gateway.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) | The client that received the update. | false |  |
+| client | [Client](/classes/Client) | The client that received the update. | false |  |
 | data | any | The data to handle. | false |  |
-| guild | [Guild](classes/Guild) | The Guild this Role belongs to. | false |  |
+| guild | [Guild](/classes/Guild) | The Guild this Role belongs to. | false |  |
 
-**Returns:** [Role](classes/Role)
+**Returns:** [Role](/classes/Role)
 
 ## toIdOnly(role)
 {: .d-inline-block }

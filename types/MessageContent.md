@@ -14,5 +14,5 @@ has_toc: true
 {:toc}
 ## Definition
 - string
-- [MessageEmbed](classes/MessageEmbed)
+- [MessageEmbed](/classes/MessageEmbed)
 - Object

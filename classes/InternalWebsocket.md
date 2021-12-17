@@ -19,7 +19,7 @@ new InternalWebsocket(client, domain)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | domain | string |  | false |  |
 
 # Properties
@@ -27,7 +27,7 @@ new InternalWebsocket(client, domain)
 **Type:** any
 
 ## client
-**Type:** [Client](classes/Client)
+**Type:** [Client](/classes/Client)
 
 ## domain
 **Type:** string
@@ -36,7 +36,7 @@ new InternalWebsocket(client, domain)
 **Type:** string
 
 ## status
-**Type:** [WebsocketStatus](enums/WebsocketStatus)
+**Type:** [WebsocketStatus](/enums/WebsocketStatus)
 
 ## url
 **Type:** URL

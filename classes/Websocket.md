@@ -20,7 +20,7 @@ new Websocket(client, domain)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) | The client. | false |  |
+| client | [Client](/classes/Client) | The client. | false |  |
 | domain | string | The domain to connect to. | false |  |
 
 # Properties
@@ -28,7 +28,7 @@ new Websocket(client, domain)
 **Type:** any
 
 ## client
-**Type:** [Client](classes/Client)
+**Type:** [Client](/classes/Client)
 
 ## doNotReconnect
 {: .d-inline-block }
@@ -107,7 +107,7 @@ PROTECTED
 **Type:** Object | string
 
 ## status
-**Type:** [WebsocketStatus](enums/WebsocketStatus)
+**Type:** [WebsocketStatus](/enums/WebsocketStatus)
 
 ## url
 **Type:** URL
@@ -296,7 +296,7 @@ Set the websocket's status.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| status | [WebsocketStatus](enums/WebsocketStatus) | The status to set. | false |  |
+| status | [WebsocketStatus](/enums/WebsocketStatus) | The status to set. | false |  |
 
 **Returns:** void
 

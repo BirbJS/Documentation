@@ -19,15 +19,15 @@ new UserBlock(client, options?)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | options | any |  | true |  |
 
 # Properties
 ## cache
-**Type:** [Cache](classes/Cache)
+**Type:** [Cache](/classes/Cache)
 
 ## client
-**Type:** [Client](classes/Client)
+**Type:** [Client](/classes/Client)
 
 # Methods
 ## fetch(userId, options?)
@@ -36,10 +36,10 @@ new UserBlock(client, options?)
 | userId | string |  | false |  |
 | options | Object |  | true |  |
 
-**Returns:** Promise<[User](classes/User)>
+**Returns:** Promise<[User](/classes/User)>
 
 ## fetchMe()
-**Returns:** Promise<[ClientUser](classes/ClientUser)>
+**Returns:** Promise<[ClientUser](/classes/ClientUser)>
 
 ## resolve(user, def?)
 | name | type | description | optional | default |
@@ -47,5 +47,5 @@ new UserBlock(client, options?)
 | user | UserResolvable |  | false |  |
 | def | any |  | true |  |
 
-**Returns:** Object | [User](classes/User)
+**Returns:** Object | [User](/classes/User)
 

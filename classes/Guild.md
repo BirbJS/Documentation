@@ -19,7 +19,7 @@ new Guild(client, data)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | data | any |  | false |  |
 
 # Properties
@@ -51,10 +51,10 @@ new Guild(client, data)
 **Type:** default
 
 ## client
-**Type:** [Client](classes/Client)
+**Type:** [Client](/classes/Client)
 
 ## defaultNotifications
-**Type:** [NotificationLevel](enums/NotificationLevel)
+**Type:** [NotificationLevel](/enums/NotificationLevel)
 
 ## description
 **Type:** Object | string
@@ -63,7 +63,7 @@ new Guild(client, data)
 **Type:** Object | string
 
 ## explicitContentFilter
-**Type:** [ExplicitContentFilterLevel](enums/ExplicitContentFilterLevel)
+**Type:** [ExplicitContentFilterLevel](/enums/ExplicitContentFilterLevel)
 
 ## icon
 **Type:** Object | string
@@ -89,10 +89,10 @@ READONLY
 **Type:** Object | number
 
 ## members
-**Type:** [GuildMemberBlock](classes/GuildMemberBlock)
+**Type:** [GuildMemberBlock](/classes/GuildMemberBlock)
 
 ## mfaLevel
-**Type:** [MFALevel](enums/MFALevel)
+**Type:** [MFALevel](/enums/MFALevel)
 
 ## name
 **Type:** string
@@ -101,7 +101,7 @@ READONLY
 **Type:** boolean
 
 ## nsfwLevel
-**Type:** [NSFWLevel](enums/NSFWLevel)
+**Type:** [NSFWLevel](/enums/NSFWLevel)
 
 ## ownerId
 **Type:** string
@@ -110,7 +110,7 @@ READONLY
 **Type:** Object | string
 
 ## roles
-**Type:** [RoleBlock](classes/RoleBlock)
+**Type:** [RoleBlock](/classes/RoleBlock)
 
 ## rulesChannelId
 **Type:** Object | string
@@ -125,7 +125,7 @@ READONLY
 **Type:** Object | string
 
 ## verificationLevel
-**Type:** [VerificationLevel](enums/VerificationLevel)
+**Type:** [VerificationLevel](/enums/VerificationLevel)
 
 # Methods
 ## build(data)
@@ -163,7 +163,7 @@ PRIVATE
 
 Set the Guild's data to the cache.
 
-**Returns:** [Guild](classes/Guild)
+**Returns:** [Guild](/classes/Guild)
 
 ## setAfkChannel(channel, reason?)
 Set this Guild's AFK timeout channel.
@@ -200,7 +200,7 @@ Change this Guild's default notifications level.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| level | [NotificationLevel](enums/NotificationLevel) | The new notification level for the Guild. | false |  |
+| level | [NotificationLevel](/enums/NotificationLevel) | The new notification level for the Guild. | false |  |
 | reason | string |  | true |  |
 
 **Returns:** Promise<void>
@@ -220,7 +220,7 @@ Change this Guild's explicit content filter level.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| level | [ExplicitContentFilterLevel](enums/ExplicitContentFilterLevel) | The new explicit content filter level for the Guild. | false |  |
+| level | [ExplicitContentFilterLevel](/enums/ExplicitContentFilterLevel) | The new explicit content filter level for the Guild. | false |  |
 | reason | string |  | true |  |
 
 **Returns:** Promise<void>
@@ -280,7 +280,7 @@ Change this Guild's verification level.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| level | [VerificationLevel](enums/VerificationLevel) | The new verification level for the Guild. | false |  |
+| level | [VerificationLevel](/enums/VerificationLevel) | The new verification level for the Guild. | false |  |
 | reason | string |  | true |  |
 
 **Returns:** Promise<void>

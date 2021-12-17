@@ -19,7 +19,7 @@ new User(client, data)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | data | any |  | false |  |
 
 # Properties
@@ -36,7 +36,7 @@ new User(client, data)
 **Type:** boolean
 
 ## client
-**Type:** [Client](classes/Client)
+**Type:** [Client](/classes/Client)
 
 ## discriminator
 **Type:** string
@@ -84,7 +84,7 @@ Fetch this user again.
 |:-----|:-----|:------------|:---------|:--------|
 | options | Object |  | true |  |
 
-**Returns:** Promise<[User](classes/User)>
+**Returns:** Promise<[User](/classes/User)>
 
 ## getAvatar(options?)
 Generate a link to the user's avatar.
@@ -123,7 +123,7 @@ Send a message to the user.
 |:-----|:-----|:------------|:---------|:--------|
 | content | string |  | false |  |
 
-**Returns:** Promise<[Message](classes/Message)>
+**Returns:** Promise<[Message](/classes/Message)>
 
 ## set()
 {: .d-inline-block }
@@ -133,7 +133,7 @@ PRIVATE
 
 Set the User's data to the cache.
 
-**Returns:** [User](classes/User)
+**Returns:** [User](/classes/User)
 
 ## toString()
 Convert this User into a mention (string).
@@ -155,10 +155,10 @@ PartialUser instance to avoid fetching from the API.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) | The client to use. | false |  |
+| client | [Client](/classes/Client) | The client to use. | false |  |
 | data | any | The data on the user (`id` is required). | false |  |
 
-**Returns:** [User](classes/User) | [PartialUser](classes/PartialUser)
+**Returns:** [User](/classes/User) | [PartialUser](/classes/PartialUser)
 
 ## toIdOnly(user)
 {: .d-inline-block }

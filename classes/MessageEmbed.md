@@ -19,7 +19,7 @@ new MessageEmbed()
 
 # Properties
 ## author
-**Type:** Object | [EmbedAuthor](classes/EmbedAuthor)
+**Type:** Object | [EmbedAuthor](/classes/EmbedAuthor)
 
 ## color
 **Type:** Object | string
@@ -31,13 +31,13 @@ new MessageEmbed()
 **Type:** Object
 
 ## footer
-**Type:** Object | [EmbedFooter](classes/EmbedFooter)
+**Type:** Object | [EmbedFooter](/classes/EmbedFooter)
 
 ## image
-**Type:** Object | [EmbedMedia](classes/EmbedMedia)
+**Type:** Object | [EmbedMedia](/classes/EmbedMedia)
 
 ## thumbnail
-**Type:** Object | [EmbedMedia](classes/EmbedMedia)
+**Type:** Object | [EmbedMedia](/classes/EmbedMedia)
 
 ## timestamp
 **Type:** Object | Date
@@ -49,7 +49,7 @@ new MessageEmbed()
 **Type:** Object | string
 
 ## video
-**Type:** Object | [EmbedMedia](classes/EmbedMedia)
+**Type:** Object | [EmbedMedia](/classes/EmbedMedia)
 
 # Methods
 ## addField(name, value, inline?)
@@ -61,7 +61,7 @@ Add a field to this embed.
 | value | string | The field's value. | false |  |
 | inline | boolean |  | true |  |
 
-**Returns:** [MessageEmbed](classes/MessageEmbed)
+**Returns:** [MessageEmbed](/classes/MessageEmbed)
 
 ## addFields(fields)
 Add multiple fields to this embed.
@@ -70,7 +70,7 @@ Add multiple fields to this embed.
 |:-----|:-----|:------------|:---------|:--------|
 | fields | Object | The fields to add to this embed. | false |  |
 
-**Returns:** [MessageEmbed](classes/MessageEmbed)
+**Returns:** [MessageEmbed](/classes/MessageEmbed)
 
 ## format()
 Format this class into an API-acceptable object.
@@ -84,7 +84,7 @@ Remove a field from this embed.
 |:-----|:-----|:------------|:---------|:--------|
 | index | number | The array index of the field to remove. | false |  |
 
-**Returns:** [MessageEmbed](classes/MessageEmbed)
+**Returns:** [MessageEmbed](/classes/MessageEmbed)
 
 ## setAuthor(name, url?, iconUrl?)
 Set the author of this embed.
@@ -95,7 +95,7 @@ Set the author of this embed.
 | url | string |  | true |  |
 | iconUrl | string |  | true |  |
 
-**Returns:** [MessageEmbed](classes/MessageEmbed)
+**Returns:** [MessageEmbed](/classes/MessageEmbed)
 
 ## setColor(color)
 Set the HEX color of this embed.
@@ -104,7 +104,7 @@ Set the HEX color of this embed.
 |:-----|:-----|:------------|:---------|:--------|
 | color | string | The new HEX color of this embed. | false |  |
 
-**Returns:** [MessageEmbed](classes/MessageEmbed)
+**Returns:** [MessageEmbed](/classes/MessageEmbed)
 
 ## setDescription(description)
 Set the description of this embed.
@@ -113,7 +113,7 @@ Set the description of this embed.
 |:-----|:-----|:------------|:---------|:--------|
 | description | string | The new description of this embed. | false |  |
 
-**Returns:** [MessageEmbed](classes/MessageEmbed)
+**Returns:** [MessageEmbed](/classes/MessageEmbed)
 
 ## setFields(fields)
 Set the fields of this embed.
@@ -122,7 +122,7 @@ Set the fields of this embed.
 |:-----|:-----|:------------|:---------|:--------|
 | fields | Object | The new fields of this embed. | false |  |
 
-**Returns:** [MessageEmbed](classes/MessageEmbed)
+**Returns:** [MessageEmbed](/classes/MessageEmbed)
 
 ## setFooter(text, iconUrl?)
 Set the footer of this embed.
@@ -132,7 +132,7 @@ Set the footer of this embed.
 | text | string | The text of the footer. | false |  |
 | iconUrl | string |  | true |  |
 
-**Returns:** [MessageEmbed](classes/MessageEmbed)
+**Returns:** [MessageEmbed](/classes/MessageEmbed)
 
 ## setImage(url, height?, width?)
 Set the image for this embed.
@@ -143,7 +143,7 @@ Set the image for this embed.
 | height | number |  | true |  |
 | width | number |  | true |  |
 
-**Returns:** [MessageEmbed](classes/MessageEmbed)
+**Returns:** [MessageEmbed](/classes/MessageEmbed)
 
 ## setThumbnail(url, height?, width?)
 Set the thumbnail for this embed.
@@ -154,7 +154,7 @@ Set the thumbnail for this embed.
 | height | number |  | true |  |
 | width | number |  | true |  |
 
-**Returns:** [MessageEmbed](classes/MessageEmbed)
+**Returns:** [MessageEmbed](/classes/MessageEmbed)
 
 ## setTimestamp(timestamp)
 Set the timestamp of this embed.
@@ -163,7 +163,7 @@ Set the timestamp of this embed.
 |:-----|:-----|:------------|:---------|:--------|
 | timestamp | number | Date | The new timestamp of this embed. | false |  |
 
-**Returns:** [MessageEmbed](classes/MessageEmbed)
+**Returns:** [MessageEmbed](/classes/MessageEmbed)
 
 ## setTitle(title)
 Set the title of this embed.
@@ -172,7 +172,7 @@ Set the title of this embed.
 |:-----|:-----|:------------|:---------|:--------|
 | title | string | The new title of this embed. | false |  |
 
-**Returns:** [MessageEmbed](classes/MessageEmbed)
+**Returns:** [MessageEmbed](/classes/MessageEmbed)
 
 ## setUrl(url)
 Set the URL of this embed.
@@ -181,7 +181,7 @@ Set the URL of this embed.
 |:-----|:-----|:------------|:---------|:--------|
 | url | string | The new URL of this embed. | false |  |
 
-**Returns:** [MessageEmbed](classes/MessageEmbed)
+**Returns:** [MessageEmbed](/classes/MessageEmbed)
 
 ## setVideo(url, height?, width?)
 Set the video for this embed.
@@ -192,5 +192,5 @@ Set the video for this embed.
 | height | number |  | true |  |
 | width | number |  | true |  |
 
-**Returns:** [MessageEmbed](classes/MessageEmbed)
+**Returns:** [MessageEmbed](/classes/MessageEmbed)
 

@@ -19,14 +19,14 @@ new MessageBlock(client, guild, options?)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
-| guild | [Guild](classes/Guild) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
+| guild | [Guild](/classes/Guild) |  | false |  |
 | options | any |  | true |  |
 
 # Properties
 ## cache
-**Type:** [Cache](classes/Cache)
+**Type:** [Cache](/classes/Cache)
 
 ## client
-**Type:** [Client](classes/Client)
+**Type:** [Client](/classes/Client)
 

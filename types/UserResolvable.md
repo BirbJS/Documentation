@@ -13,7 +13,7 @@ has_toc: true
 - TOC
 {:toc}
 ## Definition
-- [User](classes/User)
-- [ClientUser](classes/ClientUser)
-- [BaseUser](classes/BaseUser)
+- [User](/classes/User)
+- [ClientUser](/classes/ClientUser)
+- [BaseUser](/classes/BaseUser)
 - string

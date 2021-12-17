@@ -26,7 +26,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 | userId | string |  | false |  |
 | data | any |  | false |  |
@@ -41,7 +41,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 | userId | string |  | false |  |
 | roleId | string |  | false |  |
@@ -58,7 +58,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 | data | any |  | false |  |
 | reason | string |  | true |  |
@@ -73,7 +73,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 | userId | string |  | false |  |
 | data | any |  | false |  |
@@ -89,7 +89,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 | data | any |  | false |  |
 | reason | string |  | true |  |
@@ -104,7 +104,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 | data | any |  | false |  |
 | reason | string |  | true |  |
@@ -119,7 +119,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 
 **Returns:** Promise<any>
@@ -132,7 +132,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 | integrationId | string |  | false |  |
 | reason | string |  | true |  |
@@ -147,7 +147,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 | roleId | string |  | false |  |
 | reason | string |  | true |  |
@@ -162,7 +162,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 
 **Returns:** Promise<any>
@@ -175,7 +175,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 
 **Returns:** Promise<any>
@@ -188,7 +188,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 | userId | string |  | false |  |
 
@@ -202,7 +202,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 
 **Returns:** Promise<any>
@@ -215,7 +215,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 
 **Returns:** Promise<any>
@@ -228,7 +228,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 
 **Returns:** Promise<any>
@@ -241,7 +241,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 
 **Returns:** Promise<any>
@@ -254,7 +254,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 | userId | string |  | false |  |
 
@@ -268,7 +268,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 
 **Returns:** Promise<any>
@@ -281,7 +281,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 
 **Returns:** Promise<any>
@@ -294,7 +294,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 | days | number |  | false |  |
 | includeRoles | string |  | true |  |
@@ -309,7 +309,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 
 **Returns:** Promise<any>
@@ -322,7 +322,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 
 **Returns:** Promise<any>
@@ -335,7 +335,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 
 **Returns:** Promise<any>
@@ -348,7 +348,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 
 **Returns:** Promise<any>
@@ -361,7 +361,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 
 **Returns:** Promise<any>
@@ -374,7 +374,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 
 **Returns:** Promise<any>
@@ -387,7 +387,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 | data | any |  | false |  |
 | reason | string |  | true |  |
@@ -402,7 +402,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 | data | any |  | false |  |
 | reason | string |  | true |  |
@@ -417,7 +417,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 | data | any |  | false |  |
 | reason | string |  | true |  |
@@ -432,7 +432,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 | userId | string |  | false |  |
 | data | any |  | false |  |
@@ -448,7 +448,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 | roleId | string |  | false |  |
 | data | any |  | false |  |
@@ -464,7 +464,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 | data | any |  | false |  |
 | reason | string |  | true |  |
@@ -479,7 +479,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 | userId | string |  | false |  |
 | data | any |  | false |  |
@@ -495,7 +495,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 | data | any |  | false |  |
 | reason | string |  | true |  |
@@ -510,7 +510,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 | data | any |  | false |  |
 | reason | string |  | true |  |
@@ -525,7 +525,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 | userId | string |  | false |  |
 | reason | string |  | true |  |
@@ -540,7 +540,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 | userId | string |  | false |  |
 | reason | string |  | true |  |
@@ -555,7 +555,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 | userId | string |  | false |  |
 | roleId | string |  | false |  |
@@ -571,7 +571,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](classes/Client) |  | false |  |
+| client | [Client](/classes/Client) |  | false |  |
 | guildId | string |  | false |  |
 | query | string |  | false |  |
 

@@ -12,6 +12,7 @@ has_toc: true
 
 - TOC
 {:toc}
+Permissions objects store permission data.
 # Constructor
 ```js
 new Permissions(flags)
@@ -19,10 +20,13 @@ new Permissions(flags)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| flags | Object |  | false |  |
+| flags | Object | The permission flags.
+ | false | *none* |
 
 # Properties
 ## flags
+The flags of the bitfield.
+
 **Type:** number
 
 ## FLAGS
@@ -30,6 +34,8 @@ new Permissions(flags)
 
 STATIC
 {: .label .label-blue }
+
+The permission flags available.
 
 **Type:** Object
 
@@ -39,7 +45,7 @@ Adds a flag (bit) to the block.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| flags | Object | The flags to add. | false |  |
+| flags | Object | The flags to add. | false | *none* |
 
 **Returns:** [BitsBlock](/classes/BitsBlock)
 
@@ -54,14 +60,20 @@ Check if a flag (bit) is in the block.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| flag | number | The flag to check. | false |  |
+| flag | number | The flag to check. | false | *none* |
 
 **Returns:** boolean
 
 ## hasPermission(flag)
+Check whether or not the permission flags exist on
+this Permissions object, whilst taking the
+administrator permission into account. If you want
+to ignore the administrator permission, use the
+`has` method instead.
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| flag | number |  | false |  |
+| flag | number | The permission flag to check for. | false | *none* |
 
 **Returns:** boolean
 
@@ -75,7 +87,7 @@ Removes a flag (bit) from the block.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| flags | Object | The flags to remove. | false |  |
+| flags | Object | The flags to remove. | false | *none* |
 
 **Returns:** [BitsBlock](/classes/BitsBlock)
 
@@ -84,7 +96,7 @@ Sets the flags of the block.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| flags | number | The flags to set. | false |  |
+| flags | number | The flags to set. | false | *none* |
 
 **Returns:** [BitsBlock](/classes/BitsBlock)
 

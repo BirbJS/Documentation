@@ -12,6 +12,7 @@ has_toc: true
 
 - TOC
 {:toc}
+A Channel represents any channel on Discord.
 # Constructor
 ```js
 new Channel(client, data)
@@ -19,11 +20,14 @@ new Channel(client, data)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](/classes/Client) |  | false |  |
-| data | any |  | false |  |
+| client | [Client](/classes/Client) | The client this channel belongs to. | false | *none* |
+| data | any | The data of this channel.
+ | false | *none* |
 
 # Properties
 ## client
+The client this channel belongs to.
+
 **Type:** [Client](/classes/Client)
 
 ## id
@@ -32,9 +36,13 @@ new Channel(client, data)
 READONLY
 {: .label .label-purple }
 
+The ID of this channel.
+
 **Type:** string
 
 ## name
+The name of this channel.
+
 **Type:** string
 
 # Methods
@@ -44,5 +52,7 @@ READONLY
 PROTECTED
 {: .label .label-red }
 
-**Returns:** undefined | Object
+Initialize the data of this channel.
+
+**Returns:** any
 

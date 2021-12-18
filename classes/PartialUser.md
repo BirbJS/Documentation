@@ -12,6 +12,11 @@ has_toc: true
 
 - TOC
 {:toc}
+**Warning:** Only the `id` property is guaranteed to be
+set. Run the `fetch()` method to retrieve the entirety
+of the User from the Discord API. If the username and/or
+discriminator are not provided, they will be set to
+`Unknown` and `0000` respectively.
 # Constructor
 ```js
 new PartialUser(client, data)
@@ -19,8 +24,9 @@ new PartialUser(client, data)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](/classes/Client) |  | false |  |
-| data | any |  | false |  |
+| client | [Client](/classes/Client) | The client this user belongs to. | false | *none* |
+| data | any | The data of this user.
+ | false | *none* |
 
 # Properties
 ## client
@@ -44,24 +50,12 @@ READONLY
 **Type:** string
 
 # Methods
-## build(data)
-{: .d-inline-block }
-
-PRIVATE
-{: .label .label-red }
-
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| data | any |  | false |  |
-
-**Returns:** void
-
 ## fetch(options?)
 Fetch (and resolve) this PartialUser into a User.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| options | Object |  | true |  |
+| options | Object |   | true | *none* |
 
 **Returns:** Promise<[User](/classes/User)>
 

@@ -12,6 +12,8 @@ has_toc: true
 
 - TOC
 {:toc}
+A permission overwrite represents a user or role
+overwrite for a channel.
 # Constructor
 ```js
 new PermissionOverwrite(client, allow, deny)
@@ -19,32 +21,43 @@ new PermissionOverwrite(client, allow, deny)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](/classes/Client) |  | false |  |
-| allow | number |  | false | 0 |
-| deny | number |  | false | 0 |
+| client | [Client](/classes/Client) | The client this overwrite belongs to. | false | *none* |
+| allow | number | The allowed permissions. | false | 0 |
+| deny | number | The denied permissions.
+ | false | 0 |
 
 # Properties
 ## allow
+The allowed permissions.
+
 **Type:** [PermissionsBlock](/classes/PermissionsBlock)
 
 ## client
+The client this overwrite belongs to.
+
 **Type:** [Client](/classes/Client)
 
 ## deny
+The denied permissions.
+
 **Type:** [PermissionsBlock](/classes/PermissionsBlock)
 
 # Methods
 ## grant(flags)
+Grant the specified permissions.
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| flags | Object |  | false |  |
+| flags | Object | The flags to grant. | false | *none* |
 
 **Returns:** [PermissionOverwrite](/classes/PermissionOverwrite)
 
 ## revoke(flags)
+Revoke the specified permissions.
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| flags | Object |  | false |  |
+| flags | Object | The flags to revoke. | false | *none* |
 
 **Returns:** [PermissionOverwrite](/classes/PermissionOverwrite)
 

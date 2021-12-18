@@ -12,6 +12,10 @@ has_toc: true
 
 - TOC
 {:toc}
+Intents are used by Discord to selectively send the
+client data, whilst not sending data that isn't
+needed. Intents are required to be set to use
+Birb.JS.
 # Constructor
 ```js
 new Intents(flags)
@@ -19,10 +23,13 @@ new Intents(flags)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| flags | Object |  | false |  |
+| flags | Object | The flags to set.
+ | false | *none* |
 
 # Properties
 ## flags
+The flags of the bitfield.
+
 **Type:** number
 
 ## FLAGS
@@ -30,6 +37,8 @@ new Intents(flags)
 
 STATIC
 {: .label .label-blue }
+
+The available Intents.
 
 **Type:** Object
 
@@ -39,7 +48,7 @@ Adds a flag (bit) to the block.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| flags | Object | The flags to add. | false |  |
+| flags | Object | The flags to add. | false | *none* |
 
 **Returns:** [BitsBlock](/classes/BitsBlock)
 
@@ -54,7 +63,7 @@ Check if a flag (bit) is in the block.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| flag | number | The flag to check. | false |  |
+| flag | number | The flag to check. | false | *none* |
 
 **Returns:** boolean
 
@@ -68,7 +77,7 @@ Removes a flag (bit) from the block.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| flags | Object | The flags to remove. | false |  |
+| flags | Object | The flags to remove. | false | *none* |
 
 **Returns:** [BitsBlock](/classes/BitsBlock)
 
@@ -77,7 +86,7 @@ Sets the flags of the block.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| flags | number | The flags to set. | false |  |
+| flags | number | The flags to set. | false | *none* |
 
 **Returns:** [BitsBlock](/classes/BitsBlock)
 

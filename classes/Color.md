@@ -28,7 +28,7 @@ Convert a hex string to an integer.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| hex | string | HEX color value as a string. | false |  |
+| hex | string | HEX color value as a string. | false | *none* |
 
 **Returns:** number
 
@@ -42,7 +42,7 @@ Convert an integer to a hex string.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| int | number | HEX color value as an integer. | false |  |
+| int | number | HEX color value as an integer. | false | *none* |
 
 **Returns:** string
 

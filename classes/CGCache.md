@@ -12,6 +12,7 @@ has_toc: true
 
 - TOC
 {:toc}
+Creates a new CCache instance.
 # Constructor
 ```js
 new CGCache(client, guild, options?)
@@ -19,15 +20,19 @@ new CGCache(client, guild, options?)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](/classes/Client) |  | false |  |
-| guild | [Guild](/classes/Guild) |  | false |  |
-| options | Object |  | true |  |
+| client | [Client](/classes/Client) | The client instance. | false | *none* |
+| guild | [Guild](/classes/Guild) | The guild instance. | false | *none* |
+| options | Object |   | true | *none* |
 
 # Properties
 ## client
+The client that initialized the cache.
+
 **Type:** [Client](/classes/Client)
 
 ## guild
+The guild instance this cache is for.
+
 **Type:** [Guild](/classes/Guild)
 
 # Methods
@@ -59,7 +64,7 @@ in the cache, an empty array is returned.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| fn | Object |  | false |  |
+| fn | Object |   | false | *none* |
 
 **Returns:** Object
 
@@ -69,7 +74,7 @@ in the cache, `null` is returned.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| fn | Object |  | false |  |
+| fn | Object |   | false | *none* |
 
 **Returns:** any
 
@@ -79,7 +84,7 @@ in the cache, `null` is returned.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| key | string | The key to get the value for. | false |  |
+| key | string | The key to get the value for. | false | *none* |
 
 **Returns:** any
 
@@ -88,7 +93,7 @@ Check if the cache contains a key.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| key | string | The key of the entry. | false |  |
+| key | string | The key of the entry. | false | *none* |
 
 **Returns:** boolean
 
@@ -99,14 +104,17 @@ unless you know **EXACTLY** what you're doing.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| options | any |  | true |  |
+| options | any |   | true | *none* |
 
 **Returns:** void
 
 ## rebuild(data)
+A method called to rebuild data that has been
+stripped.
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| data | any |  | false |  |
+| data | any |   | false | *none* |
 
 **Returns:** any
 
@@ -115,7 +123,7 @@ Remove a key from the cache.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| key | string | The key of the entry. | false |  |
+| key | string | The key of the entry. | false | *none* |
 
 **Returns:** [Cache](/classes/Cache)
 
@@ -124,9 +132,9 @@ Set a value in the cache.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| key | string | The key of the entry. | false |  |
-| value | any | The value to set it to. | false |  |
-| options | any |  | true |  |
+| key | string | The key of the entry. | false | *none* |
+| value | any | The value to set it to. | false | *none* |
+| options | any |   | true | *none* |
 
 **Returns:** [Cache](/classes/Cache)
 
@@ -136,9 +144,12 @@ Get the amount of entries in the cache.
 **Returns:** number
 
 ## strip(data)
+A method called to strip unwanted properties from an
+entry before it is added to the cache.
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| data | any |  | false |  |
+| data | any |   | false | *none* |
 
 **Returns:** any
 

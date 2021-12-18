@@ -12,6 +12,10 @@ has_toc: true
 
 - TOC
 {:toc}
+The MessageEmbed class represents a message embed on
+Discord. A message embed is a rich embed that can
+include a lot of formatted data (they can also have
+their color set which is quite nice).
 # Constructor
 ```js
 new MessageEmbed()
@@ -19,36 +23,58 @@ new MessageEmbed()
 
 # Properties
 ## author
+The author of this embed.
+
 **Type:** Object | [EmbedAuthor](/classes/EmbedAuthor)
 
 ## color
+The color of this embed as a hex string.
+
 **Type:** Object | string
 
 ## description
+The description of this embed.
+
 **Type:** Object | string
 
 ## fields
+This embed's fields.
+
 **Type:** Object
 
 ## footer
+The footer of this embed.
+
 **Type:** Object | [EmbedFooter](/classes/EmbedFooter)
 
 ## image
+The image in this embed.
+
 **Type:** Object | [EmbedMedia](/classes/EmbedMedia)
 
 ## thumbnail
+The thumbnail for this embed.
+
 **Type:** Object | [EmbedMedia](/classes/EmbedMedia)
 
 ## timestamp
+The timestamp of this embed (shows in the footer).
+
 **Type:** Object | Date
 
 ## title
+The title of this embed.
+
 **Type:** Object | string
 
 ## url
+The URL of this embed (makes the title clickable).
+
 **Type:** Object | string
 
 ## video
+The video for this embed (usually not settable).
+
 **Type:** Object | [EmbedMedia](/classes/EmbedMedia)
 
 # Methods
@@ -57,9 +83,9 @@ Add a field to this embed.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| name | string | The name of the field. | false |  |
-| value | string | The field's value. | false |  |
-| inline | boolean |  | true |  |
+| name | string | The name of the field. | false | *none* |
+| value | string | The field's value. | false | *none* |
+| inline | boolean |   | true | *none* |
 
 **Returns:** [MessageEmbed](/classes/MessageEmbed)
 
@@ -68,21 +94,21 @@ Add multiple fields to this embed.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| fields | Object | The fields to add to this embed. | false |  |
+| fields | Object | The fields to add to this embed. | false | *none* |
 
 **Returns:** [MessageEmbed](/classes/MessageEmbed)
 
 ## format()
 Format this class into an API-acceptable object.
 
-**Returns:** Object
+**Returns:** any
 
 ## removeField(index)
 Remove a field from this embed.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| index | number | The array index of the field to remove. | false |  |
+| index | number | The array index of the field to remove. | false | *none* |
 
 **Returns:** [MessageEmbed](/classes/MessageEmbed)
 
@@ -91,9 +117,9 @@ Set the author of this embed.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| name | string | The name of the author. | false |  |
-| url | string |  | true |  |
-| iconUrl | string |  | true |  |
+| name | string | The name of the author. | false | *none* |
+| url | string |   | true | *none* |
+| iconUrl | string |   | true | *none* |
 
 **Returns:** [MessageEmbed](/classes/MessageEmbed)
 
@@ -102,7 +128,7 @@ Set the HEX color of this embed.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| color | string | The new HEX color of this embed. | false |  |
+| color | string | The new HEX color of this embed. | false | *none* |
 
 **Returns:** [MessageEmbed](/classes/MessageEmbed)
 
@@ -111,7 +137,7 @@ Set the description of this embed.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| description | string | The new description of this embed. | false |  |
+| description | string | The new description of this embed. | false | *none* |
 
 **Returns:** [MessageEmbed](/classes/MessageEmbed)
 
@@ -120,7 +146,7 @@ Set the fields of this embed.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| fields | Object | The new fields of this embed. | false |  |
+| fields | Object | The new fields of this embed. | false | *none* |
 
 **Returns:** [MessageEmbed](/classes/MessageEmbed)
 
@@ -129,8 +155,8 @@ Set the footer of this embed.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| text | string | The text of the footer. | false |  |
-| iconUrl | string |  | true |  |
+| text | string | The text of the footer. | false | *none* |
+| iconUrl | string |   | true | *none* |
 
 **Returns:** [MessageEmbed](/classes/MessageEmbed)
 
@@ -139,9 +165,9 @@ Set the image for this embed.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| url | string | A public-facing URL to an image for the embed. | false |  |
-| height | number |  | true |  |
-| width | number |  | true |  |
+| url | string | A public-facing URL to an image for the embed. | false | *none* |
+| height | number |   | true | *none* |
+| width | number |   | true | *none* |
 
 **Returns:** [MessageEmbed](/classes/MessageEmbed)
 
@@ -150,9 +176,9 @@ Set the thumbnail for this embed.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| url | string | A public-facing URL to an image for the embed. | false |  |
-| height | number |  | true |  |
-| width | number |  | true |  |
+| url | string | A public-facing URL to an image for the embed. | false | *none* |
+| height | number |   | true | *none* |
+| width | number |   | true | *none* |
 
 **Returns:** [MessageEmbed](/classes/MessageEmbed)
 
@@ -161,7 +187,7 @@ Set the timestamp of this embed.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| timestamp | number | Date | The new timestamp of this embed. | false |  |
+| timestamp | number | Date | The new timestamp of this embed. | false | *none* |
 
 **Returns:** [MessageEmbed](/classes/MessageEmbed)
 
@@ -170,7 +196,7 @@ Set the title of this embed.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| title | string | The new title of this embed. | false |  |
+| title | string | The new title of this embed. | false | *none* |
 
 **Returns:** [MessageEmbed](/classes/MessageEmbed)
 
@@ -179,7 +205,7 @@ Set the URL of this embed.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| url | string | The new URL of this embed. | false |  |
+| url | string | The new URL of this embed. | false | *none* |
 
 **Returns:** [MessageEmbed](/classes/MessageEmbed)
 
@@ -188,9 +214,9 @@ Set the video for this embed.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| url | string | A public-facing URL to a video for the embed. | false |  |
-| height | number |  | true |  |
-| width | number |  | true |  |
+| url | string | A public-facing URL to a video for the embed. | false | *none* |
+| height | number |   | true | *none* |
+| width | number |   | true | *none* |
 
 **Returns:** [MessageEmbed](/classes/MessageEmbed)
 

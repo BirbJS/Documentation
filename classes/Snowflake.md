@@ -20,17 +20,9 @@ new Snowflake(epoch)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | epoch | number | bigint | Date | the epoch to use
- | false |  |
+ | false | *none* |
 
 # Properties
-## #private
-{: .d-inline-block }
-
-PRIVATE
-{: .label .label-red }
-
-**Type:** any
-
 ## decode
 **Type:** Object
 
@@ -40,7 +32,7 @@ Deconstructs a snowflake given a snowflake ID
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| id | string | bigint | the snowflake to deconstruct | false |  |
+| id | string | bigint | the snowflake to deconstruct | false | *none* |
 
 **Returns:** DeconstructedSnowflake
 
@@ -51,7 +43,7 @@ Generates a snowflake given an epoch and optionally a timestamp
 |:-----|:-----|:------------|:---------|:--------|
 | options | SnowflakeGenerateOptions | options to pass into the generator, see {@link SnowflakeGenerateOptions}
 
-**note** when `increment` is not provided it defaults to the private `increment` of the instance | true |  |
+**note** when `increment` is not provided it defaults to the private `increment` of the instance | true | *none* |
 
 **Returns:** bigint
 
@@ -60,7 +52,7 @@ Retrieves the timestamp field's value from a snowflake.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| id | string | bigint | The snowflake to get the timestamp value from. | false |  |
+| id | string | bigint | The snowflake to get the timestamp value from. | false | *none* |
 
 **Returns:** number
 

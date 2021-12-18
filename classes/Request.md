@@ -19,10 +19,10 @@ new Request(client, method, path, body?)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](/classes/Client) |  | false |  |
-| method | HTTPMethod |  | false |  |
-| path | string |  | false |  |
-| body | any |  | true |  |
+| client | [Client](/classes/Client) |   | false | *none* |
+| method | HTTPMethod |   | false | *none* |
+| path | string |   | false | *none* |
+| body | any |   | true | *none* |
 
 # Properties
 ## body
@@ -50,7 +50,7 @@ new Request(client, method, path, body?)
 ## make(files?)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| files | Object |  | true |  |
+| files | Object |   | true | *none* |
 
 **Returns:** Promise<any>
 

@@ -12,6 +12,10 @@ has_toc: true
 
 - TOC
 {:toc}
+The client is the entrypoint to Birb.JS. If you'd
+like to learn how to use Birb.JS, head over to our
+[docs](https://birb.js.org) or have a quick look at
+our [examples](https://birb.js.org/start).
 # Constructor
 ```js
 new Client(options)
@@ -19,7 +23,7 @@ new Client(options)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| options | Object |  | false |  |
+| options | Object | The client options. | false | *none* |
 
 # Properties
 ## api
@@ -28,60 +32,56 @@ new Client(options)
 READONLY
 {: .label .label-purple }
 
+Direct access to the client's rest API endpoints.
+
 **Type:** Object
 
 ## channels
+The client's channel cache.
+
 **Type:** [ChannelBlock](/classes/ChannelBlock)
 
 ## devtools
-{: .d-inline-block }
-
-PRIVATE
-{: .label .label-red }
-
-**Type:** any
-
-## events
-{: .d-inline-block }
-
-PRIVATE
-{: .label .label-red }
+The devtools instance for this client. Only set if
+the `@birbjs/devtools` package is installed.
 
 **Type:** any
 
 ## guilds
+The client's guild cache.
+
 **Type:** [GuildBlock](/classes/GuildBlock)
 
 ## me
-<<<<<<< Updated upstream
-**Type:** Object | [ClientUser](/classes/ClientUser)
-=======
 The client's Discord user.
 
 **Type:** Object or [ClientUser](/classes/ClientUser)
->>>>>>> Stashed changes
 
 ## options
+The client's options.
+
 **Type:** Object
 
 ## shard
+The client's Shard if sharding is enabled. See the
+[docs](https://birb.js.org/addons/sharding) for more
+information.
+
 **Type:** any
 
 ## token
+The token of the client.
+
 **Type:** string
 
 ## users
+The client's user cache.
+
 **Type:** [UserBlock](/classes/UserBlock)
 
-## valid
-{: .d-inline-block }
-
-PRIVATE
-{: .label .label-red }
-
-**Type:** boolean
-
 ## ws
+The client's websocket.
+
 **Type:** [Websocket](/classes/Websocket)
 
 # Methods
@@ -90,7 +90,7 @@ Initilize a new addon to the client.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| fn | Function | The addon's main function. | false |  |
+| fn | Function | The addon's main function. | false | *none* |
 
 **Returns:** [Client](/classes/Client)
 
@@ -99,7 +99,7 @@ Connect to the Discord gateway.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| token | string | Your bot's token. | false |  |
+| token | string | Your bot's token. | false | *none* |
 
 **Returns:** void
 
@@ -108,7 +108,7 @@ Emit a log in debug mode.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| message | Object | The log message. | false |  |
+| message | Object | The log message. | false | *none* |
 
 **Returns:** void
 
@@ -117,17 +117,12 @@ Emit an event.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| event | string | The event name. | false |  |
-| args | Object |  | false |  |
+| event | string | The event name. | false | *none* |
+| args | Object |   | false | *none* |
 
 **Returns:** any
 
 ## invalidate()
-{: .d-inline-block }
-
-PRIVATE
-{: .label .label-red }
-
 Invalidate the client, forcing the user to restart
 the process to use it. Once called, this cannot be
 undone (mostly because it would defeat the entire
@@ -140,66 +135,8 @@ Add an event listener.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| event | string | The event name. | false |  |
-| callback | Function |  | false |  |
-
-**Returns:** void
-
-## listenIfNotRegistered(event, callback)
-{: .d-inline-block }
-
-PRIVATE
-{: .label .label-red }
-
-Only registers the provided event if it isn't
-already registered.
-
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| event | EventResolvable |  | false |  |
-| callback | Function |  | false |  |
-
-**Returns:** void
-
-## logHttp(message)
-{: .d-inline-block }
-
-PRIVATE
-{: .label .label-red }
-
-Log a HTTP event.
-
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| message | Object | The event data. | false |  |
-
-**Returns:** void
-
-## logReceive(message)
-{: .d-inline-block }
-
-PRIVATE
-{: .label .label-red }
-
-Log a packet received from the gateway.
-
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| message | Object | The packet data. | false |  |
-
-**Returns:** void
-
-## logSend(message)
-{: .d-inline-block }
-
-PRIVATE
-{: .label .label-red }
-
-Log a packet sent to the gateway.
-
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| message | Object | The packet data. | false |  |
+| event | string | The event name. | false | *none* |
+| callback | Function |   | false | *none* |
 
 **Returns:** void
 
@@ -208,7 +145,7 @@ Undind an event listener.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| event | string | The event name to unbind. | false |  |
+| event | string | The event name to unbind. | false | *none* |
 
 **Returns:** void
 
@@ -217,7 +154,7 @@ Emit a warning in debug mode.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| message | Object | The warning message. | false |  |
+| message | Object | The warning message. | false | *none* |
 
 **Returns:** void
 

@@ -12,7 +12,7 @@ has_toc: true
 
 - TOC
 {:toc}
-A Channel represents any channel on Discord.
+Represents any kind of channel on Discord.
 # Constructor
 ```js
 new Channel(client, data)

@@ -12,6 +12,8 @@ has_toc: true
 
 - TOC
 {:toc}
+A UserPermissionOverwrite represents a user
+overwrite for a channel on Discord.
 # Constructor
 ```js
 new UserPermissionOverwrite(client, user, allow, deny)
@@ -19,50 +21,49 @@ new UserPermissionOverwrite(client, user, allow, deny)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-<<<<<<< Updated upstream
-| client | [Client](/classes/Client) |  | false |  |
-| user | [User](/classes/User) | [PartialUser](/classes/PartialUser) |  | false |  |
-| allow | number |  | false | 0 |
-| deny | number |  | false | 0 |
-=======
 | client | [Client](/classes/Client) | The client this overwrite belongs to. | false | *none* |
 | user | [User](/classes/User) or [PartialUser](/classes/PartialUser) | The user this overwrite belongs to. | false | *none* |
 | allow | number | The allowed permissions. | false | 0 |
 | deny | number | The denied permissions.
  | false | 0 |
->>>>>>> Stashed changes
 
 # Properties
 ## allow
+The allowed permissions.
+
 **Type:** [PermissionsBlock](/classes/PermissionsBlock)
 
 ## client
+The client this overwrite belongs to.
+
 **Type:** [Client](/classes/Client)
 
 ## deny
+The denied permissions.
+
 **Type:** [PermissionsBlock](/classes/PermissionsBlock)
 
 ## user
-<<<<<<< Updated upstream
-**Type:** [User](/classes/User) | [PartialUser](/classes/PartialUser)
-=======
 The user this overwrite belongs to.
 
 **Type:** [User](/classes/User) or [PartialUser](/classes/PartialUser)
->>>>>>> Stashed changes
 
 # Methods
 ## grant(flags)
+Grant the specified permissions.
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| flags | Object |  | false |  |
+| flags | Object | The flags to grant. | false | *none* |
 
-**Returns:** [UserPermissionOverwrite](/classes/UserPermissionOverwrite)
+**Returns:** [PermissionOverwrite](/classes/PermissionOverwrite)
 
 ## revoke(flags)
+Revoke the specified permissions.
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| flags | Object |  | false |  |
+| flags | Object | The flags to revoke. | false | *none* |
 
-**Returns:** [UserPermissionOverwrite](/classes/UserPermissionOverwrite)
+**Returns:** [PermissionOverwrite](/classes/PermissionOverwrite)
 

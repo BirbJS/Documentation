@@ -12,6 +12,8 @@ has_toc: true
 
 - TOC
 {:toc}
+An EmbedFooter stores data on the footer field of
+a MessageEmbed.
 # Constructor
 ```js
 new EmbedFooter(text, iconUrl?)
@@ -19,43 +21,49 @@ new EmbedFooter(text, iconUrl?)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| text | string |  | false |  |
-| iconUrl | string |  | true |  |
+| text | string | The text displayed at the bottom of the embed. | false | *none* |
+| iconUrl | string |   | true | *none* |
 
 # Properties
 ## iconUrl
-<<<<<<< Updated upstream
-**Type:** Object | string
-=======
 The URL of the icon displayed at the bottom of the
 embed.
 
 **Type:** Object or string
->>>>>>> Stashed changes
 
 ## text
+The text displayed at the bottom of the embed.
+
 **Type:** string
 
 # Methods
 ## format()
 Format this class into an API-acceptable object.
 
-**Returns:** Object
+**Returns:** any
 
 ## removeIcon()
-**Returns:** void
+Remove the the icon displayed at the bottom of the
+embed.
+
+**Returns:** [EmbedFooter](/classes/EmbedFooter)
 
 ## setIconUrl(iconUrl)
+Set the URL of the icon displayed at the bottom of the
+embed.
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| iconUrl | string |  | false |  |
+| iconUrl | string |   | false | *none* |
 
-**Returns:** void
+**Returns:** [EmbedFooter](/classes/EmbedFooter)
 
 ## setText(text)
+Set the text displayed at the bottom of the embed.
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| text | string |  | false |  |
+| text | string | The text displayed at the bottom of the embed. | false | *none* |
 
-**Returns:** void
+**Returns:** [EmbedFooter](/classes/EmbedFooter)
 

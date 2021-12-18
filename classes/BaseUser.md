@@ -12,6 +12,9 @@ has_toc: true
 
 - TOC
 {:toc}
+A BaseUser is a model user that is not a partial
+user. It is extended upon by the `User` and
+`ClientUser` classes.
 # Constructor
 ```js
 new BaseUser(client, data)
@@ -19,60 +22,49 @@ new BaseUser(client, data)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](/classes/Client) |  | false |  |
-| data | any |  | false |  |
+| client | [Client](/classes/Client) | The client that this user belongs to. | false | *none* |
+| data | any | The data to use to build this user.
+ | false | *none* |
 
 # Properties
-<<<<<<< Updated upstream
-## accent_color
-**Type:** Object | string
-
-## avatar
-**Type:** Object | string
-
-## banner
-**Type:** Object | string
-=======
 ## accentColor
-The accent color of this user represented as a hex
-color code (string).
+The accent color of this user represented as a hex color code string.
 
 **Type:** Object or string
 
 ## avatar
 The avatar hash of this user.
-**Note:** This is not the same as an avatar URL. Use
-the `displayAvatarURL` method to get the avatar URL
-of this user.
+**Note**: This is not the same as an avatar URL.
+Use `BaseUser#displayAvatarURL()` method to get the avatar URL of this user.
 
 **Type:** Object or string
 
 ## banner
 The banner hash of this user.
-**Note:** This is not the same as an banner URL. Use
-the `getBanner` method to get the banner URL of this
-user.
+**Note:** This is not the same as an banner URL.
+Use `BaseUser#getBanner()` method to get the banner URL of this user.
 
 **Type:** Object or string
->>>>>>> Stashed changes
 
 ## bot
+Whether or not this user is a bot.
+
 **Type:** boolean
 
 ## client
+The client this user belongs to.
+
 **Type:** [Client](/classes/Client)
 
 ## discriminator
+The discriminator of this user.
+
 **Type:** string
 
 ## flags
-<<<<<<< Updated upstream
-**Type:** Object | string
-=======
-The flags of this user as a bitfield (string).
+The flags of this user.
 
-**Type:** Object or string
->>>>>>> Stashed changes
+**Type:** Object or Object
 
 ## id
 {: .d-inline-block }
@@ -80,15 +72,23 @@ The flags of this user as a bitfield (string).
 READONLY
 {: .label .label-purple }
 
+The ID of this user.
+
 **Type:** string
 
 ## system
+Whether or not this user is a system account.
+
 **Type:** boolean
 
 ## tag
+The tag of this user.
+
 **Type:** string
 
 ## username
+The username of this user.
+
 **Type:** string
 
 # Methods

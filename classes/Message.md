@@ -12,6 +12,8 @@ has_toc: true
 
 - TOC
 {:toc}
+A Message represents a message in any channel on
+Discord.
 # Constructor
 ```js
 new Message(client, data)
@@ -19,56 +21,45 @@ new Message(client, data)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](/classes/Client) |  | false |  |
-| data | any |  | false |  |
+| client | [Client](/classes/Client) | The client this message belongs to. | false | *none* |
+| data | any | The data of the message.
+ | false | *none* |
 
 # Properties
 ## attachments
+Any attachments that were sent with this message.
+
 **Type:** Object
 
 ## author
-<<<<<<< Updated upstream
-**Type:** Object | [BaseUser](/classes/BaseUser)
-=======
 The author of this message.
 
 **Type:** Object or [BaseUser](/classes/BaseUser)
->>>>>>> Stashed changes
-
-## baseAuthor
-{: .d-inline-block }
-
-PRIVATE
-{: .label .label-red }
-
-**Type:** any
 
 ## channel
+The channel this message was sent in.
+
 **Type:** [TextBasedChannel](/classes/TextBasedChannel)
 
 ## client
+The client this message belongs to.
+
 **Type:** [Client](/classes/Client)
 
 ## content
-<<<<<<< Updated upstream
-**Type:** Object | string
-=======
 The text content of the message.
 
 **Type:** Object or string
->>>>>>> Stashed changes
 
 ## flags
+This message's bitfield flags.
+
 **Type:** number
 
 ## guild
-<<<<<<< Updated upstream
-**Type:** Object | [Guild](/classes/Guild)
-=======
 The guild this message was sent in, if any.
 
 **Type:** Object or [Guild](/classes/Guild)
->>>>>>> Stashed changes
 
 ## id
 {: .d-inline-block }
@@ -76,28 +67,23 @@ The guild this message was sent in, if any.
 READONLY
 {: .label .label-purple }
 
+The ID of the message.
+
 **Type:** string
 
 ## member
-<<<<<<< Updated upstream
-**Type:** Object | [GuildMember](/classes/GuildMember)
-=======
 The member that sent this message if this message
 was sent in a guild.
 
 **Type:** Object or [GuildMember](/classes/GuildMember)
->>>>>>> Stashed changes
 
 ## system
+Whether or not this is a system message (e.g. a
+welcome message).
+
 **Type:** boolean
 
 ## type
-<<<<<<< Updated upstream
-**Type:** Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object
-
-## webhookId
-**Type:** Object | string
-=======
 The type of message.
 
 **Type:** Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object
@@ -107,98 +93,77 @@ The webhook ID if this message was sent by a Discord
 webhook.
 
 **Type:** Object or string
->>>>>>> Stashed changes
 
 # Methods
-## build(data)
-{: .d-inline-block }
-
-PRIVATE
-{: .label .label-red }
-
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| data | any |  | false |  |
-
-**Returns:** void
-
 ## crosspost()
+Crosspost this message to channels that are
+following the channel this message was sent in.
+
 **Returns:** Promise<[Message](/classes/Message)>
 
 ## delete()
+Delete this message.
+
 **Returns:** Promise<void>
 
 ## edit(message)
+Edit this message. Can only be performed if the
+message was sent by this client.
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| message | MessageContent |  | false |  |
+| message | MessageContent |   | false | *none* |
 
 **Returns:** Promise<[Message](/classes/Message)>
 
 ## modify(data)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| data | any |  | false |  |
-
-**Returns:** Promise<[Message](/classes/Message)>
-
-## parse(data)
-{: .d-inline-block }
-
-PRIVATE
-{: .label .label-red }
+Send a raw API request to edit this message.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| data | any |  | false |  |
+| data | any | The data to send. | false | *none* |
 
 **Returns:** Promise<[Message](/classes/Message)>
 
 ## pin(reason?)
+Pin this message to the channel it was sent in.
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| reason | string |  | true |  |
+| reason | string |   | true | *none* |
 
 **Returns:** Promise<[Message](/classes/Message)>
 
 ## reply(message)
+Send an inline reply to this message.
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| message | MessageContent |  | false |  |
+| message | MessageContent |   | false | *none* |
 
 **Returns:** Promise<[Message](/classes/Message)>
 
-## set()
-{: .d-inline-block }
-
-PRIVATE
-{: .label .label-red }
-
-**Returns:** [Message](/classes/Message)
-
 ## startThread(name, options)
+Start a thread from this message.
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| name | string |  | false |  |
-| options | Object |  | false | {} |
+| name | string | The name of the thread. | false | *none* |
+| options | Object |   | false | {} |
 
 **Returns:** Promise<void>
 
 ## supressEmbeds()
+Supress the embeds of this message.
+
 **Returns:** Promise<[Message](/classes/Message)>
 
 ## unpin(reason?)
+Unpin this message from the channel it was sent in.
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| reason | string |  | true |  |
-
-**Returns:** Promise<[Message](/classes/Message)>
-
-## waitForAuthor()
-{: .d-inline-block }
-
-PRIVATE
-{: .label .label-red }
+| reason | string |   | true | *none* |
 
 **Returns:** Promise<[Message](/classes/Message)>
 
@@ -209,13 +174,15 @@ STATIC
 {: .label .label-blue }
 {: .d-inline-block }
 
-PRIVATE
+PROTECTED
 {: .label .label-red }
+
+Build an API message.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| data | MessageContent |  | false |  |
-| edit | boolean |  | false | false |
+| data | MessageContent |   | false | *none* |
+| edit | boolean |   | false | false |
 
 **Returns:** any
 

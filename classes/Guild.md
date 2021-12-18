@@ -12,6 +12,7 @@ has_toc: true
 
 - TOC
 {:toc}
+A Guild represents a Discord server.
 # Constructor
 ```js
 new Guild(client, data)
@@ -19,29 +20,23 @@ new Guild(client, data)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](/classes/Client) |  | false |  |
-| data | any |  | false |  |
+| client | [Client](/classes/Client) | The client that this guild belongs to. | false | *none* |
+| data | any | The data for this guild.
+ | false | *none* |
 
 # Properties
 ## afkChannelId
-<<<<<<< Updated upstream
-**Type:** Object | string
-=======
 The ID of the guild's AFK channel.
 
 **Type:** Object or string
->>>>>>> Stashed changes
 
 ## afkTimeout
+The amount of seconds to wait before moving AFK
+members to the AFK voice channel.
+
 **Type:** number
 
 ## approximateMemberCount
-<<<<<<< Updated upstream
-**Type:** Object | number
-
-## approximatePresenceCount
-**Type:** Object | number
-=======
 The approximate amount of members in this guild.
 
 **Type:** Object or number
@@ -51,53 +46,50 @@ The approximate amount of online members in this
 guild.
 
 **Type:** Object or number
->>>>>>> Stashed changes
 
 ## available
+Whether or not this guild is available to this
+client. **You should check this is set to `true`
+before performing actions on guilds.**
+
 **Type:** boolean
 
 ## banner
-<<<<<<< Updated upstream
-**Type:** Object | string
-=======
 The guild's banner hash.
 **Note:** This is not the same as an banner URL.
 Use the `getBannerURL` method to get the icon URL of
 this guild.
 
 **Type:** Object or string
->>>>>>> Stashed changes
 
 ## boostTier
+The boost tier of this guild.
+
 **Type:** number
 
 ## boosterCount
-<<<<<<< Updated upstream
-**Type:** Object | number
-=======
 The amount of members who have used Discord Nitro
 to boost this guild (or have purchased a Nitro boost
 on its own for this guild).
 
 **Type:** Object or number
->>>>>>> Stashed changes
 
 ## channels
+The channels this guild has.
+
 **Type:** default
 
 ## client
+The client this Guild belongs to.
+
 **Type:** [Client](/classes/Client)
 
 ## defaultNotifications
+The default notification level of this guild.
+
 **Type:** [NotificationLevel](/enums/NotificationLevel)
 
 ## description
-<<<<<<< Updated upstream
-**Type:** Object | string
-
-## discoverySplash
-**Type:** Object | string
-=======
 The guild's description.
 
 **Type:** Object or string
@@ -109,22 +101,20 @@ the `getSplashURL` method to get the splash URL of
 this guild.
 
 **Type:** Object or string
->>>>>>> Stashed changes
 
 ## explicitContentFilter
+The setting of the explicit content filter for this
+guild.
+
 **Type:** [ExplicitContentFilterLevel](/enums/ExplicitContentFilterLevel)
 
 ## icon
-<<<<<<< Updated upstream
-**Type:** Object | string
-=======
 The guild's icon hash.
 **Note:** This is not the same as an icon URL. Use
 the `getIconURL` method to get the icon URL of this
 guild.
 
 **Type:** Object or string
->>>>>>> Stashed changes
 
 ## id
 {: .d-inline-block }
@@ -132,21 +122,18 @@ guild.
 READONLY
 {: .label .label-purple }
 
+The ID of this Guild.
+
 **Type:** string
 
 ## large
+Whether or not this guild is deemed 'large' (at
+which point Discord will not automatically send a
+list of members).
+
 **Type:** boolean
 
 ## maxMembers
-<<<<<<< Updated upstream
-**Type:** Object | number
-
-## maxVideoChannelUsers
-**Type:** Object | number
-
-## memberCount
-**Type:** Object | number
-=======
 The maximum amount of members allowed in this guild.
 Reach out to [Discord support](https://dis.gd/support)
 if you're getting close to this limit and need it
@@ -163,51 +150,52 @@ The maximum amount of video channel members.
 The member count of this guild.
 
 **Type:** Object or number
->>>>>>> Stashed changes
 
 ## members
+The members this guild has.
+
 **Type:** [GuildMemberBlock](/classes/GuildMemberBlock)
 
 ## mfaLevel
+The multi-factor authentication requirement level
+for this guild's staff members.
+
 **Type:** [MFALevel](/enums/MFALevel)
 
 ## name
+The name of this Guild.
+
 **Type:** string
 
 ## nsfw
+Whether or not Discord has marked this guild as Not
+Safe For Wumpus (explicit).
+
 **Type:** boolean
 
 ## nsfwLevel
+The Not Safe For Wumpus (explicit) level Discord has
+assigned to this guild. Discord uses this to block
+NSFW servers on iOS.
+
 **Type:** [NSFWLevel](/enums/NSFWLevel)
 
 ## ownerId
+The ID of the owner of this guild.
+
 **Type:** string
 
 ## preferredLocale
-<<<<<<< Updated upstream
-**Type:** Object | string
-=======
 The preferred locale (language) for this Guild.
 
 **Type:** Object or string
->>>>>>> Stashed changes
 
 ## roles
+The roles this guild has.
+
 **Type:** [RoleBlock](/classes/RoleBlock)
 
 ## rulesChannelId
-<<<<<<< Updated upstream
-**Type:** Object | string
-
-## splash
-**Type:** Object | string
-
-## systemChannelId
-**Type:** Object | string
-
-## vanityCode
-**Type:** Object | string
-=======
 The channel ID of the guild's rules or guidelines
 channel.
 
@@ -232,24 +220,13 @@ The vanity invite code this guild owns. `null` if it
 doesn't have one.
 
 **Type:** Object or string
->>>>>>> Stashed changes
 
 ## verificationLevel
+The verification level of this guild.
+
 **Type:** [VerificationLevel](/enums/VerificationLevel)
 
 # Methods
-## build(data)
-{: .d-inline-block }
-
-PRIVATE
-{: .label .label-red }
-
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| data | any |  | false |  |
-
-**Returns:** void
-
 ## leave()
 Leave the Guild.
 
@@ -260,28 +237,18 @@ Modify the Guild.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| data | Object | The data to send to the Discord API. | false |  |
-| reason | string |  | true |  |
+| data | Object | The data to send to the Discord API. | false | *none* |
+| reason | string |   | true | *none* |
 
 **Returns:** Promise<void>
-
-## set()
-{: .d-inline-block }
-
-PRIVATE
-{: .label .label-red }
-
-Set the Guild's data to the cache.
-
-**Returns:** [Guild](/classes/Guild)
 
 ## setAfkChannel(channel, reason?)
 Set this Guild's AFK timeout channel.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| channel | ChannelResolvable | The AFK timeout channel. | false |  |
-| reason | string |  | true |  |
+| channel | ChannelResolvable | The AFK timeout channel. | false | *none* |
+| reason | string |   | true | *none* |
 
 **Returns:** Promise<void>
 
@@ -290,8 +257,8 @@ Change this Guild's AFK timeout.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| seconds | number | The AFK timeout in seconds. | false |  |
-| reason | string |  | true |  |
+| seconds | number | The AFK timeout in seconds. | false | *none* |
+| reason | string |   | true | *none* |
 
 **Returns:** Promise<void>
 
@@ -300,8 +267,8 @@ Toggle the Guild's booster progress bar.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| toggle | number | Whether or not to show the booster progress bar. | false |  |
-| reason | string |  | true |  |
+| toggle | number | Whether or not to show the booster progress bar. | false | *none* |
+| reason | string |   | true | *none* |
 
 **Returns:** Promise<void>
 
@@ -310,8 +277,8 @@ Change this Guild's default notifications level.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| level | [NotificationLevel](/enums/NotificationLevel) | The new notification level for the Guild. | false |  |
-| reason | string |  | true |  |
+| level | [NotificationLevel](/enums/NotificationLevel) | The new notification level for the Guild. | false | *none* |
+| reason | string |   | true | *none* |
 
 **Returns:** Promise<void>
 
@@ -320,8 +287,8 @@ Set the Guild's description.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| description | string | The new description. | false |  |
-| reason | string |  | true |  |
+| description | string | The new description. | false | *none* |
+| reason | string |   | true | *none* |
 
 **Returns:** Promise<void>
 
@@ -330,8 +297,8 @@ Change this Guild's explicit content filter level.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| level | [ExplicitContentFilterLevel](/enums/ExplicitContentFilterLevel) | The new explicit content filter level for the Guild. | false |  |
-| reason | string |  | true |  |
+| level | [ExplicitContentFilterLevel](/enums/ExplicitContentFilterLevel) | The new explicit content filter level for the Guild. | false | *none* |
+| reason | string |   | true | *none* |
 
 **Returns:** Promise<void>
 
@@ -340,8 +307,8 @@ Change this Guild's name.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| name | string | The new name for the Guild. | false |  |
-| reason | string |  | true |  |
+| name | string | The new name for the Guild. | false | *none* |
+| reason | string |   | true | *none* |
 
 **Returns:** Promise<void>
 
@@ -350,8 +317,8 @@ Set the Guild's preferred locale.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| locale | string | The new locale. | false |  |
-| reason | string |  | true |  |
+| locale | string | The new locale. | false | *none* |
+| reason | string |   | true | *none* |
 
 **Returns:** Promise<void>
 
@@ -360,8 +327,8 @@ Set this Guild's public updates channel.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| channel | ChannelResolvable | The channel. | false |  |
-| reason | string |  | true |  |
+| channel | ChannelResolvable | The channel. | false | *none* |
+| reason | string |   | true | *none* |
 
 **Returns:** Promise<void>
 
@@ -370,8 +337,8 @@ Set this Guild's rules channel.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| channel | ChannelResolvable | The channel. | false |  |
-| reason | string |  | true |  |
+| channel | ChannelResolvable | The channel. | false | *none* |
+| reason | string |   | true | *none* |
 
 **Returns:** Promise<void>
 
@@ -380,8 +347,8 @@ Set this Guild's system messages channel.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| channel | ChannelResolvable | The channel. | false |  |
-| reason | string |  | true |  |
+| channel | ChannelResolvable | The channel. | false | *none* |
+| reason | string |   | true | *none* |
 
 **Returns:** Promise<void>
 
@@ -390,8 +357,8 @@ Change this Guild's verification level.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| level | [VerificationLevel](/enums/VerificationLevel) | The new verification level for the Guild. | false |  |
-| reason | string |  | true |  |
+| level | [VerificationLevel](/enums/VerificationLevel) | The new verification level for the Guild. | false | *none* |
+| reason | string |   | true | *none* |
 
 **Returns:** Promise<void>
 

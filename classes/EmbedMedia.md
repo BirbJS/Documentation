@@ -12,6 +12,8 @@ has_toc: true
 
 - TOC
 {:toc}
+An EmbedMedia stores data on a media or attachment
+field of a MessageEmbed.
 # Constructor
 ```js
 new EmbedMedia(url, height?, width?)
@@ -19,62 +21,66 @@ new EmbedMedia(url, height?, width?)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| url | string |  | false |  |
-| height | number |  | true |  |
-| width | number |  | true |  |
+| url | string | The URL of the media. If refrences an attachment, prefix with `attachment://` followed by the attachment's filename. | false | *none* |
+| height | number |   | true | *none* |
+| width | number |   | true | *none* |
 
 # Properties
 ## height
-<<<<<<< Updated upstream
-**Type:** Object | number
-=======
 The height of the media.
 
 **Type:** Object or number
->>>>>>> Stashed changes
 
 ## url
+The URL of the media.
+
 **Type:** string
 
 ## width
-<<<<<<< Updated upstream
-**Type:** Object | number
-=======
 The width of the media.
 
 **Type:** Object or number
->>>>>>> Stashed changes
 
 # Methods
 ## format()
 Format this class into an API-acceptable object.
 
-**Returns:** Object
+**Returns:** any
 
 ## removeHeight()
-**Returns:** void
+Remove the height of the media.
+
+**Returns:** [EmbedMedia](/classes/EmbedMedia)
 
 ## removeWidth()
-**Returns:** void
+Remove the width of the media.
+
+**Returns:** [EmbedMedia](/classes/EmbedMedia)
 
 ## setHeight(height)
+Set the height of the media.
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| height | number |  | false |  |
+| height | number | The height of the media. `null` to remove the height. | false | *none* |
 
-**Returns:** void
+**Returns:** [EmbedMedia](/classes/EmbedMedia)
 
 ## setUrl(url)
+Set the URL of the media.
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| url | string |  | false |  |
+| url | string | The URL of the media. If refrences an attachment, prefix with `attachment://` followed by the attachment's filename. | false | *none* |
 
-**Returns:** void
+**Returns:** [EmbedMedia](/classes/EmbedMedia)
 
 ## setWidth(width)
+Set the width of the media.
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| width | number |  | false |  |
+| width | number | The width of the media. `null` to remove the width. | false | *none* |
 
-**Returns:** void
+**Returns:** [EmbedMedia](/classes/EmbedMedia)
 

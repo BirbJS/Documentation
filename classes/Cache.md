@@ -17,6 +17,7 @@ ABSTRACT
 
 - TOC
 {:toc}
+A Cache stores values in memory.
 # Constructor
 ```js
 new Cache(options?)
@@ -24,32 +25,18 @@ new Cache(options?)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| options | Object |  | true |  |
+| options | Object |   | true | *none* |
 
 # Properties
-## cache
-{: .d-inline-block }
-
-PRIVATE
-{: .label .label-red }
-
-**Type:** Map<string, any>
-
 ## client
 {: .d-inline-block }
 
 ABSTRACT
 {: .label .label-yellow }
 
+The Client that initialized this cache.
+
 **Type:** [Client](/classes/Client)
-
-## options
-{: .d-inline-block }
-
-PRIVATE
-{: .label .label-red }
-
-**Type:** any
 
 # Methods
 ## array()
@@ -80,7 +67,7 @@ in the cache, an empty array is returned.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| fn | Object |  | false |  |
+| fn | Object |   | false | *none* |
 
 **Returns:** Object
 
@@ -90,7 +77,7 @@ in the cache, `null` is returned.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| fn | Object |  | false |  |
+| fn | Object |   | false | *none* |
 
 **Returns:** any
 
@@ -100,7 +87,7 @@ in the cache, `null` is returned.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| key | string | The key to get the value for. | false |  |
+| key | string | The key to get the value for. | false | *none* |
 
 **Returns:** any
 
@@ -109,7 +96,7 @@ Check if the cache contains a key.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| key | string | The key of the entry. | false |  |
+| key | string | The key of the entry. | false | *none* |
 
 **Returns:** boolean
 
@@ -120,7 +107,7 @@ unless you know **EXACTLY** what you're doing.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| options | any |  | true |  |
+| options | any |   | true | *none* |
 
 **Returns:** void
 
@@ -130,9 +117,12 @@ unless you know **EXACTLY** what you're doing.
 ABSTRACT
 {: .label .label-yellow }
 
+A method called to rebuild data that has been
+stripped.
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| data | any |  | false |  |
+| data | any | The data to check and rebuild. | false | *none* |
 
 **Returns:** any
 
@@ -141,7 +131,7 @@ Remove a key from the cache.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| key | string | The key of the entry. | false |  |
+| key | string | The key of the entry. | false | *none* |
 
 **Returns:** [Cache](/classes/Cache)
 
@@ -150,9 +140,9 @@ Set a value in the cache.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| key | string | The key of the entry. | false |  |
-| value | any | The value to set it to. | false |  |
-| options | any |  | true |  |
+| key | string | The key of the entry. | false | *none* |
+| value | any | The value to set it to. | false | *none* |
+| options | any |   | true | *none* |
 
 **Returns:** [Cache](/classes/Cache)
 
@@ -167,9 +157,12 @@ Get the amount of entries in the cache.
 ABSTRACT
 {: .label .label-yellow }
 
+A method called to strip unwanted properties from an
+entry before it is added to the cache.
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| data | any |  | false |  |
+| data | any | The data to check and strip. | false | *none* |
 
 **Returns:** any
 

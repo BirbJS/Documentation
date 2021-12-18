@@ -12,6 +12,7 @@ has_toc: true
 
 - TOC
 {:toc}
+A MessageBlock stores information on messages.
 # Constructor
 ```js
 new MessageBlock(client, guild, options?)
@@ -19,14 +20,18 @@ new MessageBlock(client, guild, options?)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](/classes/Client) |  | false |  |
-| guild | [Guild](/classes/Guild) |  | false |  |
-| options | any |  | true |  |
+| client | [Client](/classes/Client) | The client instance. | false | *none* |
+| guild | [Guild](/classes/Guild) | The guild instance. | false | *none* |
+| options | any |   | true | *none* |
 
 # Properties
 ## cache
+This block's cache.
+
 **Type:** [Cache](/classes/Cache)
 
 ## client
+The client that initilized this block.
+
 **Type:** [Client](/classes/Client)
 

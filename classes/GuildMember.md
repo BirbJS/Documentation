@@ -12,6 +12,8 @@ has_toc: true
 
 - TOC
 {:toc}
+A GuildMember represents a member of a Discord
+guild (or "server").
 # Constructor
 ```js
 new GuildMember(client, data, guild)
@@ -19,24 +21,45 @@ new GuildMember(client, data, guild)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](/classes/Client) |  | false |  |
-| data | any |  | false |  |
-| guild | [Guild](/classes/Guild) |  | false |  |
+| client | [Client](/classes/Client) | The client that this member belongs to. | false | *none* |
+| data | any | The data of this member. | false | *none* |
+| guild | [Guild](/classes/Guild) | The guild this member is in.
+ | false | *none* |
 
 # Properties
 ## avatar
+The avatar hash for this member.
+**Note:** This is not the same as an avatar URL. Use
+the `displayAvatarURL` method to get the avatar URL
+of this user.
+
 **Type:** Object | string
 
 ## client
+The client that this member belongs to.
+
 **Type:** [Client](/classes/Client)
 
 ## deafened
+Whether or not this member is deafened in this
+guild's voice channels. If `true`, the member won't
+be able to hear anything said in voice channels.
+
 **Type:** boolean
 
 ## full
+{: .d-inline-block }
+
+PROTECTED
+{: .label .label-red }
+
+Whether or not this member has been fully resolved.
+
 **Type:** boolean
 
 ## guild
+The guild this member is in.
+
 **Type:** [Guild](/classes/Guild)
 
 ## id
@@ -45,34 +68,68 @@ new GuildMember(client, data, guild)
 READONLY
 {: .label .label-purple }
 
+The user ID of this member.
+
 **Type:** string
 
 ## joinedAt
+The date this member joined the guild.
+
 **Type:** Object | Date
 
 ## muted
+Whether or not this member is muted in this guild's
+voice channels. If `true`, the member won't be able
+to say anything in voice channels.
+
 **Type:** boolean
 
 ## nick
+The nickname of this member.
+
 **Type:** Object | string
 
 ## originalUser
+{: .d-inline-block }
+
+PROTECTED
+{: .label .label-red }
+
+The original user object of this member.
+
 **Type:** any
 
 ## pendingMembershipScreening
+Whether or not this member is pending membership
+screening in this guild. Until membership screening
+is passed, the member may not interact with the
+guild in any way.
+
 **Type:** boolean
 
 ## roles
+The roles this member has.
+
 **Type:** [GuildMemberRoleBlock](/classes/GuildMemberRoleBlock)
 
 ## timedOutUntil
+The date until this member leaves timeout mode. This
+will be `null` if the member is not in timeout mode.
+
 **Type:** Object | Date
 
 ## user
+The user related to this member.
+
 **Type:** Object | [BaseUser](/classes/BaseUser)
 
 # Methods
 ## _waitForFull()
+Forces the client to wait until the member has been
+fully resolved. If the member is in the cache, the
+promise will resolve immediately. However, if the
+client will fetch the member from the Discord API.
+
 **Returns:** Promise<[GuildMember](/classes/GuildMember)>
 
 ## ban(daysToPrune, reason?)
@@ -80,22 +137,10 @@ Ban the GuildMember.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| daysToPrune | number |  | false |  |
-| reason | string |  | true |  |
+| daysToPrune | number |   | false | *none* |
+| reason | string |   | true | *none* |
 
 **Returns:** Promise<void>
-
-## build(data)
-{: .d-inline-block }
-
-PRIVATE
-{: .label .label-red }
-
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| data | any |  | false |  |
-
-**Returns:** void
 
 ## isInTimeout()
 Check if this GuildMember is in timeout.
@@ -107,7 +152,7 @@ Kick the GuildMember.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| reason | string |  | true |  |
+| reason | string |   | true | *none* |
 
 **Returns:** Promise<void>
 
@@ -116,26 +161,18 @@ Modify the GuildMember.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| data | Object | The data to send to the Discord API. | false |  |
-| reason | string |  | true |  |
+| data | Object | The data to send to the Discord API. | false | *none* |
+| reason | string |   | true | *none* |
 
 **Returns:** Promise<void>
-
-## set()
-{: .d-inline-block }
-
-PRIVATE
-{: .label .label-red }
-
-**Returns:** [GuildMember](/classes/GuildMember)
 
 ## setDeafen(deafen, reason?)
 Set this GuildMember's deafened status.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| deafen | boolean | The new deafened status. | false |  |
-| reason | string |  | true |  |
+| deafen | boolean | The new deafened status. | false | *none* |
+| reason | string |   | true | *none* |
 
 **Returns:** Promise<void>
 
@@ -144,8 +181,8 @@ Set this GuildMember's muted status.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| mute | boolean |  | false |  |
-| reason | string |  | true |  |
+| mute | boolean |   | false | *none* |
+| reason | string |   | true | *none* |
 
 **Returns:** Promise<void>
 
@@ -154,8 +191,8 @@ Set this GuildMember's nickname.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| nickname | string | The new nickname. | false |  |
-| reason | string |  | true |  |
+| nickname | string | The new nickname. | false | *none* |
+| reason | string |   | true | *none* |
 
 **Returns:** Promise<void>
 

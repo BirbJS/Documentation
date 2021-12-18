@@ -17,6 +17,8 @@ ABSTRACT
 
 - TOC
 {:toc}
+A GuildChannel represents any channel on Discord
+that is associated with a guild.
 # Constructor
 ```js
 new GuildChannel(client, data, guild?)
@@ -24,15 +26,19 @@ new GuildChannel(client, data, guild?)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](/classes/Client) |  | false |  |
-| data | any |  | false |  |
-| guild | [Guild](/classes/Guild) |  | true |  |
+| client | [Client](/classes/Client) | The client this channel belongs to. | false | *none* |
+| data | any | The data of this channel. | false | *none* |
+| guild | [Guild](/classes/Guild) |   | true | *none* |
 
 # Properties
 ## client
+The client this channel belongs to.
+
 **Type:** [Client](/classes/Client)
 
 ## guild
+The guild this channel belongs to.
+
 **Type:** [Guild](/classes/Guild)
 
 ## id
@@ -41,12 +47,19 @@ new GuildChannel(client, data, guild?)
 READONLY
 {: .label .label-purple }
 
+The ID of this channel.
+
 **Type:** string
 
 ## name
+The name of this channel.
+
 **Type:** string
 
 ## permissions
+The permission overwrites associated with this
+channel.
+
 **Type:** [ChannelPermissionsBlock](/classes/ChannelPermissionsBlock)
 
 # Methods
@@ -56,7 +69,9 @@ READONLY
 PROTECTED
 {: .label .label-red }
 
-**Returns:** undefined | Object
+Initialize the data of this channel.
+
+**Returns:** any
 
 ## modify(data, reason?)
 {: .d-inline-block }
@@ -64,10 +79,12 @@ PROTECTED
 ABSTRACT
 {: .label .label-yellow }
 
+Send a raw API request to modify this channel
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| data | any |  | false |  |
-| reason | string |  | true |  |
+| data | any | The data to send. | false | *none* |
+| reason | string |   | true | *none* |
 
 **Returns:** Promise<[GuildChannel](/classes/GuildChannel)>
 
@@ -77,9 +94,11 @@ ABSTRACT
 PROTECTED
 {: .label .label-red }
 
+Set the overwrites of this channel.
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| overwrite | Object |  | false |  |
+| overwrite | Object |   | false | *none* |
 
 **Returns:** Promise<void>
 

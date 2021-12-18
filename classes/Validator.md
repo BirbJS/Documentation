@@ -26,7 +26,7 @@ STATIC
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| channel | ChannelResolvable |  | false |  |
+| channel | ChannelResolvable |   | false | *none* |
 
 **Returns:** string
 

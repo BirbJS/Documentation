@@ -20,118 +20,110 @@ new Websocket(client, domain)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](/classes/Client) | The client. | false |  |
-| domain | string | The domain to connect to. | false |  |
+| client | [Client](/classes/Client) | The client. | false | *none* |
+| domain | string | The domain to connect to.
+ | false | *none* |
 
 # Properties
 ## buffer
+{: .d-inline-block }
+
+PROTECTED
+{: .label .label-red }
+
+The internal erlpack buffer.
+
 **Type:** any
 
 ## client
+The client that owns this websocket.
+
 **Type:** [Client](/classes/Client)
 
-## doNotReconnect
-{: .d-inline-block }
-
-PROTECTED
-{: .label .label-red }
-
-**Type:** boolean
-
 ## domain
+The current Discord gateway URL.
+
 **Type:** string
 
 ## encoding
+The type of encoding to use. If `erlpack` is
+installed (`npm install erlpack`), `etf` encoding
+will be used. Otherwise, normal `json` encoding will
+be used.
+
 **Type:** string
 
 ## expectedGuilds
+The guild IDs that the client is expecting to
+receive from the Discord gateway.
+
 **Type:** Set<string>
 
 ## heartbeatInterval
-{: .d-inline-block }
+The interval to send heartbeats.
 
-PROTECTED
-{: .label .label-red }
-
-**Type:** Object
+**Type:** Object | number
 
 ## lastHeartbeat
-{: .d-inline-block }
-
-PROTECTED
-{: .label .label-red }
+The time the last heartbeat was sent.
 
 **Type:** number
 
 ## lastHeartbeatAcked
-{: .d-inline-block }
-
-PROTECTED
-{: .label .label-red }
+Whether or not the last heartbeat was acknowledged
+by the Discord gateway.
 
 **Type:** boolean
 
 ## lastResume
-{: .d-inline-block }
-
-PROTECTED
-{: .label .label-red }
+The time the last resume packet was sent.
 
 **Type:** number
 
 ## lastSequenceIdentifier
-{: .d-inline-block }
+The last sequence identifier received from the
+Discord gateway.
 
-PROTECTED
-{: .label .label-red }
+**Type:** Object | number
 
-**Type:** Object
+## latency
+The current latency (in milliseconds) between the
+client and the Discord gateway.
 
-## ping
 **Type:** number
 
 ## schedulerLoop
-{: .d-inline-block }
+The websocket's scheduler loop.
 
-PROTECTED
-{: .label .label-red }
-
-**Type:** Timer
+**Type:** Object | Timer
 
 ## sessionIdentifier
-{: .d-inline-block }
-
-PROTECTED
-{: .label .label-red }
+The session identifier from the Discord gateway.
 
 **Type:** Object | string
 
 ## status
+The current status of the websocket.
+
 **Type:** [WebsocketStatus](/enums/WebsocketStatus)
 
 ## url
+The websocket's currently set URL.
+
 **Type:** URL
 
 ## ws
+The websocket instance from the `ws` package.
+
 **Type:** WebSocket
 
 # Methods
-## cleanup()
-{: .d-inline-block }
-
-PRIVATE
-{: .label .label-red }
-
-Clean up the websocket.
-
-**Returns:** void
-
 ## close(code?)
 Close the websocket.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| code | number |  | true |  |
+| code | number |   | true | *none* |
 
 **Returns:** void
 
@@ -146,6 +138,8 @@ Connect to the gateway.
 PROTECTED
 {: .label .label-red }
 
+Generates the gateway URL.
+
 **Returns:** URL
 
 ## heartbeat()
@@ -153,21 +147,13 @@ Send a heartbeat to the gateway.
 
 **Returns:** Promise<void>
 
-## identify()
-{: .d-inline-block }
-
-PRIVATE
-{: .label .label-red }
-
-Send an identify packet to the gateway.
-
-**Returns:** void
-
 ## init()
 {: .d-inline-block }
 
 PROTECTED
 {: .label .label-red }
+
+Initializes ZLib if supported.
 
 **Returns:** void
 
@@ -186,53 +172,21 @@ Check if the websocket is connecting.
 
 **Returns:** boolean
 
-## onClose(code)
-{: .d-inline-block }
-
-PRIVATE
-{: .label .label-red }
-
-Process the websocket closing.
-
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| code | number | The closing code. | false |  |
-
-**Returns:** Promise<void>
-
-## onOpen()
-{: .d-inline-block }
-
-PRIVATE
-{: .label .label-red }
-
-Process the websocket opening.
-
-**Returns:** void
-
-## onPacket(body)
-{: .d-inline-block }
-
-PRIVATE
-{: .label .label-red }
-
-Process a packet.
-
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| body | any |  | false |  |
-
-**Returns:** Promise<void>
-
 ## pack(data)
 {: .d-inline-block }
 
 PROTECTED
 {: .label .label-red }
 
+Packs data for sending to Discord. If the encoding
+is set to `etf`, this method will use the
+`zlib-sync` (`npm install zlib-sync`) library to
+pack its `etf` data. Otherwise, parses the JSON data
+to a string.
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| data | any |  | false |  |
+| data | any | The data to pack. | false | *none* |
 
 **Returns:** any
 
@@ -241,7 +195,7 @@ Prevent reconnection.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| value | boolean |  | true |  |
+| value | boolean |   | true | *none* |
 
 **Returns:** void
 
@@ -251,9 +205,15 @@ Prevent reconnection.
 PROTECTED
 {: .label .label-red }
 
+Attempts to process a packet by using ZLib to let
+Discord send packets in chunks. If ZLib is not yet
+installed (`npm install zlib-sync`), this method
+will just pass the data through for unpacking
+(`this.unpack()`).
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| data | any |  | false |  |
+| data | any | The packet's data. | false | *none* |
 
 **Returns:** any
 
@@ -262,23 +222,12 @@ Reconnect to the gateway.
 
 **Returns:** void
 
-## scheduler()
-{: .d-inline-block }
-
-PRIVATE
-{: .label .label-red }
-
-Creates a loop that will manage repeating tasks. It
-will call it's method every 50ms.
-
-**Returns:** void
-
 ## send(data)
 Send a packet to the gateway.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| data | Object | The data to send. | false |  |
+| data | Object | The data to send. | false | *none* |
 
 **Returns:** void
 
@@ -287,7 +236,7 @@ Set the websocket's session identifier.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| sessionIdentifier | string | The session identifier to set. | false |  |
+| sessionIdentifier | string | The session identifier to set. | false | *none* |
 
 **Returns:** void
 
@@ -296,7 +245,7 @@ Set the websocket's status.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| status | [WebsocketStatus](/enums/WebsocketStatus) | The status to set. | false |  |
+| status | [WebsocketStatus](/enums/WebsocketStatus) | The status to set. | false | *none* |
 
 **Returns:** void
 
@@ -313,10 +262,16 @@ the gateway won't respond (e.g. timeouts).
 PROTECTED
 {: .label .label-red }
 
+Unpacks a packet using the current encoding. If the
+encoding is set to `etf`, this method will use the
+`zlib-sync` (`npm install zlib-sync`) library to
+unpack its `etf` data. Otherwise, parses the data to
+normal JSON.
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| data | any |  | false |  |
-| type | string |  | true |  |
+| data | any | The packet's data. | false | *none* |
+| type | string |   | true | *none* |
 
 **Returns:** any
 

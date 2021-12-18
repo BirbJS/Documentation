@@ -12,6 +12,8 @@ has_toc: true
 
 - TOC
 {:toc}
+An EmbedField stores data on a field of a
+MessageEmbed.
 # Constructor
 ```js
 new EmbedField(name, value, inline?)
@@ -19,44 +21,56 @@ new EmbedField(name, value, inline?)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| name | string |  | false |  |
-| value | string |  | false |  |
-| inline | boolean |  | true |  |
+| name | string | The name of the field. | false | *none* |
+| value | string | The value of the field. | false | *none* |
+| inline | boolean |   | true | *none* |
 
 # Properties
 ## inline
+Whether or not this field is inline.
+
 **Type:** boolean
 
 ## name
+The name of the field.
+
 **Type:** string
 
 ## value
+The value of the field.
+
 **Type:** string
 
 # Methods
 ## format()
 Format this class into an API-acceptable object.
 
-**Returns:** Object
+**Returns:** any
 
 ## setInline(inline)
+Set whether or not this field is inline.
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| inline | boolean |  | false |  |
+| inline | boolean | Whether or not this field is inline. | false | *none* |
 
-**Returns:** void
+**Returns:** [EmbedField](/classes/EmbedField)
 
 ## setName(name)
+Set the name of the field.
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| name | string |  | false |  |
+| name | string | The name of the field. | false | *none* |
 
-**Returns:** void
+**Returns:** [EmbedField](/classes/EmbedField)
 
 ## setValue(value)
+Set the value of the field.
+
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| value | string |  | false |  |
+| value | string | The value of the field. | false | *none* |
 
-**Returns:** void
+**Returns:** [EmbedField](/classes/EmbedField)
 

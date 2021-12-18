@@ -34,7 +34,7 @@ Any attachments that were sent with this message.
 ## author
 The author of this message.
 
-**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or [BaseUser](/classes/BaseUser)
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* \| [BaseUser](/classes/BaseUser)
 
 ## channel
 The channel this message was sent in.
@@ -49,7 +49,7 @@ The client this message belongs to.
 ## content
 The text content of the message.
 
-**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* \| *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## flags
 This message's bitfield flags.
@@ -59,7 +59,7 @@ This message's bitfield flags.
 ## guild
 The guild this message was sent in, if any.
 
-**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or [Guild](/classes/Guild)
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* \| [Guild](/classes/Guild)
 
 ## id
 {: .d-inline-block }
@@ -75,7 +75,7 @@ The ID of the message.
 The member that sent this message if this message
 was sent in a guild.
 
-**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or [GuildMember](/classes/GuildMember)
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* \| [GuildMember](/classes/GuildMember)
 
 ## system
 Whether or not this is a system message (e.g. a
@@ -86,13 +86,13 @@ welcome message).
 ## type
 The type of message.
 
-**Type:** DEFAULT or RECIPIENT_ADD or RECIPIENT_REMOVE or CALL or CHANNEL_NAME_CHANGE or CHANNEL_ICON_CHANGE or CHANNEL_PINNED_MESSAGE or GUILD_MEMBER_JOIN or USER_PREMIUM_GUILD_SUBSCRIPTION or USER_PREMIUM_GUILD_SUBSCRIPTION_TIER_1 or USER_PREMIUM_GUILD_SUBSCRIPTION_TIER_2 or USER_PREMIUM_GUILD_SUBSCRIPTION_TIER_3 or CHANNEL_FOLLOW_ADD or GUILD_DISCOVERY_DISQUALIFIED or GUILD_DISCOVERY_REQUALIFIED or GUILD_DISCOVERY_GRACE_PERIOD_INITIAL_WARNING or GUILD_DISCOVERY_GRACE_PERIOD_FINAL_WARNING or THREAD_CREATED or REPLY or CHAT_INPUT_COMMAND or THREAD_STARTER_MESSAGE or GUILD_INVITE_REMINDER or CONTEXT_MENU_COMMAND
+**Type:** DEFAULT \| RECIPIENT_ADD \| RECIPIENT_REMOVE \| CALL \| CHANNEL_NAME_CHANGE \| CHANNEL_ICON_CHANGE \| CHANNEL_PINNED_MESSAGE \| GUILD_MEMBER_JOIN \| USER_PREMIUM_GUILD_SUBSCRIPTION \| USER_PREMIUM_GUILD_SUBSCRIPTION_TIER_1 \| USER_PREMIUM_GUILD_SUBSCRIPTION_TIER_2 \| USER_PREMIUM_GUILD_SUBSCRIPTION_TIER_3 \| CHANNEL_FOLLOW_ADD \| GUILD_DISCOVERY_DISQUALIFIED \| GUILD_DISCOVERY_REQUALIFIED \| GUILD_DISCOVERY_GRACE_PERIOD_INITIAL_WARNING \| GUILD_DISCOVERY_GRACE_PERIOD_FINAL_WARNING \| THREAD_CREATED \| REPLY \| CHAT_INPUT_COMMAND \| THREAD_STARTER_MESSAGE \| GUILD_INVITE_REMINDER \| CONTEXT_MENU_COMMAND
 
 ## webhookId
 The webhook ID if this message was sent by a Discord
 webhook.
 
-**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* \| *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 # Methods
 ## crosspost()

@@ -49,7 +49,7 @@ Compare the PermissionsBlock to another PermissionsBlock.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| check | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* or [PermissionsBlock](/classes/PermissionsBlock) or [Permissions](/classes/Permissions) | The PermissionsBlock or Permissions to compare to. | false | *none* |
+| check | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* \| [PermissionsBlock](/classes/PermissionsBlock) \| [Permissions](/classes/Permissions) | The PermissionsBlock or Permissions to compare to. | false | *none* |
 
 **Returns:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 

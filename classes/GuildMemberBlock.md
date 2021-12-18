@@ -61,5 +61,5 @@ member is not cached.
 | user | UserResolvable | The member to resolve. | false | *none* |
 | def | any |   | true | *none* |
 
-**Returns:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or [GuildMember](/classes/GuildMember)
+**Returns:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* \| [GuildMember](/classes/GuildMember)
 

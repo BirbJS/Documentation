@@ -55,7 +55,7 @@ The client's guild cache.
 ## me
 The client's Discord user.
 
-**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or [ClientUser](/classes/ClientUser)
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* \| [ClientUser](/classes/ClientUser)
 
 ## options
 The client's options.

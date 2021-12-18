@@ -19,7 +19,7 @@ new Snowflake(epoch)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| epoch | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* or bigint or Date | the epoch to use
+| epoch | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* \| bigint \| Date | the epoch to use
  | false | *none* |
 
 # Properties
@@ -32,7 +32,7 @@ Deconstructs a snowflake given a snowflake ID
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| id | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* or bigint | the snowflake to deconstruct | false | *none* |
+| id | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* \| bigint | the snowflake to deconstruct | false | *none* |
 
 **Returns:** DeconstructedSnowflake
 
@@ -52,7 +52,7 @@ Retrieves the timestamp field's value from a snowflake.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| id | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* or bigint | The snowflake to get the timestamp value from. | false | *none* |
+| id | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* \| bigint | The snowflake to get the timestamp value from. | false | *none* |
 
 **Returns:** *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)*
 

@@ -56,7 +56,7 @@ Compare the PermissionsBlock to another PermissionsBlock.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| check | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* or [PermissionsBlock](/classes/PermissionsBlock) or [Permissions](/classes/Permissions) | The PermissionsBlock or Permissions to compare to. | false | *none* |
+| check | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* \| [PermissionsBlock](/classes/PermissionsBlock) \| [Permissions](/classes/Permissions) | The PermissionsBlock or Permissions to compare to. | false | *none* |
 
 **Returns:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
@@ -65,7 +65,7 @@ Grant the role the specified permissions.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| permissions | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* or *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* | The permissions to grant. | false | *none* |
+| permissions | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* \| *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* | The permissions to grant. | false | *none* |
 | options | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* | The options for the action. | false | {} |
 
 **Returns:** Promise<[Role](/classes/Role)>
@@ -94,7 +94,7 @@ Revoke the specified permissions from the Role.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| permissions | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* or *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* | The permissions to revoke. | false | *none* |
+| permissions | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* \| *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* | The permissions to revoke. | false | *none* |
 | options | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* | The options for the action. | false | {} |
 
 **Returns:** Promise<[Role](/classes/Role)>
@@ -104,7 +104,7 @@ Set the permissions for the Role.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| permissions | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* or *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* | The permissions to set. | false | *none* |
+| permissions | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* \| *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* | The permissions to set. | false | *none* |
 | options | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* | The options for the action. | false | {} |
 
 **Returns:** Promise<[Role](/classes/Role)>

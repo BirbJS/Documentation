@@ -60,5 +60,5 @@ in the cache.
 | user | UserResolvable | The user to resolve. | false | *none* |
 | def | any |   | true | *none* |
 
-**Returns:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or [User](/classes/User)
+**Returns:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* \| [User](/classes/User)
 

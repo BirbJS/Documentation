@@ -33,7 +33,7 @@ new PartialUser(client, data)
 **Type:** [Client](/classes/Client)
 
 ## discriminator
-**Type:** string
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## id
 {: .d-inline-block }
@@ -41,13 +41,13 @@ new PartialUser(client, data)
 READONLY
 {: .label .label-purple }
 
-**Type:** string
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## tag
-**Type:** string
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## username
-**Type:** string
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 # Methods
 ## fetch(options?)
@@ -55,7 +55,7 @@ Fetch (and resolve) this PartialUser into a User.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| options | Object |   | true | *none* |
+| options | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | true | *none* |
 
 **Returns:** Promise<[User](/classes/User)>
 
@@ -64,10 +64,10 @@ Whether or not this instance is a full or partial
 user. A partial user is a user that is only
 guaranteed to have `id` set on them.
 
-**Returns:** boolean
+**Returns:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## toString()
 Convert this User into a mention (string).
 
-**Returns:** string
+**Returns:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 

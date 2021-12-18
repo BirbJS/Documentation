@@ -23,7 +23,7 @@ new ChannelPermissionsBlock(client, channel, overwrites)
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) | The client instance. | false | *none* |
 | channel | [GuildChannel](/classes/GuildChannel) | The channel this permissions block is for. | false | *none* |
-| overwrites | Object | The data to parse.
+| overwrites | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* | The data to parse.
  | false | *none* |
 
 # Properties
@@ -40,5 +40,5 @@ The client that initiliazed the block.
 ## overwrites
 The list of permission overwrites.
 
-**Type:** Object
+**Type:** *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)*
 

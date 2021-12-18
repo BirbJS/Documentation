@@ -21,25 +21,25 @@ new EmbedField(name, value, inline?)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| name | string | The name of the field. | false | *none* |
-| value | string | The value of the field. | false | *none* |
-| inline | boolean |   | true | *none* |
+| name | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The name of the field. | false | *none* |
+| value | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The value of the field. | false | *none* |
+| inline | *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)* |   | true | *none* |
 
 # Properties
 ## inline
 Whether or not this field is inline.
 
-**Type:** boolean
+**Type:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## name
 The name of the field.
 
-**Type:** string
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## value
 The value of the field.
 
-**Type:** string
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 # Methods
 ## format()
@@ -52,7 +52,7 @@ Set whether or not this field is inline.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| inline | boolean | Whether or not this field is inline. | false | *none* |
+| inline | *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)* | Whether or not this field is inline. | false | *none* |
 
 **Returns:** [EmbedField](/classes/EmbedField)
 
@@ -61,7 +61,7 @@ Set the name of the field.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| name | string | The name of the field. | false | *none* |
+| name | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The name of the field. | false | *none* |
 
 **Returns:** [EmbedField](/classes/EmbedField)
 
@@ -70,7 +70,7 @@ Set the value of the field.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| value | string | The value of the field. | false | *none* |
+| value | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The value of the field. | false | *none* |
 
 **Returns:** [EmbedField](/classes/EmbedField)
 

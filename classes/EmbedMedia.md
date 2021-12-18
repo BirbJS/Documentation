@@ -21,25 +21,25 @@ new EmbedMedia(url, height?, width?)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| url | string | The URL of the media. If refrences an attachment, prefix with `attachment://` followed by the attachment's filename. | false | *none* |
-| height | number |   | true | *none* |
-| width | number |   | true | *none* |
+| url | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The URL of the media. If refrences an attachment, prefix with `attachment://` followed by the attachment's filename. | false | *none* |
+| height | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* |   | true | *none* |
+| width | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* |   | true | *none* |
 
 # Properties
 ## height
 The height of the media.
 
-**Type:** Object or number
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)*
 
 ## url
 The URL of the media.
 
-**Type:** string
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## width
 The width of the media.
 
-**Type:** Object or number
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)*
 
 # Methods
 ## format()
@@ -62,7 +62,7 @@ Set the height of the media.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| height | number | The height of the media. `null` to remove the height. | false | *none* |
+| height | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* | The height of the media. `null` to remove the height. | false | *none* |
 
 **Returns:** [EmbedMedia](/classes/EmbedMedia)
 
@@ -71,7 +71,7 @@ Set the URL of the media.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| url | string | The URL of the media. If refrences an attachment, prefix with `attachment://` followed by the attachment's filename. | false | *none* |
+| url | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The URL of the media. If refrences an attachment, prefix with `attachment://` followed by the attachment's filename. | false | *none* |
 
 **Returns:** [EmbedMedia](/classes/EmbedMedia)
 
@@ -80,7 +80,7 @@ Set the width of the media.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| width | number | The width of the media. `null` to remove the width. | false | *none* |
+| width | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* | The width of the media. `null` to remove the width. | false | *none* |
 
 **Returns:** [EmbedMedia](/classes/EmbedMedia)
 

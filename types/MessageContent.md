@@ -13,6 +13,6 @@ has_toc: true
 - TOC
 {:toc}
 ## Definition
-- string
+- *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 - [MessageEmbed](/classes/MessageEmbed)
-- Object
+- *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)*

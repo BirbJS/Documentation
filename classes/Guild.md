@@ -28,31 +28,31 @@ new Guild(client, data)
 ## afkChannelId
 The ID of the guild's AFK channel.
 
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## afkTimeout
 The amount of seconds to wait before moving AFK
 members to the AFK voice channel.
 
-**Type:** number
+**Type:** *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)*
 
 ## approximateMemberCount
 The approximate amount of members in this guild.
 
-**Type:** Object or number
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)*
 
 ## approximatePresenceCount
 The approximate amount of online members in this
 guild.
 
-**Type:** Object or number
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)*
 
 ## available
 Whether or not this guild is available to this
 client. **You should check this is set to `true`
 before performing actions on guilds.**
 
-**Type:** boolean
+**Type:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## banner
 The guild's banner hash.
@@ -60,19 +60,19 @@ The guild's banner hash.
 Use the `getBannerURL` method to get the icon URL of
 this guild.
 
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## boostTier
 The boost tier of this guild.
 
-**Type:** number
+**Type:** *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)*
 
 ## boosterCount
 The amount of members who have used Discord Nitro
 to boost this guild (or have purchased a Nitro boost
 on its own for this guild).
 
-**Type:** Object or number
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)*
 
 ## channels
 The channels this guild has.
@@ -92,7 +92,7 @@ The default notification level of this guild.
 ## description
 The guild's description.
 
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## discoverySplash
 The guild's discovery splash hash.
@@ -100,7 +100,7 @@ The guild's discovery splash hash.
 the `getSplashURL` method to get the splash URL of
 this guild.
 
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## explicitContentFilter
 The setting of the explicit content filter for this
@@ -114,7 +114,7 @@ The guild's icon hash.
 the `getIconURL` method to get the icon URL of this
 guild.
 
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## id
 {: .d-inline-block }
@@ -124,14 +124,14 @@ READONLY
 
 The ID of this Guild.
 
-**Type:** string
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## large
 Whether or not this guild is deemed 'large' (at
 which point Discord will not automatically send a
 list of members).
 
-**Type:** boolean
+**Type:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## maxMembers
 The maximum amount of members allowed in this guild.
@@ -139,17 +139,17 @@ Reach out to [Discord support](https://dis.gd/support)
 if you're getting close to this limit and need it
 increased.
 
-**Type:** Object or number
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)*
 
 ## maxVideoChannelUsers
 The maximum amount of video channel members.
 
-**Type:** Object or number
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)*
 
 ## memberCount
 The member count of this guild.
 
-**Type:** Object or number
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)*
 
 ## members
 The members this guild has.
@@ -165,13 +165,13 @@ for this guild's staff members.
 ## name
 The name of this Guild.
 
-**Type:** string
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## nsfw
 Whether or not Discord has marked this guild as Not
 Safe For Wumpus (explicit).
 
-**Type:** boolean
+**Type:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## nsfwLevel
 The Not Safe For Wumpus (explicit) level Discord has
@@ -183,12 +183,12 @@ NSFW servers on iOS.
 ## ownerId
 The ID of the owner of this guild.
 
-**Type:** string
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## preferredLocale
 The preferred locale (language) for this Guild.
 
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## roles
 The roles this guild has.
@@ -199,7 +199,7 @@ The roles this guild has.
 The channel ID of the guild's rules or guidelines
 channel.
 
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## splash
 The splash hash of this guild.
@@ -207,19 +207,19 @@ The splash hash of this guild.
 Use the `getSplashURL` method to get the splash URL
 of this guild.
 
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## systemChannelId
 The ID of this guild's system channel where join
 notifications, boost messages, etc. are sent.
 
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## vanityCode
 The vanity invite code this guild owns. `null` if it
 doesn't have one.
 
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## verificationLevel
 The verification level of this guild.
@@ -238,7 +238,7 @@ Modify the Guild.
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | data | Object | The data to send to the Discord API. | false | *none* |
-| reason | string |   | true | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<void>
 
@@ -248,7 +248,7 @@ Set this Guild's AFK timeout channel.
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | channel | ChannelResolvable | The AFK timeout channel. | false | *none* |
-| reason | string |   | true | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<void>
 
@@ -257,8 +257,8 @@ Change this Guild's AFK timeout.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| seconds | number | The AFK timeout in seconds. | false | *none* |
-| reason | string |   | true | *none* |
+| seconds | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* | The AFK timeout in seconds. | false | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<void>
 
@@ -267,8 +267,8 @@ Toggle the Guild's booster progress bar.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| toggle | number | Whether or not to show the booster progress bar. | false | *none* |
-| reason | string |   | true | *none* |
+| toggle | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* | Whether or not to show the booster progress bar. | false | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<void>
 
@@ -278,7 +278,7 @@ Change this Guild's default notifications level.
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | level | [NotificationLevel](/enums/NotificationLevel) | The new notification level for the Guild. | false | *none* |
-| reason | string |   | true | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<void>
 
@@ -287,8 +287,8 @@ Set the Guild's description.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| description | string | The new description. | false | *none* |
-| reason | string |   | true | *none* |
+| description | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The new description. | false | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<void>
 
@@ -298,7 +298,7 @@ Change this Guild's explicit content filter level.
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | level | [ExplicitContentFilterLevel](/enums/ExplicitContentFilterLevel) | The new explicit content filter level for the Guild. | false | *none* |
-| reason | string |   | true | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<void>
 
@@ -307,8 +307,8 @@ Change this Guild's name.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| name | string | The new name for the Guild. | false | *none* |
-| reason | string |   | true | *none* |
+| name | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The new name for the Guild. | false | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<void>
 
@@ -317,8 +317,8 @@ Set the Guild's preferred locale.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| locale | string | The new locale. | false | *none* |
-| reason | string |   | true | *none* |
+| locale | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The new locale. | false | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<void>
 
@@ -328,7 +328,7 @@ Set this Guild's public updates channel.
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | channel | ChannelResolvable | The channel. | false | *none* |
-| reason | string |   | true | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<void>
 
@@ -338,7 +338,7 @@ Set this Guild's rules channel.
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | channel | ChannelResolvable | The channel. | false | *none* |
-| reason | string |   | true | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<void>
 
@@ -348,7 +348,7 @@ Set this Guild's system messages channel.
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | channel | ChannelResolvable | The channel. | false | *none* |
-| reason | string |   | true | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<void>
 
@@ -358,12 +358,12 @@ Change this Guild's verification level.
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | level | [VerificationLevel](/enums/VerificationLevel) | The new verification level for the Guild. | false | *none* |
-| reason | string |   | true | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<void>
 
 ## toString()
 Convert this Guild into a a string (the name).
 
-**Returns:** string
+**Returns:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 

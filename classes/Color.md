@@ -28,9 +28,9 @@ Convert a hex string to an integer.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| hex | string | HEX color value as a string. | false | *none* |
+| hex | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | HEX color value as a string. | false | *none* |
 
-**Returns:** number
+**Returns:** *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)*
 
 ## intToHex(int)
 {: .d-inline-block }
@@ -42,7 +42,7 @@ Convert an integer to a hex string.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| int | number | HEX color value as an integer. | false | *none* |
+| int | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* | HEX color value as an integer. | false | *none* |
 
-**Returns:** string
+**Returns:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 

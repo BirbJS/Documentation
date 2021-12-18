@@ -28,26 +28,26 @@ new User(client, data)
 ## accentColor
 The accent color of this user represented as a hex color code string.
 
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## avatar
 The avatar hash of this user.
 **Note**: This is not the same as an avatar URL.
 Use `BaseUser#displayAvatarURL()` method to get the avatar URL of this user.
 
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## banner
 The banner hash of this user.
 **Note:** This is not the same as an banner URL.
 Use `BaseUser#getBanner()` method to get the banner URL of this user.
 
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## bot
 Whether or not this user is a bot.
 
-**Type:** boolean
+**Type:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## client
 The client this user belongs to.
@@ -57,7 +57,7 @@ The client this user belongs to.
 ## discriminator
 The discriminator of this user.
 
-**Type:** string
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## dmChannel
 {: .d-inline-block }
@@ -72,7 +72,7 @@ Raw data on this user's DM channel.
 ## flags
 The flags of this user.
 
-**Type:** Object or Object
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)*
 
 ## id
 {: .d-inline-block }
@@ -82,22 +82,22 @@ READONLY
 
 The ID of this user.
 
-**Type:** string
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## system
 Whether or not this user is a system account.
 
-**Type:** boolean
+**Type:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## tag
 The tag of this user.
 
-**Type:** string
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## username
 The username of this user.
 
-**Type:** string
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 # Methods
 ## fetch(options?)
@@ -105,7 +105,7 @@ Fetch this user again.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| options | Object |   | true | *none* |
+| options | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | true | *none* |
 
 **Returns:** Promise<[User](/classes/User)>
 
@@ -114,44 +114,44 @@ Generate a link to the user's avatar.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| options | Object |   | true | *none* |
+| options | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | true | *none* |
 
-**Returns:** string
+**Returns:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## getBanner(options?)
 Generate a link to the user's avatar.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| options | Object |   | true | *none* |
+| options | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | true | *none* |
 
-**Returns:** string
+**Returns:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## hasDefaultAvatar()
 Determine if the user's avatar is default.
 
-**Returns:** boolean
+**Returns:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## isPartial()
 Whether or not this instance is a full or partial
 user. A partial user is a user that is only
 guaranteed to have `id` set on them.
 
-**Returns:** boolean
+**Returns:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## send(content)
 Send a message to the user.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| content | string |   | false | *none* |
+| content | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<[Message](/classes/Message)>
 
 ## toString()
 Convert this User into a mention (string).
 
-**Returns:** string
+**Returns:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## toIdOnly(user)
 {: .d-inline-block }
@@ -169,5 +169,5 @@ Converts a UserResolvable to a user ID (string).
 |:-----|:-----|:------------|:---------|:--------|
 | user | UserResolvable | The user to convert. | false | *none* |
 
-**Returns:** string
+**Returns:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 

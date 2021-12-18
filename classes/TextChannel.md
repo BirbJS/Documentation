@@ -23,7 +23,7 @@ new TextChannel(client, data, options?, guild?)
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) | The client this channel belongs to. | false | *none* |
 | data | any | The data of this channel. | false | *none* |
-| options | Object |   | true | *none* |
+| options | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | true | *none* |
 | guild | [Guild](/classes/Guild) |   | true | *none* |
 
 # Properties
@@ -45,7 +45,7 @@ READONLY
 
 The ID of this channel.
 
-**Type:** string
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## messages
 The messages in this channel.
@@ -55,7 +55,7 @@ The messages in this channel.
 ## name
 The name of this channel.
 
-**Type:** string
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## permissions
 The permission overwrites associated with this
@@ -80,7 +80,7 @@ Send a raw modify request to the Discord API.
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | data | any | The data to send. | false | *none* |
-| reason | string |   | true | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<[TextChannel](/classes/TextChannel)>
 
@@ -108,8 +108,8 @@ Set the auto-archive timeout of this channel.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| minutes | number | The auto-archive timeout of this channel in minutes. | false | *none* |
-| reason | string |   | true | *none* |
+| minutes | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* | The auto-archive timeout of this channel in minutes. | false | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<[TextChannel](/classes/TextChannel)>
 
@@ -119,8 +119,8 @@ Wumpus (explict).
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| nsfw | boolean | Whether or not this channel is explicit. | false | *none* |
-| reason | string |   | true | *none* |
+| nsfw | *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)* | Whether or not this channel is explicit. | false | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<[TextChannel](/classes/TextChannel)>
 
@@ -129,8 +129,8 @@ Set the name of this channel.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| name | string | The name of this channel. | false | *none* |
-| reason | string |   | true | *none* |
+| name | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The name of this channel. | false | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<[TextChannel](/classes/TextChannel)>
 
@@ -144,7 +144,7 @@ Set the overwrites of this channel.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| overwrite | Object |   | false | *none* |
+| overwrite | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
 
 **Returns:** Promise<void>
 
@@ -153,8 +153,8 @@ Set the position of this channel.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| position | number | The position of this channel. | false | *none* |
-| reason | string |   | true | *none* |
+| position | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* | The position of this channel. | false | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<[TextChannel](/classes/TextChannel)>
 
@@ -163,8 +163,8 @@ Sets the slowmode of this channel.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| seconds | number | The number of seconds of slowmode. | false | *none* |
-| reason | string |   | true | *none* |
+| seconds | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* | The number of seconds of slowmode. | false | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<[TextChannel](/classes/TextChannel)>
 
@@ -173,8 +173,8 @@ Set the topic of this channel.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| topic | string | The topic of this channel. | false | *none* |
-| reason | string |   | true | *none* |
+| topic | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The topic of this channel. | false | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<[TextChannel](/classes/TextChannel)>
 

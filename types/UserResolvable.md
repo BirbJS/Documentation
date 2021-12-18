@@ -16,4 +16,4 @@ has_toc: true
 - [User](/classes/User)
 - [ClientUser](/classes/ClientUser)
 - [BaseUser](/classes/BaseUser)
-- string
+- *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*

@@ -33,7 +33,7 @@ The avatar hash for this member.
 the `displayAvatarURL` method to get the avatar URL
 of this user.
 
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## client
 The client that this member belongs to.
@@ -45,7 +45,7 @@ Whether or not this member is deafened in this
 guild's voice channels. If `true`, the member won't
 be able to hear anything said in voice channels.
 
-**Type:** boolean
+**Type:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## full
 {: .d-inline-block }
@@ -55,7 +55,7 @@ PROTECTED
 
 Whether or not this member has been fully resolved.
 
-**Type:** boolean
+**Type:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## guild
 The guild this member is in.
@@ -70,24 +70,24 @@ READONLY
 
 The user ID of this member.
 
-**Type:** string
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## joinedAt
 The date this member joined the guild.
 
-**Type:** Object or Date
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or Date
 
 ## muted
 Whether or not this member is muted in this guild's
 voice channels. If `true`, the member won't be able
 to say anything in voice channels.
 
-**Type:** boolean
+**Type:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## nick
 The nickname of this member.
 
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## originalUser
 {: .d-inline-block }
@@ -105,7 +105,7 @@ screening in this guild. Until membership screening
 is passed, the member may not interact with the
 guild in any way.
 
-**Type:** boolean
+**Type:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## roles
 The roles this member has.
@@ -116,12 +116,12 @@ The roles this member has.
 The date until this member leaves timeout mode. This
 will be `null` if the member is not in timeout mode.
 
-**Type:** Object or Date
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or Date
 
 ## user
 The user related to this member.
 
-**Type:** Object or [BaseUser](/classes/BaseUser)
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or [BaseUser](/classes/BaseUser)
 
 # Methods
 ## _waitForFull()
@@ -137,22 +137,22 @@ Ban the GuildMember.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| daysToPrune | number |   | false | *none* |
-| reason | string |   | true | *none* |
+| daysToPrune | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* |   | false | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<void>
 
 ## isInTimeout()
 Check if this GuildMember is in timeout.
 
-**Returns:** boolean
+**Returns:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## kick(reason?)
 Kick the GuildMember.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| reason | string |   | true | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<void>
 
@@ -162,7 +162,7 @@ Modify the GuildMember.
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | data | Object | The data to send to the Discord API. | false | *none* |
-| reason | string |   | true | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<void>
 
@@ -171,8 +171,8 @@ Set this GuildMember's deafened status.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| deafen | boolean | The new deafened status. | false | *none* |
-| reason | string |   | true | *none* |
+| deafen | *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)* | The new deafened status. | false | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<void>
 
@@ -181,8 +181,8 @@ Set this GuildMember's muted status.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| mute | boolean |   | false | *none* |
-| reason | string |   | true | *none* |
+| mute | *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)* |   | false | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<void>
 
@@ -191,8 +191,8 @@ Set this GuildMember's nickname.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| nickname | string | The new nickname. | false | *none* |
-| reason | string |   | true | *none* |
+| nickname | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The new nickname. | false | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<void>
 

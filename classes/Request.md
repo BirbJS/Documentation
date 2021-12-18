@@ -21,7 +21,7 @@ new Request(client, method, path, body?)
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
 | method | HTTPMethod |   | false | *none* |
-| path | string |   | false | *none* |
+| path | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 | body | any |   | true | *none* |
 
 # Properties
@@ -35,22 +35,22 @@ new Request(client, method, path, body?)
 **Type:** HTTPMethod
 
 ## reason
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## response
 **Type:** any
 
 ## upload
-**Type:** boolean
+**Type:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## url
-**Type:** string
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 # Methods
 ## make(files?)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| files | Object |   | true | *none* |
+| files | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | true | *none* |
 
 **Returns:** Promise<any>
 

@@ -22,7 +22,7 @@ new CGCache(client, guild, options?)
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) | The client instance. | false | *none* |
 | guild | [Guild](/classes/Guild) | The guild instance. | false | *none* |
-| options | Object |   | true | *none* |
+| options | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | true | *none* |
 
 # Properties
 ## client
@@ -39,12 +39,12 @@ The guild instance this cache is for.
 ## array()
 Get an array of the entries in the cache.
 
-**Returns:** Object
+**Returns:** *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)*
 
 ## arrayPair()
 Get an array of the entries in the cache as `Pair`s.
 
-**Returns:** Object
+**Returns:** *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)*
 
 ## clear()
 Clear the cache and its contents.
@@ -56,7 +56,7 @@ Get an object of the entries in the cache. The
 key is the key of the entry, and the value is
 the value of the entry.
 
-**Returns:** Object
+**Returns:** *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)*
 
 ## filter(fn)
 Filter values in the cache. If the key is not found
@@ -64,9 +64,9 @@ in the cache, an empty array is returned.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| fn | Object |   | false | *none* |
+| fn | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
 
-**Returns:** Object
+**Returns:** *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)*
 
 ## find(fn)
 Find a value in the cache. If the key is not found
@@ -74,7 +74,7 @@ in the cache, `null` is returned.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| fn | Object |   | false | *none* |
+| fn | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
 
 **Returns:** any
 
@@ -84,7 +84,7 @@ in the cache, `null` is returned.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| key | string | The key to get the value for. | false | *none* |
+| key | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The key to get the value for. | false | *none* |
 
 **Returns:** any
 
@@ -93,9 +93,9 @@ Check if the cache contains a key.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| key | string | The key of the entry. | false | *none* |
+| key | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The key of the entry. | false | *none* |
 
-**Returns:** boolean
+**Returns:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## makeSpace(options?)
 Make space in the cache for a new entry. You
@@ -123,7 +123,7 @@ Remove a key from the cache.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| key | string | The key of the entry. | false | *none* |
+| key | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The key of the entry. | false | *none* |
 
 **Returns:** [Cache](/classes/Cache)
 
@@ -132,7 +132,7 @@ Set a value in the cache.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| key | string | The key of the entry. | false | *none* |
+| key | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The key of the entry. | false | *none* |
 | value | any | The value to set it to. | false | *none* |
 | options | any |   | true | *none* |
 
@@ -141,7 +141,7 @@ Set a value in the cache.
 ## size()
 Get the amount of entries in the cache.
 
-**Returns:** number
+**Returns:** *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)*
 
 ## strip(data)
 A method called to strip unwanted properties from an

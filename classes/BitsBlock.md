@@ -20,14 +20,14 @@ new BitsBlock(flags)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| flags | Object | The flags to set.
+| flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* | The flags to set.
  | false | *none* |
 
 # Properties
 ## flags
 The flags of the bitfield.
 
-**Type:** number
+**Type:** *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)*
 
 # Methods
 ## add(flags)
@@ -35,7 +35,7 @@ Adds a flag (bit) to the block.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| flags | Object | The flags to add. | false | *none* |
+| flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* | The flags to add. | false | *none* |
 
 **Returns:** [BitsBlock](/classes/BitsBlock)
 
@@ -50,21 +50,21 @@ Check if a flag (bit) is in the block.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| flag | number | The flag to check. | false | *none* |
+| flag | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* | The flag to check. | false | *none* |
 
-**Returns:** boolean
+**Returns:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## isEmpty()
 Check if the block is empty.
 
-**Returns:** boolean
+**Returns:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## remove(flags)
 Removes a flag (bit) from the block.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| flags | Object | The flags to remove. | false | *none* |
+| flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* | The flags to remove. | false | *none* |
 
 **Returns:** [BitsBlock](/classes/BitsBlock)
 
@@ -73,7 +73,7 @@ Sets the flags of the block.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| flags | number | The flags to set. | false | *none* |
+| flags | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* | The flags to set. | false | *none* |
 
 **Returns:** [BitsBlock](/classes/BitsBlock)
 

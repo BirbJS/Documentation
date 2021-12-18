@@ -21,7 +21,7 @@ new Websocket(client, domain)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) | The client. | false | *none* |
-| domain | string | The domain to connect to.
+| domain | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The domain to connect to.
  | false | *none* |
 
 # Properties
@@ -43,7 +43,7 @@ The client that owns this websocket.
 ## domain
 The current Discord gateway URL.
 
-**Type:** string
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## encoding
 The type of encoding to use. If `erlpack` is
@@ -51,56 +51,56 @@ installed (`npm install erlpack`), `etf` encoding
 will be used. Otherwise, normal `json` encoding will
 be used.
 
-**Type:** string
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## expectedGuilds
 The guild IDs that the client is expecting to
 receive from the Discord gateway.
 
-**Type:** Set<string>
+**Type:** Set<*[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*>
 
 ## heartbeatInterval
 The interval to send heartbeats.
 
-**Type:** Object or number
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)*
 
 ## lastHeartbeat
 The time the last heartbeat was sent.
 
-**Type:** number
+**Type:** *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)*
 
 ## lastHeartbeatAcked
 Whether or not the last heartbeat was acknowledged
 by the Discord gateway.
 
-**Type:** boolean
+**Type:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## lastResume
 The time the last resume packet was sent.
 
-**Type:** number
+**Type:** *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)*
 
 ## lastSequenceIdentifier
 The last sequence identifier received from the
 Discord gateway.
 
-**Type:** Object or number
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)*
 
 ## latency
 The current latency (in milliseconds) between the
 client and the Discord gateway.
 
-**Type:** number
+**Type:** *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)*
 
 ## schedulerLoop
 The websocket's scheduler loop.
 
-**Type:** Object or Timer
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or Timer
 
 ## sessionIdentifier
 The session identifier from the Discord gateway.
 
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## status
 The current status of the websocket.
@@ -123,7 +123,7 @@ Close the websocket.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| code | number |   | true | *none* |
+| code | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* |   | true | *none* |
 
 **Returns:** void
 
@@ -160,17 +160,17 @@ Initializes ZLib if supported.
 ## isClosed()
 Check if the websocket is closed.
 
-**Returns:** boolean
+**Returns:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## isConnected()
 Check if the websocket is connected.
 
-**Returns:** boolean
+**Returns:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## isConnecting()
 Check if the websocket is connecting.
 
-**Returns:** boolean
+**Returns:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## pack(data)
 {: .d-inline-block }
@@ -195,7 +195,7 @@ Prevent reconnection.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| value | boolean |   | true | *none* |
+| value | *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)* |   | true | *none* |
 
 **Returns:** void
 
@@ -236,7 +236,7 @@ Set the websocket's session identifier.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| sessionIdentifier | string | The session identifier to set. | false | *none* |
+| sessionIdentifier | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The session identifier to set. | false | *none* |
 
 **Returns:** void
 
@@ -271,7 +271,7 @@ normal JSON.
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | data | any | The packet's data. | false | *none* |
-| type | string |   | true | *none* |
+| type | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** any
 

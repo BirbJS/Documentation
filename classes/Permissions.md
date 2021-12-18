@@ -20,14 +20,14 @@ new Permissions(flags)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| flags | Object | The permission flags.
+| flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* | The permission flags.
  | false | *none* |
 
 # Properties
 ## flags
 The flags of the bitfield.
 
-**Type:** number
+**Type:** *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)*
 
 ## FLAGS
 {: .d-inline-block }
@@ -37,7 +37,7 @@ STATIC
 
 The permission flags available.
 
-**Type:** Object
+**Type:** *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)*
 
 # Methods
 ## add(flags)
@@ -45,7 +45,7 @@ Adds a flag (bit) to the block.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| flags | Object | The flags to add. | false | *none* |
+| flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* | The flags to add. | false | *none* |
 
 **Returns:** [BitsBlock](/classes/BitsBlock)
 
@@ -60,9 +60,9 @@ Check if a flag (bit) is in the block.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| flag | number | The flag to check. | false | *none* |
+| flag | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* | The flag to check. | false | *none* |
 
-**Returns:** boolean
+**Returns:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## hasPermission(flag)
 Check whether or not the permission flags exist on
@@ -73,21 +73,21 @@ to ignore the administrator permission, use the
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| flag | number | The permission flag to check for. | false | *none* |
+| flag | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* | The permission flag to check for. | false | *none* |
 
-**Returns:** boolean
+**Returns:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## isEmpty()
 Check if the block is empty.
 
-**Returns:** boolean
+**Returns:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## remove(flags)
 Removes a flag (bit) from the block.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| flags | Object | The flags to remove. | false | *none* |
+| flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* | The flags to remove. | false | *none* |
 
 **Returns:** [BitsBlock](/classes/BitsBlock)
 
@@ -96,7 +96,7 @@ Sets the flags of the block.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| flags | number | The flags to set. | false | *none* |
+| flags | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* | The flags to set. | false | *none* |
 
 **Returns:** [BitsBlock](/classes/BitsBlock)
 

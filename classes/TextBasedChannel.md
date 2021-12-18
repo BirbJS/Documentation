@@ -28,7 +28,7 @@ new TextBasedChannel(client, data, options?, guild?)
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) | The client this channel belongs to. | false | *none* |
 | data | any | The data of this channel. | false | *none* |
-| options | Object |   | true | *none* |
+| options | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | true | *none* |
 | guild | [Guild](/classes/Guild) |   | true | *none* |
 
 # Properties
@@ -50,7 +50,7 @@ READONLY
 
 The ID of this channel.
 
-**Type:** string
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## messages
 The messages in this channel.
@@ -60,7 +60,7 @@ The messages in this channel.
 ## name
 The name of this channel.
 
-**Type:** string
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## permissions
 The permission overwrites associated with this
@@ -90,7 +90,7 @@ Send a raw API request to modify this channel
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | data | any | The data to send. | false | *none* |
-| reason | string |   | true | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<[GuildChannel](/classes/GuildChannel)>
 
@@ -113,7 +113,7 @@ Set the overwrites of this channel.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| overwrite | Object |   | false | *none* |
+| overwrite | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
 
 **Returns:** Promise<void>
 

@@ -41,7 +41,7 @@ not already cached.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| options | GuildResolvable or Object | The options to use. | false | *none* |
+| options | GuildResolvable or *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* | The options to use. | false | *none* |
 
 **Returns:** Promise<[Guild](/classes/Guild)>
 

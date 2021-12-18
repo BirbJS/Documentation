@@ -21,20 +21,20 @@ new EmbedFooter(text, iconUrl?)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| text | string | The text displayed at the bottom of the embed. | false | *none* |
-| iconUrl | string |   | true | *none* |
+| text | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The text displayed at the bottom of the embed. | false | *none* |
+| iconUrl | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 # Properties
 ## iconUrl
 The URL of the icon displayed at the bottom of the
 embed.
 
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## text
 The text displayed at the bottom of the embed.
 
-**Type:** string
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 # Methods
 ## format()
@@ -54,7 +54,7 @@ embed.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| iconUrl | string |   | false | *none* |
+| iconUrl | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** [EmbedFooter](/classes/EmbedFooter)
 
@@ -63,7 +63,7 @@ Set the text displayed at the bottom of the embed.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| text | string | The text displayed at the bottom of the embed. | false | *none* |
+| text | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The text displayed at the bottom of the embed. | false | *none* |
 
 **Returns:** [EmbedFooter](/classes/EmbedFooter)
 

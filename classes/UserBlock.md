@@ -41,8 +41,8 @@ the user is not cached.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| userId | string | The ID of the user to fetch. | false | *none* |
-| options | Object |   | true | *none* |
+| userId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The ID of the user to fetch. | false | *none* |
+| options | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | true | *none* |
 
 **Returns:** Promise<[User](/classes/User)>
 
@@ -60,5 +60,5 @@ in the cache.
 | user | UserResolvable | The user to resolve. | false | *none* |
 | def | any |   | true | *none* |
 
-**Returns:** Object or [User](/classes/User)
+**Returns:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or [User](/classes/User)
 

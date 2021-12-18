@@ -47,8 +47,8 @@ API if it is not in the cache.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| userId | string | The user's ID. | false | *none* |
-| options | Object |   | true | *none* |
+| userId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The user's ID. | false | *none* |
+| options | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | true | *none* |
 
 **Returns:** Promise<[GuildMember](/classes/GuildMember)>
 
@@ -61,5 +61,5 @@ member is not cached.
 | user | UserResolvable | The member to resolve. | false | *none* |
 | def | any |   | true | *none* |
 
-**Returns:** Object or [GuildMember](/classes/GuildMember)
+**Returns:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or [GuildMember](/classes/GuildMember)
 

@@ -13,7 +13,7 @@ has_toc: true
 - TOC
 {:toc}
 ## Definition
-- Object
-- Object
-- Object
-- Object
+- online
+- idle
+- dnd
+- invisible

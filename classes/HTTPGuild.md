@@ -27,8 +27,8 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
-| userId | string |   | false | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| userId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 | data | any |   | false | *none* |
 
 **Returns:** Promise<any>
@@ -42,11 +42,11 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
-| userId | string |   | false | *none* |
-| roleId | string |   | false | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| userId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| roleId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 | data | any |   | false | *none* |
-| reason | string |   | true | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<any>
 
@@ -59,9 +59,9 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 | data | any |   | false | *none* |
-| reason | string |   | true | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<any>
 
@@ -74,10 +74,10 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
-| userId | string |   | false | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| userId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 | data | any |   | false | *none* |
-| reason | string |   | true | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<any>
 
@@ -90,9 +90,9 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 | data | any |   | false | *none* |
-| reason | string |   | true | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<any>
 
@@ -105,9 +105,9 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 | data | any |   | false | *none* |
-| reason | string |   | true | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<any>
 
@@ -120,7 +120,7 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -133,9 +133,9 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
-| integrationId | string |   | false | *none* |
-| reason | string |   | true | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| integrationId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<any>
 
@@ -148,9 +148,9 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
-| roleId | string |   | false | *none* |
-| reason | string |   | true | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| roleId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<any>
 
@@ -163,7 +163,7 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -176,7 +176,7 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -189,8 +189,8 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
-| userId | string |   | false | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| userId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -203,7 +203,7 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -216,7 +216,7 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -229,7 +229,7 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -242,7 +242,7 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -255,8 +255,8 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
-| userId | string |   | false | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| userId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -269,7 +269,7 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -282,7 +282,7 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -295,9 +295,9 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
-| days | number |   | false | *none* |
-| includeRoles | string |   | true | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| days | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* |   | false | *none* |
+| includeRoles | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<any>
 
@@ -310,7 +310,7 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -323,7 +323,7 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -336,7 +336,7 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -349,7 +349,7 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -362,7 +362,7 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -375,7 +375,7 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -388,9 +388,9 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 | data | any |   | false | *none* |
-| reason | string |   | true | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<any>
 
@@ -403,9 +403,9 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 | data | any |   | false | *none* |
-| reason | string |   | true | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<any>
 
@@ -418,9 +418,9 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 | data | any |   | false | *none* |
-| reason | string |   | true | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<any>
 
@@ -433,10 +433,10 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
-| userId | string |   | false | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| userId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 | data | any |   | false | *none* |
-| reason | string |   | true | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<any>
 
@@ -449,10 +449,10 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
-| roleId | string |   | false | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| roleId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 | data | any |   | false | *none* |
-| reason | string |   | true | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<any>
 
@@ -465,9 +465,9 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 | data | any |   | false | *none* |
-| reason | string |   | true | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<any>
 
@@ -480,10 +480,10 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
-| userId | string |   | false | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| userId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 | data | any |   | false | *none* |
-| reason | string |   | true | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<any>
 
@@ -496,9 +496,9 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 | data | any |   | false | *none* |
-| reason | string |   | true | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<any>
 
@@ -511,9 +511,9 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 | data | any |   | false | *none* |
-| reason | string |   | true | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<any>
 
@@ -526,9 +526,9 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
-| userId | string |   | false | *none* |
-| reason | string |   | true | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| userId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<any>
 
@@ -541,9 +541,9 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
-| userId | string |   | false | *none* |
-| reason | string |   | true | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| userId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<any>
 
@@ -556,10 +556,10 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
-| userId | string |   | false | *none* |
-| roleId | string |   | false | *none* |
-| reason | string |   | true | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| userId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| roleId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<any>
 
@@ -572,8 +572,8 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
-| query | string |   | false | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| query | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 

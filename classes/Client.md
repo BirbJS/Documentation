@@ -23,7 +23,7 @@ new Client(options)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| options | Object | The client options. | false | *none* |
+| options | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* | The client options. | false | *none* |
 
 # Properties
 ## api
@@ -34,7 +34,7 @@ READONLY
 
 Direct access to the client's rest API endpoints.
 
-**Type:** Object
+**Type:** *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)*
 
 ## channels
 The client's channel cache.
@@ -55,12 +55,12 @@ The client's guild cache.
 ## me
 The client's Discord user.
 
-**Type:** Object or [ClientUser](/classes/ClientUser)
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or [ClientUser](/classes/ClientUser)
 
 ## options
 The client's options.
 
-**Type:** Object
+**Type:** *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)*
 
 ## shard
 The client's Shard if sharding is enabled. See the
@@ -72,7 +72,7 @@ information.
 ## token
 The token of the client.
 
-**Type:** string
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## users
 The client's user cache.
@@ -99,7 +99,7 @@ Connect to the Discord gateway.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| token | string | Your bot's token. | false | *none* |
+| token | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | Your bot's token. | false | *none* |
 
 **Returns:** void
 
@@ -108,7 +108,7 @@ Emit a log in debug mode.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| message | Object | The log message. | false | *none* |
+| message | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* | The log message. | false | *none* |
 
 **Returns:** void
 
@@ -117,8 +117,8 @@ Emit an event.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| event | string | The event name. | false | *none* |
-| args | Object |   | false | *none* |
+| event | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The event name. | false | *none* |
+| args | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
 
 **Returns:** any
 
@@ -135,7 +135,7 @@ Add an event listener.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| event | string | The event name. | false | *none* |
+| event | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The event name. | false | *none* |
 | callback | Function |   | false | *none* |
 
 **Returns:** void
@@ -145,7 +145,7 @@ Undind an event listener.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| event | string | The event name to unbind. | false | *none* |
+| event | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The event name to unbind. | false | *none* |
 
 **Returns:** void
 
@@ -154,7 +154,7 @@ Emit a warning in debug mode.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| message | Object | The warning message. | false | *none* |
+| message | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* | The warning message. | false | *none* |
 
 **Returns:** void
 

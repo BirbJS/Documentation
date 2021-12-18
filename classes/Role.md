@@ -34,7 +34,7 @@ The client that this Role belongs to.
 ## color
 The color of this Role as a hex color string.
 
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## guild
 The guild this Role belongs to.
@@ -45,12 +45,12 @@ The guild this Role belongs to.
 Whether or not this Role is hoisted on the member
 list.
 
-**Type:** Object or boolean
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## icon
 The icon hash of this Role.
 
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## id
 {: .d-inline-block }
@@ -60,24 +60,24 @@ READONLY
 
 The ID of this Role.
 
-**Type:** string
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## managed
 Whether or not this Role is managed by Discord,
 another application or a bot. If so, it cannot be
 deleted.
 
-**Type:** Object or boolean
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## mentionable
 Whether or not anyone can mention this Role.
 
-**Type:** Object or boolean
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## name
 The name of this Role.
 
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## permissions
 The permissions of this Role.
@@ -87,12 +87,12 @@ The permissions of this Role.
 ## position
 The position of this Role.
 
-**Type:** Object or number
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)*
 
 ## unicodeEmoji
 The unicode emoji of this Role.
 
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 # Methods
 ## delete(reason?)
@@ -100,7 +100,7 @@ Delete this Role.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| reason | string |   | true | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<void>
 
@@ -110,7 +110,7 @@ Modify this Role.
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | data | any | The data to modify this Role with. | false | *none* |
-| reason | string |   | true | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<[Role](/classes/Role)>
 
@@ -119,8 +119,8 @@ Move this Role's position.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| velocity | number | The velocity to apply to this Role's position. Provide a positive integer to move this Role up, and a negative integer to move this Role down. | false | *none* |
-| reason | string |   | true | *none* |
+| velocity | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* | The velocity to apply to this Role's position. Provide a positive integer to move this Role up, and a negative integer to move this Role down. | false | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<[Role](/classes/Role)>
 
@@ -129,8 +129,8 @@ Set the color of this Role.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| color | string or number | The new color for this Role. Accepts HEX color codes (e.g. ffffff for white) or an RGB integer. | false | *none* |
-| reason | string |   | true | *none* |
+| color | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* or *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* | The new color for this Role. Accepts HEX color codes (e.g. ffffff for white) or an RGB integer. | false | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<[Role](/classes/Role)>
 
@@ -140,8 +140,8 @@ on the member list.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| hoisted | boolean | Whether or not this Role should be hoisted on the member list. | false | *none* |
-| reason | string |   | true | *none* |
+| hoisted | *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)* | Whether or not this Role should be hoisted on the member list. | false | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<[Role](/classes/Role)>
 
@@ -150,8 +150,8 @@ Set if this Role can be mentioned.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| mentionable | boolean | Whether or not this Role can be mentioned. | false | *none* |
-| reason | string |   | true | *none* |
+| mentionable | *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)* | Whether or not this Role can be mentioned. | false | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<[Role](/classes/Role)>
 
@@ -160,8 +160,8 @@ Set the name of this Role.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| name | string | The name to set this Role to. | false | *none* |
-| reason | string |   | true | *none* |
+| name | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The name to set this Role to. | false | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<[Role](/classes/Role)>
 
@@ -170,15 +170,15 @@ Set the position of this Role.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| position | number | The position to set this Role to. | false | *none* |
-| reason | string |   | true | *none* |
+| position | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* | The position to set this Role to. | false | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<[Role](/classes/Role)>
 
 ## toString()
 Convert this Role into a mention (string).
 
-**Returns:** string
+**Returns:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## toIdOnly(role)
 {: .d-inline-block }
@@ -196,5 +196,5 @@ Convert a RoleResolvable into a role ID (string).
 |:-----|:-----|:------------|:---------|:--------|
 | role | RoleResolvable | The Role to convert. | false | *none* |
 
-**Returns:** string
+**Returns:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 

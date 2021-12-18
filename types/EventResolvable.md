@@ -13,9 +13,9 @@ has_toc: true
 - TOC
 {:toc}
 ## Definition
-- Object
-- Object
-- Object
-- Object
-- Object
-- Object
+- ready
+- waitingForGuilds
+- guildAvailable
+- guildCreate
+- guildUpdate
+- message

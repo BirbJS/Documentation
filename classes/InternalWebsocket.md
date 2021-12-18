@@ -23,7 +23,7 @@ new InternalWebsocket(client, domain)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) | The client that owns this websocket. | false | *none* |
-| domain | string | The current Discord gateway URL.
+| domain | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The current Discord gateway URL.
  | false | *none* |
 
 # Properties
@@ -45,7 +45,7 @@ The client that owns this websocket.
 ## domain
 The current Discord gateway URL.
 
-**Type:** string
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## encoding
 The type of encoding to use. If `erlpack` is
@@ -53,7 +53,7 @@ installed (`npm install erlpack`), `etf` encoding
 will be used. Otherwise, normal `json` encoding will
 be used.
 
-**Type:** string
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## status
 The current status of the websocket.
@@ -137,7 +137,7 @@ normal JSON.
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | data | any | The packet's data. | false | *none* |
-| type | string |   | true | *none* |
+| type | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** any
 

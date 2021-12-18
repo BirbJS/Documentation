@@ -14,4 +14,4 @@ has_toc: true
 {:toc}
 ## Definition
 - [Channel](/classes/Channel)
-- string
+- *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*

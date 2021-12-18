@@ -21,25 +21,25 @@ new EmbedAuthor(name, url?, iconUrl?)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| name | string | The name of the author. | false | *none* |
-| url | string |   | true | *none* |
-| iconUrl | string |   | true | *none* |
+| name | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The name of the author. | false | *none* |
+| url | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
+| iconUrl | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 # Properties
 ## iconUrl
 The icon URL of the author.
 
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## name
 The name of the author.
 
-**Type:** string
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## url
 The URL of the author.
 
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 # Methods
 ## format()
@@ -62,7 +62,7 @@ Set the icon URL of the author.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| iconUrl | Object or string | A publicly-accessible URL to an image to use as the author's icon. `null` to remove the icon. | false | *none* |
+| iconUrl | *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | A publicly-accessible URL to an image to use as the author's icon. `null` to remove the icon. | false | *none* |
 
 **Returns:** [EmbedAuthor](/classes/EmbedAuthor)
 
@@ -71,7 +71,7 @@ Set the name of the author.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| name | string | The name of the author. | false | *none* |
+| name | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The name of the author. | false | *none* |
 
 **Returns:** [EmbedAuthor](/classes/EmbedAuthor)
 
@@ -80,7 +80,7 @@ Set the URL of the author.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| url | Object or string | The URL of the author. `null` to remove the URL. | false | *none* |
+| url | *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The URL of the author. `null` to remove the URL. | false | *none* |
 
 **Returns:** [EmbedAuthor](/classes/EmbedAuthor)
 

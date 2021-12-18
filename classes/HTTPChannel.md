@@ -27,8 +27,8 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| channelId | string |   | false | *none* |
-| userId | string |   | false | *none* |
+| channelId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| userId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -41,9 +41,9 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| channelId | string |   | false | *none* |
+| channelId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 | data | any |   | false | *none* |
-| reason | string |   | true | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<any>
 
@@ -56,9 +56,9 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| channelId | string |   | false | *none* |
+| channelId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 | data | any |   | false | *none* |
-| reason | string |   | true | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<any>
 
@@ -71,7 +71,7 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| channelId | string |   | false | *none* |
+| channelId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 | data | any |   | false | *none* |
 
 **Returns:** Promise<any>
@@ -85,9 +85,9 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| channelId | string |   | false | *none* |
-| messageId | string |   | false | *none* |
-| emoji | string |   | false | *none* |
+| channelId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| messageId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| emoji | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -100,8 +100,8 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| channelId | string |   | false | *none* |
-| messageId | string |   | false | *none* |
+| channelId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| messageId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -114,8 +114,8 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| channelId | string |   | false | *none* |
-| reason | string |   | true | *none* |
+| channelId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<any>
 
@@ -128,8 +128,8 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| channelId | string |   | false | *none* |
-| messageId | string |   | false | *none* |
+| channelId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| messageId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -142,9 +142,9 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| channelId | string |   | false | *none* |
-| messageId | string |   | false | *none* |
-| emoji | string |   | false | *none* |
+| channelId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| messageId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| emoji | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -157,9 +157,9 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| channelId | string |   | false | *none* |
-| messageId | string |   | false | *none* |
-| reason | string |   | true | *none* |
+| channelId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| messageId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<any>
 
@@ -172,10 +172,10 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| channelId | string |   | false | *none* |
-| messageId | string |   | false | *none* |
-| userId | string |   | false | *none* |
-| emoji | string |   | false | *none* |
+| channelId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| messageId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| userId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| emoji | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -188,9 +188,9 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| channelId | string |   | false | *none* |
-| messageId | string |   | false | *none* |
-| emoji | string |   | false | *none* |
+| channelId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| messageId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| emoji | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -203,9 +203,9 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| channelId | string |   | false | *none* |
-| overwriteId | string |   | false | *none* |
-| reason | string |   | true | *none* |
+| channelId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| overwriteId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<any>
 
@@ -218,8 +218,8 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| channelId | string |   | false | *none* |
-| userId | string |   | false | *none* |
+| channelId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| userId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 | data | any |   | false | *none* |
 
 **Returns:** Promise<any>
@@ -233,8 +233,8 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| channelId | string |   | false | *none* |
-| userId | string |   | false | *none* |
+| channelId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| userId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -247,8 +247,8 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| channelId | string |   | false | *none* |
-| messageId | string |   | false | *none* |
+| channelId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| messageId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 | data | any |   | false | *none* |
 | original | [Message](/classes/Message) |   | true | *none* |
 
@@ -263,8 +263,8 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| channelId | string |   | false | *none* |
-| overwriteId | string |   | false | *none* |
+| channelId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| overwriteId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 | data | any |   | false | *none* |
 
 **Returns:** Promise<any>
@@ -278,7 +278,7 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| channelId | string |   | false | *none* |
+| channelId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 | data | any |   | false | *none* |
 
 **Returns:** Promise<any>
@@ -292,7 +292,7 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| channelId | string |   | false | *none* |
+| channelId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -305,7 +305,7 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| channelId | string |   | false | *none* |
+| channelId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 | messageId | any |   | false | *none* |
 
 **Returns:** Promise<any>
@@ -319,9 +319,9 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| channelId | string |   | false | *none* |
+| channelId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 | messageId | any |   | false | *none* |
-| emoji | string |   | false | *none* |
+| emoji | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -334,7 +334,7 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| channelId | string |   | false | *none* |
+| channelId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 | data | any |   | false | *none* |
 
 **Returns:** Promise<any>
@@ -348,7 +348,7 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| channelId | string |   | false | *none* |
+| channelId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -361,8 +361,8 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| channelId | string |   | false | *none* |
-| userId | string |   | false | *none* |
+| channelId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| userId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -375,7 +375,7 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| channelId | string |   | false | *none* |
+| channelId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -388,7 +388,7 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| channelId | string |   | false | *none* |
+| channelId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -401,7 +401,7 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| channelId | string |   | false | *none* |
+| channelId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -414,7 +414,7 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| channelId | string |   | false | *none* |
+| channelId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -427,9 +427,9 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| channelId | string |   | false | *none* |
+| channelId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 | data | any |   | false | *none* |
-| reason | string |   | true | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<any>
 
@@ -442,9 +442,9 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| channelId | string |   | false | *none* |
-| messageId | string |   | false | *none* |
-| reason | string |   | true | *none* |
+| channelId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| messageId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<any>
 
@@ -457,8 +457,8 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| channelId | string |   | false | *none* |
-| userId | string |   | false | *none* |
+| channelId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| userId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -471,10 +471,10 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| channelId | string |   | false | *none* |
-| messageId | string |   | false | *none* |
+| channelId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| messageId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 | data | any |   | false | *none* |
-| reason | string |   | true | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<any>
 
@@ -487,9 +487,9 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| channelId | string |   | false | *none* |
+| channelId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 | data | any |   | false | *none* |
-| reason | string |   | true | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<any>
 
@@ -502,7 +502,7 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| channelId | string |   | false | *none* |
+| channelId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -515,9 +515,9 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| channelId | string |   | false | *none* |
-| messageId | string |   | false | *none* |
-| reason | string |   | true | *none* |
+| channelId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| messageId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<any>
 

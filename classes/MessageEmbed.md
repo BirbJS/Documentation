@@ -25,57 +25,57 @@ new MessageEmbed()
 ## author
 The author of this embed.
 
-**Type:** Object or [EmbedAuthor](/classes/EmbedAuthor)
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or [EmbedAuthor](/classes/EmbedAuthor)
 
 ## color
 The color of this embed as a hex string.
 
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## description
 The description of this embed.
 
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## fields
 This embed's fields.
 
-**Type:** Object
+**Type:** *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)*
 
 ## footer
 The footer of this embed.
 
-**Type:** Object or [EmbedFooter](/classes/EmbedFooter)
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or [EmbedFooter](/classes/EmbedFooter)
 
 ## image
 The image in this embed.
 
-**Type:** Object or [EmbedMedia](/classes/EmbedMedia)
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or [EmbedMedia](/classes/EmbedMedia)
 
 ## thumbnail
 The thumbnail for this embed.
 
-**Type:** Object or [EmbedMedia](/classes/EmbedMedia)
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or [EmbedMedia](/classes/EmbedMedia)
 
 ## timestamp
 The timestamp of this embed (shows in the footer).
 
-**Type:** Object or Date
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or Date
 
 ## title
 The title of this embed.
 
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## url
 The URL of this embed (makes the title clickable).
 
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## video
 The video for this embed (usually not settable).
 
-**Type:** Object or [EmbedMedia](/classes/EmbedMedia)
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or [EmbedMedia](/classes/EmbedMedia)
 
 # Methods
 ## addField(name, value, inline?)
@@ -83,9 +83,9 @@ Add a field to this embed.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| name | string | The name of the field. | false | *none* |
-| value | string | The field's value. | false | *none* |
-| inline | boolean |   | true | *none* |
+| name | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The name of the field. | false | *none* |
+| value | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The field's value. | false | *none* |
+| inline | *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)* |   | true | *none* |
 
 **Returns:** [MessageEmbed](/classes/MessageEmbed)
 
@@ -94,7 +94,7 @@ Add multiple fields to this embed.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| fields | Object | The fields to add to this embed. | false | *none* |
+| fields | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* | The fields to add to this embed. | false | *none* |
 
 **Returns:** [MessageEmbed](/classes/MessageEmbed)
 
@@ -108,7 +108,7 @@ Remove a field from this embed.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| index | number | The array index of the field to remove. | false | *none* |
+| index | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* | The array index of the field to remove. | false | *none* |
 
 **Returns:** [MessageEmbed](/classes/MessageEmbed)
 
@@ -117,9 +117,9 @@ Set the author of this embed.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| name | string | The name of the author. | false | *none* |
-| url | string |   | true | *none* |
-| iconUrl | string |   | true | *none* |
+| name | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The name of the author. | false | *none* |
+| url | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
+| iconUrl | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** [MessageEmbed](/classes/MessageEmbed)
 
@@ -128,7 +128,7 @@ Set the HEX color of this embed.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| color | string | The new HEX color of this embed. | false | *none* |
+| color | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The new HEX color of this embed. | false | *none* |
 
 **Returns:** [MessageEmbed](/classes/MessageEmbed)
 
@@ -137,7 +137,7 @@ Set the description of this embed.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| description | string | The new description of this embed. | false | *none* |
+| description | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The new description of this embed. | false | *none* |
 
 **Returns:** [MessageEmbed](/classes/MessageEmbed)
 
@@ -146,7 +146,7 @@ Set the fields of this embed.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| fields | Object | The new fields of this embed. | false | *none* |
+| fields | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* | The new fields of this embed. | false | *none* |
 
 **Returns:** [MessageEmbed](/classes/MessageEmbed)
 
@@ -155,8 +155,8 @@ Set the footer of this embed.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| text | string | The text of the footer. | false | *none* |
-| iconUrl | string |   | true | *none* |
+| text | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The text of the footer. | false | *none* |
+| iconUrl | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** [MessageEmbed](/classes/MessageEmbed)
 
@@ -165,9 +165,9 @@ Set the image for this embed.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| url | string | A public-facing URL to an image for the embed. | false | *none* |
-| height | number |   | true | *none* |
-| width | number |   | true | *none* |
+| url | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | A public-facing URL to an image for the embed. | false | *none* |
+| height | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* |   | true | *none* |
+| width | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* |   | true | *none* |
 
 **Returns:** [MessageEmbed](/classes/MessageEmbed)
 
@@ -176,9 +176,9 @@ Set the thumbnail for this embed.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| url | string | A public-facing URL to an image for the embed. | false | *none* |
-| height | number |   | true | *none* |
-| width | number |   | true | *none* |
+| url | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | A public-facing URL to an image for the embed. | false | *none* |
+| height | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* |   | true | *none* |
+| width | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* |   | true | *none* |
 
 **Returns:** [MessageEmbed](/classes/MessageEmbed)
 
@@ -187,7 +187,7 @@ Set the timestamp of this embed.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| timestamp | number or Date | The new timestamp of this embed. | false | *none* |
+| timestamp | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* or Date | The new timestamp of this embed. | false | *none* |
 
 **Returns:** [MessageEmbed](/classes/MessageEmbed)
 
@@ -196,7 +196,7 @@ Set the title of this embed.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| title | string | The new title of this embed. | false | *none* |
+| title | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The new title of this embed. | false | *none* |
 
 **Returns:** [MessageEmbed](/classes/MessageEmbed)
 
@@ -205,7 +205,7 @@ Set the URL of this embed.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| url | string | The new URL of this embed. | false | *none* |
+| url | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The new URL of this embed. | false | *none* |
 
 **Returns:** [MessageEmbed](/classes/MessageEmbed)
 
@@ -214,9 +214,9 @@ Set the video for this embed.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| url | string | A public-facing URL to a video for the embed. | false | *none* |
-| height | number |   | true | *none* |
-| width | number |   | true | *none* |
+| url | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | A public-facing URL to a video for the embed. | false | *none* |
+| height | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* |   | true | *none* |
+| width | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* |   | true | *none* |
 
 **Returns:** [MessageEmbed](/classes/MessageEmbed)
 

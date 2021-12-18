@@ -30,26 +30,26 @@ new BaseUser(client, data)
 ## accentColor
 The accent color of this user represented as a hex color code string.
 
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## avatar
 The avatar hash of this user.
 **Note**: This is not the same as an avatar URL.
 Use `BaseUser#displayAvatarURL()` method to get the avatar URL of this user.
 
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## banner
 The banner hash of this user.
 **Note:** This is not the same as an banner URL.
 Use `BaseUser#getBanner()` method to get the banner URL of this user.
 
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## bot
 Whether or not this user is a bot.
 
-**Type:** boolean
+**Type:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## client
 The client this user belongs to.
@@ -59,12 +59,12 @@ The client this user belongs to.
 ## discriminator
 The discriminator of this user.
 
-**Type:** string
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## flags
 The flags of this user.
 
-**Type:** Object or Object
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)*
 
 ## id
 {: .d-inline-block }
@@ -74,22 +74,22 @@ READONLY
 
 The ID of this user.
 
-**Type:** string
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## system
 Whether or not this user is a system account.
 
-**Type:** boolean
+**Type:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## tag
 The tag of this user.
 
-**Type:** string
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## username
 The username of this user.
 
-**Type:** string
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 # Methods
 ## isPartial()
@@ -97,5 +97,5 @@ Whether or not this instance is a full or partial
 user. A partial user is a user that is only
 guaranteed to have `id` set on them.
 
-**Returns:** boolean
+**Returns:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 

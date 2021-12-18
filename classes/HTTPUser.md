@@ -27,7 +27,7 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| userId | string |   | false | *none* |
+| userId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -40,7 +40,7 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| userId | string |   | false | *none* |
+| userId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 
@@ -65,7 +65,7 @@ STATIC
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) |   | false | *none* |
-| guildId | string |   | false | *none* |
+| guildId | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** Promise<any>
 

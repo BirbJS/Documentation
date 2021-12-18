@@ -29,12 +29,12 @@ new Message(client, data)
 ## attachments
 Any attachments that were sent with this message.
 
-**Type:** Object
+**Type:** *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)*
 
 ## author
 The author of this message.
 
-**Type:** Object or [BaseUser](/classes/BaseUser)
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or [BaseUser](/classes/BaseUser)
 
 ## channel
 The channel this message was sent in.
@@ -49,17 +49,17 @@ The client this message belongs to.
 ## content
 The text content of the message.
 
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## flags
 This message's bitfield flags.
 
-**Type:** number
+**Type:** *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)*
 
 ## guild
 The guild this message was sent in, if any.
 
-**Type:** Object or [Guild](/classes/Guild)
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or [Guild](/classes/Guild)
 
 ## id
 {: .d-inline-block }
@@ -69,30 +69,30 @@ READONLY
 
 The ID of the message.
 
-**Type:** string
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## member
 The member that sent this message if this message
 was sent in a guild.
 
-**Type:** Object or [GuildMember](/classes/GuildMember)
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or [GuildMember](/classes/GuildMember)
 
 ## system
 Whether or not this is a system message (e.g. a
 welcome message).
 
-**Type:** boolean
+**Type:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## type
 The type of message.
 
-**Type:** Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object
+**Type:** DEFAULT or RECIPIENT_ADD or RECIPIENT_REMOVE or CALL or CHANNEL_NAME_CHANGE or CHANNEL_ICON_CHANGE or CHANNEL_PINNED_MESSAGE or GUILD_MEMBER_JOIN or USER_PREMIUM_GUILD_SUBSCRIPTION or USER_PREMIUM_GUILD_SUBSCRIPTION_TIER_1 or USER_PREMIUM_GUILD_SUBSCRIPTION_TIER_2 or USER_PREMIUM_GUILD_SUBSCRIPTION_TIER_3 or CHANNEL_FOLLOW_ADD or GUILD_DISCOVERY_DISQUALIFIED or GUILD_DISCOVERY_REQUALIFIED or GUILD_DISCOVERY_GRACE_PERIOD_INITIAL_WARNING or GUILD_DISCOVERY_GRACE_PERIOD_FINAL_WARNING or THREAD_CREATED or REPLY or CHAT_INPUT_COMMAND or THREAD_STARTER_MESSAGE or GUILD_INVITE_REMINDER or CONTEXT_MENU_COMMAND
 
 ## webhookId
 The webhook ID if this message was sent by a Discord
 webhook.
 
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 # Methods
 ## crosspost()
@@ -130,7 +130,7 @@ Pin this message to the channel it was sent in.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| reason | string |   | true | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<[Message](/classes/Message)>
 
@@ -148,8 +148,8 @@ Start a thread from this message.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| name | string | The name of the thread. | false | *none* |
-| options | Object |   | false | {} |
+| name | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The name of the thread. | false | *none* |
+| options | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | {} |
 
 **Returns:** Promise<void>
 
@@ -163,7 +163,7 @@ Unpin this message from the channel it was sent in.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| reason | string |   | true | *none* |
+| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** Promise<[Message](/classes/Message)>
 
@@ -182,7 +182,7 @@ Build an API message.
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | data | MessageContent |   | false | *none* |
-| edit | boolean |   | false | false |
+| edit | *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)* |   | false | false |
 
 **Returns:** any
 

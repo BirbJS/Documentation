@@ -23,8 +23,8 @@ new RolePermissionOverwrite(client, role, allow, deny)
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) | The client this overwrite belongs to. | false | *none* |
 | role | [Role](/classes/Role) | The role this overwrite belongs to. | false | *none* |
-| allow | number | The allowed permissions. | false | 0 |
-| deny | number | The denied permissions.
+| allow | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* | The allowed permissions. | false | 0 |
+| deny | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* | The denied permissions.
  | false | 0 |
 
 # Properties
@@ -54,7 +54,7 @@ Grant the specified permissions.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| flags | Object | The flags to grant. | false | *none* |
+| flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* | The flags to grant. | false | *none* |
 
 **Returns:** [PermissionOverwrite](/classes/PermissionOverwrite)
 
@@ -63,7 +63,7 @@ Revoke the specified permissions.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| flags | Object | The flags to revoke. | false | *none* |
+| flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* | The flags to revoke. | false | *none* |
 
 **Returns:** [PermissionOverwrite](/classes/PermissionOverwrite)
 

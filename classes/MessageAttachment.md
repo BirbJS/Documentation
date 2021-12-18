@@ -21,17 +21,17 @@ new MessageAttachment(file, filename, id?, url?, proxyUrl?)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| file | Object or string or Buffer | The file to upload. If a string, it is assumed to be the path to the file (which Birb.JS shall read and turn into a buffer). Rarely should be set to `null`. | false | null |
-| filename | Object or string | The filename of the attachment. Rarely should be set to `null`. | false | null |
-| id | string |   | true | *none* |
-| url | string |   | true | *none* |
-| proxyUrl | string |   | true | *none* |
+| file | *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* or Buffer | The file to upload. If a string, it is assumed to be the path to the file (which Birb.JS shall read and turn into a buffer). Rarely should be set to `null`. | false | null |
+| filename | *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The filename of the attachment. Rarely should be set to `null`. | false | null |
+| id | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
+| url | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
+| proxyUrl | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 # Properties
 ## buffer
 The buffer containing this attachment's data.
 
-**Type:** Object or Buffer
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or Buffer
 
 ## filename
 The filename of this attachment. Can be used to
@@ -39,30 +39,30 @@ represent this attachment in embededs. For example,
 if the filename is `image.png`, then the attachment
 URL would be `attachment://image.png`.
 
-**Type:** string
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## id
 The ID of this attachment. Not present if the
 attachment is yet to be uploaded to Discord.
 
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## proxyUrl
 The Discord proxy URL to this attachment. Not
 present if the attachment is yet to be uploaded to
 Discord.
 
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## url
 The Discord CDN URL to this attachment. Not present
 if the attachment is yet to be uploaded to Discord.
 
-**Type:** Object or string
+**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 # Methods
 ## getBuffer()
 Gets the attachment's data as a Buffer.
 
-**Returns:** Object or Buffer
+**Returns:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* or Buffer
 

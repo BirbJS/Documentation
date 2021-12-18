@@ -23,8 +23,7 @@ new GuildMember(client, data, guild)
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) | The client that this member belongs to. | false | *none* |
 | data | any | The data of this member. | false | *none* |
-| guild | [Guild](/classes/Guild) | The guild this member is in.
- | false | *none* |
+| guild | [Guild](/classes/Guild) | The guild this member is in.  | false | *none* |
 
 # Properties
 ## avatar

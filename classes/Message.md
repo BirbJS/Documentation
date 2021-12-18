@@ -22,8 +22,7 @@ new Message(client, data)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) | The client this message belongs to. | false | *none* |
-| data | any | The data of the message.
- | false | *none* |
+| data | any | The data of the message.  | false | *none* |
 
 # Properties
 ## attachments

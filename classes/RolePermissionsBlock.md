@@ -22,8 +22,7 @@ new RolePermissionsBlock(client, role, flags)
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) | The client instance. | false | *none* |
 | role | [Role](/classes/Role) | The Role this PermissionsBlock is for. | false | *none* |
-| flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* | The permissions to set.
- | false | *none* |
+| flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* | The permissions to set.  | false | *none* |
 
 # Properties
 ## bits

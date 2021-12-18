@@ -19,8 +19,7 @@ new Snowflake(epoch)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| epoch | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* \| bigint \| Date | the epoch to use
- | false | *none* |
+| epoch | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* \| bigint \| Date | the epoch to use  | false | *none* |
 
 # Properties
 ## decode
@@ -41,9 +40,7 @@ Generates a snowflake given an epoch and optionally a timestamp
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| options | SnowflakeGenerateOptions | options to pass into the generator, see {@link SnowflakeGenerateOptions}
-
-**note** when `increment` is not provided it defaults to the private `increment` of the instance | true | *none* |
+| options | SnowflakeGenerateOptions | options to pass into the generator, see {@link SnowflakeGenerateOptions}  **note** when `increment` is not provided it defaults to the private `increment` of the instance | true | *none* |
 
 **Returns:** bigint
 

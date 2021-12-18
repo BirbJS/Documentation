@@ -21,8 +21,7 @@ new Websocket(client, domain)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) | The client. | false | *none* |
-| domain | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The domain to connect to.
- | false | *none* |
+| domain | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The domain to connect to.  | false | *none* |
 
 # Properties
 ## buffer

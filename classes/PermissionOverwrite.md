@@ -23,8 +23,7 @@ new PermissionOverwrite(client, allow, deny)
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) | The client this overwrite belongs to. | false | *none* |
 | allow | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* | The allowed permissions. | false | 0 |
-| deny | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* | The denied permissions.
- | false | 0 |
+| deny | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* | The denied permissions.  | false | 0 |
 
 # Properties
 ## allow

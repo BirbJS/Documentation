@@ -22,8 +22,7 @@ new Role(client, data, guild)
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) | The client that this Role belongs to. | false | *none* |
 | data | any | The data of this Role. | false | *none* |
-| guild | [Guild](/classes/Guild) | The guild this Role belongs to.
- | false | *none* |
+| guild | [Guild](/classes/Guild) | The guild this Role belongs to.  | false | *none* |
 
 # Properties
 ## client

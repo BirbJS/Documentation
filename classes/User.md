@@ -21,8 +21,7 @@ new User(client, data)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) | The client that instantiated this User. | false | *none* |
-| data | any | The data for this User.
- | false | *none* |
+| data | any | The data for this User.  | false | *none* |
 
 # Properties
 ## accentColor

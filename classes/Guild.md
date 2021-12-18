@@ -21,8 +21,7 @@ new Guild(client, data)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) | The client that this guild belongs to. | false | *none* |
-| data | any | The data for this guild.
- | false | *none* |
+| data | any | The data for this guild.  | false | *none* |
 
 # Properties
 ## afkChannelId

@@ -23,8 +23,7 @@ new BaseUser(client, data)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) | The client that this user belongs to. | false | *none* |
-| data | any | The data to use to build this user.
- | false | *none* |
+| data | any | The data to use to build this user.  | false | *none* |
 
 # Properties
 ## accentColor

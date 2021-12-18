@@ -27,8 +27,7 @@ new CachedBlock(client, cache)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) | The client to use. | false | *none* |
-| cache | [Cache](/classes/Cache) | The cache to use.
- | false | *none* |
+| cache | [Cache](/classes/Cache) | The cache to use.  | false | *none* |
 
 # Properties
 ## cache

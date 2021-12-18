@@ -21,8 +21,7 @@ new Channel(client, data)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) | The client this channel belongs to. | false | *none* |
-| data | any | The data of this channel.
- | false | *none* |
+| data | any | The data of this channel.  | false | *none* |
 
 # Properties
 ## client

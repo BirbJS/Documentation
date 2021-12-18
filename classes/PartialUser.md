@@ -25,8 +25,7 @@ new PartialUser(client, data)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) | The client this user belongs to. | false | *none* |
-| data | any | The data of this user.
- | false | *none* |
+| data | any | The data of this user.  | false | *none* |
 
 # Properties
 ## client

@@ -23,8 +23,7 @@ new InternalWebsocket(client, domain)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | client | [Client](/classes/Client) | The client that owns this websocket. | false | *none* |
-| domain | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The current Discord gateway URL.
- | false | *none* |
+| domain | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The current Discord gateway URL.  | false | *none* |
 
 # Properties
 ## buffer

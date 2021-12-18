@@ -49,5 +49,5 @@ new GuildMemberBlock(client, guild, options?)
 | guild | [Guild](/classes/Guild) |  | false |  |
 | def | any |  | true |  |
 
-**Returns:** Object | [GuildMember](/classes/GuildMember)
+**Returns:** Object or [GuildMember](/classes/GuildMember)
 

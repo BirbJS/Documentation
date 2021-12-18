@@ -44,7 +44,11 @@ new RolePermissionsBlock(client, role, flags)
 ## equals(check)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
+<<<<<<< Updated upstream
 | check | number | [PermissionsBlock](/classes/PermissionsBlock) | [Permissions](/classes/Permissions) |  | false |  |
+=======
+| check | number or [PermissionsBlock](/classes/PermissionsBlock) or [Permissions](/classes/Permissions) | The PermissionsBlock or Permissions to compare to. | false | *none* |
+>>>>>>> Stashed changes
 
 **Returns:** boolean
 
@@ -53,7 +57,11 @@ Grant the role the specified permissions.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
+<<<<<<< Updated upstream
 | permissions | number | Object | The permissions to grant. | false |  |
+=======
+| permissions | number or Object | The permissions to grant. | false | *none* |
+>>>>>>> Stashed changes
 | options | Object | The options for the action. | false | {} |
 
 **Returns:** Promise<[Role](/classes/Role)>
@@ -78,7 +86,11 @@ Revoke the specified permissions from the Role.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
+<<<<<<< Updated upstream
 | permissions | number | Object | The permissions to revoke. | false |  |
+=======
+| permissions | number or Object | The permissions to revoke. | false | *none* |
+>>>>>>> Stashed changes
 | options | Object | The options for the action. | false | {} |
 
 **Returns:** Promise<[Role](/classes/Role)>
@@ -88,7 +100,11 @@ Set the permissions for the Role.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
+<<<<<<< Updated upstream
 | permissions | number | Object | The permissions to set. | false |  |
+=======
+| permissions | number or Object | The permissions to set. | false | *none* |
+>>>>>>> Stashed changes
 | options | Object | The options for the action. | false | {} |
 
 **Returns:** Promise<[Role](/classes/Role)>

@@ -27,7 +27,13 @@ new Message(client, data)
 **Type:** Object
 
 ## author
+<<<<<<< Updated upstream
 **Type:** Object | [BaseUser](/classes/BaseUser)
+=======
+The author of this message.
+
+**Type:** Object or [BaseUser](/classes/BaseUser)
+>>>>>>> Stashed changes
 
 ## baseAuthor
 {: .d-inline-block }
@@ -44,13 +50,25 @@ PRIVATE
 **Type:** [Client](/classes/Client)
 
 ## content
+<<<<<<< Updated upstream
 **Type:** Object | string
+=======
+The text content of the message.
+
+**Type:** Object or string
+>>>>>>> Stashed changes
 
 ## flags
 **Type:** number
 
 ## guild
+<<<<<<< Updated upstream
 **Type:** Object | [Guild](/classes/Guild)
+=======
+The guild this message was sent in, if any.
+
+**Type:** Object or [Guild](/classes/Guild)
+>>>>>>> Stashed changes
 
 ## id
 {: .d-inline-block }
@@ -61,16 +79,35 @@ READONLY
 **Type:** string
 
 ## member
+<<<<<<< Updated upstream
 **Type:** Object | [GuildMember](/classes/GuildMember)
+=======
+The member that sent this message if this message
+was sent in a guild.
+
+**Type:** Object or [GuildMember](/classes/GuildMember)
+>>>>>>> Stashed changes
 
 ## system
 **Type:** boolean
 
 ## type
+<<<<<<< Updated upstream
 **Type:** Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object | Object
 
 ## webhookId
 **Type:** Object | string
+=======
+The type of message.
+
+**Type:** Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object or Object
+
+## webhookId
+The webhook ID if this message was sent by a Discord
+webhook.
+
+**Type:** Object or string
+>>>>>>> Stashed changes
 
 # Methods
 ## build(data)

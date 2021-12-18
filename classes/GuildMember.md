@@ -25,7 +25,16 @@ new GuildMember(client, data, guild)
 
 # Properties
 ## avatar
+<<<<<<< Updated upstream
 **Type:** Object | string
+=======
+The avatar hash for this member.
+**Note:** This is not the same as an avatar URL. Use
+the `displayAvatarURL` method to get the avatar URL
+of this user.
+
+**Type:** Object or string
+>>>>>>> Stashed changes
 
 ## client
 **Type:** [Client](/classes/Client)
@@ -48,13 +57,25 @@ READONLY
 **Type:** string
 
 ## joinedAt
+<<<<<<< Updated upstream
 **Type:** Object | Date
+=======
+The date this member joined the guild.
+
+**Type:** Object or Date
+>>>>>>> Stashed changes
 
 ## muted
 **Type:** boolean
 
 ## nick
+<<<<<<< Updated upstream
 **Type:** Object | string
+=======
+The nickname of this member.
+
+**Type:** Object or string
+>>>>>>> Stashed changes
 
 ## originalUser
 **Type:** any
@@ -66,10 +87,22 @@ READONLY
 **Type:** [GuildMemberRoleBlock](/classes/GuildMemberRoleBlock)
 
 ## timedOutUntil
+<<<<<<< Updated upstream
 **Type:** Object | Date
 
 ## user
 **Type:** Object | [BaseUser](/classes/BaseUser)
+=======
+The date until this member leaves timeout mode. This
+will be `null` if the member is not in timeout mode.
+
+**Type:** Object or Date
+
+## user
+The user related to this member.
+
+**Type:** Object or [BaseUser](/classes/BaseUser)
+>>>>>>> Stashed changes
 
 # Methods
 ## _waitForFull()

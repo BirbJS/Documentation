@@ -24,28 +24,63 @@ new Guild(client, data)
 
 # Properties
 ## afkChannelId
+<<<<<<< Updated upstream
 **Type:** Object | string
+=======
+The ID of the guild's AFK channel.
+
+**Type:** Object or string
+>>>>>>> Stashed changes
 
 ## afkTimeout
 **Type:** number
 
 ## approximateMemberCount
+<<<<<<< Updated upstream
 **Type:** Object | number
 
 ## approximatePresenceCount
 **Type:** Object | number
+=======
+The approximate amount of members in this guild.
+
+**Type:** Object or number
+
+## approximatePresenceCount
+The approximate amount of online members in this
+guild.
+
+**Type:** Object or number
+>>>>>>> Stashed changes
 
 ## available
 **Type:** boolean
 
 ## banner
+<<<<<<< Updated upstream
 **Type:** Object | string
+=======
+The guild's banner hash.
+**Note:** This is not the same as an banner URL.
+Use the `getBannerURL` method to get the icon URL of
+this guild.
+
+**Type:** Object or string
+>>>>>>> Stashed changes
 
 ## boostTier
 **Type:** number
 
 ## boosterCount
+<<<<<<< Updated upstream
 **Type:** Object | number
+=======
+The amount of members who have used Discord Nitro
+to boost this guild (or have purchased a Nitro boost
+on its own for this guild).
+
+**Type:** Object or number
+>>>>>>> Stashed changes
 
 ## channels
 **Type:** default
@@ -57,16 +92,39 @@ new Guild(client, data)
 **Type:** [NotificationLevel](/enums/NotificationLevel)
 
 ## description
+<<<<<<< Updated upstream
 **Type:** Object | string
 
 ## discoverySplash
 **Type:** Object | string
+=======
+The guild's description.
+
+**Type:** Object or string
+
+## discoverySplash
+The guild's discovery splash hash.
+**Note:** This is not the same as a splash URL. Use
+the `getSplashURL` method to get the splash URL of
+this guild.
+
+**Type:** Object or string
+>>>>>>> Stashed changes
 
 ## explicitContentFilter
 **Type:** [ExplicitContentFilterLevel](/enums/ExplicitContentFilterLevel)
 
 ## icon
+<<<<<<< Updated upstream
 **Type:** Object | string
+=======
+The guild's icon hash.
+**Note:** This is not the same as an icon URL. Use
+the `getIconURL` method to get the icon URL of this
+guild.
+
+**Type:** Object or string
+>>>>>>> Stashed changes
 
 ## id
 {: .d-inline-block }
@@ -80,6 +138,7 @@ READONLY
 **Type:** boolean
 
 ## maxMembers
+<<<<<<< Updated upstream
 **Type:** Object | number
 
 ## maxVideoChannelUsers
@@ -87,6 +146,24 @@ READONLY
 
 ## memberCount
 **Type:** Object | number
+=======
+The maximum amount of members allowed in this guild.
+Reach out to [Discord support](https://dis.gd/support)
+if you're getting close to this limit and need it
+increased.
+
+**Type:** Object or number
+
+## maxVideoChannelUsers
+The maximum amount of video channel members.
+
+**Type:** Object or number
+
+## memberCount
+The member count of this guild.
+
+**Type:** Object or number
+>>>>>>> Stashed changes
 
 ## members
 **Type:** [GuildMemberBlock](/classes/GuildMemberBlock)
@@ -107,12 +184,19 @@ READONLY
 **Type:** string
 
 ## preferredLocale
+<<<<<<< Updated upstream
 **Type:** Object | string
+=======
+The preferred locale (language) for this Guild.
+
+**Type:** Object or string
+>>>>>>> Stashed changes
 
 ## roles
 **Type:** [RoleBlock](/classes/RoleBlock)
 
 ## rulesChannelId
+<<<<<<< Updated upstream
 **Type:** Object | string
 
 ## splash
@@ -123,6 +207,32 @@ READONLY
 
 ## vanityCode
 **Type:** Object | string
+=======
+The channel ID of the guild's rules or guidelines
+channel.
+
+**Type:** Object or string
+
+## splash
+The splash hash of this guild.
+**Note:** This is not the same as a splash URL.
+Use the `getSplashURL` method to get the splash URL
+of this guild.
+
+**Type:** Object or string
+
+## systemChannelId
+The ID of this guild's system channel where join
+notifications, boost messages, etc. are sent.
+
+**Type:** Object or string
+
+## vanityCode
+The vanity invite code this guild owns. `null` if it
+doesn't have one.
+
+**Type:** Object or string
+>>>>>>> Stashed changes
 
 ## verificationLevel
 **Type:** [VerificationLevel](/enums/VerificationLevel)

@@ -19,6 +19,7 @@ new MessageEmbed()
 
 # Properties
 ## author
+<<<<<<< Updated upstream
 **Type:** Object | [EmbedAuthor](/classes/EmbedAuthor)
 
 ## color
@@ -26,11 +27,27 @@ new MessageEmbed()
 
 ## description
 **Type:** Object | string
+=======
+The author of this embed.
+
+**Type:** Object or [EmbedAuthor](/classes/EmbedAuthor)
+
+## color
+The color of this embed as a hex string.
+
+**Type:** Object or string
+
+## description
+The description of this embed.
+
+**Type:** Object or string
+>>>>>>> Stashed changes
 
 ## fields
 **Type:** Object
 
 ## footer
+<<<<<<< Updated upstream
 **Type:** Object | [EmbedFooter](/classes/EmbedFooter)
 
 ## image
@@ -50,6 +67,41 @@ new MessageEmbed()
 
 ## video
 **Type:** Object | [EmbedMedia](/classes/EmbedMedia)
+=======
+The footer of this embed.
+
+**Type:** Object or [EmbedFooter](/classes/EmbedFooter)
+
+## image
+The image in this embed.
+
+**Type:** Object or [EmbedMedia](/classes/EmbedMedia)
+
+## thumbnail
+The thumbnail for this embed.
+
+**Type:** Object or [EmbedMedia](/classes/EmbedMedia)
+
+## timestamp
+The timestamp of this embed (shows in the footer).
+
+**Type:** Object or Date
+
+## title
+The title of this embed.
+
+**Type:** Object or string
+
+## url
+The URL of this embed (makes the title clickable).
+
+**Type:** Object or string
+
+## video
+The video for this embed (usually not settable).
+
+**Type:** Object or [EmbedMedia](/classes/EmbedMedia)
+>>>>>>> Stashed changes
 
 # Methods
 ## addField(name, value, inline?)
@@ -161,7 +213,11 @@ Set the timestamp of this embed.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
+<<<<<<< Updated upstream
 | timestamp | number | Date | The new timestamp of this embed. | false |  |
+=======
+| timestamp | number or Date | The new timestamp of this embed. | false | *none* |
+>>>>>>> Stashed changes
 
 **Returns:** [MessageEmbed](/classes/MessageEmbed)
 

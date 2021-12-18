@@ -24,7 +24,14 @@ new EmbedFooter(text, iconUrl?)
 
 # Properties
 ## iconUrl
+<<<<<<< Updated upstream
 **Type:** Object | string
+=======
+The URL of the icon displayed at the bottom of the
+embed.
+
+**Type:** Object or string
+>>>>>>> Stashed changes
 
 ## text
 **Type:** string

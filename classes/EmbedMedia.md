@@ -25,13 +25,25 @@ new EmbedMedia(url, height?, width?)
 
 # Properties
 ## height
+<<<<<<< Updated upstream
 **Type:** Object | number
+=======
+The height of the media.
+
+**Type:** Object or number
+>>>>>>> Stashed changes
 
 ## url
 **Type:** string
 
 ## width
+<<<<<<< Updated upstream
 **Type:** Object | number
+=======
+The width of the media.
+
+**Type:** Object or number
+>>>>>>> Stashed changes
 
 # Methods
 ## format()

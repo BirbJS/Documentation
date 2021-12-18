@@ -25,13 +25,25 @@ new EmbedAuthor(name, url?, iconUrl?)
 
 # Properties
 ## iconUrl
+<<<<<<< Updated upstream
 **Type:** Object | string
+=======
+The icon URL of the author.
+
+**Type:** Object or string
+>>>>>>> Stashed changes
 
 ## name
 **Type:** string
 
 ## url
+<<<<<<< Updated upstream
 **Type:** Object | string
+=======
+The URL of the author.
+
+**Type:** Object or string
+>>>>>>> Stashed changes
 
 # Methods
 ## format()
@@ -48,7 +60,11 @@ Format this class into an API-acceptable object.
 ## setIconUrl(iconUrl)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
+<<<<<<< Updated upstream
 | iconUrl | string |  | false |  |
+=======
+| iconUrl | Object or string | A publicly-accessible URL to an image to use as the author's icon. `null` to remove the icon. | false | *none* |
+>>>>>>> Stashed changes
 
 **Returns:** void
 
@@ -62,7 +78,11 @@ Format this class into an API-acceptable object.
 ## setUrl(url)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
+<<<<<<< Updated upstream
 | url | string |  | false |  |
+=======
+| url | Object or string | The URL of the author. `null` to remove the URL. | false | *none* |
+>>>>>>> Stashed changes
 
 **Returns:** void
 

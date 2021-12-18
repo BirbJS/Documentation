@@ -53,7 +53,11 @@ PROTECTED
 PROTECTED
 {: .label .label-red }
 
+<<<<<<< Updated upstream
 **Type:** Object
+=======
+**Type:** Object or number
+>>>>>>> Stashed changes
 
 ## lastHeartbeat
 {: .d-inline-block }
@@ -82,8 +86,12 @@ PROTECTED
 ## lastSequenceIdentifier
 {: .d-inline-block }
 
+<<<<<<< Updated upstream
 PROTECTED
 {: .label .label-red }
+=======
+**Type:** Object or number
+>>>>>>> Stashed changes
 
 **Type:** Object
 
@@ -96,7 +104,11 @@ PROTECTED
 PROTECTED
 {: .label .label-red }
 
+<<<<<<< Updated upstream
 **Type:** Timer
+=======
+**Type:** Object or Timer
+>>>>>>> Stashed changes
 
 ## sessionIdentifier
 {: .d-inline-block }
@@ -104,7 +116,7 @@ PROTECTED
 PROTECTED
 {: .label .label-red }
 
-**Type:** Object | string
+**Type:** Object or string
 
 ## status
 **Type:** [WebsocketStatus](/enums/WebsocketStatus)

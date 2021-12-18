@@ -40,7 +40,11 @@ new PermissionsBlock(client, flags)
 ## equals(check)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
+<<<<<<< Updated upstream
 | check | number | [PermissionsBlock](/classes/PermissionsBlock) | [Permissions](/classes/Permissions) |  | false |  |
+=======
+| check | number or [PermissionsBlock](/classes/PermissionsBlock) or [Permissions](/classes/Permissions) | The PermissionsBlock or Permissions to compare to. | false | *none* |
+>>>>>>> Stashed changes
 
 **Returns:** boolean
 

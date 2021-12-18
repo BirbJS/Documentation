@@ -35,7 +35,7 @@ new Request(client, method, path, body?)
 **Type:** HTTPMethod
 
 ## reason
-**Type:** Object | string
+**Type:** Object or string
 
 ## response
 **Type:** any

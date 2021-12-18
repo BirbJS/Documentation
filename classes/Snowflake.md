@@ -19,8 +19,13 @@ new Snowflake(epoch)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
+<<<<<<< Updated upstream
 | epoch | number | bigint | Date | the epoch to use
  | false |  |
+=======
+| epoch | number or bigint or Date | the epoch to use
+ | false | *none* |
+>>>>>>> Stashed changes
 
 # Properties
 ## #private
@@ -40,7 +45,11 @@ Deconstructs a snowflake given a snowflake ID
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
+<<<<<<< Updated upstream
 | id | string | bigint | the snowflake to deconstruct | false |  |
+=======
+| id | string or bigint | the snowflake to deconstruct | false | *none* |
+>>>>>>> Stashed changes
 
 **Returns:** DeconstructedSnowflake
 
@@ -60,7 +69,11 @@ Retrieves the timestamp field's value from a snowflake.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
+<<<<<<< Updated upstream
 | id | string | bigint | The snowflake to get the timestamp value from. | false |  |
+=======
+| id | string or bigint | The snowflake to get the timestamp value from. | false | *none* |
+>>>>>>> Stashed changes
 
 **Returns:** number
 

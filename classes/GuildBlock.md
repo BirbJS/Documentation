@@ -33,7 +33,11 @@ new GuildBlock(client, options?)
 ## fetch(options)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
+<<<<<<< Updated upstream
 | options | GuildResolvable | Object |  | false |  |
+=======
+| options | GuildResolvable or Object | The options to use. | false | *none* |
+>>>>>>> Stashed changes
 
 **Returns:** Promise<[Guild](/classes/Guild)>
 

@@ -47,5 +47,5 @@ new UserBlock(client, options?)
 | user | UserResolvable |  | false |  |
 | def | any |  | true |  |
 
-**Returns:** Object | [User](/classes/User)
+**Returns:** Object or [User](/classes/User)
 

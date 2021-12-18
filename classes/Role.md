@@ -28,16 +28,34 @@ new Role(client, data, guild)
 **Type:** [Client](/classes/Client)
 
 ## color
+<<<<<<< Updated upstream
 **Type:** Object | string
+=======
+The color of this Role as a hex color string.
+
+**Type:** Object or string
+>>>>>>> Stashed changes
 
 ## guild
 **Type:** [Guild](/classes/Guild)
 
 ## hoist
+<<<<<<< Updated upstream
 **Type:** Object | boolean
 
 ## icon
 **Type:** Object | string
+=======
+Whether or not this Role is hoisted on the member
+list.
+
+**Type:** Object or boolean
+
+## icon
+The icon hash of this Role.
+
+**Type:** Object or string
+>>>>>>> Stashed changes
 
 ## id
 {: .d-inline-block }
@@ -48,6 +66,7 @@ READONLY
 **Type:** string
 
 ## managed
+<<<<<<< Updated upstream
 **Type:** Object | boolean
 
 ## mentionable
@@ -55,15 +74,43 @@ READONLY
 
 ## name
 **Type:** Object | string
+=======
+Whether or not this Role is managed by Discord,
+another application or a bot. If so, it cannot be
+deleted.
+
+**Type:** Object or boolean
+
+## mentionable
+Whether or not anyone can mention this Role.
+
+**Type:** Object or boolean
+
+## name
+The name of this Role.
+
+**Type:** Object or string
+>>>>>>> Stashed changes
 
 ## permissions
 **Type:** [RolePermissionsBlock](/classes/RolePermissionsBlock)
 
 ## position
+<<<<<<< Updated upstream
 **Type:** Object | number
 
 ## unicodeEmoji
 **Type:** Object | string
+=======
+The position of this Role.
+
+**Type:** Object or number
+
+## unicodeEmoji
+The unicode emoji of this Role.
+
+**Type:** Object or string
+>>>>>>> Stashed changes
 
 # Methods
 ## build(data)
@@ -122,8 +169,13 @@ Set the color of this Role.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
+<<<<<<< Updated upstream
 | color | string | number | The new color for this Role. Accepts HEX color codes (e.g. ffffff for white) or an RGB integer. | false |  |
 | reason | string |  | true |  |
+=======
+| color | string or number | The new color for this Role. Accepts HEX color codes (e.g. ffffff for white) or an RGB integer. | false | *none* |
+| reason | string |   | true | *none* |
+>>>>>>> Stashed changes
 
 **Returns:** Promise<[Role](/classes/Role)>
 

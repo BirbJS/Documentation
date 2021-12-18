@@ -23,6 +23,7 @@ new BaseUser(client, data)
 | data | any |  | false |  |
 
 # Properties
+<<<<<<< Updated upstream
 ## accent_color
 **Type:** Object | string
 
@@ -31,6 +32,29 @@ new BaseUser(client, data)
 
 ## banner
 **Type:** Object | string
+=======
+## accentColor
+The accent color of this user represented as a hex
+color code (string).
+
+**Type:** Object or string
+
+## avatar
+The avatar hash of this user.
+**Note:** This is not the same as an avatar URL. Use
+the `displayAvatarURL` method to get the avatar URL
+of this user.
+
+**Type:** Object or string
+
+## banner
+The banner hash of this user.
+**Note:** This is not the same as an banner URL. Use
+the `getBanner` method to get the banner URL of this
+user.
+
+**Type:** Object or string
+>>>>>>> Stashed changes
 
 ## bot
 **Type:** boolean
@@ -42,7 +66,13 @@ new BaseUser(client, data)
 **Type:** string
 
 ## flags
+<<<<<<< Updated upstream
 **Type:** Object | string
+=======
+The flags of this user as a bitfield (string).
+
+**Type:** Object or string
+>>>>>>> Stashed changes
 
 ## id
 {: .d-inline-block }

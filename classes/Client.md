@@ -53,7 +53,13 @@ PRIVATE
 **Type:** [GuildBlock](/classes/GuildBlock)
 
 ## me
+<<<<<<< Updated upstream
 **Type:** Object | [ClientUser](/classes/ClientUser)
+=======
+The client's Discord user.
+
+**Type:** Object or [ClientUser](/classes/ClientUser)
+>>>>>>> Stashed changes
 
 ## options
 **Type:** Object

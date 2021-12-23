@@ -26,17 +26,17 @@ new MessageEmbed()
 ## author
 The author of this embed.
 
-**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* \| [EmbedAuthor](/ref/classes/EmbedAuthor)
+**Type:** [EmbedAuthor](/ref/classes/EmbedAuthor)
 
 ## color
 The color of this embed as a hex string.
 
-**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* \| *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## description
 The description of this embed.
 
-**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* \| *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## fields
 This embed's fields.
@@ -46,37 +46,37 @@ This embed's fields.
 ## footer
 The footer of this embed.
 
-**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* \| [EmbedFooter](/ref/classes/EmbedFooter)
+**Type:** [EmbedFooter](/ref/classes/EmbedFooter)
 
 ## image
 The image in this embed.
 
-**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* \| [EmbedMedia](/ref/classes/EmbedMedia)
+**Type:** [EmbedMedia](/ref/classes/EmbedMedia)
 
 ## thumbnail
 The thumbnail for this embed.
 
-**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* \| [EmbedMedia](/ref/classes/EmbedMedia)
+**Type:** [EmbedMedia](/ref/classes/EmbedMedia)
 
 ## timestamp
 The timestamp of this embed (shows in the footer).
 
-**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* \| Date
+**Type:** Date
 
 ## title
 The title of this embed.
 
-**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* \| *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## url
 The URL of this embed (makes the title clickable).
 
-**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* \| *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## video
 The video for this embed (usually not settable).
 
-**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* \| [EmbedMedia](/ref/classes/EmbedMedia)
+**Type:** [EmbedMedia](/ref/classes/EmbedMedia)
 
 # Methods
 ## addField(name, value, inline?)

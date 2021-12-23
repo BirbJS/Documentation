@@ -30,7 +30,7 @@ new EmbedFooter(text, iconUrl?)
 The URL of the icon displayed at the bottom of the
 embed.
 
-**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* \| *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## text
 The text displayed at the bottom of the embed.
@@ -49,13 +49,13 @@ embed.
 
 **Returns:** [EmbedFooter](/ref/classes/EmbedFooter)
 
-## setIconUrl(iconUrl)
+## setIconUrl(iconUrl?)
 Set the URL of the icon displayed at the bottom of the
 embed.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| iconUrl | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| iconUrl | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** [EmbedFooter](/ref/classes/EmbedFooter)
 

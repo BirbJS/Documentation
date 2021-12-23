@@ -30,7 +30,7 @@ new EmbedMedia(url, height?, width?)
 ## height
 The height of the media.
 
-**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* \| *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)*
+**Type:** *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)*
 
 ## url
 The URL of the media.
@@ -40,7 +40,7 @@ The URL of the media.
 ## width
 The width of the media.
 
-**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* \| *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)*
+**Type:** *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)*
 
 # Methods
 ## format()
@@ -58,12 +58,12 @@ Remove the width of the media.
 
 **Returns:** [EmbedMedia](/ref/classes/EmbedMedia)
 
-## setHeight(height)
+## setHeight(height?)
 Set the height of the media.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| height | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* | The height of the media. `null` to remove the height. | false | *none* |
+| height | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* | The height of the media. Pass through no arguments to remove the height. | true | *none* |
 
 **Returns:** [EmbedMedia](/ref/classes/EmbedMedia)
 
@@ -76,12 +76,12 @@ Set the URL of the media.
 
 **Returns:** [EmbedMedia](/ref/classes/EmbedMedia)
 
-## setWidth(width)
+## setWidth(width?)
 Set the width of the media.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| width | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* | The width of the media. `null` to remove the width. | false | *none* |
+| width | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* | The width of the media. Pass through no arguments to remove the width. | true | *none* |
 
 **Returns:** [EmbedMedia](/ref/classes/EmbedMedia)
 

@@ -15,5 +15,4 @@ has_toc: true
 {:toc}
 ## Definition
 - *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
-- [MessageEmbed](/ref/classes/MessageEmbed)
-- *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)*
+- RequireOnlyOne<*[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)*, content \| embeds>

@@ -28,9 +28,7 @@ new EmbedAuthor(name, url?, iconUrl?)
 
 # Properties
 ## iconUrl
-The icon URL of the author.
-
-**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* \| *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## name
 The name of the author.
@@ -38,9 +36,7 @@ The name of the author.
 **Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## url
-The URL of the author.
-
-**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* \| *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
+**Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 # Methods
 ## format()
@@ -58,12 +54,12 @@ Remove the author's URL.
 
 **Returns:** [EmbedAuthor](/ref/classes/EmbedAuthor)
 
-## setIconUrl(iconUrl)
+## setIconUrl(iconUrl?)
 Set the icon URL of the author.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| iconUrl | *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* \| *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | A publicly-accessible URL to an image to use as the author's icon. `null` to remove the icon. | false | *none* |
+| iconUrl | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | A publicly-accessible URL to an image to use as the author's icon. Pass through no arguments to remove the icon. | true | *none* |
 
 **Returns:** [EmbedAuthor](/ref/classes/EmbedAuthor)
 
@@ -76,12 +72,12 @@ Set the name of the author.
 
 **Returns:** [EmbedAuthor](/ref/classes/EmbedAuthor)
 
-## setUrl(url)
+## setUrl(url?)
 Set the URL of the author.
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| url | *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* \| *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The URL of the author. `null` to remove the URL. | false | *none* |
+| url | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The URL of the author. Pass through no arguments to remove the URL. | true | *none* |
 
 **Returns:** [EmbedAuthor](/ref/classes/EmbedAuthor)
 

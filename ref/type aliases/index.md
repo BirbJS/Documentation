@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Classes
+title: Type Aliases
 has_children: true
 has_toc: false
 ---
 
-# Classes
+# Type Aliases
 ### Table of Contents
 {: .no_toc .text-delta }
 

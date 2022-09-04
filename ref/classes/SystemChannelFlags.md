@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Intents
+title: SystemChannelFlags
 parent: Classes
 has_children: false
 has_toc: true
 ---
 
-# Intents
+# SystemChannelFlags
 ### Table of Contents
 {: .no_toc .text-delta }
 
@@ -14,7 +14,7 @@ has_toc: true
 {:toc}
 # Constructor
 ```js
-new Intents(bits?)
+new SystemChannelFlags(bits?)
 ```
 
 | name | type | description | optional | default |
@@ -43,15 +43,15 @@ READONLY
 |:-----|:-----|:------------|:---------|:--------|
 | flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
 
-**Returns:** [Intents](/classes/Intents)
+**Returns:** [SystemChannelFlags](/classes/SystemChannelFlags)
 
 ## clone()
-**Returns:** [Intents](/classes/Intents)
+**Returns:** [SystemChannelFlags](/classes/SystemChannelFlags)
 
 ## convert(flags)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| flags | BitResolvable<GUILDS \| GUILD_MEMBERS \| GUILD_BANS \| GUILD_EMOJIS_AND_STICKERS \| GUILD_INTEGRATIONS \| GUILD_WEBHOOKS \| GUILD_INVITES \| GUILD_VOICE_STATES \| GUILD_PRESENCES \| GUILD_MESSAGES \| GUILD_MESSAGE_REACTIONS \| GUILD_MESSAGE_TYPING \| DIRECT_MESSAGES \| DIRECT_MESSAGE_REACTIONS \| DIRECT_MESSAGE_TYPING \| MESSAGE_CONTENT \| GUILD_SCHEDULED_EVENTS \| AUTO_MODERATION_CONFIGURATION \| AUTO_MODERATION_EXECUTION> \| *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
+| flags | BitResolvable<SUPPRESS_JOIN_NOTIFICATIONS \| SUPPRESS_PREMIUM_SUBSCRIPTIONS \| SUPPRESS_GUILD_REMINDER_NOTIFICATIONS \| SUPPRESS_JOIN_NOTIFICATION_REPLIES> \| *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
 
 **Returns:** bigint
 
@@ -73,14 +73,14 @@ READONLY
 |:-----|:-----|:------------|:---------|:--------|
 | flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
 
-**Returns:** [Intents](/classes/Intents)
+**Returns:** [SystemChannelFlags](/classes/SystemChannelFlags)
 
 ## set(flags)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
 
-**Returns:** [Intents](/classes/Intents)
+**Returns:** [SystemChannelFlags](/classes/SystemChannelFlags)
 
 ## toArray()
 **Returns:** *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)*

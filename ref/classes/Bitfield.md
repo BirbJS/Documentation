@@ -1,12 +1,17 @@
 ---
 layout: default
-title: Intents
+title: Bitfield
 parent: Classes
 has_children: false
 has_toc: true
 ---
 
-# Intents
+# Bitfield
+{: .d-inline-block }
+
+ABSTRACT
+{: .label .label-yellow }
+
 ### Table of Contents
 {: .no_toc .text-delta }
 
@@ -14,28 +19,17 @@ has_toc: true
 {:toc}
 # Constructor
 ```js
-new Intents(bits?)
+new Bitfield(bits, flags?)
 ```
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| bits | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* \| bigint |   | true | *none* |
+| bits | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* \| bigint |   | false | *none* |
+| flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | true | *none* |
 
 # Properties
 ## bits
 **Type:** bigint
-
-## FLAGS
-{: .d-inline-block }
-
-STATIC
-{: .label .label-blue }
-{: .d-inline-block }
-
-READONLY
-{: .label .label-purple }
-
-**Type:** *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)*
 
 # Methods
 ## add(flags)
@@ -43,15 +37,20 @@ READONLY
 |:-----|:-----|:------------|:---------|:--------|
 | flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
 
-**Returns:** [Intents](/classes/Intents)
+**Returns:** Bitfield<K>
 
 ## clone()
-**Returns:** [Intents](/classes/Intents)
+{: .d-inline-block }
+
+ABSTRACT
+{: .label .label-yellow }
+
+**Returns:** Bitfield<K>
 
 ## convert(flags)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| flags | BitResolvable<GUILDS \| GUILD_MEMBERS \| GUILD_BANS \| GUILD_EMOJIS_AND_STICKERS \| GUILD_INTEGRATIONS \| GUILD_WEBHOOKS \| GUILD_INVITES \| GUILD_VOICE_STATES \| GUILD_PRESENCES \| GUILD_MESSAGES \| GUILD_MESSAGE_REACTIONS \| GUILD_MESSAGE_TYPING \| DIRECT_MESSAGES \| DIRECT_MESSAGE_REACTIONS \| DIRECT_MESSAGE_TYPING \| MESSAGE_CONTENT \| GUILD_SCHEDULED_EVENTS \| AUTO_MODERATION_CONFIGURATION \| AUTO_MODERATION_EXECUTION> \| *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
+| flags | BitResolvable<K> \| *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
 
 **Returns:** bigint
 
@@ -73,14 +72,14 @@ READONLY
 |:-----|:-----|:------------|:---------|:--------|
 | flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
 
-**Returns:** [Intents](/classes/Intents)
+**Returns:** Bitfield<K>
 
 ## set(flags)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
 
-**Returns:** [Intents](/classes/Intents)
+**Returns:** Bitfield<K>
 
 ## toArray()
 **Returns:** *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)*

@@ -2,7 +2,6 @@
 layout: default
 title: Websocket
 parent: Classes
-grand_parent: Reference
 has_children: false
 has_toc: true
 ---
@@ -13,7 +12,6 @@ has_toc: true
 
 - TOC
 {:toc}
-Creates a websocket connection to a Discord gateway.
 # Constructor
 ```js
 new Websocket(client, domain)
@@ -21,8 +19,8 @@ new Websocket(client, domain)
 
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| client | [Client](/ref/classes/Client) | The client. | false | *none* |
-| domain | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The domain to connect to.  | false | *none* |
+| client | [Birb](/classes/Birb) |   | false | *none* |
+| domain | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 # Properties
 ## buffer
@@ -31,96 +29,67 @@ new Websocket(client, domain)
 PROTECTED
 {: .label .label-red }
 
-The internal erlpack buffer.
-
 **Type:** any
 
 ## client
-The client that owns this websocket.
+**Type:** [Birb](/classes/Birb)
 
-**Type:** [Client](/ref/classes/Client)
+## connectedSince
+**Type:** *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)*
+
+## doNotReconnect
+**Type:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## domain
-The current Discord gateway URL.
-
 **Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## encoding
-The type of encoding to use. If `erlpack` is
-installed (`npm install erlpack`), `etf` encoding
-will be used. Otherwise, normal `json` encoding will
-be used.
-
 **Type:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## expectedGuilds
-The guild IDs that the client is expecting to
-receive from the Discord gateway.
+**Type:** *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)*
 
-**Type:** Set<*[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*>
+## hasBeenReady
+**Type:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## heartbeatInterval
-The interval to send heartbeats.
-
-**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* \| *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)*
+**Type:** *[undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)* \| *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)*
 
 ## lastHeartbeat
-The time the last heartbeat was sent.
-
 **Type:** *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)*
 
 ## lastHeartbeatAcked
-Whether or not the last heartbeat was acknowledged
-by the Discord gateway.
-
 **Type:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## lastResume
-The time the last resume packet was sent.
-
 **Type:** *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)*
 
 ## lastSequenceIdentifier
-The last sequence identifier received from the
-Discord gateway.
+**Type:** *[undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)* \| *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)*
 
-**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* \| *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)*
-
-## latency
-The current latency (in milliseconds) between the
-client and the Discord gateway.
-
+## ping
 **Type:** *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)*
 
-## schedulerLoop
-The websocket's scheduler loop.
+## resumeGatewayUrl
+**Type:** *[undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)* \| *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
-**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* \| Timer
+## schedulerLoop
+**Type:** *[undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)* \| Timer
 
 ## sessionIdentifier
-The session identifier from the Discord gateway.
+**Type:** *[undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)* \| *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
-**Type:** *[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)* \| *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
+## socket
+**Type:** *[undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)* \| WebSocket
 
 ## status
-The current status of the websocket.
-
-**Type:** [WebsocketStatus](/ref/enums/WebsocketStatus)
+**Type:** [GatewayStatus](/enums/GatewayStatus)
 
 ## url
-The websocket's currently set URL.
-
 **Type:** URL
-
-## ws
-The websocket instance from the `ws` package.
-
-**Type:** WebSocket
 
 # Methods
 ## close(code?)
-Close the websocket.
-
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | code | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* |   | true | *none* |
@@ -128,23 +97,12 @@ Close the websocket.
 **Returns:** void
 
 ## connect()
-Connect to the gateway.
-
 **Returns:** void
 
 ## generateURL()
-{: .d-inline-block }
-
-PROTECTED
-{: .label .label-red }
-
-Generates the gateway URL.
-
 **Returns:** URL
 
 ## heartbeat()
-Send a heartbeat to the gateway.
-
 **Returns:** Promise<void>
 
 ## init()
@@ -153,23 +111,15 @@ Send a heartbeat to the gateway.
 PROTECTED
 {: .label .label-red }
 
-Initializes ZLib if supported.
-
 **Returns:** void
 
 ## isClosed()
-Check if the websocket is closed.
-
 **Returns:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## isConnected()
-Check if the websocket is connected.
-
 **Returns:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## isConnecting()
-Check if the websocket is connecting.
-
 **Returns:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## pack(data)
@@ -178,21 +128,13 @@ Check if the websocket is connecting.
 PROTECTED
 {: .label .label-red }
 
-Packs data for sending to Discord. If the encoding
-is set to `etf`, this method will use the
-`zlib-sync` (`npm install zlib-sync`) library to
-pack its `etf` data. Otherwise, parses the JSON data
-to a string.
-
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| data | any | The data to pack. | false | *none* |
+| data | any |   | false | *none* |
 
 **Returns:** any
 
 ## preventReconnect(value?)
-Prevent reconnection.
-
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | value | *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)* |   | true | *none* |
@@ -205,55 +147,37 @@ Prevent reconnection.
 PROTECTED
 {: .label .label-red }
 
-Attempts to process a packet by using ZLib to let
-Discord send packets in chunks. If ZLib is not yet
-installed (`npm install zlib-sync`), this method
-will just pass the data through for unpacking
-(`this.unpack()`).
-
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| data | any | The packet's data. | false | *none* |
+| data | any |   | false | *none* |
 
 **Returns:** any
 
 ## reconnect()
-Reconnect to the gateway.
-
 **Returns:** void
 
 ## send(data)
-Send a packet to the gateway.
-
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| data | Object | The data to send. | false | *none* |
+| data | Object |   | false | *none* |
 
 **Returns:** void
 
 ## setSessionIdentifier(sessionIdentifier)
-Set the websocket's session identifier.
-
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| sessionIdentifier | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* | The session identifier to set. | false | *none* |
+| sessionIdentifier | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
 
 **Returns:** void
 
 ## setStatus(status)
-Set the websocket's status.
-
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| status | [WebsocketStatus](/ref/enums/WebsocketStatus) | The status to set. | false | *none* |
+| status | [GatewayStatus](/enums/GatewayStatus) |   | false | *none* |
 
 **Returns:** void
 
 ## terminate()
-Terminate the websocket. Does not notify the gateway
-that you've disconnected. Should only be used when
-the gateway won't respond (e.g. timeouts).
-
 **Returns:** void
 
 ## unpack(data, type?)
@@ -262,15 +186,9 @@ the gateway won't respond (e.g. timeouts).
 PROTECTED
 {: .label .label-red }
 
-Unpacks a packet using the current encoding. If the
-encoding is set to `etf`, this method will use the
-`zlib-sync` (`npm install zlib-sync`) library to
-unpack its `etf` data. Otherwise, parses the data to
-normal JSON.
-
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| data | any | The packet's data. | false | *none* |
+| data | any |   | false | *none* |
 | type | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
 
 **Returns:** any

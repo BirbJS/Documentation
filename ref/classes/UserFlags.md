@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Intents
+title: UserFlags
 parent: Classes
 has_children: false
 has_toc: true
 ---
 
-# Intents
+# UserFlags
 ### Table of Contents
 {: .no_toc .text-delta }
 
@@ -14,7 +14,7 @@ has_toc: true
 {:toc}
 # Constructor
 ```js
-new Intents(bits?)
+new UserFlags(bits?)
 ```
 
 | name | type | description | optional | default |
@@ -43,15 +43,15 @@ READONLY
 |:-----|:-----|:------------|:---------|:--------|
 | flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
 
-**Returns:** [Intents](/classes/Intents)
+**Returns:** [UserFlags](/classes/UserFlags)
 
 ## clone()
-**Returns:** [Intents](/classes/Intents)
+**Returns:** [UserFlags](/classes/UserFlags)
 
 ## convert(flags)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
-| flags | BitResolvable<GUILDS \| GUILD_MEMBERS \| GUILD_BANS \| GUILD_EMOJIS_AND_STICKERS \| GUILD_INTEGRATIONS \| GUILD_WEBHOOKS \| GUILD_INVITES \| GUILD_VOICE_STATES \| GUILD_PRESENCES \| GUILD_MESSAGES \| GUILD_MESSAGE_REACTIONS \| GUILD_MESSAGE_TYPING \| DIRECT_MESSAGES \| DIRECT_MESSAGE_REACTIONS \| DIRECT_MESSAGE_TYPING \| MESSAGE_CONTENT \| GUILD_SCHEDULED_EVENTS \| AUTO_MODERATION_CONFIGURATION \| AUTO_MODERATION_EXECUTION> \| *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
+| flags | BitResolvable<STAFF \| PARTNER \| HYPESQUAD \| BUG_HUNTER_LEVEL_1 \| HYPESQUAD_ONLINE_HOUSE_BRAVERY \| HYPESQUAD_ONLINE_HOUSE_BRILLIANCE \| HYPESQUAD_ONLINE_HOUSE_BALANCE \| NITRO_EARLY_SUPPORTER \| TEAM_PSEUDO_USER \| BUG_HUNTER_LEVEL_2 \| VERIFIED_BOT \| VERIFIED_BOT_DEVELOPER \| CERTIFIED_MODERATOR \| BOT_HTTP_INTERACTIONS> \| *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
 
 **Returns:** bigint
 
@@ -73,14 +73,14 @@ READONLY
 |:-----|:-----|:------------|:---------|:--------|
 | flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
 
-**Returns:** [Intents](/classes/Intents)
+**Returns:** [UserFlags](/classes/UserFlags)
 
 ## set(flags)
 | name | type | description | optional | default |
 |:-----|:-----|:------------|:---------|:--------|
 | flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
 
-**Returns:** [Intents](/classes/Intents)
+**Returns:** [UserFlags](/classes/UserFlags)
 
 ## toArray()
 **Returns:** *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)*

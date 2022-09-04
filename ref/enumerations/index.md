@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Enumerations
-parent: Reference
 has_children: true
 has_toc: false
 ---

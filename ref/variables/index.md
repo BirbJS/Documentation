@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Classes
+title: Variables
 has_children: true
 has_toc: false
 ---
 
-# Classes
+# Variables
 ### Table of Contents
 {: .no_toc .text-delta }
 

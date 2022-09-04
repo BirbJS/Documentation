@@ -17,9 +17,9 @@ has_toc: true
 new UserFlags(bits?)
 ```
 
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| bits | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* \| bigint |   | true | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| bits? | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* \| bigint |   | *none* |
 
 # Properties
 ## bits
@@ -39,9 +39,9 @@ READONLY
 
 # Methods
 ## add(flags)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | *none* |
 
 **Returns:** [UserFlags](/classes/UserFlags)
 
@@ -49,16 +49,16 @@ READONLY
 **Returns:** [UserFlags](/classes/UserFlags)
 
 ## convert(flags)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| flags | BitResolvable<STAFF \| PARTNER \| HYPESQUAD \| BUG_HUNTER_LEVEL_1 \| HYPESQUAD_ONLINE_HOUSE_BRAVERY \| HYPESQUAD_ONLINE_HOUSE_BRILLIANCE \| HYPESQUAD_ONLINE_HOUSE_BALANCE \| NITRO_EARLY_SUPPORTER \| TEAM_PSEUDO_USER \| BUG_HUNTER_LEVEL_2 \| VERIFIED_BOT \| VERIFIED_BOT_DEVELOPER \| CERTIFIED_MODERATOR \| BOT_HTTP_INTERACTIONS> \| *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| flags | BitResolvable<STAFF \| PARTNER \| HYPESQUAD \| BUG_HUNTER_LEVEL_1 \| HYPESQUAD_ONLINE_HOUSE_BRAVERY \| HYPESQUAD_ONLINE_HOUSE_BRILLIANCE \| HYPESQUAD_ONLINE_HOUSE_BALANCE \| NITRO_EARLY_SUPPORTER \| TEAM_PSEUDO_USER \| BUG_HUNTER_LEVEL_2 \| VERIFIED_BOT \| VERIFIED_BOT_DEVELOPER \| CERTIFIED_MODERATOR \| BOT_HTTP_INTERACTIONS> \| *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | *none* |
 
 **Returns:** bigint
 
 ## has(flags)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | *none* |
 
 **Returns:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
@@ -69,16 +69,16 @@ READONLY
 **Returns:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## remove(flags)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | *none* |
 
 **Returns:** [UserFlags](/classes/UserFlags)
 
 ## set(flags)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | *none* |
 
 **Returns:** [UserFlags](/classes/UserFlags)
 

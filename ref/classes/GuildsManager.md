@@ -17,9 +17,9 @@ has_toc: true
 new GuildsManager(client)
 ```
 
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| client | [Birb](/classes/Birb) |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| client | [Birb](/classes/Birb) |   | *none* |
 
 # Properties
 ## cache
@@ -33,16 +33,16 @@ new GuildsManager(client)
 
 # Methods
 ## fetch(target)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| target | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* \| [GuildPartial](/classes/GuildPartial) \| [Guild](/classes/Guild) |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| target | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* \| [GuildPartial](/classes/GuildPartial) \| [Guild](/classes/Guild) |   | *none* |
 
 **Returns:** Promise<*[undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)* \| [Guild](/classes/Guild)>
 
 ## resolve(target)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| target | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* \| [GuildPartial](/classes/GuildPartial) \| [Guild](/classes/Guild) |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| target | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* \| [GuildPartial](/classes/GuildPartial) \| [Guild](/classes/Guild) |   | *none* |
 
 **Returns:** *[undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)* \| [GuildPartial](/classes/GuildPartial) \| [Guild](/classes/Guild)
 

@@ -17,10 +17,10 @@ has_toc: true
 new Pair(key, value)
 ```
 
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| key | Key |   | false | *none* |
-| value | Value |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| key | Key |   | *none* |
+| value | Value |   | *none* |
 
 # Properties
 ## key

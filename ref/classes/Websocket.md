@@ -17,10 +17,10 @@ has_toc: true
 new Websocket(client, domain)
 ```
 
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| client | [Birb](/classes/Birb) |   | false | *none* |
-| domain | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| client | [Birb](/classes/Birb) |   | *none* |
+| domain | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | *none* |
 
 # Properties
 ## buffer
@@ -90,9 +90,9 @@ PROTECTED
 
 # Methods
 ## close(code?)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| code | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* |   | true | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| code? | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* |   | *none* |
 
 **Returns:** void
 
@@ -128,16 +128,16 @@ PROTECTED
 PROTECTED
 {: .label .label-red }
 
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| data | any |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| data | any |   | *none* |
 
 **Returns:** any
 
 ## preventReconnect(value?)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| value | *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)* |   | true | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| value? | *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)* |   | *none* |
 
 **Returns:** void
 
@@ -147,9 +147,9 @@ PROTECTED
 PROTECTED
 {: .label .label-red }
 
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| data | any |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| data | any |   | *none* |
 
 **Returns:** any
 
@@ -157,23 +157,23 @@ PROTECTED
 **Returns:** void
 
 ## send(data)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| data | Object |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| data | Object |   | *none* |
 
 **Returns:** void
 
 ## setSessionIdentifier(sessionIdentifier)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| sessionIdentifier | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| sessionIdentifier | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | *none* |
 
 **Returns:** void
 
 ## setStatus(status)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| status | [GatewayStatus](/enums/GatewayStatus) |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| status | [GatewayStatus](/enums/GatewayStatus) |   | *none* |
 
 **Returns:** void
 
@@ -186,10 +186,10 @@ PROTECTED
 PROTECTED
 {: .label .label-red }
 
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| data | any |   | false | *none* |
-| type | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| data | any |   | *none* |
+| type? | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | *none* |
 
 **Returns:** any
 

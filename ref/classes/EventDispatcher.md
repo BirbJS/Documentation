@@ -22,9 +22,9 @@ new EventDispatcher()
 **Returns:** void
 
 ## when(event)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| event | T |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| event | T |   | *none* |
 
 **Returns:** EventListener<T, Function>
 

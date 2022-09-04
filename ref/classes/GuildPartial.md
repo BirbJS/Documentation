@@ -17,10 +17,10 @@ has_toc: true
 new GuildPartial(client, guild)
 ```
 
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| client | [Birb](/classes/Birb) |   | false | *none* |
-| guild | APIGuild \| APIGuildPartial |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| client | [Birb](/classes/Birb) |   | *none* |
+| guild | APIGuild \| APIGuildPartial |   | *none* |
 
 # Properties
 ## available

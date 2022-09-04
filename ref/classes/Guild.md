@@ -17,10 +17,10 @@ has_toc: true
 new Guild(client, guild)
 ```
 
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| client | [Birb](/classes/Birb) |   | false | *none* |
-| guild | APIGuild |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| client | [Birb](/classes/Birb) |   | *none* |
+| guild | APIGuild |   | *none* |
 
 # Properties
 ## afkChannelId
@@ -144,10 +144,10 @@ READONLY
 
 # Methods
 ## edit(options, reason?)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| options | GuildEditOptions |   | false | *none* |
-| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| options | GuildEditOptions |   | *none* |
+| reason? | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | *none* |
 
 **Returns:** Promise<[Guild](/classes/Guild)>
 

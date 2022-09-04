@@ -17,10 +17,10 @@ has_toc: true
 new User(client, user)
 ```
 
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| client | [Birb](/classes/Birb) |   | false | *none* |
-| user | APIUser |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| client | [Birb](/classes/Birb) |   | *none* |
+| user | APIUser |   | *none* |
 
 # Properties
 ## avatarHash

@@ -17,9 +17,9 @@ has_toc: true
 new Intents(bits?)
 ```
 
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| bits | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* \| bigint |   | true | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| bits? | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* \| bigint |   | *none* |
 
 # Properties
 ## bits
@@ -39,9 +39,9 @@ READONLY
 
 # Methods
 ## add(flags)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | *none* |
 
 **Returns:** [Intents](/classes/Intents)
 
@@ -49,16 +49,16 @@ READONLY
 **Returns:** [Intents](/classes/Intents)
 
 ## convert(flags)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| flags | BitResolvable<GUILDS \| GUILD_MEMBERS \| GUILD_BANS \| GUILD_EMOJIS_AND_STICKERS \| GUILD_INTEGRATIONS \| GUILD_WEBHOOKS \| GUILD_INVITES \| GUILD_VOICE_STATES \| GUILD_PRESENCES \| GUILD_MESSAGES \| GUILD_MESSAGE_REACTIONS \| GUILD_MESSAGE_TYPING \| DIRECT_MESSAGES \| DIRECT_MESSAGE_REACTIONS \| DIRECT_MESSAGE_TYPING \| MESSAGE_CONTENT \| GUILD_SCHEDULED_EVENTS \| AUTO_MODERATION_CONFIGURATION \| AUTO_MODERATION_EXECUTION> \| *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| flags | BitResolvable<GUILDS \| GUILD_MEMBERS \| GUILD_BANS \| GUILD_EMOJIS_AND_STICKERS \| GUILD_INTEGRATIONS \| GUILD_WEBHOOKS \| GUILD_INVITES \| GUILD_VOICE_STATES \| GUILD_PRESENCES \| GUILD_MESSAGES \| GUILD_MESSAGE_REACTIONS \| GUILD_MESSAGE_TYPING \| DIRECT_MESSAGES \| DIRECT_MESSAGE_REACTIONS \| DIRECT_MESSAGE_TYPING \| MESSAGE_CONTENT \| GUILD_SCHEDULED_EVENTS \| AUTO_MODERATION_CONFIGURATION \| AUTO_MODERATION_EXECUTION> \| *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | *none* |
 
 **Returns:** bigint
 
 ## has(flags)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | *none* |
 
 **Returns:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
@@ -69,16 +69,16 @@ READONLY
 **Returns:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## remove(flags)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | *none* |
 
 **Returns:** [Intents](/classes/Intents)
 
 ## set(flags)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | *none* |
 
 **Returns:** [Intents](/classes/Intents)
 

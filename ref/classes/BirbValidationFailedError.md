@@ -17,10 +17,10 @@ has_toc: true
 new BirbValidationFailedError(message, data?)
 ```
 
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| message | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
-| data | any |   | true | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| message | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | *none* |
+| data? | any |   | *none* |
 
 # Properties
 ## cause
@@ -74,10 +74,10 @@ STATIC
 STATIC
 {: .label .label-blue }
 
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| targetObject | *[object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object)* |   | false | *none* |
-| constructorOpt | Function |   | true | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| targetObject | *[object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object)* |   | *none* |
+| constructorOpt? | Function |   | *none* |
 
 **Returns:** void
 

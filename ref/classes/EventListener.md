@@ -17,16 +17,16 @@ has_toc: true
 new EventListener(parent, event)
 ```
 
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| parent | EventDispatcher<E> |   | false | *none* |
-| event | E |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| parent | EventDispatcher<E> |   | *none* |
+| event | E |   | *none* |
 
 # Methods
 ## do(handler)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| handler | F |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| handler | F |   | *none* |
 
 **Returns:** EventListener<E, F>
 

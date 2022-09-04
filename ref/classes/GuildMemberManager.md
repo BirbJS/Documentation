@@ -17,10 +17,10 @@ has_toc: true
 new GuildMemberManager(client, guild)
 ```
 
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| client | [Birb](/classes/Birb) |   | false | *none* |
-| guild | [Guild](/classes/Guild) |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| client | [Birb](/classes/Birb) |   | *none* |
+| guild | [Guild](/classes/Guild) |   | *none* |
 
 # Properties
 ## cache
@@ -34,16 +34,16 @@ new GuildMemberManager(client, guild)
 
 # Methods
 ## fetch(target)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| target | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* \| [GuildMember](/classes/GuildMember) |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| target | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* \| [GuildMember](/classes/GuildMember) |   | *none* |
 
 **Returns:** Promise<*[undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)* \| [GuildMember](/classes/GuildMember)>
 
 ## resolve(target)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| target | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* \| [GuildMember](/classes/GuildMember) |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| target | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* \| [GuildMember](/classes/GuildMember) |   | *none* |
 
 **Returns:** *[undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)* \| [GuildMember](/classes/GuildMember)
 

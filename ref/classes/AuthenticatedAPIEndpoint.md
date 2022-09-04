@@ -22,10 +22,10 @@ ABSTRACT
 new AuthenticatedAPIEndpoint(client, method)
 ```
 
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| client | [Birb](/classes/Birb) |   | false | *none* |
-| method | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| client | [Birb](/classes/Birb) |   | *none* |
+| method | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | *none* |
 
 # Properties
 ## body
@@ -55,9 +55,9 @@ READONLY
 ABSTRACT
 {: .label .label-yellow }
 
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| params | Params |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| params | Params |   | *none* |
 
 **Returns:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
@@ -73,38 +73,38 @@ PROTECTED
 **Returns:** AuthenticatedAPIEndpoint<Params, Response, Body>
 
 ## setAuditLogReason(reason?)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| reason? | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | *none* |
 
 **Returns:** AuthenticatedAPIEndpoint<Params, Response, Body>
 
 ## setBody(body)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| body | *[undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)* \| Body |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| body | *[undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)* \| Body |   | *none* |
 
 **Returns:** AuthenticatedAPIEndpoint<Params, Response, Body>
 
 ## setHeaders(headers)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| headers | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| headers | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | *none* |
 
 **Returns:** AuthenticatedAPIEndpoint<Params, Response, Body>
 
 ## setParams(params)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| params | Params |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| params | Params |   | *none* |
 
 **Returns:** AuthenticatedAPIEndpoint<Params, Response, Body>
 
 ## throwJSONError(response, json?)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| response | Response |   | false | *none* |
-| json | any |   | true | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| response | Response |   | *none* |
+| json? | any |   | *none* |
 
 **Returns:** [BirbAPIError](/classes/BirbAPIError)
 

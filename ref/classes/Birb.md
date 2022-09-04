@@ -17,9 +17,9 @@ has_toc: true
 new Birb(options)
 ```
 
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| options | BirbOptions |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| options | BirbOptions |   | *none* |
 
 # Properties
 ## baseApiUrl
@@ -69,16 +69,16 @@ READONLY
 **Returns:** *[undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)* \| *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
 ## setToken(token)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| token | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| token | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | *none* |
 
 **Returns:** [Birb](/classes/Birb)
 
 ## when(event)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| event | BirbEvent |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| event | BirbEvent |   | *none* |
 
 **Returns:** EventListener<BirbEvent, Function>
 

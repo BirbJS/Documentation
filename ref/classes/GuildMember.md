@@ -17,11 +17,11 @@ has_toc: true
 new GuildMember(client, guild, member)
 ```
 
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| client | [Birb](/classes/Birb) |   | false | *none* |
-| guild | [Guild](/classes/Guild) |   | false | *none* |
-| member | APIGuildMemberWithUser |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| client | [Birb](/classes/Birb) |   | *none* |
+| guild | [Guild](/classes/Guild) |   | *none* |
+| member | APIGuildMemberWithUser |   | *none* |
 
 # Properties
 ## avatarHash

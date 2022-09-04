@@ -17,9 +17,9 @@ has_toc: true
 new SystemChannelFlags(bits?)
 ```
 
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| bits | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* \| bigint |   | true | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| bits? | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* \| bigint |   | *none* |
 
 # Properties
 ## bits
@@ -39,9 +39,9 @@ READONLY
 
 # Methods
 ## add(flags)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | *none* |
 
 **Returns:** [SystemChannelFlags](/classes/SystemChannelFlags)
 
@@ -49,16 +49,16 @@ READONLY
 **Returns:** [SystemChannelFlags](/classes/SystemChannelFlags)
 
 ## convert(flags)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| flags | BitResolvable<SUPPRESS_JOIN_NOTIFICATIONS \| SUPPRESS_PREMIUM_SUBSCRIPTIONS \| SUPPRESS_GUILD_REMINDER_NOTIFICATIONS \| SUPPRESS_JOIN_NOTIFICATION_REPLIES> \| *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| flags | BitResolvable<SUPPRESS_JOIN_NOTIFICATIONS \| SUPPRESS_PREMIUM_SUBSCRIPTIONS \| SUPPRESS_GUILD_REMINDER_NOTIFICATIONS \| SUPPRESS_JOIN_NOTIFICATION_REPLIES> \| *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | *none* |
 
 **Returns:** bigint
 
 ## has(flags)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | *none* |
 
 **Returns:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
@@ -69,16 +69,16 @@ READONLY
 **Returns:** *[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean)*
 
 ## remove(flags)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | *none* |
 
 **Returns:** [SystemChannelFlags](/classes/SystemChannelFlags)
 
 ## set(flags)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| flags | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | *none* |
 
 **Returns:** [SystemChannelFlags](/classes/SystemChannelFlags)
 

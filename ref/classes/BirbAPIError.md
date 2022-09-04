@@ -17,12 +17,12 @@ has_toc: true
 new BirbAPIError(message, request, status, json?)
 ```
 
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| message | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
-| request | APIEndpoint<any, any, any> |   | false | *none* |
-| status | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* |   | false | *none* |
-| json | any |   | true | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| message | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | *none* |
+| request | APIEndpoint<any, any, any> |   | *none* |
+| status | *[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number)* |   | *none* |
+| json? | any |   | *none* |
 
 # Properties
 ## body
@@ -108,10 +108,10 @@ STATIC
 STATIC
 {: .label .label-blue }
 
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| targetObject | *[object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object)* |   | false | *none* |
-| constructorOpt | Function |   | true | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| targetObject | *[object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object)* |   | *none* |
+| constructorOpt? | Function |   | *none* |
 
 **Returns:** void
 

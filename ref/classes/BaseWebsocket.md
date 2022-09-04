@@ -22,10 +22,10 @@ ABSTRACT
 new BaseWebsocket(client, domain)
 ```
 
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| client | [Birb](/classes/Birb) |   | false | *none* |
-| domain | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| client | [Birb](/classes/Birb) |   | *none* |
+| domain | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | *none* |
 
 # Properties
 ## buffer
@@ -69,9 +69,9 @@ PROTECTED
 PROTECTED
 {: .label .label-red }
 
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| data | any |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| data | any |   | *none* |
 
 **Returns:** any
 
@@ -81,9 +81,9 @@ PROTECTED
 PROTECTED
 {: .label .label-red }
 
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| data | any |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| data | any |   | *none* |
 
 **Returns:** any
 
@@ -93,10 +93,10 @@ PROTECTED
 PROTECTED
 {: .label .label-red }
 
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| data | any |   | false | *none* |
-| type | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| data | any |   | *none* |
+| type? | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | *none* |
 
 **Returns:** any
 

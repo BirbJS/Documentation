@@ -17,9 +17,9 @@ has_toc: true
 new ModifyGuildRequest(client)
 ```
 
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| client | [Birb](/classes/Birb) |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| client | [Birb](/classes/Birb) |   | *none* |
 
 # Properties
 ## body
@@ -44,9 +44,9 @@ READONLY
 
 # Methods
 ## buildURL(params)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| params | ModifyGuildParams |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| params | ModifyGuildParams |   | *none* |
 
 **Returns:** *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)*
 
@@ -62,38 +62,38 @@ PROTECTED
 **Returns:** [ModifyGuildRequest](/classes/ModifyGuildRequest)
 
 ## setAuditLogReason(reason?)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| reason | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | true | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| reason? | *[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string)* |   | *none* |
 
 **Returns:** [ModifyGuildRequest](/classes/ModifyGuildRequest)
 
 ## setBody(body)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| body | *[undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)* \| ModifyGuildRequestBody |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| body | *[undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)* \| ModifyGuildRequestBody |   | *none* |
 
 **Returns:** [ModifyGuildRequest](/classes/ModifyGuildRequest)
 
 ## setHeaders(headers)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| headers | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| headers | *[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)* |   | *none* |
 
 **Returns:** [ModifyGuildRequest](/classes/ModifyGuildRequest)
 
 ## setParams(params)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| params | ModifyGuildParams |   | false | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| params | ModifyGuildParams |   | *none* |
 
 **Returns:** [ModifyGuildRequest](/classes/ModifyGuildRequest)
 
 ## throwJSONError(response, json?)
-| name | type | description | optional | default |
-|:-----|:-----|:------------|:---------|:--------|
-| response | Response |   | false | *none* |
-| json | any |   | true | *none* |
+| name | type | description | default |
+|:-----|:-----|:------------|:--------|
+| response | Response |   | *none* |
+| json? | any |   | *none* |
 
 **Returns:** [BirbAPIError](/classes/BirbAPIError)
 

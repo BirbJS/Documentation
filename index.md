@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Welcome
+title: Welcome to Birb.JS
 has_children: false
 has_toc: false
 nav_order: 1

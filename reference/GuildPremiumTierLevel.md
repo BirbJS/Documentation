@@ -1,9 +1,10 @@
 ---
 layout: default
-title: Modules
-parent: Reference
+title: GuildPremiumTierLevel
+parent: Enums
+grand_parent: Reference
 has_toc: false
-nav_order: 5
+nav_order: 1
 ---
 
 [Birb](/) / GuildPremiumTierLevel

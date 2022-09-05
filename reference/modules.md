@@ -6,7 +6,9 @@ has_toc: false
 nav_order: 5
 ---
 
-# Modules
+[birb](README.md) / Exports
+
+# birb
 
 ## Table of contents
 
@@ -284,7 +286,7 @@ ___
 
 ### BirbEvent
 
-Ƭ **BirbEvent**: ``"ready"`` \| ``"guildCreate"`` \| ``"guildUpdate"`` \| ``"guildUnavailable"`` \| ``"guildDelete"`` \| ``"gatewayConnectionEstablished"`` \| ``"websocketHeartbeatSent"`` \| ``"websocketHeartbeatAckReceived"`` \| ``"packetSent"`` \| ``"packetReceived"``
+Ƭ **BirbEvent**: ``"ready"`` \| ``"guild created"`` \| ``"guild updated"`` \| ``"guild becomes unavailable"`` \| ``"guild deleted"`` \| ``"gateway connection established"`` \| ``"gateway heartbeat sent"`` \| ``"gateway heartbeat ack received"`` \| ``"gateway packet sent"`` \| ``"gateway packet received"``
 
 #### Defined in
 

@@ -84,11 +84,11 @@ src/classes/GuildPartial.ts:9
 
 ### fetch
 
-▸ **fetch**(): `Promise`<[`Guild`](../Guild/index.md)\>
+▸ **fetch**(): [`Promise`]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise )<[`Guild`](../Guild/index.md)\>
 
 #### Returns
 
-`Promise`<[`Guild`](../Guild/index.md)\>
+[`Promise`]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise )<[`Guild`](../Guild/index.md)\>
 
 #### Defined in
 

@@ -89,7 +89,7 @@ src/classes/managers/Manager.ts:8
 
 ### fetch
 
-▸ **fetch**(`target`): `Promise`<`undefined` \| [`Guild`](../Guild/index.md)\>
+▸ **fetch**(`target`): [`Promise`]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise )<`undefined` \| [`Guild`](../Guild/index.md)\>
 
 Fetch a user from the cache, or the API if it is not cached.
 
@@ -101,7 +101,7 @@ Fetch a user from the cache, or the API if it is not cached.
 
 #### Returns
 
-`Promise`<`undefined` \| [`Guild`](../Guild/index.md)\>
+[`Promise`]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise )<`undefined` \| [`Guild`](../Guild/index.md)\>
 
 #### Defined in
 

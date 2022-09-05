@@ -486,7 +486,7 @@ src/classes/Guild.ts:34
 
 ### edit
 
-▸ **edit**(`options`, `reason?`): `Promise`<[`Guild`](index.md)\>
+▸ **edit**(`options`, `reason?`): [`Promise`]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise )<[`Guild`](index.md)\>
 
 #### Parameters
 
@@ -497,7 +497,7 @@ src/classes/Guild.ts:34
 
 #### Returns
 
-`Promise`<[`Guild`](index.md)\>
+[`Promise`]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise )<[`Guild`](index.md)\>
 
 #### Defined in
 
@@ -507,11 +507,11 @@ ___
 
 ### fetch
 
-▸ **fetch**(): `Promise`<[`Guild`](index.md)\>
+▸ **fetch**(): [`Promise`]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise )<[`Guild`](index.md)\>
 
 #### Returns
 
-`Promise`<[`Guild`](index.md)\>
+[`Promise`]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise )<[`Guild`](index.md)\>
 
 #### Inherited from
 

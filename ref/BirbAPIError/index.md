@@ -192,7 +192,7 @@ ___
 
 ### prepareStackTrace
 
-▪ `Static` `Optional` **prepareStackTrace**: (`err`: `Error`, `stackTraces`: `CallSite`[]) => `any`
+▪ `Static` `Optional` **prepareStackTrace**: (`err`: [`Error`]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error ), `stackTraces`: `CallSite`[]) => `any`
 
 #### Type declaration
 
@@ -208,7 +208,7 @@ https://v8.dev/docs/stack-trace-api#customizing-stack-traces
 
 | Name | Type |
 | :------ | :------ |
-| `err` | `Error` |
+| `err` | [`Error`]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error ) |
 | `stackTraces` | `CallSite`[] |
 
 ##### Returns
@@ -250,7 +250,7 @@ Create .stack property on a target object
 | Name | Type |
 | :------ | :------ |
 | `targetObject` | `object` |
-| `constructorOpt?` | `Function` |
+| `constructorOpt?` | [`Function`]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function ) |
 
 #### Returns
 

@@ -339,7 +339,7 @@ ___
 
 ### url
 
-• **url**: `URL`
+• **url**: [`URL`]( https://developer.mozilla.org/en-US/docs/Web/API/URL )
 
 The URL to connect to.
 
@@ -393,11 +393,11 @@ ___
 
 ### generateURL
 
-▸ **generateURL**(): `URL`
+▸ **generateURL**(): [`URL`]( https://developer.mozilla.org/en-US/docs/Web/API/URL )
 
 #### Returns
 
-`URL`
+[`URL`]( https://developer.mozilla.org/en-US/docs/Web/API/URL )
 
 #### Inherited from
 
@@ -411,13 +411,13 @@ ___
 
 ### heartbeat
 
-▸ **heartbeat**(): `Promise`<`void`\>
+▸ **heartbeat**(): [`Promise`]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise )<`void`\>
 
 Send a heartbeat to the gateway.
 
 #### Returns
 
-`Promise`<`void`\>
+[`Promise`]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise )<`void`\>
 
 Voids once sent.
 
@@ -619,7 +619,7 @@ Send a packet to the gateway.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `data` | `Object` | The data to send. |
+| `data` | [`Object`]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object ) | The data to send. |
 
 #### Returns
 

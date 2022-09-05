@@ -94,7 +94,7 @@ ___
 
 ### joinedAt
 
-• `Readonly` **joinedAt**: `Date`
+• `Readonly` **joinedAt**: [`Date`]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date )
 
 #### Defined in
 
@@ -114,7 +114,7 @@ ___
 
 ### nitroBoostingSince
 
-• **nitroBoostingSince**: ``null`` \| `Date` = `null`
+• **nitroBoostingSince**: ``null`` \| [`Date`]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date ) = `null`
 
 #### Defined in
 
@@ -144,7 +144,7 @@ ___
 
 ### timedOutUntil
 
-• **timedOutUntil**: ``null`` \| `Date` = `null`
+• **timedOutUntil**: ``null`` \| [`Date`]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date ) = `null`
 
 #### Defined in
 

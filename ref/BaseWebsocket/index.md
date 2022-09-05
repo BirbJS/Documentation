@@ -120,7 +120,7 @@ ___
 
 ### url
 
-• **url**: `URL`
+• **url**: [`URL`]( https://developer.mozilla.org/en-US/docs/Web/API/URL )
 
 The URL to connect to.
 
@@ -132,11 +132,11 @@ src/classes/ws/BaseWebsocket.ts:32
 
 ### generateURL
 
-▸ **generateURL**(): `URL`
+▸ **generateURL**(): [`URL`]( https://developer.mozilla.org/en-US/docs/Web/API/URL )
 
 #### Returns
 
-`URL`
+[`URL`]( https://developer.mozilla.org/en-US/docs/Web/API/URL )
 
 #### Defined in
 

@@ -67,7 +67,7 @@ ___
 
 ### when
 
-▸ **when**(`event`): [`EventListener`](../EventListener/index.md)<`T`, `Function`\>
+▸ **when**(`event`): [`EventListener`](../EventListener/index.md)<`T`, [`Function`]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function )\>
 
 #### Parameters
 
@@ -77,7 +77,7 @@ ___
 
 #### Returns
 
-[`EventListener`](../EventListener/index.md)<`T`, `Function`\>
+[`EventListener`](../EventListener/index.md)<`T`, [`Function`]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function )\>
 
 #### Defined in
 

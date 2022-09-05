@@ -174,11 +174,11 @@ ___
 
 ### execute
 
-▸ **execute**(): `Promise`<[`APIResponse`](../modules.md#apiresponse)<[`APIGuild`](../modules.md#apiguild)\>\>
+▸ **execute**(): [`Promise`]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise )<[`APIResponse`](../modules.md#apiresponse)<[`APIGuild`](../modules.md#apiguild)\>\>
 
 #### Returns
 
-`Promise`<[`APIResponse`](../modules.md#apiresponse)<[`APIGuild`](../modules.md#apiguild)\>\>
+[`Promise`]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise )<[`APIResponse`](../modules.md#apiresponse)<[`APIGuild`](../modules.md#apiguild)\>\>
 
 #### Inherited from
 

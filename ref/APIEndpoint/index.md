@@ -160,11 +160,11 @@ ___
 
 ### execute
 
-▸ **execute**(): `Promise`<[`APIResponse`](../modules.md#apiresponse)<`Response`\>\>
+▸ **execute**(): [`Promise`]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise )<[`APIResponse`](../modules.md#apiresponse)<`Response`\>\>
 
 #### Returns
 
-`Promise`<[`APIResponse`](../modules.md#apiresponse)<`Response`\>\>
+[`Promise`]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise )<[`APIResponse`](../modules.md#apiresponse)<`Response`\>\>
 
 #### Defined in
 

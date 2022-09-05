@@ -168,11 +168,11 @@ ___
 
 ### fly
 
-▸ **fly**(): `Promise`<[`Birb`](index.md)\>
+▸ **fly**(): [`Promise`]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise )<[`Birb`](index.md)\>
 
 #### Returns
 
-`Promise`<[`Birb`](index.md)\>
+[`Promise`]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise )<[`Birb`](index.md)\>
 
 #### Defined in
 
@@ -220,7 +220,7 @@ ___
 
 ### when
 
-▸ **when**(`event`): [`EventListener`](../EventListener/index.md)<[`BirbEvent`](../modules.md#birbevent), `Function`\>
+▸ **when**(`event`): [`EventListener`](../EventListener/index.md)<[`BirbEvent`](../modules.md#birbevent), [`Function`]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function )\>
 
 #### Parameters
 
@@ -230,7 +230,7 @@ ___
 
 #### Returns
 
-[`EventListener`](../EventListener/index.md)<[`BirbEvent`](../modules.md#birbevent), `Function`\>
+[`EventListener`](../EventListener/index.md)<[`BirbEvent`](../modules.md#birbevent), [`Function`]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function )\>
 
 #### Inherited from
 

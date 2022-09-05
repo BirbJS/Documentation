@@ -15,7 +15,7 @@ nav_order: 1
 | Name | Type |
 | :------ | :------ |
 | `E` | extends `string` |
-| `F` | extends `Function` |
+| `F` | extends [`Function`]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function ) |
 
 ## Table of contents
 
@@ -40,7 +40,7 @@ nav_order: 1
 | Name | Type |
 | :------ | :------ |
 | `E` | extends `string` |
-| `F` | extends `Function` |
+| `F` | extends [`Function`]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function ) |
 
 #### Parameters
 

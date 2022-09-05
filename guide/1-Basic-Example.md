@@ -12,10 +12,9 @@ nav_order: 1
 # Creating a Basic Bot
 
 This bot will:
-
-    - Connect to the Discord real-time gateway
-    - Listen for the `ready` event (which is fired once the client is fully ready)
-    - Listen for the `guild created` event (which is fired when the client joins a server)
+- Connect to the Discord real-time gateway
+- Listen for the `ready` event (which is fired once the client is fully ready)
+- Listen for the `guild created` event (which is fired when the client joins a server)
 
 ## Example
 
@@ -23,14 +22,13 @@ This bot will:
 
 ```ts
 import { Birb, Guild } from 'birb';
-
 const client = new Birb({
     intents: ['GUILDS'],
 });
 
-client.when('ready', () => {
+client.when('ready').do(() => {
     console.log('Connected to Discord!');
-})
+});
 
 client.when('guild created').do((guild: Guild) => {
     console.log(`I just joined ${guild.name}!`);
@@ -42,16 +40,15 @@ client.fly();
 
 ### JavaScript
 
-```ts
+```js
 const { Birb } = require('birb');
-
 const client = new Birb({
     intents: ['GUILDS'],
 });
 
-client.when('ready', () => {
+client.when('ready').do(() => {
     console.log('Connected to Discord!');
-})
+});
 
 client.when('guild created').do((guild) => {
     console.log(`I just joined ${guild.name}!`);

@@ -49,7 +49,7 @@ nav_order: 1
 
 #### Defined in
 
-src/classes/GuildPartial.ts:12
+src/classes/GuildPartial.ts:23
 
 ## Properties
 
@@ -57,9 +57,13 @@ src/classes/GuildPartial.ts:12
 
 • **available**: `boolean` = `false`
 
+It is recommended to check if this value is `true` before performing actions
+on the guild. If this value is `false`, the guild is unavailable due to a 
+temporary Discord outage.
+
 #### Defined in
 
-src/classes/GuildPartial.ts:10
+src/classes/GuildPartial.ts:21
 
 ___
 
@@ -67,9 +71,11 @@ ___
 
 • **client**: [`Birb`](Birb.md)
 
+The Birb client
+
 #### Defined in
 
-src/classes/GuildPartial.ts:8
+src/classes/GuildPartial.ts:11
 
 ___
 
@@ -77,9 +83,11 @@ ___
 
 • `Readonly` **id**: `string`
 
+The guild's ID (snowflake) as a string
+
 #### Defined in
 
-src/classes/GuildPartial.ts:9
+src/classes/GuildPartial.ts:15
 
 ## Methods
 
@@ -93,7 +101,7 @@ src/classes/GuildPartial.ts:9
 
 #### Defined in
 
-src/classes/GuildPartial.ts:25
+src/classes/GuildPartial.ts:36
 
 ___
 
@@ -109,4 +117,4 @@ ___
 
 #### Defined in
 
-src/classes/GuildPartial.ts:49
+src/classes/GuildPartial.ts:60

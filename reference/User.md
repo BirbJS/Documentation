@@ -106,7 +106,7 @@ ___
 
 • **discriminator**: `string`
 
-The user's discriminator (Username#**0000**)
+The user's discriminator (e.g. Username#**0000**)
 
 #### Defined in
 
@@ -154,7 +154,7 @@ ___
 
 • **tag**: `string`
 
-The user's tag (**Username#0000**)
+The user's tag (e.g. **Username#0000**)
 
 #### Defined in
 
@@ -166,7 +166,7 @@ ___
 
 • **username**: `string`
 
-The user's username (**Username**#0000)
+The user's username (e.g. **Username**#0000)
 
 #### Defined in
 

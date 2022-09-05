@@ -1,11 +1,12 @@
 # their theme is sooooooo good
 remote_theme: pmarsceill/just-the-docs
 color_scheme: dark
-source: public
 
 # Header links
 aux_links_new_tab: true
 aux_links:
+  "Documentation":
+    - "https://birb.js.org/docs"
   "GitHub":
     - "https://github.com/BirbJS/Birb"
   "NPM":

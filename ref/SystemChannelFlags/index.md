@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "SystemChannelFlags"
+parent: "1"
 has_children: true
 has_toc: false
 nav_order: 1
